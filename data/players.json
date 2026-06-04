@@ -1,0 +1,1848 @@
+[
+  {
+    "id": 1,
+    "name": "Wayne Gretzky",
+    "initials": "WG",
+    "position": "C",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 696,
+      "goals": 583,
+      "assists": 1086,
+      "points": 1669,
+      "plusMinus": 6,
+      "pointsPerGame": 2.398
+    },
+    "strengthScore": 99
+  },
+  {
+    "id": 2,
+    "name": "Jari Kurri",
+    "initials": "JK",
+    "position": "RW",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 697,
+      "goals": 474,
+      "assists": 569,
+      "points": 1043,
+      "plusMinus": 50,
+      "pointsPerGame": 1.496
+    },
+    "strengthScore": 89
+  },
+  {
+    "id": 3,
+    "name": "Glenn Anderson",
+    "initials": "GA",
+    "position": "LW",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 625,
+      "goals": 417,
+      "assists": 489,
+      "points": 906,
+      "plusMinus": 98,
+      "pointsPerGame": 1.45
+    },
+    "strengthScore": 84
+  },
+  {
+    "id": 4,
+    "name": "Paul Coffey",
+    "initials": "PC",
+    "position": "RD",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 532,
+      "goals": 209,
+      "assists": 534,
+      "points": 743,
+      "plusMinus": 162,
+      "pointsPerGame": 1.397
+    },
+    "strengthScore": 90
+  },
+  {
+    "id": 5,
+    "name": "Charlie Huddy",
+    "initials": "CH",
+    "position": "LD",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 521,
+      "goals": 60,
+      "assists": 247,
+      "points": 307,
+      "plusMinus": 173,
+      "pointsPerGame": 0.589
+    },
+    "strengthScore": 65
+  },
+  {
+    "id": 6,
+    "name": "Grant Fuhr",
+    "initials": "GF",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 423,
+      "wins": 226,
+      "gaa": 3.43,
+      "savePct": 0.881,
+      "shutouts": 14
+    },
+    "strengthScore": 82
+  },
+  {
+    "id": 7,
+    "name": "Guy Lafleur",
+    "initials": "GL",
+    "position": "RW",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1970s",
+    "stats": {
+      "gp": 680,
+      "goals": 518,
+      "assists": 686,
+      "points": 1204,
+      "plusMinus": 363,
+      "pointsPerGame": 1.771
+    },
+    "strengthScore": 95
+  },
+  {
+    "id": 8,
+    "name": "Pete Mahovlich",
+    "initials": "PM",
+    "position": "C",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1970s",
+    "stats": {
+      "gp": 490,
+      "goals": 174,
+      "assists": 330,
+      "points": 504,
+      "plusMinus": 125,
+      "pointsPerGame": 1.029
+    },
+    "strengthScore": 73
+  },
+  {
+    "id": 9,
+    "name": "Steve Shutt",
+    "initials": "SS",
+    "position": "LW",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1970s",
+    "stats": {
+      "gp": 558,
+      "goals": 387,
+      "assists": 358,
+      "points": 745,
+      "plusMinus": 218,
+      "pointsPerGame": 1.335
+    },
+    "strengthScore": 85
+  },
+  {
+    "id": 10,
+    "name": "Larry Robinson",
+    "initials": "LR",
+    "position": "LD",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1970s",
+    "stats": {
+      "gp": 671,
+      "goals": 89,
+      "assists": 447,
+      "points": 536,
+      "plusMinus": 462,
+      "pointsPerGame": 0.799
+    },
+    "strengthScore": 88
+  },
+  {
+    "id": 11,
+    "name": "Serge Savard",
+    "initials": "SS",
+    "position": "RD",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1970s",
+    "stats": {
+      "gp": 583,
+      "goals": 83,
+      "assists": 283,
+      "points": 366,
+      "plusMinus": 228,
+      "pointsPerGame": 0.628
+    },
+    "strengthScore": 76
+  },
+  {
+    "id": 12,
+    "name": "Ken Dryden",
+    "initials": "KD",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1970s",
+    "stats": {
+      "gp": 397,
+      "wins": 258,
+      "gaa": 2.24,
+      "savePct": 0.922,
+      "shutouts": 46
+    },
+    "strengthScore": 95
+  },
+  {
+    "id": 13,
+    "name": "Bobby Orr",
+    "initials": "BO",
+    "position": "LD",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1970s",
+    "stats": {
+      "gp": 396,
+      "goals": 204,
+      "assists": 527,
+      "points": 731,
+      "plusMinus": 439,
+      "pointsPerGame": 1.846
+    },
+    "strengthScore": 99
+  },
+  {
+    "id": 14,
+    "name": "Phil Esposito",
+    "initials": "PE",
+    "position": "C",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1970s",
+    "stats": {
+      "gp": 562,
+      "goals": 459,
+      "assists": 553,
+      "points": 1012,
+      "plusMinus": 186,
+      "pointsPerGame": 1.801
+    },
+    "strengthScore": 95
+  },
+  {
+    "id": 15,
+    "name": "Ken Hodge",
+    "initials": "KH",
+    "position": "RW",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1970s",
+    "stats": {
+      "gp": 380,
+      "goals": 182,
+      "assists": 274,
+      "points": 456,
+      "plusMinus": 125,
+      "pointsPerGame": 1.2
+    },
+    "strengthScore": 74
+  },
+  {
+    "id": 16,
+    "name": "Wayne Cashman",
+    "initials": "WC",
+    "position": "LW",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1970s",
+    "stats": {
+      "gp": 484,
+      "goals": 156,
+      "assists": 282,
+      "points": 438,
+      "plusMinus": 362,
+      "pointsPerGame": 0.905
+    },
+    "strengthScore": 70
+  },
+  {
+    "id": 17,
+    "name": "Dallas Smith",
+    "initials": "DS",
+    "position": "RD",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1970s",
+    "stats": {
+      "gp": 470,
+      "goals": 55,
+      "assists": 172,
+      "points": 227,
+      "plusMinus": 266,
+      "pointsPerGame": 0.483
+    },
+    "strengthScore": 65
+  },
+  {
+    "id": 18,
+    "name": "Gerry Cheevers",
+    "initials": "GC",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1970s",
+    "stats": {
+      "gp": 324,
+      "wins": 229,
+      "gaa": 2.89,
+      "savePct": 0.905,
+      "shutouts": 26
+    },
+    "strengthScore": 83
+  },
+  {
+    "id": 19,
+    "name": "Mario Lemieux",
+    "initials": "ML",
+    "position": "C",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 406,
+      "goals": 379,
+      "assists": 576,
+      "points": 955,
+      "plusMinus": 58,
+      "pointsPerGame": 2.352
+    },
+    "strengthScore": 97
+  },
+  {
+    "id": 20,
+    "name": "Jaromir Jagr",
+    "initials": "JJ",
+    "position": "RW",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 439,
+      "goals": 349,
+      "assists": 448,
+      "points": 797,
+      "plusMinus": 169,
+      "pointsPerGame": 1.815
+    },
+    "strengthScore": 94
+  },
+  {
+    "id": 21,
+    "name": "Ron Francis",
+    "initials": "RF",
+    "position": "LW",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 528,
+      "goals": 189,
+      "assists": 402,
+      "points": 591,
+      "plusMinus": 34,
+      "pointsPerGame": 1.119
+    },
+    "strengthScore": 82
+  },
+  {
+    "id": 22,
+    "name": "Larry Murphy",
+    "initials": "LM",
+    "position": "RD",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 512,
+      "goals": 115,
+      "assists": 329,
+      "points": 444,
+      "plusMinus": 112,
+      "pointsPerGame": 0.867
+    },
+    "strengthScore": 77
+  },
+  {
+    "id": 23,
+    "name": "Ulf Samuelsson",
+    "initials": "US",
+    "position": "LD",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 452,
+      "goals": 54,
+      "assists": 185,
+      "points": 239,
+      "plusMinus": 80,
+      "pointsPerGame": 0.529
+    },
+    "strengthScore": 68
+  },
+  {
+    "id": 24,
+    "name": "Tom Barrasso",
+    "initials": "TB",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 460,
+      "wins": 252,
+      "gaa": 3.26,
+      "savePct": 0.899,
+      "shutouts": 18
+    },
+    "strengthScore": 79
+  },
+  {
+    "id": 25,
+    "name": "Mike Bossy",
+    "initials": "MB",
+    "position": "RW",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 452,
+      "goals": 413,
+      "assists": 378,
+      "points": 791,
+      "plusMinus": 118,
+      "pointsPerGame": 1.75
+    },
+    "strengthScore": 94
+  },
+  {
+    "id": 26,
+    "name": "Bryan Trottier",
+    "initials": "BT",
+    "position": "C",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 480,
+      "goals": 262,
+      "assists": 468,
+      "points": 730,
+      "plusMinus": 59,
+      "pointsPerGame": 1.521
+    },
+    "strengthScore": 88
+  },
+  {
+    "id": 27,
+    "name": "Clark Gillies",
+    "initials": "CG",
+    "position": "LW",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 476,
+      "goals": 223,
+      "assists": 271,
+      "points": 494,
+      "plusMinus": 73,
+      "pointsPerGame": 1.038
+    },
+    "strengthScore": 74
+  },
+  {
+    "id": 28,
+    "name": "Denis Potvin",
+    "initials": "DP",
+    "position": "LD",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 504,
+      "goals": 189,
+      "assists": 437,
+      "points": 626,
+      "plusMinus": 176,
+      "pointsPerGame": 1.242
+    },
+    "strengthScore": 91
+  },
+  {
+    "id": 29,
+    "name": "Stefan Persson",
+    "initials": "SP",
+    "position": "RD",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 419,
+      "goals": 55,
+      "assists": 228,
+      "points": 283,
+      "plusMinus": 180,
+      "pointsPerGame": 0.675
+    },
+    "strengthScore": 63
+  },
+  {
+    "id": 30,
+    "name": "Billy Smith",
+    "initials": "BS",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 454,
+      "wins": 252,
+      "gaa": 3.13,
+      "savePct": 0.889,
+      "shutouts": 22
+    },
+    "strengthScore": 81
+  },
+  {
+    "id": 31,
+    "name": "Steve Yzerman",
+    "initials": "SY",
+    "position": "C",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1990s",
+    "stats": {
+      "gp": 478,
+      "goals": 254,
+      "assists": 409,
+      "points": 663,
+      "plusMinus": 56,
+      "pointsPerGame": 1.387
+    },
+    "strengthScore": 91
+  },
+  {
+    "id": 32,
+    "name": "Brendan Shanahan",
+    "initials": "BS",
+    "position": "LW",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1990s",
+    "stats": {
+      "gp": 326,
+      "goals": 154,
+      "assists": 143,
+      "points": 297,
+      "plusMinus": 62,
+      "pointsPerGame": 0.911
+    },
+    "strengthScore": 80
+  },
+  {
+    "id": 33,
+    "name": "Sergei Fedorov",
+    "initials": "SF",
+    "position": "RW",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1990s",
+    "stats": {
+      "gp": 384,
+      "goals": 221,
+      "assists": 282,
+      "points": 503,
+      "plusMinus": 192,
+      "pointsPerGame": 1.31
+    },
+    "strengthScore": 90
+  },
+  {
+    "id": 34,
+    "name": "Nicklas Lidstrom",
+    "initials": "NL",
+    "position": "LD",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1990s",
+    "stats": {
+      "gp": 492,
+      "goals": 87,
+      "assists": 318,
+      "points": 405,
+      "plusMinus": 206,
+      "pointsPerGame": 0.823
+    },
+    "strengthScore": 92
+  },
+  {
+    "id": 35,
+    "name": "Larry Murphy",
+    "initials": "LM",
+    "position": "RD",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1990s",
+    "stats": {
+      "gp": 199,
+      "goals": 32,
+      "assists": 102,
+      "points": 134,
+      "plusMinus": 48,
+      "pointsPerGame": 0.673
+    },
+    "strengthScore": 68
+  },
+  {
+    "id": 36,
+    "name": "Dominik Hasek",
+    "initials": "DH",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1990s",
+    "stats": {
+      "gp": 176,
+      "wins": 116,
+      "gaa": 2.1,
+      "savePct": 0.926,
+      "shutouts": 22
+    },
+    "strengthScore": 93
+  },
+  {
+    "id": 37,
+    "name": "Joe Sakic",
+    "initials": "JS",
+    "position": "C",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 361,
+      "goals": 200,
+      "assists": 317,
+      "points": 517,
+      "plusMinus": 79,
+      "pointsPerGame": 1.432
+    },
+    "strengthScore": 92
+  },
+  {
+    "id": 38,
+    "name": "Peter Forsberg",
+    "initials": "PF",
+    "position": "C",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 289,
+      "goals": 166,
+      "assists": 335,
+      "points": 501,
+      "plusMinus": 170,
+      "pointsPerGame": 1.734
+    },
+    "strengthScore": 96
+  },
+  {
+    "id": 39,
+    "name": "Valeri Kamensky",
+    "initials": "VK",
+    "position": "LW",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 280,
+      "goals": 126,
+      "assists": 179,
+      "points": 305,
+      "plusMinus": 61,
+      "pointsPerGame": 1.089
+    },
+    "strengthScore": 76
+  },
+  {
+    "id": 40,
+    "name": "Claude Lemieux",
+    "initials": "CL",
+    "position": "RW",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 218,
+      "goals": 93,
+      "assists": 92,
+      "points": 185,
+      "plusMinus": 57,
+      "pointsPerGame": 0.849
+    },
+    "strengthScore": 70
+  },
+  {
+    "id": 41,
+    "name": "Sandis Ozolinsh",
+    "initials": "SO",
+    "position": "RD",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 239,
+      "goals": 62,
+      "assists": 138,
+      "points": 200,
+      "plusMinus": 109,
+      "pointsPerGame": 0.837
+    },
+    "strengthScore": 76
+  },
+  {
+    "id": 42,
+    "name": "Uwe Krupp",
+    "initials": "UK",
+    "position": "LD",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 154,
+      "goals": 22,
+      "assists": 60,
+      "points": 82,
+      "plusMinus": 46,
+      "pointsPerGame": 0.532
+    },
+    "strengthScore": 60
+  },
+  {
+    "id": 43,
+    "name": "Patrick Roy",
+    "initials": "PR",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 262,
+      "wins": 172,
+      "gaa": 2.38,
+      "savePct": 0.921,
+      "shutouts": 37
+    },
+    "strengthScore": 96
+  },
+  {
+    "id": 44,
+    "name": "Bobby Clarke",
+    "initials": "BC",
+    "position": "C",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1970s",
+    "stats": {
+      "gp": 625,
+      "goals": 252,
+      "assists": 535,
+      "points": 787,
+      "plusMinus": 183,
+      "pointsPerGame": 1.259
+    },
+    "strengthScore": 90
+  },
+  {
+    "id": 45,
+    "name": "Bill Barber",
+    "initials": "BB",
+    "position": "LW",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1970s",
+    "stats": {
+      "gp": 508,
+      "goals": 232,
+      "assists": 294,
+      "points": 526,
+      "plusMinus": 154,
+      "pointsPerGame": 1.035
+    },
+    "strengthScore": 76
+  },
+  {
+    "id": 46,
+    "name": "Reggie Leach",
+    "initials": "RL",
+    "position": "RW",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1970s",
+    "stats": {
+      "gp": 469,
+      "goals": 306,
+      "assists": 210,
+      "points": 516,
+      "plusMinus": 73,
+      "pointsPerGame": 1.1
+    },
+    "strengthScore": 82
+  },
+  {
+    "id": 47,
+    "name": "Andre Dupont",
+    "initials": "AD",
+    "position": "LD",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1970s",
+    "stats": {
+      "gp": 405,
+      "goals": 45,
+      "assists": 163,
+      "points": 208,
+      "plusMinus": 160,
+      "pointsPerGame": 0.514
+    },
+    "strengthScore": 63
+  },
+  {
+    "id": 48,
+    "name": "Tom Bladon",
+    "initials": "TB",
+    "position": "RD",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1970s",
+    "stats": {
+      "gp": 385,
+      "goals": 75,
+      "assists": 196,
+      "points": 271,
+      "plusMinus": 109,
+      "pointsPerGame": 0.704
+    },
+    "strengthScore": 65
+  },
+  {
+    "id": 49,
+    "name": "Bernie Parent",
+    "initials": "BP",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1970s",
+    "stats": {
+      "gp": 441,
+      "wins": 232,
+      "gaa": 2.42,
+      "savePct": 0.921,
+      "shutouts": 55
+    },
+    "strengthScore": 93
+  },
+  {
+    "id": 50,
+    "name": "Jean Beliveau",
+    "initials": "JB",
+    "position": "C",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1950s",
+    "stats": {
+      "gp": 384,
+      "goals": 186,
+      "assists": 243,
+      "points": 429,
+      "plusMinus": 0,
+      "pointsPerGame": 1.117
+    },
+    "strengthScore": 91
+  },
+  {
+    "id": 51,
+    "name": "Bernie Geoffrion",
+    "initials": "BG",
+    "position": "RW",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1950s",
+    "stats": {
+      "gp": 394,
+      "goals": 196,
+      "assists": 153,
+      "points": 349,
+      "plusMinus": 0,
+      "pointsPerGame": 0.886
+    },
+    "strengthScore": 83
+  },
+  {
+    "id": 52,
+    "name": "Dickie Moore",
+    "initials": "DM",
+    "position": "LW",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1950s",
+    "stats": {
+      "gp": 352,
+      "goals": 163,
+      "assists": 185,
+      "points": 348,
+      "plusMinus": 0,
+      "pointsPerGame": 0.989
+    },
+    "strengthScore": 81
+  },
+  {
+    "id": 53,
+    "name": "Doug Harvey",
+    "initials": "DH",
+    "position": "LD",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1950s",
+    "stats": {
+      "gp": 420,
+      "goals": 68,
+      "assists": 300,
+      "points": 368,
+      "plusMinus": 0,
+      "pointsPerGame": 0.876
+    },
+    "strengthScore": 93
+  },
+  {
+    "id": 54,
+    "name": "Tom Johnson",
+    "initials": "TJ",
+    "position": "RD",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1950s",
+    "stats": {
+      "gp": 374,
+      "goals": 41,
+      "assists": 148,
+      "points": 189,
+      "plusMinus": 0,
+      "pointsPerGame": 0.505
+    },
+    "strengthScore": 68
+  },
+  {
+    "id": 55,
+    "name": "Jacques Plante",
+    "initials": "JP",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1950s",
+    "stats": {
+      "gp": 393,
+      "wins": 262,
+      "gaa": 2.14,
+      "savePct": 0.93,
+      "shutouts": 58
+    },
+    "strengthScore": 97
+  },
+  {
+    "id": 56,
+    "name": "Dave Andreychuk",
+    "initials": "DA",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 213,
+      "goals": 89,
+      "assists": 104,
+      "points": 193,
+      "plusMinus": 21,
+      "pointsPerGame": 0.906
+    },
+    "strengthScore": 72
+  },
+  {
+    "id": 57,
+    "name": "Scott Stevens",
+    "initials": "SS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 449,
+      "goals": 74,
+      "assists": 241,
+      "points": 315,
+      "plusMinus": 127,
+      "pointsPerGame": 0.702
+    },
+    "strengthScore": 84
+  },
+  {
+    "id": 58,
+    "name": "Ken Daneyko",
+    "initials": "KD",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 477,
+      "goals": 26,
+      "assists": 71,
+      "points": 97,
+      "plusMinus": 21,
+      "pointsPerGame": 0.203
+    },
+    "strengthScore": 60
+  },
+  {
+    "id": 59,
+    "name": "Doug Gilmour",
+    "initials": "DG",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 183,
+      "goals": 47,
+      "assists": 113,
+      "points": 160,
+      "plusMinus": 32,
+      "pointsPerGame": 0.874
+    },
+    "strengthScore": 73
+  },
+  {
+    "id": 60,
+    "name": "Petr Sykora",
+    "initials": "PS",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 266,
+      "goals": 77,
+      "assists": 97,
+      "points": 174,
+      "plusMinus": 22,
+      "pointsPerGame": 0.654
+    },
+    "strengthScore": 68
+  },
+  {
+    "id": 61,
+    "name": "Martin Brodeur",
+    "initials": "MB",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 400,
+      "wins": 259,
+      "gaa": 2.29,
+      "savePct": 0.913,
+      "shutouts": 44
+    },
+    "strengthScore": 95
+  },
+  {
+    "id": 62,
+    "name": "Steven Stamkos",
+    "initials": "SS",
+    "position": "C",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 442,
+      "goals": 249,
+      "assists": 277,
+      "points": 526,
+      "plusMinus": 67,
+      "pointsPerGame": 1.19
+    },
+    "strengthScore": 93
+  },
+  {
+    "id": 63,
+    "name": "Nikita Kucherov",
+    "initials": "NK",
+    "position": "RW",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 432,
+      "goals": 193,
+      "assists": 316,
+      "points": 509,
+      "plusMinus": 87,
+      "pointsPerGame": 1.178
+    },
+    "strengthScore": 94
+  },
+  {
+    "id": 64,
+    "name": "Ondrej Palat",
+    "initials": "OP",
+    "position": "LW",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 382,
+      "goals": 108,
+      "assists": 167,
+      "points": 275,
+      "plusMinus": 63,
+      "pointsPerGame": 0.72
+    },
+    "strengthScore": 72
+  },
+  {
+    "id": 65,
+    "name": "Victor Hedman",
+    "initials": "VH",
+    "position": "LD",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 484,
+      "goals": 75,
+      "assists": 296,
+      "points": 371,
+      "plusMinus": 177,
+      "pointsPerGame": 0.767
+    },
+    "strengthScore": 91
+  },
+  {
+    "id": 66,
+    "name": "Ryan McDonagh",
+    "initials": "RM",
+    "position": "RD",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 192,
+      "goals": 18,
+      "assists": 75,
+      "points": 93,
+      "plusMinus": 51,
+      "pointsPerGame": 0.484
+    },
+    "strengthScore": 68
+  },
+  {
+    "id": 67,
+    "name": "Andrei Vasilevskiy",
+    "initials": "AV",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 342,
+      "wins": 204,
+      "gaa": 2.58,
+      "savePct": 0.919,
+      "shutouts": 21
+    },
+    "strengthScore": 91
+  },
+  {
+    "id": 68,
+    "name": "Jonathan Toews",
+    "initials": "JT",
+    "position": "C",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 450,
+      "goals": 209,
+      "assists": 266,
+      "points": 475,
+      "plusMinus": 139,
+      "pointsPerGame": 1.056
+    },
+    "strengthScore": 90
+  },
+  {
+    "id": 69,
+    "name": "Patrick Kane",
+    "initials": "PK",
+    "position": "RW",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 476,
+      "goals": 220,
+      "assists": 331,
+      "points": 551,
+      "plusMinus": 56,
+      "pointsPerGame": 1.158
+    },
+    "strengthScore": 93
+  },
+  {
+    "id": 70,
+    "name": "Marian Hossa",
+    "initials": "MH",
+    "position": "LW",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 354,
+      "goals": 167,
+      "assists": 178,
+      "points": 345,
+      "plusMinus": 73,
+      "pointsPerGame": 0.975
+    },
+    "strengthScore": 84
+  },
+  {
+    "id": 71,
+    "name": "Duncan Keith",
+    "initials": "DK",
+    "position": "LD",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 486,
+      "goals": 62,
+      "assists": 266,
+      "points": 328,
+      "plusMinus": 145,
+      "pointsPerGame": 0.675
+    },
+    "strengthScore": 88
+  },
+  {
+    "id": 72,
+    "name": "Brent Seabrook",
+    "initials": "BS",
+    "position": "RD",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 484,
+      "goals": 81,
+      "assists": 186,
+      "points": 267,
+      "plusMinus": 98,
+      "pointsPerGame": 0.552
+    },
+    "strengthScore": 74
+  },
+  {
+    "id": 73,
+    "name": "Corey Crawford",
+    "initials": "CC",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 396,
+      "wins": 223,
+      "gaa": 2.41,
+      "savePct": 0.919,
+      "shutouts": 28
+    },
+    "strengthScore": 87
+  },
+  {
+    "id": 74,
+    "name": "Alex Ovechkin",
+    "initials": "AO",
+    "position": "LW",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2010s",
+    "stats": {
+      "gp": 420,
+      "goals": 317,
+      "assists": 234,
+      "points": 551,
+      "plusMinus": 8,
+      "pointsPerGame": 1.312
+    },
+    "strengthScore": 97
+  },
+  {
+    "id": 75,
+    "name": "Nicklas Backstrom",
+    "initials": "NB",
+    "position": "C",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2010s",
+    "stats": {
+      "gp": 416,
+      "goals": 130,
+      "assists": 323,
+      "points": 453,
+      "plusMinus": 87,
+      "pointsPerGame": 1.089
+    },
+    "strengthScore": 88
+  },
+  {
+    "id": 76,
+    "name": "Tom Wilson",
+    "initials": "TW",
+    "position": "RW",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2010s",
+    "stats": {
+      "gp": 344,
+      "goals": 95,
+      "assists": 100,
+      "points": 195,
+      "plusMinus": 62,
+      "pointsPerGame": 0.567
+    },
+    "strengthScore": 73
+  },
+  {
+    "id": 77,
+    "name": "John Carlson",
+    "initials": "JC",
+    "position": "RD",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2010s",
+    "stats": {
+      "gp": 476,
+      "goals": 93,
+      "assists": 271,
+      "points": 364,
+      "plusMinus": 98,
+      "pointsPerGame": 0.765
+    },
+    "strengthScore": 86
+  },
+  {
+    "id": 78,
+    "name": "Matt Niskanen",
+    "initials": "MN",
+    "position": "LD",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2010s",
+    "stats": {
+      "gp": 291,
+      "goals": 38,
+      "assists": 117,
+      "points": 155,
+      "plusMinus": 76,
+      "pointsPerGame": 0.533
+    },
+    "strengthScore": 70
+  },
+  {
+    "id": 79,
+    "name": "Braden Holtby",
+    "initials": "BH",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2010s",
+    "stats": {
+      "gp": 363,
+      "wins": 214,
+      "gaa": 2.54,
+      "savePct": 0.916,
+      "shutouts": 32
+    },
+    "strengthScore": 88
+  },
+  {
+    "id": 80,
+    "name": "Peter Stastny",
+    "initials": "PS",
+    "position": "C",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 554,
+      "goals": 380,
+      "assists": 668,
+      "points": 1048,
+      "plusMinus": 42,
+      "pointsPerGame": 1.892
+    },
+    "strengthScore": 93
+  },
+  {
+    "id": 81,
+    "name": "Anton Stastny",
+    "initials": "AS",
+    "position": "LW",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 469,
+      "goals": 215,
+      "assists": 366,
+      "points": 581,
+      "plusMinus": 30,
+      "pointsPerGame": 1.239
+    },
+    "strengthScore": 81
+  },
+  {
+    "id": 82,
+    "name": "Michel Goulet",
+    "initials": "MG",
+    "position": "LW",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 571,
+      "goals": 395,
+      "assists": 460,
+      "points": 855,
+      "plusMinus": 43,
+      "pointsPerGame": 1.497
+    },
+    "strengthScore": 91
+  },
+  {
+    "id": 83,
+    "name": "Marian Stastny",
+    "initials": "MS",
+    "position": "RW",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 322,
+      "goals": 118,
+      "assists": 165,
+      "points": 283,
+      "plusMinus": 5,
+      "pointsPerGame": 0.879
+    },
+    "strengthScore": 72
+  },
+  {
+    "id": 84,
+    "name": "Dave Maloney",
+    "initials": "DM",
+    "position": "LD",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 170,
+      "goals": 20,
+      "assists": 55,
+      "points": 75,
+      "plusMinus": -15,
+      "pointsPerGame": 0.441
+    },
+    "strengthScore": 58
+  },
+  {
+    "id": 85,
+    "name": "Randy Moller",
+    "initials": "RM",
+    "position": "RD",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 420,
+      "goals": 46,
+      "assists": 140,
+      "points": 186,
+      "plusMinus": 21,
+      "pointsPerGame": 0.443
+    },
+    "strengthScore": 62
+  },
+  {
+    "id": 86,
+    "name": "Dan Bouchard",
+    "initials": "DB",
+    "position": "G",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 211,
+      "wins": 100,
+      "gaa": 3.79,
+      "savePct": 0.875,
+      "shutouts": 11
+    },
+    "strengthScore": 68
+  },
+  {
+    "id": 87,
+    "name": "Neal Broten",
+    "initials": "NB",
+    "position": "C",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1980s",
+    "stats": {
+      "gp": 476,
+      "goals": 158,
+      "assists": 345,
+      "points": 503,
+      "plusMinus": 54,
+      "pointsPerGame": 1.057
+    },
+    "strengthScore": 80
+  },
+  {
+    "id": 88,
+    "name": "Dino Ciccarelli",
+    "initials": "DC",
+    "position": "RW",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1980s",
+    "stats": {
+      "gp": 454,
+      "goals": 293,
+      "assists": 267,
+      "points": 560,
+      "plusMinus": 43,
+      "pointsPerGame": 1.233
+    },
+    "strengthScore": 86
+  },
+  {
+    "id": 89,
+    "name": "Steve Payne",
+    "initials": "SP",
+    "position": "LW",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1980s",
+    "stats": {
+      "gp": 354,
+      "goals": 166,
+      "assists": 198,
+      "points": 364,
+      "plusMinus": 73,
+      "pointsPerGame": 1.028
+    },
+    "strengthScore": 73
+  },
+  {
+    "id": 90,
+    "name": "Craig Hartsburg",
+    "initials": "CH",
+    "position": "LD",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1980s",
+    "stats": {
+      "gp": 434,
+      "goals": 88,
+      "assists": 285,
+      "points": 373,
+      "plusMinus": 148,
+      "pointsPerGame": 0.859
+    },
+    "strengthScore": 78
+  },
+  {
+    "id": 91,
+    "name": "Brad Maxwell",
+    "initials": "BM",
+    "position": "RD",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1980s",
+    "stats": {
+      "gp": 371,
+      "goals": 88,
+      "assists": 238,
+      "points": 326,
+      "plusMinus": 60,
+      "pointsPerGame": 0.879
+    },
+    "strengthScore": 72
+  },
+  {
+    "id": 92,
+    "name": "Gilles Meloche",
+    "initials": "GM",
+    "position": "G",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1980s",
+    "stats": {
+      "gp": 275,
+      "wins": 117,
+      "gaa": 3.63,
+      "savePct": 0.876,
+      "shutouts": 13
+    },
+    "strengthScore": 65
+  },
+  {
+    "id": 93,
+    "name": "Connor McDavid",
+    "initials": "CM",
+    "position": "C",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 246,
+      "goals": 134,
+      "assists": 267,
+      "points": 401,
+      "plusMinus": 45,
+      "pointsPerGame": 1.63
+    },
+    "strengthScore": 99
+  },
+  {
+    "id": 94,
+    "name": "Leon Draisaitl",
+    "initials": "LD",
+    "position": "LW",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 246,
+      "goals": 149,
+      "assists": 208,
+      "points": 357,
+      "plusMinus": 19,
+      "pointsPerGame": 1.451
+    },
+    "strengthScore": 96
+  },
+  {
+    "id": 95,
+    "name": "Zach Hyman",
+    "initials": "ZH",
+    "position": "LW",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 181,
+      "goals": 82,
+      "assists": 75,
+      "points": 157,
+      "plusMinus": 40,
+      "pointsPerGame": 0.867
+    },
+    "strengthScore": 76
+  },
+  {
+    "id": 96,
+    "name": "Evan Bouchard",
+    "initials": "EB",
+    "position": "RD",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 197,
+      "goals": 41,
+      "assists": 117,
+      "points": 158,
+      "plusMinus": 30,
+      "pointsPerGame": 0.802
+    },
+    "strengthScore": 77
+  },
+  {
+    "id": 97,
+    "name": "Darnell Nurse",
+    "initials": "DN",
+    "position": "LD",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 197,
+      "goals": 31,
+      "assists": 75,
+      "points": 106,
+      "plusMinus": -22,
+      "pointsPerGame": 0.538
+    },
+    "strengthScore": 66
+  },
+  {
+    "id": 98,
+    "name": "Stuart Skinner",
+    "initials": "SS",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 145,
+      "wins": 73,
+      "gaa": 3.03,
+      "savePct": 0.904,
+      "shutouts": 5
+    },
+    "strengthScore": 74
+  }
+]
