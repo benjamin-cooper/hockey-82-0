@@ -1,6 +1,6 @@
 'use client';
 import { useState, useCallback } from 'react';
-import { Player, Position, POSITIONS, POSITION_LABELS, TeamResult } from '@/types';
+import { Player, DraftedPlayer, Position, POSITIONS, POSITION_LABELS, TeamResult } from '@/types';
 import SlotMachine from './SlotMachine';
 import PlayerCard from './PlayerCard';
 import ResultsScreen from './ResultsScreen';
@@ -14,7 +14,7 @@ type GamePhase =
 
 export default function DraftGame() {
   const [phase, setPhase] = useState<GamePhase | null>(null);
-  const [drafted, setDrafted] = useState<Player[]>([]);
+  const [drafted, setDrafted] = useState<DraftedPlayer[]>([]);
   const [usedCombos, setUsedCombos] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -57,7 +57,9 @@ export default function DraftGame() {
   }, [phase]);
 
   async function handlePick(player: Player) {
-    const newDrafted = [...drafted, player];
+    const slotPosition = POSITIONS[drafted.length];
+    const draftedPlayer: DraftedPlayer = { ...player, slotPosition };
+    const newDrafted = [...drafted, draftedPlayer];
     const combo = `${player.franchiseAbbr}-${player.decade}`;
     const newUsed = [...usedCombos, combo];
     setDrafted(newDrafted);
@@ -73,7 +75,7 @@ export default function DraftGame() {
           body: JSON.stringify({ playerIds: newDrafted.map(p => p.id) }),
         });
         const result: TeamResult = await res.json();
-        // Re-attach full player objects (API returns lean result)
+        // Re-attach full drafted players (with slotPosition) from local state
         result.players = newDrafted;
         setPhase({ type: 'results', result });
       } catch {

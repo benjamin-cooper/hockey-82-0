@@ -54,8 +54,13 @@ export interface DraftSlot {
   player: Player | null;
 }
 
+/** A player as drafted — includes the slot they were drafted into (may differ from their natural position) */
+export interface DraftedPlayer extends Player {
+  slotPosition: Position; // the roster slot they were picked for
+}
+
 export interface TeamResult {
-  players: Player[];
+  players: DraftedPlayer[];
   wins: number;
   losses: number;
   otl: number;

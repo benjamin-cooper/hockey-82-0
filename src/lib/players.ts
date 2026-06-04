@@ -24,9 +24,20 @@ export function getPlayerById(id: number): Player | undefined {
   return loadPlayers().find(p => p.id === id);
 }
 
+const FORWARD_POSITIONS: Position[] = ['C', 'LW', 'RW'];
+
 export function getPlayersBySlot(franchiseAbbr: string, decade: string, position: Position): Player[] {
+  // For any forward slot, show all forwards — a center can play wing and vice versa
+  const eligible = FORWARD_POSITIONS.includes(position)
+    ? FORWARD_POSITIONS
+    : [position];
+
   return loadPlayers()
-    .filter(p => p.franchiseAbbr === franchiseAbbr && p.decade === decade && p.position === position)
+    .filter(p =>
+      p.franchiseAbbr === franchiseAbbr &&
+      p.decade === decade &&
+      eligible.includes(p.position as Position)
+    )
     .sort((a, b) => b.strengthScore - a.strengthScore);
 }
 

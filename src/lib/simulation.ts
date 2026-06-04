@@ -1,4 +1,4 @@
-import { Player, TeamResult, isGoalieStats } from '@/types';
+import { DraftedPlayer, TeamResult, isGoalieStats } from '@/types';
 import { ERA_AVERAGES } from '@/lib/franchises';
 
 // Era-average production rates as fractions of team goals/game.
@@ -35,9 +35,9 @@ function simulate82(winPct: number, otlRate = 0.12): { wins: number; losses: num
   return { wins, losses, otl };
 }
 
-export function simulateSeason(players: Player[]): TeamResult {
-  const skaters = players.filter(p => p.position !== 'G');
-  const goalie  = players.find(p => p.position === 'G');
+export function simulateSeason(players: DraftedPlayer[]): TeamResult {
+  const skaters = players.filter(p => p.slotPosition !== 'G');
+  const goalie  = players.find(p => p.slotPosition === 'G');
 
   // ─── OFFENSE ───────────────────────────────────────────────────────────────
   // Each skater scored against era-average production at their position.
@@ -50,7 +50,8 @@ export function simulateSeason(players: Player[]): TeamResult {
     if (isGoalieStats(p.stats)) continue;
     const era   = ERA_AVERAGES[p.decade] ?? ERA_AVERAGES['2010s'];
     const egpg  = era.goalsPerGame;
-    const isF   = ['C', 'LW', 'RW'].includes(p.position);
+    // Use slotPosition for role weighting — a C drafted to LW is a forward contributor
+    const isF   = ['C', 'LW', 'RW'].includes(p.slotPosition);
 
     const gpg = p.stats.goals   / p.stats.gp;
     const apg = p.stats.assists / p.stats.gp;

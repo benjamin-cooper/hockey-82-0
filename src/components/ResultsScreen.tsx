@@ -1,5 +1,5 @@
 'use client';
-import { TeamResult } from '@/types';
+import { TeamResult, DraftedPlayer } from '@/types';
 import PlayerCard from './PlayerCard';
 
 interface Props {
@@ -29,8 +29,9 @@ export default function ResultsScreen({ result, onBuildAnother }: Props) {
   const ratingBg = RATING_BG[rating] ?? 'bg-white/10';
 
   function handleShare() {
-    const teamStr = players.map(p => `${p.position}: ${p.name} (${p.franchiseAbbr} ${p.decade})`).join('\n');
-    const text = `My hockey 82-0 team went ${wins}-${losses}-${otl} (${points} pts) — ${rating}!\n\n${teamStr}\n\nhttps://hockey82-0.vercel.app`;
+    const record = otl > 0 ? `${wins}-${losses}-${otl}` : `${wins}-${losses}`;
+    const teamStr = players.map(p => `${p.slotPosition}: ${p.name} (${p.franchiseAbbr} ${p.decade})`).join('\n');
+    const text = `My hockey 82-0 team went ${record} (${points} pts) — ${rating}!\n\n${teamStr}\n\nhttps://hockey82-0.vercel.app`;
     if (navigator.share) {
       navigator.share({ title: 'Hockey 82-0', text });
     } else {
