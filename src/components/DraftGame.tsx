@@ -1,6 +1,7 @@
 'use client';
 import { useState, useCallback } from 'react';
 import { Player, DraftedPlayer, Position, POSITIONS, POSITION_LABELS, TeamResult } from '@/types';
+import { FRANCHISE_MAP } from '@/lib/franchises';
 import SlotMachine from './SlotMachine';
 import PlayerCard from './PlayerCard';
 import ResultsScreen from './ResultsScreen';
@@ -15,14 +16,6 @@ type GamePhase =
 
 type Roster = Partial<Record<Position, DraftedPlayer>>;
 
-const POSITION_COLORS: Record<Position, string> = {
-  C:  'bg-blue-700',
-  LW: 'bg-green-700',
-  RW: 'bg-emerald-700',
-  LD: 'bg-purple-700',
-  RD: 'bg-violet-700',
-  G:  'bg-orange-700',
-};
 
 export default function DraftGame() {
   const [phase, setPhase]           = useState<GamePhase | null>(null);
@@ -174,7 +167,6 @@ export default function DraftGame() {
       {/* Slot machine */}
       {phase.type === 'spinning' && (
         <SlotMachine
-          position={unfilledPositions[0]}
           franchiseAbbr={phase.franchiseAbbr}
           city={phase.city}
           decade={phase.decade}
@@ -184,48 +176,69 @@ export default function DraftGame() {
       )}
 
       {/* Position picker */}
-      {phase.type === 'picking-position' && (
-        <div className="flex flex-col items-center gap-5">
-          <div className="text-center">
-            <div className="text-white font-bold text-2xl">{phase.franchiseAbbr} · {phase.decade}</div>
-            <div className="text-slate-400 text-sm mt-1">{phase.city}</div>
+      {phase.type === 'picking-position' && (() => {
+        const teamColor = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
+        const available = POSITIONS.filter(pos => phase.availablePositions.includes(pos));
+        return (
+          <div className="flex flex-col items-center gap-5">
+            <div className="text-center">
+              <div className="text-white font-bold text-xl tracking-tight">
+                {phase.franchiseAbbr}
+                <span className="text-slate-500 mx-2">·</span>
+                {phase.decade}
+              </div>
+              <div className="text-xs mt-1 font-medium" style={{ color: teamColor }}>{phase.city}</div>
+            </div>
+
+            <div className="text-slate-400 text-xs uppercase tracking-widest">Which position?</div>
+
+            <div className="flex gap-2 flex-wrap justify-center">
+              {available.map(pos => (
+                <button
+                  key={pos}
+                  onClick={() => handleSelectPosition(pos)}
+                  className="group flex flex-col items-center gap-1 px-5 py-3 rounded-xl
+                             bg-slate-800/60 hover:bg-slate-800 transition-all duration-150
+                             border border-slate-700 hover:border-opacity-100"
+                  style={{
+                    borderColor: `${teamColor}55`,
+                    ['--tw-shadow-color' as string]: teamColor,
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = teamColor)}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = `${teamColor}55`)}
+                >
+                  <span className="text-base font-black text-white leading-none">{pos}</span>
+                  <span className="text-[10px] font-medium leading-none" style={{ color: teamColor }}>
+                    {POSITION_LABELS[pos]}
+                  </span>
+                </button>
+              ))}
+            </div>
+
+            {available.length === 0 && (
+              <p className="text-slate-500 text-sm">No players available for your remaining positions.</p>
+            )}
           </div>
-          <div className="text-slate-400 text-xs uppercase tracking-widest">Which position do you want?</div>
-          <div className="flex gap-3 flex-wrap justify-center">
-            {POSITIONS.filter(pos => phase.availablePositions.includes(pos)).map(pos => (
-              <button
-                key={pos}
-                onClick={() => handleSelectPosition(pos)}
-                className={`
-                  ${POSITION_COLORS[pos]} hover:opacity-90
-                  text-white font-bold px-6 py-3 rounded-xl transition-all
-                  flex flex-col items-center gap-0.5 min-w-[72px]
-                `}
-              >
-                <span className="text-lg leading-none">{pos}</span>
-                <span className="text-[10px] text-white/70 leading-none">{POSITION_LABELS[pos].split(' ')[0]}</span>
-              </button>
-            ))}
-          </div>
-          {phase.availablePositions.length === 0 && (
-            <p className="text-slate-500 text-sm">No players available for your remaining positions.</p>
-          )}
-        </div>
-      )}
+        );
+      })()}
 
       {/* Player picker */}
-      {phase.type === 'picking-player' && (
+      {phase.type === 'picking-player' && (() => {
+        const teamColor = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
+        return (
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
             <button
               onClick={() => setPhase({ type: 'picking-position', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, availablePositions: POSITIONS.filter(p => unfilledPositions.includes(p)) })}
-              className="text-slate-400 hover:text-white text-sm flex items-center gap-1 transition-colors"
+              className="text-slate-500 hover:text-slate-300 text-sm flex items-center gap-1 transition-colors"
             >
               ← Back
             </button>
             <div className="flex-1 text-center">
               <span className="text-white font-bold">{phase.franchiseAbbr} · {phase.decade}</span>
-              <span className="text-slate-400 text-sm ml-2">— {POSITION_LABELS[phase.selectedPosition]}</span>
+              <span className="text-sm ml-2 font-medium" style={{ color: teamColor }}>
+                {POSITION_LABELS[phase.selectedPosition]}
+              </span>
             </div>
           </div>
 
@@ -239,7 +252,8 @@ export default function DraftGame() {
             </div>
           )}
         </div>
-      )}
+        );
+      })()}
 
       {loading && (
         <div className="flex justify-center py-4">
