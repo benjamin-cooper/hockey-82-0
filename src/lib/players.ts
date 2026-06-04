@@ -1,4 +1,4 @@
-import { Player, Position } from '@/types';
+import { Player, Position, FORWARD_POSITIONS, DEFENSE_POSITIONS, eligibleSlots } from '@/types';
 import { FRANCHISES } from '@/lib/franchises';
 import path from 'path';
 import fs from 'fs';
@@ -22,16 +22,6 @@ export function getPlayers(): Player[] {
 
 export function getPlayerById(id: number): Player | undefined {
   return loadPlayers().find(p => p.id === id);
-}
-
-export const FORWARD_POSITIONS: Position[] = ['C', 'LW', 'RW'];
-export const DEFENSE_POSITIONS: Position[] = ['LD', 'RD'];
-
-/** Eligible slot positions for a player based on their natural position */
-export function eligibleSlots(playerPosition: Position): Position[] {
-  if (FORWARD_POSITIONS.includes(playerPosition)) return FORWARD_POSITIONS;
-  if (DEFENSE_POSITIONS.includes(playerPosition)) return DEFENSE_POSITIONS;
-  return [playerPosition]; // G → G only
 }
 
 /** All players from a franchise+decade that can fill at least one unfilled slot */

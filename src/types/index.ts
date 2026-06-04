@@ -1,5 +1,15 @@
 export type Position = 'C' | 'LW' | 'RW' | 'LD' | 'RD' | 'G';
 
+export const FORWARD_POSITIONS: Position[] = ['C', 'LW', 'RW'];
+export const DEFENSE_POSITIONS: Position[] = ['LD', 'RD'];
+
+/** Which roster slots a player is eligible for based on their natural position */
+export function eligibleSlots(playerPosition: Position): Position[] {
+  if (FORWARD_POSITIONS.includes(playerPosition)) return FORWARD_POSITIONS;
+  if (DEFENSE_POSITIONS.includes(playerPosition)) return DEFENSE_POSITIONS;
+  return [playerPosition]; // G → G only
+}
+
 export const POSITIONS: Position[] = ['C', 'LW', 'RW', 'LD', 'RD', 'G'];
 
 export const POSITION_LABELS: Record<Position, string> = {

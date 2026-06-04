@@ -1,8 +1,7 @@
 'use client';
 import { useState, useCallback } from 'react';
-import { Player, DraftedPlayer, Position, POSITIONS, TeamResult } from '@/types';
+import { Player, DraftedPlayer, Position, POSITIONS, TeamResult, eligibleSlots } from '@/types';
 import { FRANCHISE_MAP } from '@/lib/franchises';
-import { eligibleSlots } from '@/lib/players';
 import SlotMachine from './SlotMachine';
 import PlayerCard from './PlayerCard';
 import RinkLayout from './RinkLayout';
