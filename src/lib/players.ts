@@ -24,7 +24,7 @@ export function getPlayerById(id: number): Player | undefined {
   return loadPlayers().find(p => p.id === id);
 }
 
-const FORWARD_POSITIONS: Position[] = ['C', 'LW', 'RW'];
+export const FORWARD_POSITIONS: Position[] = ['C', 'LW', 'RW'];
 
 export function getPlayersBySlot(franchiseAbbr: string, decade: string, position: Position): Player[] {
   // For any forward slot, show all forwards — a center can play wing and vice versa
@@ -41,6 +41,17 @@ export function getPlayersBySlot(franchiseAbbr: string, decade: string, position
     .sort((a, b) => b.strengthScore - a.strengthScore);
 }
 
+/** Which positions have players at this franchise+decade (considering forward flexibility) */
+export function getAvailablePositions(franchiseAbbr: string, decade: string, unfilled: Position[]): Position[] {
+  const players = loadPlayers().filter(
+    p => p.franchiseAbbr === franchiseAbbr && p.decade === decade
+  );
+  return unfilled.filter(pos => {
+    const eligible = FORWARD_POSITIONS.includes(pos) ? FORWARD_POSITIONS : [pos];
+    return players.some(p => eligible.includes(p.position as Position));
+  });
+}
+
 export interface DraftSlotResult {
   franchiseAbbr: string;
   franchise: string;
@@ -50,19 +61,34 @@ export interface DraftSlotResult {
   spinCombos: { abbr: string; decade: string }[];
 }
 
-/** Returns a random franchise+decade combo that hasn't been used yet for the given position,
- *  plus the full list of valid combos for the spin animation. */
+/** Returns a random franchise+decade combo that:
+ *  - hasn't been used yet
+ *  - has at least one player for at least one unfilled position
+ *  Also returns the full set of valid combos for the spin animation.
+ */
 export function randomDraftSlot(
-  position: Position,
-  usedCombos: string[] // "ABBR-decade" strings
+  usedCombos: string[],
+  unfilledPositions: Position[]
 ): DraftSlotResult | null {
   const players = loadPlayers();
+
+  // Build all combos that have players for at least one unfilled position
   const allValid = new Map<string, { franchiseAbbr: string; franchise: string; city: string; decade: string }>();
 
   for (const p of players) {
-    if (p.position !== position) continue;
     const key = `${p.franchiseAbbr}-${p.decade}`;
-    if (!allValid.has(key)) {
+    if (allValid.has(key)) continue;
+
+    // Check if this combo has at least one player eligible for an unfilled slot
+    const comboPlayers = players.filter(
+      q => q.franchiseAbbr === p.franchiseAbbr && q.decade === p.decade
+    );
+    const hasEligible = unfilledPositions.some(pos => {
+      const eligible = FORWARD_POSITIONS.includes(pos) ? FORWARD_POSITIONS : [pos];
+      return comboPlayers.some(q => eligible.includes(q.position as Position));
+    });
+
+    if (hasEligible) {
       const f = FRANCHISES.find(f => f.abbr === p.franchiseAbbr);
       allValid.set(key, {
         franchiseAbbr: p.franchiseAbbr,

@@ -8,34 +8,48 @@ import ResultsScreen from './ResultsScreen';
 type SpinCombo = { abbr: string; decade: string };
 
 type GamePhase =
-  | { type: 'spinning'; round: number; franchiseAbbr: string; city: string; decade: string; spinCombos: SpinCombo[] }
-  | { type: 'picking'; round: number; franchiseAbbr: string; city: string; decade: string; players: Player[] }
-  | { type: 'results'; result: TeamResult };
+  | { type: 'spinning';         franchiseAbbr: string; city: string; decade: string; spinCombos: SpinCombo[] }
+  | { type: 'picking-position'; franchiseAbbr: string; city: string; decade: string; availablePositions: Position[] }
+  | { type: 'picking-player';   franchiseAbbr: string; city: string; decade: string; selectedPosition: Position; players: Player[] }
+  | { type: 'results';          result: TeamResult };
+
+type Roster = Partial<Record<Position, DraftedPlayer>>;
+
+const POSITION_COLORS: Record<Position, string> = {
+  C:  'bg-blue-700',
+  LW: 'bg-green-700',
+  RW: 'bg-emerald-700',
+  LD: 'bg-purple-700',
+  RD: 'bg-violet-700',
+  G:  'bg-orange-700',
+};
 
 export default function DraftGame() {
-  const [phase, setPhase] = useState<GamePhase | null>(null);
-  const [drafted, setDrafted] = useState<DraftedPlayer[]>([]);
+  const [phase, setPhase]           = useState<GamePhase | null>(null);
+  const [roster, setRoster]         = useState<Roster>({});
   const [usedCombos, setUsedCombos] = useState<string[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading]       = useState(false);
+  const [error, setError]           = useState<string | null>(null);
 
-  const currentRound = drafted.length; // 0–5
+  const filledPositions   = Object.keys(roster) as Position[];
+  const unfilledPositions = POSITIONS.filter(p => !filledPositions.includes(p));
+  const isDraftComplete   = filledPositions.length === 6;
 
   async function startDraft() {
-    setDrafted([]);
+    setRoster({});
     setUsedCombos([]);
     setError(null);
-    await spinForRound(0, []);
+    await spinNext([], POSITIONS);
   }
 
-  async function spinForRound(round: number, used: string[]) {
+  async function spinNext(used: string[], unfilled: Position[]) {
     setLoading(true);
     try {
-      const res = await fetch(`/api/draft-slot?round=${round}&used=${used.join(',')}`);
-      if (!res.ok) throw new Error('Failed to get draft slot');
+      const res = await fetch(`/api/draft-slot?used=${used.join(',')}&unfilled=${unfilled.join(',')}`);
+      if (!res.ok) throw new Error('No available slots');
       const slot = await res.json();
-      setPhase({ type: 'spinning', round, ...slot });
-    } catch (e) {
+      setPhase({ type: 'spinning', ...slot });
+    } catch {
       setError('Something went wrong. Try again.');
     } finally {
       setLoading(false);
@@ -44,39 +58,55 @@ export default function DraftGame() {
 
   const handleSpinDone = useCallback(async () => {
     if (!phase || phase.type !== 'spinning') return;
-    const { round, franchiseAbbr, city, decade } = phase;
-    const position: Position = POSITIONS[round];
+    const { franchiseAbbr, city, decade } = phase;
+
+    try {
+      const res = await fetch(
+        `/api/available-positions?franchise=${franchiseAbbr}&decade=${decade}&unfilled=${unfilledPositions.join(',')}`
+      );
+      const data = await res.json();
+      setPhase({ type: 'picking-position', franchiseAbbr, city, decade, availablePositions: data.positions ?? [] });
+    } catch {
+      setError('Failed to load positions.');
+    }
+  }, [phase, unfilledPositions]);
+
+  async function handleSelectPosition(position: Position) {
+    if (!phase || phase.type !== 'picking-position') return;
+    const { franchiseAbbr, city, decade } = phase;
 
     try {
       const res = await fetch(`/api/players?franchise=${franchiseAbbr}&decade=${decade}&position=${position}`);
       const data = await res.json();
-      setPhase({ type: 'picking', round, franchiseAbbr, city, decade, players: data.players ?? [] });
+      setPhase({ type: 'picking-player', franchiseAbbr, city, decade, selectedPosition: position, players: data.players ?? [] });
     } catch {
       setError('Failed to load players.');
     }
-  }, [phase]);
+  }
 
   async function handlePick(player: Player) {
-    const slotPosition = POSITIONS[drafted.length];
-    const draftedPlayer: DraftedPlayer = { ...player, slotPosition };
-    const newDrafted = [...drafted, draftedPlayer];
-    const combo = `${player.franchiseAbbr}-${player.decade}`;
-    const newUsed = [...usedCombos, combo];
-    setDrafted(newDrafted);
+    if (!phase || phase.type !== 'picking-player') return;
+    const draftedPlayer: DraftedPlayer = { ...player, slotPosition: phase.selectedPosition };
+
+    const newRoster    = { ...roster, [phase.selectedPosition]: draftedPlayer };
+    const newUsed      = [...usedCombos, `${player.franchiseAbbr}-${player.decade}`];
+    const newUnfilled  = POSITIONS.filter(p => !(p in newRoster));
+
+    setRoster(newRoster);
     setUsedCombos(newUsed);
 
-    if (newDrafted.length === 6) {
-      // Simulate
+    if (newUnfilled.length === 0) {
+      // All slots filled — simulate
       setLoading(true);
       try {
+        const orderedPlayers = POSITIONS.map(pos => newRoster[pos]!);
         const res = await fetch('/api/simulate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ playerIds: newDrafted.map(p => p.id) }),
+          body: JSON.stringify({ playerIds: orderedPlayers.map(p => p.id) }),
         });
         const result: TeamResult = await res.json();
-        // Re-attach full drafted players (with slotPosition) from local state
-        result.players = newDrafted;
+        result.players = orderedPlayers;
         setPhase({ type: 'results', result });
       } catch {
         setError('Simulation failed.');
@@ -84,18 +114,18 @@ export default function DraftGame() {
         setLoading(false);
       }
     } else {
-      await spinForRound(newDrafted.length, newUsed);
+      await spinNext(newUsed, newUnfilled);
     }
   }
 
-  // ---- RENDER ----
+  // ── RENDER ─────────────────────────────────────────────────────────────────
 
   if (!phase) {
     return (
       <div className="flex flex-col items-center gap-6 py-12">
         <p className="text-slate-400 text-center max-w-sm">
-          Draft 6 all-time NHL legends — one per round, with team and decade assigned by fate.
-          Can you build a team good enough to go 82-0?
+          Draft 6 all-time NHL legends — each round the slot machine picks a franchise and decade,
+          then you choose which position to fill. Can you build a team good enough to go 82-0?
         </p>
         <button
           onClick={startDraft}
@@ -114,32 +144,37 @@ export default function DraftGame() {
   }
 
   return (
-    <div className="flex flex-col w-full max-w-2xl mx-auto px-4">
-      {/* Draft progress bar */}
-      <div className="flex gap-2 mb-6">
-        {POSITIONS.map((pos, i) => {
-          const player = drafted[i];
-          const isCurrent = i === currentRound;
-          const isDone = i < currentRound;
+    <div className="flex flex-col w-full max-w-2xl mx-auto px-4 gap-6">
+
+      {/* Roster progress grid */}
+      <div className="grid grid-cols-6 gap-2">
+        {POSITIONS.map(pos => {
+          const player  = roster[pos];
+          const isCurrent = phase.type === 'picking-player' && phase.selectedPosition === pos;
           return (
-            <div key={pos} className={`flex-1 rounded-lg p-2 text-center transition-all
-              ${isDone ? 'bg-slate-700' : isCurrent ? 'bg-blue-900/50 ring-1 ring-blue-500' : 'bg-slate-800/50'}
+            <div key={pos} className={`
+              rounded-lg p-2 text-center transition-all
+              ${player        ? 'bg-slate-700'
+              : isCurrent     ? 'bg-blue-900/50 ring-1 ring-blue-500'
+              :                 'bg-slate-800/40'}
             `}>
-              <div className={`text-xs font-bold ${isDone ? 'text-slate-300' : isCurrent ? 'text-blue-300' : 'text-slate-600'}`}>
-                {pos}
-              </div>
+              <div className={`text-xs font-bold
+                ${player ? 'text-slate-300' : isCurrent ? 'text-blue-300' : 'text-slate-600'}
+              `}>{pos}</div>
               {player && (
-                <div className="text-[10px] text-slate-400 truncate mt-0.5">{player.name.split(' ').pop()}</div>
+                <div className="text-[9px] text-slate-400 truncate mt-0.5 leading-tight">
+                  {player.name.split(' ').slice(-1)[0]}
+                </div>
               )}
             </div>
           );
         })}
       </div>
 
-      {/* Slot machine spin */}
+      {/* Slot machine */}
       {phase.type === 'spinning' && (
         <SlotMachine
-          position={POSITIONS[phase.round]}
+          position={unfilledPositions[0]}
           franchiseAbbr={phase.franchiseAbbr}
           city={phase.city}
           decade={phase.decade}
@@ -148,15 +183,49 @@ export default function DraftGame() {
         />
       )}
 
-      {/* Player picker */}
-      {phase.type === 'picking' && (
-        <div className="flex flex-col gap-4">
+      {/* Position picker */}
+      {phase.type === 'picking-position' && (
+        <div className="flex flex-col items-center gap-5">
           <div className="text-center">
-            <div className="text-slate-400 text-sm uppercase tracking-widest mb-1">
-              Pick your {POSITION_LABELS[POSITIONS[phase.round]]}
-            </div>
-            <div className="text-white font-bold text-xl">
-              {phase.franchiseAbbr} · {phase.decade}
+            <div className="text-white font-bold text-2xl">{phase.franchiseAbbr} · {phase.decade}</div>
+            <div className="text-slate-400 text-sm mt-1">{phase.city}</div>
+          </div>
+          <div className="text-slate-400 text-xs uppercase tracking-widest">Which position do you want?</div>
+          <div className="flex gap-3 flex-wrap justify-center">
+            {POSITIONS.filter(pos => phase.availablePositions.includes(pos)).map(pos => (
+              <button
+                key={pos}
+                onClick={() => handleSelectPosition(pos)}
+                className={`
+                  ${POSITION_COLORS[pos]} hover:opacity-90
+                  text-white font-bold px-6 py-3 rounded-xl transition-all
+                  flex flex-col items-center gap-0.5 min-w-[72px]
+                `}
+              >
+                <span className="text-lg leading-none">{pos}</span>
+                <span className="text-[10px] text-white/70 leading-none">{POSITION_LABELS[pos].split(' ')[0]}</span>
+              </button>
+            ))}
+          </div>
+          {phase.availablePositions.length === 0 && (
+            <p className="text-slate-500 text-sm">No players available for your remaining positions.</p>
+          )}
+        </div>
+      )}
+
+      {/* Player picker */}
+      {phase.type === 'picking-player' && (
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setPhase({ type: 'picking-position', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, availablePositions: POSITIONS.filter(p => unfilledPositions.includes(p)) })}
+              className="text-slate-400 hover:text-white text-sm flex items-center gap-1 transition-colors"
+            >
+              ← Back
+            </button>
+            <div className="flex-1 text-center">
+              <span className="text-white font-bold">{phase.franchiseAbbr} · {phase.decade}</span>
+              <span className="text-slate-400 text-sm ml-2">— {POSITION_LABELS[phase.selectedPosition]}</span>
             </div>
           </div>
 
@@ -165,11 +234,7 @@ export default function DraftGame() {
           ) : (
             <div className="flex flex-col gap-3">
               {phase.players.map(player => (
-                <PlayerCard
-                  key={player.id}
-                  player={player}
-                  onClick={() => handlePick(player)}
-                />
+                <PlayerCard key={player.id} player={player} onClick={() => handlePick(player)} />
               ))}
             </div>
           )}
@@ -181,7 +246,7 @@ export default function DraftGame() {
           <div className="w-6 h-6 border-2 border-blue-400 border-t-transparent rounded-full animate-spin" />
         </div>
       )}
-      {error && <p className="text-red-400 text-sm text-center mt-2">{error}</p>}
+      {error && <p className="text-red-400 text-sm text-center">{error}</p>}
     </div>
   );
 }

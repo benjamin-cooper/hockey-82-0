@@ -5,7 +5,7 @@ import { Position, POSITION_LABELS } from '@/types';
 interface SpinCombo { abbr: string; decade: string; }
 
 interface Props {
-  position: Position;
+  position?: Position; // unused now, kept for compat
   franchiseAbbr: string;
   city: string;
   decade: string;
@@ -60,7 +60,7 @@ export default function SlotMachine({ position, franchiseAbbr, city, decade, spi
   return (
     <div className="flex flex-col items-center gap-6 py-8">
       <div className="text-slate-400 text-sm font-medium uppercase tracking-widest">
-        Round {(['C','LW','RW','LD','RD','G'] as Position[]).indexOf(position) + 1} · {POSITION_LABELS[position]}
+        Choose your position
       </div>
 
       <div className="flex items-center gap-6">
