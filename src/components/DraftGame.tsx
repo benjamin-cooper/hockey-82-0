@@ -5,8 +5,10 @@ import SlotMachine from './SlotMachine';
 import PlayerCard from './PlayerCard';
 import ResultsScreen from './ResultsScreen';
 
+type SpinCombo = { abbr: string; decade: string };
+
 type GamePhase =
-  | { type: 'spinning'; round: number; franchiseAbbr: string; city: string; decade: string }
+  | { type: 'spinning'; round: number; franchiseAbbr: string; city: string; decade: string; spinCombos: SpinCombo[] }
   | { type: 'picking'; round: number; franchiseAbbr: string; city: string; decade: string; players: Player[] }
   | { type: 'results'; result: TeamResult };
 
@@ -139,6 +141,7 @@ export default function DraftGame() {
           franchiseAbbr={phase.franchiseAbbr}
           city={phase.city}
           decade={phase.decade}
+          spinCombos={phase.spinCombos}
           onDone={handleSpinDone}
         />
       )}

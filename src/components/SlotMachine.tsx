@@ -1,46 +1,48 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { Position, POSITION_LABELS } from '@/types';
-import { FRANCHISES } from '@/lib/franchises';
+
+interface SpinCombo { abbr: string; decade: string; }
 
 interface Props {
   position: Position;
   franchiseAbbr: string;
   city: string;
   decade: string;
+  spinCombos: SpinCombo[];
   onDone: () => void;
 }
 
-const DECADES = ['1950s','1960s','1970s','1980s','1990s','2000s','2010s','2020s'];
-const ALL_ABBRS = FRANCHISES.map(f => f.abbr);
-
-export default function SlotMachine({ position, franchiseAbbr, city, decade, onDone }: Props) {
-  const [displayAbbr, setDisplayAbbr] = useState(ALL_ABBRS[0]);
-  const [displayDecade, setDisplayDecade] = useState(DECADES[0]);
-  const [spinning, setSpinning] = useState(true);
+export default function SlotMachine({ position, franchiseAbbr, city, decade, spinCombos, onDone }: Props) {
+  const [displayAbbr, setDisplayAbbr]     = useState(spinCombos[0]?.abbr   ?? franchiseAbbr);
+  const [displayDecade, setDisplayDecade] = useState(spinCombos[0]?.decade  ?? decade);
+  const [spinning, setSpinning]           = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const startTime = useRef(Date.now());
 
   useEffect(() => {
-    startTime.current = Date.now();
     setSpinning(true);
+    const combos = spinCombos.length > 0 ? spinCombos : [{ abbr: franchiseAbbr, decade }];
 
     let tick = 0;
-    const totalTicks = 28; // ~2.8s at 100ms intervals
-    const spinDuration = 2800;
+    const totalTicks = 28; // 2.8s at 100ms
 
     intervalRef.current = setInterval(() => {
       tick++;
       const progress = tick / totalTicks;
 
-      // Slow down near end
       if (progress > 0.75) {
-        // Lock franchise first, keep decade spinning
+        // Lock franchise first, keep only the valid decades for that franchise spinning
+        const validDecades = combos
+          .filter(c => c.abbr === franchiseAbbr)
+          .map(c => c.decade);
+        const pool = validDecades.length > 0 ? validDecades : [decade];
         setDisplayAbbr(franchiseAbbr);
-        setDisplayDecade(DECADES[Math.floor(Math.random() * DECADES.length)]);
+        setDisplayDecade(pool[Math.floor(Math.random() * pool.length)]);
       } else {
-        setDisplayAbbr(ALL_ABBRS[Math.floor(Math.random() * ALL_ABBRS.length)]);
-        setDisplayDecade(DECADES[Math.floor(Math.random() * DECADES.length)]);
+        // Show random valid pairs from the real dataset
+        const c = combos[Math.floor(Math.random() * combos.length)];
+        setDisplayAbbr(c.abbr);
+        setDisplayDecade(c.decade);
       }
 
       if (tick >= totalTicks) {
@@ -52,25 +54,22 @@ export default function SlotMachine({ position, franchiseAbbr, city, decade, onD
       }
     }, 100);
 
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [franchiseAbbr, decade, onDone]);
+    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
+  }, [franchiseAbbr, decade, spinCombos, onDone]);
 
   return (
     <div className="flex flex-col items-center gap-6 py-8">
       <div className="text-slate-400 text-sm font-medium uppercase tracking-widest">
-        Round {['C','LW','RW','LD','RD','G'].indexOf(position) + 1} · {POSITION_LABELS[position]}
+        Round {(['C','LW','RW','LD','RD','G'] as Position[]).indexOf(position) + 1} · {POSITION_LABELS[position]}
       </div>
 
       <div className="flex items-center gap-6">
         {/* Franchise reel */}
         <div className={`
-          bg-slate-800 border border-slate-600 rounded-2xl px-8 py-5 min-w-[160px] text-center
-          transition-all duration-150
-          ${spinning ? 'border-blue-500/50' : 'border-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.3)]'}
+          bg-slate-800 border rounded-2xl px-8 py-5 min-w-[160px] text-center transition-all duration-150
+          ${spinning ? 'border-slate-600' : 'border-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.3)]'}
         `}>
-          <div className={`text-4xl font-black text-white tracking-tight ${spinning ? 'blur-[1px]' : ''}`}>
+          <div className={`text-4xl font-black text-white tracking-tight transition-all ${spinning ? 'blur-[1px]' : ''}`}>
             {displayAbbr}
           </div>
           {!spinning && (
@@ -82,11 +81,10 @@ export default function SlotMachine({ position, franchiseAbbr, city, decade, onD
 
         {/* Decade reel */}
         <div className={`
-          bg-slate-800 border border-slate-600 rounded-2xl px-8 py-5 min-w-[120px] text-center
-          transition-all duration-150
-          ${spinning ? 'border-blue-500/50' : 'border-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.3)]'}
+          bg-slate-800 border rounded-2xl px-8 py-5 min-w-[120px] text-center transition-all duration-150
+          ${spinning ? 'border-slate-600' : 'border-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.3)]'}
         `}>
-          <div className={`text-4xl font-black text-white tracking-tight ${spinning ? 'blur-[1px]' : ''}`}>
+          <div className={`text-4xl font-black text-white tracking-tight transition-all ${spinning ? 'blur-[1px]' : ''}`}>
             {displayDecade}
           </div>
         </div>

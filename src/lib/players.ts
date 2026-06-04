@@ -30,31 +30,45 @@ export function getPlayersBySlot(franchiseAbbr: string, decade: string, position
     .sort((a, b) => b.strengthScore - a.strengthScore);
 }
 
-/** Returns a random franchise+decade combo that hasn't been used yet for the given position. */
+export interface DraftSlotResult {
+  franchiseAbbr: string;
+  franchise: string;
+  city: string;
+  decade: string;
+  /** All valid franchise+decade pairs for this position — used for slot machine animation */
+  spinCombos: { abbr: string; decade: string }[];
+}
+
+/** Returns a random franchise+decade combo that hasn't been used yet for the given position,
+ *  plus the full list of valid combos for the spin animation. */
 export function randomDraftSlot(
   position: Position,
   usedCombos: string[] // "ABBR-decade" strings
-): { franchiseAbbr: string; franchise: string; city: string; decade: string } | null {
-  // Build all valid combos for this position that have players
+): DraftSlotResult | null {
   const players = loadPlayers();
-  const available = new Map<string, { franchiseAbbr: string; franchise: string; city: string; decade: string }>();
+  const allValid = new Map<string, { franchiseAbbr: string; franchise: string; city: string; decade: string }>();
 
   for (const p of players) {
     if (p.position !== position) continue;
     const key = `${p.franchiseAbbr}-${p.decade}`;
-    if (!usedCombos.includes(key) && !available.has(key)) {
-      // Find display info
+    if (!allValid.has(key)) {
       const f = FRANCHISES.find(f => f.abbr === p.franchiseAbbr);
-      available.set(key, {
+      allValid.set(key, {
         franchiseAbbr: p.franchiseAbbr,
         franchise: p.franchise,
-        city: (f?.city ?? ''),
+        city: f?.city ?? '',
         decade: p.decade,
       });
     }
   }
 
-  const options = Array.from(available.values());
-  if (options.length === 0) return null;
-  return options[Math.floor(Math.random() * options.length)];
+  const available = Array.from(allValid.values()).filter(
+    c => !usedCombos.includes(`${c.franchiseAbbr}-${c.decade}`)
+  );
+  if (available.length === 0) return null;
+
+  const picked = available[Math.floor(Math.random() * available.length)];
+  const spinCombos = Array.from(allValid.values()).map(c => ({ abbr: c.franchiseAbbr, decade: c.decade }));
+
+  return { ...picked, spinCombos };
 }
