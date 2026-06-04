@@ -13,10 +13,13 @@ function getRating(strengthScore: number): string {
   return RATINGS.find(r => strengthScore >= r.min)?.label ?? 'REBUILD';
 }
 
-/** Sigmoid mapping strength score → win probability per game (0–1) */
+/** Sigmoid mapping strength score → win probability per game (0–1)
+ *  score 50  → ~.500  (average NHL team)
+ *  score 100 → ~.911  (all-time super team — ~1-in-2000 shot at 82-0)
+ *  score 0   → ~.089  (historically bad)
+ */
 function strengthToWinPct(score: number): number {
-  // score of 50 → ~.500 win rate; score 100 → ~.900; score 0 → ~.100
-  return 0.1 + 0.8 / (1 + Math.exp(-0.08 * (score - 50)));
+  return 0.08 + 0.84 / (1 + Math.exp(-0.09 * (score - 50)));
 }
 
 /** Monte Carlo simulation of 82 games. Returns { wins, losses, otl }. */
@@ -75,11 +78,8 @@ export function simulateSeason(players: Player[]): TeamResult {
 
   const winPct = strengthToWinPct(strengthScore);
 
-  // Run simulation 3× and average for stability
-  const runs = [simulate82(winPct), simulate82(winPct), simulate82(winPct)];
-  const wins = Math.round(runs.reduce((s, r) => s + r.wins, 0) / 3);
-  const otl = Math.round(runs.reduce((s, r) => s + r.otl, 0) / 3);
-  const losses = 82 - wins - otl;
+  // Single simulation — real random result, not an average
+  const { wins, losses, otl } = simulate82(winPct);
 
   const points = wins * 2 + otl;
 
