@@ -64,7 +64,7 @@ DECADES = {
 }
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (research project; contact: dev@example.com)",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
     "Accept-Language": "en-US,en;q=0.9",
 }
 
@@ -117,63 +117,65 @@ def scrape_season(hr_abbr: str, year: int) -> tuple[list[dict], list[dict]]:
     if soup is None:
         return [], []
 
+    # Build shooting-hand lookup from roster table (name → "L" or "R")
+    shoots_lookup: dict[str, str] = {}
+    roster_table = soup.find("table", {"id": "roster"})
+    if roster_table:
+        for row in roster_table.find("tbody").find_all("tr"):
+            name_cell = row.find("td", {"data-stat": "player"})
+            sc_cell = row.find("td", {"data-stat": "shoots_and_catches"})
+            if name_cell and sc_cell:
+                sc = sc_cell.text.strip()  # e.g. "L/-" or "R/-"
+                hand = sc[0] if sc and sc[0] in ("L", "R") else "L"
+                shoots_lookup[name_cell.text.strip()] = hand
+
     skaters = []
     goalies = []
 
     # --- Skaters ---
-    skater_table = soup.find("table", {"id": "skaters"})
+    skater_table = soup.find("table", {"id": "player_stats"})
     if skater_table:
         for row in skater_table.find("tbody").find_all("tr"):
             if row.get("class") and "thead" in row.get("class", []):
                 continue
-            cells = row.find_all(["td", "th"])
-            if not cells:
-                continue
 
-            player_cell = row.find("td", {"data-stat": "player"})
+            player_cell = row.find("td", {"data-stat": "name_display"})
             if not player_cell or not player_cell.text.strip():
                 continue
 
             name = player_cell.text.strip()
-            # Skip "Total" rows
             if name in ("", "Team Total", "Total"):
                 continue
 
             pos_cell = row.find("td", {"data-stat": "pos"})
-            shoots_cell = row.find("td", {"data-stat": "shoots"})
-            gp_cell = row.find("td", {"data-stat": "games_played"})
-            g_cell = row.find("td", {"data-stat": "goals"})
-            a_cell = row.find("td", {"data-stat": "assists"})
+            gp_cell  = row.find("td", {"data-stat": "games"})
+            g_cell   = row.find("td", {"data-stat": "goals"})
+            a_cell   = row.find("td", {"data-stat": "assists"})
             pts_cell = row.find("td", {"data-stat": "points"})
-            pm_cell = row.find("td", {"data-stat": "plus_minus"})
+            pm_cell  = row.find("td", {"data-stat": "plus_minus"})
 
             pos = pos_cell.text.strip() if pos_cell else ""
-            shoots = shoots_cell.text.strip() if shoots_cell else "L"
-            gp = parse_int(gp_cell.text) if gp_cell else 0
-            g = parse_int(g_cell.text) if g_cell else 0
-            a = parse_int(a_cell.text) if a_cell else 0
+            gp  = parse_int(gp_cell.text)  if gp_cell  else 0
+            g   = parse_int(g_cell.text)   if g_cell   else 0
+            a   = parse_int(a_cell.text)   if a_cell   else 0
             pts = parse_int(pts_cell.text) if pts_cell else 0
-            pm = parse_int(pm_cell.text) if pm_cell else 0
+            pm  = parse_int(pm_cell.text)  if pm_cell  else 0
 
-            if gp < 5 or pos not in ("C", "L", "R", "D", "F", "W"):
+            if gp < 5 or pos not in ("C", "L", "LW", "R", "RW", "D", "F", "W"):
                 continue
 
-            # Normalize position
-            if pos in ("F", "W"):
-                pos = "L"  # fallback
-            if pos == "L":
+            if pos in ("F", "W", "L"):
                 pos = "LW"
             elif pos == "R":
                 pos = "RW"
-
-            # For D, use shoots to determine LD/RD
-            if pos == "D":
-                pos = "LD" if shoots in ("L", "") else "RD"
+            elif pos == "D":
+                shoots = shoots_lookup.get(name, "L")
+                pos = "LD" if shoots == "L" else "RD"
+            # "LW" and "RW" already correct
 
             skaters.append({
                 "name": name,
                 "position": pos,
-                "shoots": shoots,
                 "gp": gp,
                 "goals": g,
                 "assists": a,
@@ -182,13 +184,13 @@ def scrape_season(hr_abbr: str, year: int) -> tuple[list[dict], list[dict]]:
             })
 
     # --- Goalies ---
-    goalie_table = soup.find("table", {"id": "goalies"})
+    goalie_table = soup.find("table", {"id": "goalie_stats"})
     if goalie_table:
         for row in goalie_table.find("tbody").find_all("tr"):
             if row.get("class") and "thead" in row.get("class", []):
                 continue
 
-            player_cell = row.find("td", {"data-stat": "player"})
+            player_cell = row.find("td", {"data-stat": "name_display"})
             if not player_cell or not player_cell.text.strip():
                 continue
 
@@ -196,17 +198,17 @@ def scrape_season(hr_abbr: str, year: int) -> tuple[list[dict], list[dict]]:
             if name in ("", "Team Total", "Total"):
                 continue
 
-            gp_cell = row.find("td", {"data-stat": "games_goalie"})
-            w_cell = row.find("td", {"data-stat": "wins"})
+            gp_cell  = row.find("td", {"data-stat": "goalie_games"})
+            w_cell   = row.find("td", {"data-stat": "goalie_wins"})
             gaa_cell = row.find("td", {"data-stat": "goals_against_avg"})
-            sv_cell = row.find("td", {"data-stat": "save_pct"})
-            so_cell = row.find("td", {"data-stat": "shutouts"})
+            sv_cell  = row.find("td", {"data-stat": "save_pct_goalie"})
+            so_cell  = row.find("td", {"data-stat": "goalie_shutouts"})
 
-            gp = parse_int(gp_cell.text) if gp_cell else 0
-            w = parse_int(w_cell.text) if w_cell else 0
+            gp  = parse_int(gp_cell.text)   if gp_cell  else 0
+            w   = parse_int(w_cell.text)    if w_cell   else 0
             gaa = parse_float(gaa_cell.text) if gaa_cell else 0.0
-            sv = parse_float(sv_cell.text) if sv_cell else 0.0
-            so = parse_int(so_cell.text) if so_cell else 0
+            sv  = parse_float(sv_cell.text)  if sv_cell  else 0.0
+            so  = parse_int(so_cell.text)   if so_cell  else 0
 
             if gp < 5:
                 continue
