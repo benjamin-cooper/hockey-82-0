@@ -25,13 +25,30 @@ export function getPlayerById(id: number): Player | undefined {
 }
 
 export const FORWARD_POSITIONS: Position[] = ['C', 'LW', 'RW'];
+export const DEFENSE_POSITIONS: Position[] = ['LD', 'RD'];
 
+/** Eligible slot positions for a player based on their natural position */
+export function eligibleSlots(playerPosition: Position): Position[] {
+  if (FORWARD_POSITIONS.includes(playerPosition)) return FORWARD_POSITIONS;
+  if (DEFENSE_POSITIONS.includes(playerPosition)) return DEFENSE_POSITIONS;
+  return [playerPosition]; // G → G only
+}
+
+/** All players from a franchise+decade that can fill at least one unfilled slot */
+export function getPlayersForCombo(franchiseAbbr: string, decade: string, unfilled: Position[]): Player[] {
+  return loadPlayers()
+    .filter(p => {
+      if (p.franchiseAbbr !== franchiseAbbr || p.decade !== decade) return false;
+      // Only include players whose eligible slots overlap with unfilled slots
+      const slots = eligibleSlots(p.position as Position);
+      return slots.some(s => unfilled.includes(s));
+    })
+    .sort((a, b) => b.strengthScore - a.strengthScore);
+}
+
+/** Legacy: players for a single position slot */
 export function getPlayersBySlot(franchiseAbbr: string, decade: string, position: Position): Player[] {
-  // For any forward slot, show all forwards — a center can play wing and vice versa
-  const eligible = FORWARD_POSITIONS.includes(position)
-    ? FORWARD_POSITIONS
-    : [position];
-
+  const eligible = eligibleSlots(position);
   return loadPlayers()
     .filter(p =>
       p.franchiseAbbr === franchiseAbbr &&
@@ -39,17 +56,6 @@ export function getPlayersBySlot(franchiseAbbr: string, decade: string, position
       eligible.includes(p.position as Position)
     )
     .sort((a, b) => b.strengthScore - a.strengthScore);
-}
-
-/** Which positions have players at this franchise+decade (considering forward flexibility) */
-export function getAvailablePositions(franchiseAbbr: string, decade: string, unfilled: Position[]): Position[] {
-  const players = loadPlayers().filter(
-    p => p.franchiseAbbr === franchiseAbbr && p.decade === decade
-  );
-  return unfilled.filter(pos => {
-    const eligible = FORWARD_POSITIONS.includes(pos) ? FORWARD_POSITIONS : [pos];
-    return players.some(p => eligible.includes(p.position as Position));
-  });
 }
 
 export interface DraftSlotResult {

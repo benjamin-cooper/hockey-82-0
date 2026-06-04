@@ -1,32 +1,32 @@
 'use client';
 import { useState, useCallback } from 'react';
-import { Player, DraftedPlayer, Position, POSITIONS, POSITION_LABELS, TeamResult } from '@/types';
+import { Player, DraftedPlayer, Position, POSITIONS, TeamResult } from '@/types';
 import { FRANCHISE_MAP } from '@/lib/franchises';
+import { eligibleSlots } from '@/lib/players';
 import SlotMachine from './SlotMachine';
 import PlayerCard from './PlayerCard';
+import RinkLayout from './RinkLayout';
 import ResultsScreen from './ResultsScreen';
 
 type SpinCombo = { abbr: string; decade: string };
 
 type GamePhase =
-  | { type: 'spinning';         franchiseAbbr: string; city: string; decade: string; spinCombos: SpinCombo[] }
-  | { type: 'picking-position'; franchiseAbbr: string; city: string; decade: string; availablePositions: Position[] }
-  | { type: 'picking-player';   franchiseAbbr: string; city: string; decade: string; selectedPosition: Position; players: Player[] }
-  | { type: 'results';          result: TeamResult };
+  | { type: 'spinning';        franchiseAbbr: string; city: string; decade: string; spinCombos: SpinCombo[] }
+  | { type: 'picking-player';  franchiseAbbr: string; city: string; decade: string; players: Player[] }
+  | { type: 'placing-player';  franchiseAbbr: string; city: string; decade: string; player: Player; slots: Position[] }
+  | { type: 'results';         result: TeamResult };
 
 type Roster = Partial<Record<Position, DraftedPlayer>>;
 
-
 export default function DraftGame() {
-  const [phase, setPhase]           = useState<GamePhase | null>(null);
-  const [roster, setRoster]         = useState<Roster>({});
-  const [usedCombos, setUsedCombos] = useState<string[]>([]);
-  const [loading, setLoading]       = useState(false);
-  const [error, setError]           = useState<string | null>(null);
+  const [phase,       setPhase]       = useState<GamePhase | null>(null);
+  const [roster,      setRoster]      = useState<Roster>({});
+  const [usedCombos,  setUsedCombos]  = useState<string[]>([]);
+  const [loading,     setLoading]     = useState(false);
+  const [error,       setError]       = useState<string | null>(null);
 
-  const filledPositions   = Object.keys(roster) as Position[];
-  const unfilledPositions = POSITIONS.filter(p => !filledPositions.includes(p));
-  const isDraftComplete   = filledPositions.length === 6;
+  const filled   = Object.keys(roster) as Position[];
+  const unfilled = POSITIONS.filter(p => !filled.includes(p));
 
   async function startDraft() {
     setRoster({});
@@ -35,11 +35,11 @@ export default function DraftGame() {
     await spinNext([], POSITIONS);
   }
 
-  async function spinNext(used: string[], unfilled: Position[]) {
+  async function spinNext(used: string[], remaining: Position[]) {
     setLoading(true);
     try {
-      const res = await fetch(`/api/draft-slot?used=${used.join(',')}&unfilled=${unfilled.join(',')}`);
-      if (!res.ok) throw new Error('No available slots');
+      const res = await fetch(`/api/draft-slot?used=${used.join(',')}&unfilled=${remaining.join(',')}`);
+      if (!res.ok) throw new Error('No slots');
       const slot = await res.json();
       setPhase({ type: 'spinning', ...slot });
     } catch {
@@ -52,47 +52,38 @@ export default function DraftGame() {
   const handleSpinDone = useCallback(async () => {
     if (!phase || phase.type !== 'spinning') return;
     const { franchiseAbbr, city, decade } = phase;
-
     try {
-      const res = await fetch(
-        `/api/available-positions?franchise=${franchiseAbbr}&decade=${decade}&unfilled=${unfilledPositions.join(',')}`
-      );
+      const res = await fetch(`/api/players?franchise=${franchiseAbbr}&decade=${decade}&unfilled=${unfilled.join(',')}`);
       const data = await res.json();
-      setPhase({ type: 'picking-position', franchiseAbbr, city, decade, availablePositions: data.positions ?? [] });
-    } catch {
-      setError('Failed to load positions.');
-    }
-  }, [phase, unfilledPositions]);
-
-  async function handleSelectPosition(position: Position) {
-    if (!phase || phase.type !== 'picking-position') return;
-    const { franchiseAbbr, city, decade } = phase;
-
-    try {
-      const res = await fetch(`/api/players?franchise=${franchiseAbbr}&decade=${decade}&position=${position}`);
-      const data = await res.json();
-      setPhase({ type: 'picking-player', franchiseAbbr, city, decade, selectedPosition: position, players: data.players ?? [] });
+      setPhase({ type: 'picking-player', franchiseAbbr, city, decade, players: data.players ?? [] });
     } catch {
       setError('Failed to load players.');
     }
+  }, [phase, unfilled]);
+
+  function handlePickPlayer(player: Player) {
+    if (!phase || phase.type !== 'picking-player') return;
+    // Which unfilled slots is this player eligible for?
+    const slots = (eligibleSlots(player.position as Position) as Position[]).filter(s => unfilled.includes(s));
+    setPhase({ type: 'placing-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, player, slots });
   }
 
-  async function handlePick(player: Player) {
-    if (!phase || phase.type !== 'picking-player') return;
-    const draftedPlayer: DraftedPlayer = { ...player, slotPosition: phase.selectedPosition };
+  async function handlePlace(pos: Position) {
+    if (!phase || phase.type !== 'placing-player') return;
+    const { player, franchiseAbbr, decade } = phase;
 
-    const newRoster    = { ...roster, [phase.selectedPosition]: draftedPlayer };
-    const newUsed      = [...usedCombos, `${player.franchiseAbbr}-${player.decade}`];
-    const newUnfilled  = POSITIONS.filter(p => !(p in newRoster));
+    const drafted: DraftedPlayer = { ...player, slotPosition: pos };
+    const newRoster   = { ...roster, [pos]: drafted };
+    const newUsed     = [...usedCombos, `${franchiseAbbr}-${decade}`];
+    const newUnfilled = POSITIONS.filter(p => !(p in newRoster));
 
     setRoster(newRoster);
     setUsedCombos(newUsed);
 
     if (newUnfilled.length === 0) {
-      // All slots filled — simulate
       setLoading(true);
       try {
-        const orderedPlayers = POSITIONS.map(pos => newRoster[pos]!);
+        const orderedPlayers = POSITIONS.map(p => newRoster[p]!);
         const res = await fetch('/api/simulate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -111,14 +102,14 @@ export default function DraftGame() {
     }
   }
 
-  // ── RENDER ─────────────────────────────────────────────────────────────────
+  // ── RENDER ───────────────────────────────────────────────────────────────────
 
   if (!phase) {
     return (
       <div className="flex flex-col items-center gap-6 py-12">
-        <p className="text-slate-400 text-center max-w-sm">
-          Draft 6 all-time NHL legends — each round the slot machine picks a franchise and decade,
-          then you choose which position to fill. Can you build a team good enough to go 82-0?
+        <p className="text-slate-400 text-center max-w-sm text-sm leading-relaxed">
+          Each round, the slot machine picks a franchise and decade. Pick any player from that
+          era, then place them on the rink. Can you build a team good enough to go 82-0?
         </p>
         <button
           onClick={startDraft}
@@ -136,35 +127,23 @@ export default function DraftGame() {
     return <ResultsScreen result={phase.result} onBuildAnother={startDraft} />;
   }
 
+  const teamColor = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
+
   return (
-    <div className="flex flex-col w-full max-w-2xl mx-auto px-4 gap-6">
+    <div className="flex flex-col w-full max-w-2xl mx-auto px-4 gap-5">
 
-      {/* Roster progress grid */}
-      <div className="grid grid-cols-6 gap-2">
-        {POSITIONS.map(pos => {
-          const player  = roster[pos];
-          const isCurrent = phase.type === 'picking-player' && phase.selectedPosition === pos;
-          return (
-            <div key={pos} className={`
-              rounded-lg p-2 text-center transition-all
-              ${player        ? 'bg-slate-700'
-              : isCurrent     ? 'bg-blue-900/50 ring-1 ring-blue-500'
-              :                 'bg-slate-800/40'}
-            `}>
-              <div className={`text-xs font-bold
-                ${player ? 'text-slate-300' : isCurrent ? 'text-blue-300' : 'text-slate-600'}
-              `}>{pos}</div>
-              {player && (
-                <div className="text-[9px] text-slate-400 truncate mt-0.5 leading-tight">
-                  {player.name.split(' ').slice(-1)[0]}
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
+      {/* Rink — always visible, shows current roster state */}
+      <RinkLayout
+        roster={roster}
+        eligibleSlots={phase.type === 'placing-player' ? phase.slots : []}
+        teamColor={teamColor}
+        onPlace={handlePlace}
+      />
 
-      {/* Slot machine */}
+      {/* Divider */}
+      <div className="h-px bg-slate-800" />
+
+      {/* Slot machine spin */}
       {phase.type === 'spinning' && (
         <SlotMachine
           franchiseAbbr={phase.franchiseAbbr}
@@ -175,89 +154,54 @@ export default function DraftGame() {
         />
       )}
 
-      {/* Position picker */}
-      {phase.type === 'picking-position' && (() => {
-        const teamColor = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
-        const available = POSITIONS.filter(pos => phase.availablePositions.includes(pos));
-        return (
-          <div className="flex flex-col items-center gap-5">
-            <div className="text-center">
-              <div className="text-white font-bold text-xl tracking-tight">
-                {phase.franchiseAbbr}
-                <span className="text-slate-500 mx-2">·</span>
-                {phase.decade}
-              </div>
-              <div className="text-xs mt-1 font-medium" style={{ color: teamColor }}>{phase.city}</div>
+      {/* All players — pick one */}
+      {phase.type === 'picking-player' && (
+        <div className="flex flex-col gap-3">
+          <div className="flex items-center justify-between">
+            <div>
+              <span className="text-white font-bold">{phase.franchiseAbbr}</span>
+              <span className="text-slate-500 mx-1.5">·</span>
+              <span className="text-white font-bold">{phase.decade}</span>
             </div>
-
-            <div className="text-slate-400 text-xs uppercase tracking-widest">Which position?</div>
-
-            <div className="flex gap-2 flex-wrap justify-center">
-              {available.map(pos => (
-                <button
-                  key={pos}
-                  onClick={() => handleSelectPosition(pos)}
-                  className="group flex flex-col items-center gap-1 px-5 py-3 rounded-xl
-                             bg-slate-800/60 hover:bg-slate-800 transition-all duration-150
-                             border border-slate-700 hover:border-opacity-100"
-                  style={{
-                    borderColor: `${teamColor}55`,
-                    ['--tw-shadow-color' as string]: teamColor,
-                  }}
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = teamColor)}
-                  onMouseLeave={e => (e.currentTarget.style.borderColor = `${teamColor}55`)}
-                >
-                  <span className="text-base font-black text-white leading-none">{pos}</span>
-                  <span className="text-[10px] font-medium leading-none" style={{ color: teamColor }}>
-                    {POSITION_LABELS[pos]}
-                  </span>
-                </button>
-              ))}
-            </div>
-
-            {available.length === 0 && (
-              <p className="text-slate-500 text-sm">No players available for your remaining positions.</p>
-            )}
+            <div className="text-xs font-medium" style={{ color: teamColor }}>{phase.city}</div>
           </div>
-        );
-      })()}
+          <p className="text-slate-400 text-xs">Pick a player — then place them on the rink.</p>
+          {phase.players.length === 0 ? (
+            <p className="text-slate-500 text-sm text-center py-6">No available players for your remaining slots.</p>
+          ) : (
+            phase.players.map(player => (
+              <PlayerCard key={player.id} player={player} onClick={() => handlePickPlayer(player)} />
+            ))
+          )}
+        </div>
+      )}
 
-      {/* Player picker */}
-      {phase.type === 'picking-player' && (() => {
-        const teamColor = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
-        return (
-        <div className="flex flex-col gap-4">
+      {/* Placing — player selected, prompt to click a slot */}
+      {phase.type === 'placing-player' && (
+        <div className="flex flex-col gap-3">
           <div className="flex items-center gap-3">
             <button
-              onClick={() => setPhase({ type: 'picking-position', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, availablePositions: POSITIONS.filter(p => unfilledPositions.includes(p)) })}
-              className="text-slate-500 hover:text-slate-300 text-sm flex items-center gap-1 transition-colors"
+              className="text-slate-500 hover:text-slate-300 text-sm transition-colors"
+              onClick={async () => {
+                const res = await fetch(`/api/players?franchise=${phase.franchiseAbbr}&decade=${phase.decade}&unfilled=${unfilled.join(',')}`);
+                const data = await res.json();
+                setPhase({ type: 'picking-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, players: data.players ?? [] });
+              }}
             >
               ← Back
             </button>
-            <div className="flex-1 text-center">
-              <span className="text-white font-bold">{phase.franchiseAbbr} · {phase.decade}</span>
-              <span className="text-sm ml-2 font-medium" style={{ color: teamColor }}>
-                {POSITION_LABELS[phase.selectedPosition]}
-              </span>
-            </div>
+            <p className="text-slate-400 text-sm flex-1 text-center">
+              Now place <span className="text-white font-semibold">{phase.player.name}</span> on the rink ↑
+            </p>
           </div>
-
-          {phase.players.length === 0 ? (
-            <div className="text-slate-500 text-center py-8">No players found for this slot.</div>
-          ) : (
-            <div className="flex flex-col gap-3">
-              {phase.players.map(player => (
-                <PlayerCard key={player.id} player={player} onClick={() => handlePick(player)} />
-              ))}
-            </div>
-          )}
+          {/* Show the selected player card */}
+          <PlayerCard player={phase.player} />
         </div>
-        );
-      })()}
+      )}
 
       {loading && (
-        <div className="flex justify-center py-4">
-          <div className="w-6 h-6 border-2 border-blue-400 border-t-transparent rounded-full animate-spin" />
+        <div className="flex justify-center py-2">
+          <div className="w-5 h-5 border-2 border-blue-400 border-t-transparent rounded-full animate-spin" />
         </div>
       )}
       {error && <p className="text-red-400 text-sm text-center">{error}</p>}
