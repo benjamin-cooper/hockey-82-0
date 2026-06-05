@@ -21,8 +21,9 @@ export default function DraftGame() {
   const [phase,           setPhase]           = useState<GamePhase | null>(null);
   const [roster,          setRoster]          = useState<Roster>({});
   const [usedCombos,      setUsedCombos]      = useState<string[]>([]);
-  // Reroll: one per round. Track combos already rerolled so they can't be rerolled again.
-  const [rerollAvailable, setRerollAvailable] = useState(false);
+  // Reroll: one Team reroll + one Era reroll per game (not per round)
+  const [teamRerollUsed,  setTeamRerollUsed]  = useState(false);
+  const [eraRerollUsed,   setEraRerollUsed]   = useState(false);
   const [rerolledCombos,  setRerolledCombos]  = useState<string[]>([]);
   const [loading,         setLoading]         = useState(false);
   const [error,           setError]           = useState<string | null>(null);
@@ -34,13 +35,14 @@ export default function DraftGame() {
     setRoster({});
     setUsedCombos([]);
     setRerolledCombos([]);
+    setTeamRerollUsed(false);
+    setEraRerollUsed(false);
     setError(null);
     await spinNext([], POSITIONS, []);
   }
 
   async function spinNext(used: string[], remaining: Position[], rerolled: string[]) {
     setLoading(true);
-    setRerollAvailable(true); // fresh round — reroll available
     try {
       // Exclude both permanently used combos and temporarily rerolled ones
       const exclude = [...used, ...rerolled];
@@ -70,11 +72,15 @@ export default function DraftGame() {
   }, [phase, unfilled]);
 
   async function handleReroll(type: 'team' | 'era') {
-    if (!phase || phase.type === 'results' || !rerollAvailable) return;
+    if (!phase || phase.type === 'results') return;
+    if (type === 'team' && teamRerollUsed) return;
+    if (type === 'era'  && eraRerollUsed)  return;
+
     const combo = `${phase.franchiseAbbr}-${phase.decade}`;
     const newRerolled = [...rerolledCombos, combo];
     setRerolledCombos(newRerolled);
-    setRerollAvailable(false);
+    if (type === 'team') setTeamRerollUsed(true);
+    else                 setEraRerollUsed(true);
 
     const lock = type === 'team'
       ? `&lockDecade=${phase.decade}`         // keep era, swap franchise
@@ -181,8 +187,8 @@ export default function DraftGame() {
   }
 
   const teamColor     = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
-  const currentCombo  = `${phase.franchiseAbbr}-${phase.decade}`;
-  const canReroll     = rerollAvailable && !rerolledCombos.includes(currentCombo);
+  const canRerollTeam = !teamRerollUsed;
+  const canRerollEra  = !eraRerollUsed;
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4">
@@ -212,28 +218,32 @@ export default function DraftGame() {
                   <span className="text-white font-bold">{phase.decade}</span>
                   <span className="text-xs font-medium ml-2" style={{ color: teamColor }}>{phase.city}</span>
                 </div>
-                {canReroll && (
+                {(canRerollTeam || canRerollEra) && (
                   <div className="flex gap-2">
-                    <button
-                      onClick={() => handleReroll('team')}
-                      disabled={loading}
-                      title="Keep this era, spin a new team"
-                      className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
-                                 text-slate-300 hover:text-white hover:border-slate-400
-                                 transition-colors disabled:opacity-40"
-                    >
-                      Team
-                    </button>
-                    <button
-                      onClick={() => handleReroll('era')}
-                      disabled={loading}
-                      title="Keep this team, spin a new era"
-                      className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
-                                 text-slate-300 hover:text-white hover:border-slate-400
-                                 transition-colors disabled:opacity-40"
-                    >
-                      Era
-                    </button>
+                    {canRerollTeam && (
+                      <button
+                        onClick={() => handleReroll('team')}
+                        disabled={loading}
+                        title="Keep this era, spin a new team"
+                        className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
+                                   text-slate-300 hover:text-white hover:border-slate-400
+                                   transition-colors disabled:opacity-40"
+                      >
+                        Team
+                      </button>
+                    )}
+                    {canRerollEra && (
+                      <button
+                        onClick={() => handleReroll('era')}
+                        disabled={loading}
+                        title="Keep this team, spin a new era"
+                        className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
+                                   text-slate-300 hover:text-white hover:border-slate-400
+                                   transition-colors disabled:opacity-40"
+                      >
+                        Era
+                      </button>
+                    )}
                   </div>
                 )}
               </div>
