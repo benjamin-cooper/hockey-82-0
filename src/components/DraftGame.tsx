@@ -15,7 +15,26 @@ type GamePhase =
   | { type: 'placing-player'; franchiseAbbr: string; city: string; decade: string; player: Player; slots: Position[] }
   | { type: 'results';        result: TeamResult };
 
-type Roster = Partial<Record<Position, DraftedPlayer>>;
+type Roster   = Partial<Record<Position, DraftedPlayer>>;
+type SortKey  = 'score' | 'pts' | 'ppg' | 'goals' | 'assists' | 'pm' | 'wins' | 'gaa' | 'svpct';
+
+function sortPlayers(players: Player[], key: SortKey): Player[] {
+  return [...players].sort((a, b) => {
+    const sa = a.stats, sb = b.stats;
+    const isGA = (s: typeof sa): s is import('@/types').GoalieStats => 'savePct' in s;
+    switch (key) {
+      case 'pts':    return (isGA(sb) ? 0 : sb.points)    - (isGA(sa) ? 0 : sa.points);
+      case 'ppg':    return (isGA(sb) ? 0 : sb.pointsPerGame) - (isGA(sa) ? 0 : sa.pointsPerGame);
+      case 'goals':  return (isGA(sb) ? 0 : sb.goals)     - (isGA(sa) ? 0 : sa.goals);
+      case 'assists':return (isGA(sb) ? 0 : sb.assists)   - (isGA(sa) ? 0 : sa.assists);
+      case 'pm':     return (isGA(sb) ? 0 : sb.plusMinus) - (isGA(sa) ? 0 : sa.plusMinus);
+      case 'wins':   return (isGA(sb) ? sb.wins : 0)      - (isGA(sa) ? sa.wins : 0);
+      case 'gaa':    return (isGA(sa) ? sa.gaa : 99)      - (isGA(sb) ? sb.gaa : 99); // lower = better
+      case 'svpct':  return (isGA(sb) ? sb.savePct : 0)   - (isGA(sa) ? sa.savePct : 0);
+      default:       return b.strengthScore - a.strengthScore;
+    }
+  });
+}
 
 export default function DraftGame() {
   const [phase,           setPhase]           = useState<GamePhase | null>(null);
@@ -27,6 +46,9 @@ export default function DraftGame() {
   const [rerolledCombos,  setRerolledCombos]  = useState<string[]>([]);
   const [loading,         setLoading]         = useState(false);
   const [error,           setError]           = useState<string | null>(null);
+  // Player list controls — reset each round
+  const [filterPos,       setFilterPos]       = useState<Position | 'all'>('all');
+  const [sortBy,          setSortBy]          = useState<SortKey>('score');
 
   const filled   = Object.keys(roster) as Position[];
   const unfilled = POSITIONS.filter(p => !filled.includes(p));
@@ -42,6 +64,8 @@ export default function DraftGame() {
   }
 
   async function spinNext(used: string[], remaining: Position[], rerolled: string[]) {
+    setFilterPos('all');
+    setSortBy('score');
     setLoading(true);
     try {
       // Exclude both permanently used combos and temporarily rerolled ones
@@ -209,54 +233,98 @@ export default function DraftGame() {
           )}
 
           {/* Player list */}
-          {phase.type === 'picking-player' && (
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center justify-between">
-                <div>
-                  <span className="text-white font-bold">{phase.franchiseAbbr}</span>
-                  <span className="text-slate-500 mx-1.5">·</span>
-                  <span className="text-white font-bold">{phase.decade}</span>
-                  <span className="text-xs font-medium ml-2" style={{ color: teamColor }}>{phase.city}</span>
+          {phase.type === 'picking-player' && (() => {
+            // Derive available positions from this combo's player list
+            const availablePos = Array.from(new Set(phase.players.map(p => p.position as Position)));
+
+            // Apply filter then sort
+            const displayed = sortPlayers(
+              filterPos === 'all' ? phase.players : phase.players.filter(p => p.position === filterPos),
+              sortBy
+            );
+
+            // Which sort keys make sense (hide goalie-only sorts if no goalies, etc.)
+            const hasGoalies  = phase.players.some(p => p.position === 'G');
+            const hasSkaters  = phase.players.some(p => p.position !== 'G');
+
+            const skaterSorts: { key: SortKey; label: string }[] = [
+              { key: 'score',   label: 'Best'  },
+              { key: 'pts',     label: 'PTS'   },
+              { key: 'ppg',     label: 'PPG'   },
+              { key: 'goals',   label: 'G'     },
+              { key: 'assists', label: 'A'     },
+              { key: 'pm',      label: '+/-'   },
+            ];
+            const goalieSorts: { key: SortKey; label: string }[] = [
+              { key: 'score',  label: 'Best' },
+              { key: 'wins',   label: 'W'    },
+              { key: 'svpct',  label: 'SV%'  },
+              { key: 'gaa',    label: 'GAA'  },
+            ];
+            const sortOptions = filterPos === 'G' ? goalieSorts
+              : !hasSkaters ? goalieSorts
+              : skaterSorts;
+
+            return (
+              <div className="flex flex-col gap-3">
+                {/* Header row */}
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-white font-bold">{phase.franchiseAbbr}</span>
+                    <span className="text-slate-500 mx-1.5">·</span>
+                    <span className="text-white font-bold">{phase.decade}</span>
+                    <span className="text-xs font-medium ml-2" style={{ color: teamColor }}>{phase.city}</span>
+                  </div>
+                  {(canRerollTeam || canRerollEra) && (
+                    <div className="flex gap-2">
+                      {canRerollTeam && (
+                        <button onClick={() => handleReroll('team')} disabled={loading}
+                          title="Keep this era, spin a new team"
+                          className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
+                                     text-slate-300 hover:text-white hover:border-slate-400 transition-colors disabled:opacity-40">
+                          Team
+                        </button>
+                      )}
+                      {canRerollEra && (
+                        <button onClick={() => handleReroll('era')} disabled={loading}
+                          title="Keep this team, spin a new era"
+                          className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
+                                     text-slate-300 hover:text-white hover:border-slate-400 transition-colors disabled:opacity-40">
+                          Era
+                        </button>
+                      )}
+                    </div>
+                  )}
                 </div>
-                {(canRerollTeam || canRerollEra) && (
-                  <div className="flex gap-2">
-                    {canRerollTeam && (
-                      <button
-                        onClick={() => handleReroll('team')}
-                        disabled={loading}
-                        title="Keep this era, spin a new team"
-                        className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
-                                   text-slate-300 hover:text-white hover:border-slate-400
-                                   transition-colors disabled:opacity-40"
-                      >
-                        Team
-                      </button>
-                    )}
-                    {canRerollEra && (
-                      <button
-                        onClick={() => handleReroll('era')}
-                        disabled={loading}
-                        title="Keep this team, spin a new era"
-                        className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
-                                   text-slate-300 hover:text-white hover:border-slate-400
-                                   transition-colors disabled:opacity-40"
-                      >
-                        Era
-                      </button>
-                    )}
+
+                {/* Position filter */}
+                {availablePos.length > 1 && (
+                  <div className="flex gap-1.5 flex-wrap">
+                    <FilterChip label="All" active={filterPos === 'all'} onClick={() => setFilterPos('all')} color={teamColor} />
+                    {POSITIONS.filter(p => availablePos.includes(p)).map(pos => (
+                      <FilterChip key={pos} label={pos} active={filterPos === pos} onClick={() => setFilterPos(pos)} color={teamColor} />
+                    ))}
                   </div>
                 )}
+
+                {/* Sort */}
+                <div className="flex gap-1.5 flex-wrap">
+                  {sortOptions.map(({ key, label }) => (
+                    <FilterChip key={key} label={label} active={sortBy === key} onClick={() => setSortBy(key)} color={teamColor} small />
+                  ))}
+                </div>
+
+                {/* List */}
+                {displayed.length === 0 ? (
+                  <p className="text-slate-500 text-sm text-center py-6">No players for this filter.</p>
+                ) : (
+                  displayed.map(player => (
+                    <PlayerCard key={player.id} player={player} onClick={() => handlePickPlayer(player)} />
+                  ))
+                )}
               </div>
-              <p className="text-slate-400 text-xs">Pick a player — then place them on the rink →</p>
-              {phase.players.length === 0 ? (
-                <p className="text-slate-500 text-sm text-center py-6">No available players for your remaining slots.</p>
-              ) : (
-                phase.players.map(player => (
-                  <PlayerCard key={player.id} player={player} onClick={() => handlePickPlayer(player)} />
-                ))
-              )}
-            </div>
-          )}
+            );
+          })()}
 
           {/* Placing */}
           {phase.type === 'placing-player' && (
@@ -296,3 +364,28 @@ export default function DraftGame() {
   );
 }
 
+function FilterChip({ label, active, onClick, color, small }: {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+  color: string;
+  small?: boolean;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`rounded-lg font-semibold transition-all ${small ? 'px-2.5 py-1 text-[11px]' : 'px-3 py-1.5 text-xs'}`}
+      style={active ? {
+        backgroundColor: `${color}25`,
+        color: color,
+        border: `1px solid ${color}80`,
+      } : {
+        backgroundColor: 'transparent',
+        color: '#94a3b8',
+        border: '1px solid #334155',
+      }}
+    >
+      {label}
+    </button>
+  );
+}
