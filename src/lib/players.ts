@@ -1,4 +1,4 @@
-import { Player, Position, FORWARD_POSITIONS, DEFENSE_POSITIONS, eligibleSlots } from '@/types';
+import { Player, Position, FORWARD_POSITIONS, DEFENSE_POSITIONS, eligibleSlots, isGoalieStats } from '@/types';
 import { FRANCHISES } from '@/lib/franchises';
 import path from 'path';
 import fs from 'fs';
@@ -25,15 +25,25 @@ export function getPlayerById(id: number): Player | undefined {
 }
 
 /** All players from a franchise+decade that can fill at least one unfilled slot */
+/** Composite sort score: strengthScore (PPG-based) + +/- per game bonus.
+ *  Keeps offensive production as the primary signal while surfacing
+ *  two-way players and penalizing defensive liabilities. */
+function sortScore(p: Player): number {
+  if (isGoalieStats(p.stats)) return p.strengthScore;
+  const pmPerGame = p.stats.gp > 0 ? p.stats.plusMinus / p.stats.gp : 0;
+  // +/- per game typically ranges from ~-0.5 to +1.5 for elite D like Orr.
+  // Scale to add up to ±10 points on the 0–100 strength scale.
+  return p.strengthScore + pmPerGame * 8;
+}
+
 export function getPlayersForCombo(franchiseAbbr: string, decade: string, unfilled: Position[]): Player[] {
   return loadPlayers()
     .filter(p => {
       if (p.franchiseAbbr !== franchiseAbbr || p.decade !== decade) return false;
-      // Only include players whose eligible slots overlap with unfilled slots
       const slots = eligibleSlots(p.position as Position);
       return slots.some(s => unfilled.includes(s));
     })
-    .sort((a, b) => b.strengthScore - a.strengthScore);
+    .sort((a, b) => sortScore(b) - sortScore(a));
 }
 
 /** Legacy: players for a single position slot */
