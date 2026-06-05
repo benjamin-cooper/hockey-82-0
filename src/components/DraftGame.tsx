@@ -129,81 +129,86 @@ export default function DraftGame() {
   const teamColor = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
 
   return (
-    <div className="flex flex-col w-full max-w-2xl mx-auto px-4 gap-5">
+    <div className="w-full max-w-4xl mx-auto px-4">
+      <div className="grid grid-cols-[1fr_280px] gap-6 items-start">
 
-      {/* Rink — always visible, shows current roster state */}
-      <RinkLayout
-        roster={roster}
-        eligibleSlots={phase.type === 'placing-player' ? phase.slots : []}
-        teamColor={teamColor}
-        onPlace={handlePlace}
-      />
+        {/* LEFT — slot machine / player list / placing prompt */}
+        <div className="flex flex-col gap-4 min-w-0">
 
-      {/* Divider */}
-      <div className="h-px bg-slate-800" />
-
-      {/* Slot machine spin */}
-      {phase.type === 'spinning' && (
-        <SlotMachine
-          franchiseAbbr={phase.franchiseAbbr}
-          city={phase.city}
-          decade={phase.decade}
-          spinCombos={phase.spinCombos}
-          onDone={handleSpinDone}
-        />
-      )}
-
-      {/* All players — pick one */}
-      {phase.type === 'picking-player' && (
-        <div className="flex flex-col gap-3">
-          <div className="flex items-center justify-between">
-            <div>
-              <span className="text-white font-bold">{phase.franchiseAbbr}</span>
-              <span className="text-slate-500 mx-1.5">·</span>
-              <span className="text-white font-bold">{phase.decade}</span>
-            </div>
-            <div className="text-xs font-medium" style={{ color: teamColor }}>{phase.city}</div>
-          </div>
-          <p className="text-slate-400 text-xs">Pick a player — then place them on the rink.</p>
-          {phase.players.length === 0 ? (
-            <p className="text-slate-500 text-sm text-center py-6">No available players for your remaining slots.</p>
-          ) : (
-            phase.players.map(player => (
-              <PlayerCard key={player.id} player={player} onClick={() => handlePickPlayer(player)} />
-            ))
+          {/* Slot machine */}
+          {phase.type === 'spinning' && (
+            <SlotMachine
+              franchiseAbbr={phase.franchiseAbbr}
+              city={phase.city}
+              decade={phase.decade}
+              spinCombos={phase.spinCombos}
+              onDone={handleSpinDone}
+            />
           )}
-        </div>
-      )}
 
-      {/* Placing — player selected, prompt to click a slot */}
-      {phase.type === 'placing-player' && (
-        <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-3">
-            <button
-              className="text-slate-500 hover:text-slate-300 text-sm transition-colors"
-              onClick={async () => {
-                const res = await fetch(`/api/players?franchise=${phase.franchiseAbbr}&decade=${phase.decade}&unfilled=${unfilled.join(',')}`);
-                const data = await res.json();
-                setPhase({ type: 'picking-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, players: data.players ?? [] });
-              }}
-            >
-              ← Back
-            </button>
-            <p className="text-slate-400 text-sm flex-1 text-center">
-              Now place <span className="text-white font-semibold">{phase.player.name}</span> on the rink ↑
-            </p>
-          </div>
-          {/* Show the selected player card */}
-          <PlayerCard player={phase.player} />
-        </div>
-      )}
+          {/* Player list */}
+          {phase.type === 'picking-player' && (
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center justify-between">
+                <div>
+                  <span className="text-white font-bold">{phase.franchiseAbbr}</span>
+                  <span className="text-slate-500 mx-1.5">·</span>
+                  <span className="text-white font-bold">{phase.decade}</span>
+                </div>
+                <div className="text-xs font-medium" style={{ color: teamColor }}>{phase.city}</div>
+              </div>
+              <p className="text-slate-400 text-xs">Pick a player — then place them on the rink →</p>
+              {phase.players.length === 0 ? (
+                <p className="text-slate-500 text-sm text-center py-6">No available players for your remaining slots.</p>
+              ) : (
+                phase.players.map(player => (
+                  <PlayerCard key={player.id} player={player} onClick={() => handlePickPlayer(player)} />
+                ))
+              )}
+            </div>
+          )}
 
-      {loading && (
-        <div className="flex justify-center py-2">
-          <div className="w-5 h-5 border-2 border-blue-400 border-t-transparent rounded-full animate-spin" />
+          {/* Placing phase */}
+          {phase.type === 'placing-player' && (
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-3">
+                <button
+                  className="text-slate-500 hover:text-slate-300 text-sm transition-colors"
+                  onClick={async () => {
+                    const res = await fetch(`/api/players?franchise=${phase.franchiseAbbr}&decade=${phase.decade}&unfilled=${unfilled.join(',')}`);
+                    const data = await res.json();
+                    setPhase({ type: 'picking-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, players: data.players ?? [] });
+                  }}
+                >
+                  ← Back
+                </button>
+                <p className="text-slate-400 text-sm">
+                  Place <span className="text-white font-semibold">{phase.player.name}</span> on the rink →
+                </p>
+              </div>
+              <PlayerCard player={phase.player} />
+            </div>
+          )}
+
+          {loading && (
+            <div className="flex justify-center py-2">
+              <div className="w-5 h-5 border-2 border-blue-400 border-t-transparent rounded-full animate-spin" />
+            </div>
+          )}
+          {error && <p className="text-red-400 text-sm">{error}</p>}
         </div>
-      )}
-      {error && <p className="text-red-400 text-sm text-center">{error}</p>}
+
+        {/* RIGHT — rink, always visible */}
+        <div className="sticky top-6">
+          <RinkLayout
+            roster={roster}
+            eligibleSlots={phase.type === 'placing-player' ? phase.slots : []}
+            teamColor={teamColor}
+            onPlace={handlePlace}
+          />
+        </div>
+
+      </div>
     </div>
   );
 }
