@@ -236,10 +236,12 @@ def aggregate_players(season_data: list[dict], is_goalie: bool) -> list[dict]:
         if name not in by_name:
             by_name[name] = dict(p)
             by_name[name]["season_count"] = 1
+            by_name[name]["_all_positions"] = {p["position"]}  # track all positions seen
         else:
             existing = by_name[name]
             existing["gp"] += p["gp"]
             existing["season_count"] += 1
+            existing["_all_positions"].add(p["position"])  # accumulate
             if is_goalie:
                 existing["wins"] += p["wins"]
                 existing["shutouts"] += p["shutouts"]
@@ -262,6 +264,8 @@ def aggregate_players(season_data: list[dict], is_goalie: bool) -> list[dict]:
             continue
         if not is_goalie:
             p["pointsPerGame"] = round(p["points"] / p["gp"], 3) if p["gp"] > 0 else 0
+        # Persist all recorded positions; convert set to sorted list
+        p["positions"] = sorted(p.pop("_all_positions", {p["position"]}))
         result.append(p)
 
     # Sort by relevance

@@ -35,8 +35,8 @@ export default function PlayerCard({ player, onClick, compact }: Props) {
       onClick={onClick}
       className={`
         relative flex items-center gap-4 rounded-xl p-4 transition-all
-        bg-slate-700/50 border border-slate-600/40
-        ${onClick ? 'cursor-pointer hover:bg-slate-600/50 hover:border-slate-500/60' : 'cursor-default'}
+        border border-white/10 bg-white/[0.07]
+        ${onClick ? 'cursor-pointer hover:bg-white/[0.12] hover:border-white/20' : 'cursor-default'}
       `}
     >
       {/* Left accent bar */}

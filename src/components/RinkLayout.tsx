@@ -31,9 +31,9 @@ export default function RinkLayout({ roster, eligibleSlots, teamColor, onPlace }
       <div
         className="relative rounded-3xl px-5 py-7 flex flex-col gap-4"
         style={{
-          background: 'linear-gradient(180deg, #1a2f4a 0%, #142238 100%)',
-          border: '1px solid rgba(100,160,220,0.25)',
-          boxShadow: 'inset 0 0 60px rgba(30,80,140,0.2)',
+          background: 'linear-gradient(180deg, #1e3a5c 0%, #162d4a 100%)',
+          border: '1px solid rgba(120,180,255,0.2)',
+          boxShadow: 'inset 0 0 60px rgba(30,100,180,0.15)',
         }}
       >
         {/* Blue line */}

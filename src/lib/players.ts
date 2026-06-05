@@ -44,12 +44,21 @@ function sortScore(p: Player): number {
   return p.strengthScore + pmPerGame * 8;
 }
 
+/** All eligible slots for a player, using their full positions array if available */
+function playerEligibleSlots(p: Player): Position[] {
+  const positions = (p.positions ?? [p.position]) as Position[];
+  const slots = new Set<Position>();
+  for (const pos of positions) {
+    for (const s of eligibleSlots(pos)) slots.add(s);
+  }
+  return Array.from(slots);
+}
+
 export function getPlayersForCombo(franchiseAbbr: string, decade: string, unfilled: Position[]): Player[] {
   return loadPlayers()
     .filter(p => {
       if (p.franchiseAbbr !== franchiseAbbr || p.decade !== decade) return false;
-      const slots = eligibleSlots(p.position as Position);
-      return slots.some(s => unfilled.includes(s));
+      return playerEligibleSlots(p).some(s => unfilled.includes(s));
     })
     .sort((a, b) => sortScore(b) - sortScore(a));
 }

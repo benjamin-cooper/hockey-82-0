@@ -3,11 +3,13 @@ export type Position = 'C' | 'LW' | 'RW' | 'LD' | 'RD' | 'G';
 export const FORWARD_POSITIONS: Position[] = ['C', 'LW', 'RW'];
 export const DEFENSE_POSITIONS: Position[] = ['LD', 'RD'];
 
-/** Which roster slots a player is eligible for based on their natural position */
+/** Which roster slots a player is eligible for based on their natural position.
+ *  Forwards play their specific position (C≠LW≠RW).
+ *  Defensemen can swap sides (LD↔RD) since the physical demands are similar.
+ *  Multi-position data (player.positions[]) can override this in future scrapes. */
 export function eligibleSlots(playerPosition: Position): Position[] {
-  if (FORWARD_POSITIONS.includes(playerPosition)) return FORWARD_POSITIONS;
   if (DEFENSE_POSITIONS.includes(playerPosition)) return DEFENSE_POSITIONS;
-  return [playerPosition]; // G → G only
+  return [playerPosition]; // C→C, LW→LW, RW→RW, G→G
 }
 
 export const POSITIONS: Position[] = ['C', 'LW', 'RW', 'LD', 'RD', 'G'];
@@ -48,12 +50,13 @@ export interface Player {
   id: number;
   name: string;
   initials: string;
-  position: Position;
+  position: Position;           // primary / display position
+  positions: Position[];        // all positions ever recorded (enables real multi-pos eligibility)
   franchise: string;
   franchiseAbbr: string;
   decade: string;
   stats: PlayerStats;
-  strengthScore: number; // normalized 0-100
+  strengthScore: number;
 }
 
 export interface DraftSlot {

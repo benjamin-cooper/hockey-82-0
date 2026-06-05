@@ -63,7 +63,7 @@ export default function SlotMachine({ franchiseAbbr, city, decade, spinCombos, o
       <div className="flex items-center gap-4">
         {/* Franchise reel */}
         <div
-          className="bg-slate-700/60 rounded-2xl px-6 py-4 min-w-[130px] text-center transition-all duration-300"
+          className="bg-white/[0.09] rounded-2xl px-6 py-4 min-w-[130px] text-center transition-all duration-300"
           style={{
             border: `2px solid ${spinning ? 'rgba(255,255,255,0.18)' : teamColor}`,
             boxShadow: spinning ? 'none' : `0 0 24px ${teamColor}55`,
@@ -83,7 +83,7 @@ export default function SlotMachine({ franchiseAbbr, city, decade, spinCombos, o
 
         {/* Decade reel */}
         <div
-          className="bg-slate-700/60 rounded-2xl px-6 py-4 min-w-[100px] text-center transition-all duration-300"
+          className="bg-white/[0.09] rounded-2xl px-6 py-4 min-w-[100px] text-center transition-all duration-300"
           style={{
             border: `2px solid ${spinning ? 'rgba(255,255,255,0.18)' : teamColor}`,
             boxShadow: spinning ? 'none' : `0 0 24px ${teamColor}55`,

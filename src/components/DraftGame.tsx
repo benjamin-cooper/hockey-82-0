@@ -133,7 +133,13 @@ export default function DraftGame() {
 
   function handlePickPlayer(player: Player) {
     if (!phase || phase.type !== 'picking-player') return;
-    const slots = (eligibleSlots(player.position as Position) as Position[]).filter(s => unfilled.includes(s));
+    // Use player.positions (all recorded positions) to determine eligible slots
+    const allPositions = (player.positions ?? [player.position]) as Position[];
+    const eligibleSet = new Set<Position>();
+    for (const pos of allPositions) {
+      for (const s of eligibleSlots(pos as Position)) eligibleSet.add(s);
+    }
+    const slots = Array.from(eligibleSet).filter(s => unfilled.includes(s));
     setPhase({ type: 'placing-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, player, slots });
   }
 
@@ -284,16 +290,16 @@ export default function DraftGame() {
                       {canRerollTeam && (
                         <button onClick={() => handleReroll('team')} disabled={loading}
                           title="Keep this era, spin a new team"
-                          className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
-                                     text-slate-300 hover:text-white hover:border-slate-400 transition-colors disabled:opacity-40">
+                          className="text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors disabled:opacity-40"
+                          style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.18)', color: '#e2e8f0' }}>
                           Team
                         </button>
                       )}
                       {canRerollEra && (
                         <button onClick={() => handleReroll('era')} disabled={loading}
                           title="Keep this team, spin a new era"
-                          className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
-                                     text-slate-300 hover:text-white hover:border-slate-400 transition-colors disabled:opacity-40">
+                          className="text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors disabled:opacity-40"
+                          style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.18)', color: '#e2e8f0' }}>
                           Era
                         </button>
                       )}
@@ -380,13 +386,13 @@ function FilterChip({ label, active, onClick, color, small }: {
       onClick={onClick}
       className={`rounded-lg font-semibold transition-all ${small ? 'px-2.5 py-1 text-[11px]' : 'px-3 py-1.5 text-xs'}`}
       style={active ? {
-        backgroundColor: `${color}25`,
+        backgroundColor: `${color}30`,
         color: color,
-        border: `1px solid ${color}80`,
+        border: `1px solid ${color}`,
       } : {
-        backgroundColor: 'transparent',
-        color: '#94a3b8',
-        border: '1px solid #334155',
+        backgroundColor: 'rgba(255,255,255,0.07)',
+        color: '#cbd5e1',
+        border: '1px solid rgba(255,255,255,0.15)',
       }}
     >
       {label}
