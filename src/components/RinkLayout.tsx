@@ -113,35 +113,29 @@ function RinkSlot({
   }
 
   if (isEligible) {
+    // Use white-based styling so dark team colors (WIN #041E42) are still visible.
+    // Team color is used as a tint/glow only, not the primary contrast color.
     return (
       <button
         onClick={onPlace}
         className="rounded-2xl py-4 px-2 text-center border-2 border-dashed
-                   transition-all duration-150 hover:scale-105 active:scale-95 w-full"
-        style={{
-          borderColor: `${teamColor}90`,
-          backgroundColor: `${teamColor}15`,
-          boxShadow: `0 0 16px ${teamColor}35`,
-        }}
+                   transition-all duration-150 hover:scale-105 active:scale-95 w-full
+                   border-slate-400/60 hover:border-white/80"
+        style={{ backgroundColor: 'rgba(255,255,255,0.06)', boxShadow: `0 0 16px ${teamColor}40` }}
         onMouseEnter={e => {
-          e.currentTarget.style.backgroundColor = `${teamColor}28`;
-          e.currentTarget.style.borderColor = teamColor;
-          e.currentTarget.style.boxShadow = `0 0 24px ${teamColor}55`;
+          e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.12)';
+          e.currentTarget.style.boxShadow = `0 0 24px ${teamColor}70`;
         }}
         onMouseLeave={e => {
-          e.currentTarget.style.backgroundColor = `${teamColor}15`;
-          e.currentTarget.style.borderColor = `${teamColor}90`;
-          e.currentTarget.style.boxShadow = `0 0 16px ${teamColor}35`;
+          e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.06)';
+          e.currentTarget.style.boxShadow = `0 0 16px ${teamColor}40`;
         }}
       >
-        <div
-          className="w-11 h-11 rounded-xl mx-auto mb-2 flex items-center justify-center
-                     text-2xl font-light"
-          style={{ color: teamColor, backgroundColor: `${teamColor}25` }}
-        >
+        <div className="w-11 h-11 rounded-xl mx-auto mb-2 flex items-center justify-center
+                        text-2xl font-light text-white/70 bg-white/10">
           +
         </div>
-        <div className="text-[12px] font-bold" style={{ color: teamColor }}>{pos}</div>
+        <div className="text-[12px] font-bold text-white/80">{pos}</div>
         <div className="text-slate-400 text-[10px] mt-0.5">{label}</div>
       </button>
     );
@@ -149,10 +143,10 @@ function RinkSlot({
 
   // Empty, ineligible
   return (
-    <div className="rounded-2xl py-4 px-2 text-center border border-slate-700/30 cursor-default">
-      <div className="w-11 h-11 rounded-xl mx-auto mb-2 bg-slate-800/50" />
-      <div className="text-slate-600 text-[12px] font-bold">{pos}</div>
-      <div className="text-slate-700 text-[10px] mt-0.5">{label}</div>
+    <div className="rounded-2xl py-4 px-2 text-center border border-slate-700/20 cursor-default opacity-30">
+      <div className="w-11 h-11 rounded-xl mx-auto mb-2 bg-slate-800/40" />
+      <div className="text-slate-500 text-[12px] font-bold">{pos}</div>
+      <div className="text-slate-600 text-[10px] mt-0.5">{label}</div>
     </div>
   );
 }

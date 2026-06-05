@@ -100,6 +100,10 @@ export default function DraftGame() {
     if (type === 'team' && teamRerollUsed) return;
     if (type === 'era'  && eraRerollUsed)  return;
 
+    // Reset list controls for the new combo
+    setFilterPos('all');
+    setSortBy('score');
+
     const combo = `${phase.franchiseAbbr}-${phase.decade}`;
     const newRerolled = [...rerolledCombos, combo];
     setRerolledCombos(newRerolled);
