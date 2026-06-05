@@ -98,7 +98,8 @@ export interface RerollLock {
 export function randomDraftSlot(
   usedCombos: string[],
   unfilledPositions: Position[],
-  lock?: RerollLock
+  lock?: RerollLock,
+  avoidFranchise?: string  // don't pick this franchise if other options exist
 ): DraftSlotResult | null {
   const players = loadPlayers();
 
@@ -136,7 +137,13 @@ export function randomDraftSlot(
   );
   if (available.length === 0) return null;
 
-  const picked = available[Math.floor(Math.random() * available.length)];
+  // Prefer not to pick the same franchise as last round; fall back if no other options
+  const preferred = avoidFranchise
+    ? available.filter(c => c.franchiseAbbr !== avoidFranchise)
+    : available;
+  const pool = preferred.length > 0 ? preferred : available;
+
+  const picked = pool[Math.floor(Math.random() * pool.length)];
   // For spin animation: use lock-filtered valid combos so the reel only shows relevant options
   const spinCombos = Array.from(allValid.values()).map(c => ({ abbr: c.franchiseAbbr, decade: c.decade }));
 

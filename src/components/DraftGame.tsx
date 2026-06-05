@@ -44,6 +44,7 @@ export default function DraftGame() {
   const [teamRerollUsed,  setTeamRerollUsed]  = useState(false);
   const [eraRerollUsed,   setEraRerollUsed]   = useState(false);
   const [rerolledCombos,  setRerolledCombos]  = useState<string[]>([]);
+  const [lastFranchise,   setLastFranchise]   = useState<string | undefined>(undefined);
   const [loading,         setLoading]         = useState(false);
   const [error,           setError]           = useState<string | null>(null);
   // Player list controls — reset each round
@@ -59,18 +60,20 @@ export default function DraftGame() {
     setRerolledCombos([]);
     setTeamRerollUsed(false);
     setEraRerollUsed(false);
+    setLastFranchise(undefined);
     setError(null);
-    await spinNext([], POSITIONS, []);
+    await spinNext([], POSITIONS, [], undefined);
   }
 
-  async function spinNext(used: string[], remaining: Position[], rerolled: string[]) {
+  async function spinNext(used: string[], remaining: Position[], rerolled: string[], avoid?: string) {
     setFilterPos('all');
     setSortBy('score');
     setLoading(true);
     try {
       // Exclude both permanently used combos and temporarily rerolled ones
       const exclude = [...used, ...rerolled];
-      const res = await fetch(`/api/draft-slot?used=${exclude.join(',')}&unfilled=${remaining.join(',')}`);
+      const avoidParam = avoid ? `&avoidFranchise=${avoid}` : '';
+      const res = await fetch(`/api/draft-slot?used=${exclude.join(',')}&unfilled=${remaining.join(',')}${avoidParam}`);
       if (!res.ok) throw new Error('No slots available');
       const slot = await res.json();
       setPhase({ type: 'spinning', ...slot });
@@ -165,6 +168,7 @@ export default function DraftGame() {
 
     setRoster(newRoster);
     setUsedCombos(newUsed);
+    setLastFranchise(franchiseAbbr); // avoid same franchise next round
 
     if (newUnfilled.length === 0) {
       setLoading(true);
@@ -185,7 +189,7 @@ export default function DraftGame() {
         setLoading(false);
       }
     } else {
-      await spinNext(newUsed, newUnfilled, rerolledCombos);
+      await spinNext(newUsed, newUnfilled, rerolledCombos, franchiseAbbr);
     }
   }
 
