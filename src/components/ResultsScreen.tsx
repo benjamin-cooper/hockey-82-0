@@ -44,23 +44,23 @@ export default function ResultsScreen({ result, onBuildAnother }: Props) {
 
   return (
     <div className="flex flex-col items-center gap-6 w-full max-w-2xl mx-auto px-4 py-8">
-      <div className="text-slate-400 text-xs font-medium uppercase tracking-widest">
+      <div className="text-slate-300 text-xs font-medium uppercase tracking-widest">
         Projected Record
       </div>
 
       {/* W - L - OTL always shown */}
       <div className="flex items-center gap-3">
         <span className="text-8xl font-black text-white tabular-nums">{wins}</span>
-        <span className="text-4xl text-slate-500 font-light">—</span>
+        <span className="text-4xl text-slate-400 font-light">—</span>
         <span className="text-8xl font-black text-white tabular-nums">{losses}</span>
-        <span className="text-4xl text-slate-500 font-light">—</span>
+        <span className="text-4xl text-slate-400 font-light">—</span>
         <span className="text-8xl font-black text-white tabular-nums">{otl}</span>
       </div>
 
       <div className={`flex items-center gap-2 px-4 py-2 rounded-full ${ratingBg}`}>
         <div className={`w-2 h-2 rounded-full ${ratingColor.replace('text-', 'bg-')}`} />
         <span className={`font-bold text-sm tracking-wider ${ratingColor}`}>{rating}</span>
-        <span className="text-slate-500 text-sm">· {points} pts</span>
+        <span className="text-slate-300 text-sm">· {points} pts</span>
       </div>
 
       <div className="flex gap-3 w-full">
@@ -73,7 +73,7 @@ export default function ResultsScreen({ result, onBuildAnother }: Props) {
         </button>
         <button
           onClick={onBuildAnother}
-          className="flex-1 bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3.5 rounded-xl transition-colors"
+          className="flex-1 bg-slate-600 hover:bg-slate-500 text-white font-semibold py-3.5 rounded-xl transition-colors"
         >
           Build Another
         </button>

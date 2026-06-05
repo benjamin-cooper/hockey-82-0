@@ -3,7 +3,7 @@ import DraftGame from '@/components/DraftGame';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0d1117] text-white">
+    <main className="min-h-screen bg-[#111827] text-white">
       <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col items-center gap-6">
         <Logo />
         <h1 className="text-2xl font-black tracking-tight">Can you go 82-0?</h1>

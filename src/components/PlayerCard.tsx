@@ -1,5 +1,5 @@
 'use client';
-import { Player, DraftedPlayer, Position, PlayerStats, isGoalieStats } from '@/types';
+import { Player, DraftedPlayer, PlayerStats, isGoalieStats } from '@/types';
 import { FRANCHISE_MAP } from '@/lib/franchises';
 
 interface Props {
@@ -9,12 +9,12 @@ interface Props {
 }
 
 const POSITION_COLORS: Record<string, string> = {
-  C:  'bg-blue-700',
-  LW: 'bg-green-700',
-  RW: 'bg-emerald-700',
-  LD: 'bg-purple-700',
-  RD: 'bg-violet-700',
-  G:  'bg-orange-700',
+  C:  'bg-blue-600',
+  LW: 'bg-green-600',
+  RW: 'bg-emerald-600',
+  LD: 'bg-purple-600',
+  RD: 'bg-violet-600',
+  G:  'bg-orange-600',
 };
 
 function isDrafted(p: Player | DraftedPlayer): p is DraftedPlayer {
@@ -25,42 +25,35 @@ export default function PlayerCard({ player, onClick, compact }: Props) {
   const franchise   = FRANCHISE_MAP.get(player.franchiseAbbr);
   const accentColor = franchise?.color ?? '#4a9eff';
 
-  // Use slotPosition for the badge colour; show both if they differ
   const slotPos    = isDrafted(player) ? player.slotPosition : player.position;
   const naturalPos = player.position;
   const posLabel   = slotPos !== naturalPos ? `${slotPos}/${naturalPos}` : slotPos;
-  const posColor   = POSITION_COLORS[slotPos] ?? 'bg-gray-700';
+  const posColor   = POSITION_COLORS[slotPos] ?? 'bg-gray-600';
 
   return (
     <div
       onClick={onClick}
       className={`
         relative flex items-center gap-4 rounded-xl p-4 transition-all
-        bg-slate-800/80 hover:bg-slate-700/80
-        ${onClick ? 'cursor-pointer hover:ring-1 hover:ring-slate-600' : 'cursor-default'}
+        bg-slate-700/50 border border-slate-600/40
+        ${onClick ? 'cursor-pointer hover:bg-slate-600/50 hover:border-slate-500/60' : 'cursor-default'}
       `}
     >
       {/* Left accent bar */}
-      <div
-        className="absolute left-0 top-3 bottom-3 w-1 rounded-full"
-        style={{ backgroundColor: accentColor }}
-      />
+      <div className="absolute left-0 top-3 bottom-3 w-1 rounded-full" style={{ backgroundColor: accentColor }} />
 
-      {/* Avatar + position badge */}
+      {/* Avatar */}
       <div className={`${posColor} rounded-lg w-12 h-12 flex flex-col items-center justify-center flex-shrink-0 ml-2`}>
         <span className="text-white font-bold text-sm leading-none">{player.initials}</span>
-        <span className="text-white/70 text-[9px] mt-0.5 leading-none">{posLabel}</span>
+        <span className="text-white/80 text-[9px] mt-0.5 leading-none">{posLabel}</span>
       </div>
 
       {/* Name + team */}
       <div className="flex-1 min-w-0">
         <div className="text-white font-semibold text-sm truncate">{player.name}</div>
-        <div className="text-slate-400 text-xs mt-0.5">
-          {player.franchiseAbbr} · {player.decade}
-        </div>
+        <div className="text-slate-300 text-xs mt-0.5">{player.franchiseAbbr} · {player.decade}</div>
       </div>
 
-      {/* Stats — full in draft list, compact summary on results */}
       {!compact && <StatsBlock stats={player.stats} />}
       {compact && <CompactStat stats={player.stats} />}
     </div>
@@ -69,18 +62,18 @@ export default function PlayerCard({ player, onClick, compact }: Props) {
 
 function CompactStat({ stats }: { stats: PlayerStats }) {
   if (isGoalieStats(stats)) {
-    return <div className="text-slate-400 text-xs tabular-nums">{stats.wins}W · {stats.gaa.toFixed(2)} GAA · {stats.savePct.toFixed(3)}</div>;
+    return <div className="text-slate-300 text-xs tabular-nums">{stats.wins}W · {stats.gaa.toFixed(2)} GAA · {stats.savePct.toFixed(3)}</div>;
   }
   const pm = stats.plusMinus;
   const pmStr = pm > 0 ? `+${pm}` : `${pm}`;
-  const pmColor = pm > 0 ? 'text-emerald-400' : pm < 0 ? 'text-red-400' : 'text-slate-400';
+  const pmColor = pm > 0 ? 'text-emerald-400' : pm < 0 ? 'text-red-400' : 'text-slate-300';
   return (
     <div className="flex items-center gap-2 text-xs tabular-nums">
-      <span className="text-slate-400">{stats.points} PTS</span>
-      <span className="text-slate-600">·</span>
+      <span className="text-slate-300">{stats.points} PTS</span>
+      <span className="text-slate-500">·</span>
       <span className={pmColor}>{pmStr}</span>
-      <span className="text-slate-600">·</span>
-      <span className="text-slate-400">{stats.pointsPerGame.toFixed(2)} PPG</span>
+      <span className="text-slate-500">·</span>
+      <span className="text-slate-300">{stats.pointsPerGame.toFixed(2)} PPG</span>
     </div>
   );
 }
@@ -114,7 +107,7 @@ function Stat({ label, value, highlight }: { label: string; value: string | numb
   return (
     <div className="text-center min-w-[2.5rem]">
       <div className={`${valueColor} font-semibold text-sm tabular-nums`}>{value}</div>
-      <div className="text-slate-500 text-[10px]">{label}</div>
+      <div className="text-slate-400 text-[10px]">{label}</div>
     </div>
   );
 }

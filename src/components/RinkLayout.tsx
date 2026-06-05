@@ -31,15 +31,14 @@ export default function RinkLayout({ roster, eligibleSlots, teamColor, onPlace }
       <div
         className="relative rounded-3xl px-5 py-7 flex flex-col gap-4"
         style={{
-          background: 'linear-gradient(180deg, #0e1e35 0%, #091625 100%)',
-          border: '1px solid rgba(100,160,220,0.15)',
-          boxShadow: 'inset 0 0 60px rgba(30,80,140,0.15)',
+          background: 'linear-gradient(180deg, #1a2f4a 0%, #142238 100%)',
+          border: '1px solid rgba(100,160,220,0.25)',
+          boxShadow: 'inset 0 0 60px rgba(30,80,140,0.2)',
         }}
       >
         {/* Blue line */}
-        <div className="absolute inset-x-5 top-[37%] h-[2px] rounded-full" style={{ backgroundColor: 'rgba(59,130,246,0.35)' }} />
-        {/* Red line */}
-        <div className="absolute inset-x-5 top-[63%] h-[2px] rounded-full" style={{ backgroundColor: 'rgba(220,38,38,0.35)' }} />
+        <div className="absolute inset-x-5 top-[37%] h-[2px] rounded-full" style={{ backgroundColor: 'rgba(99,160,255,0.5)' }} />
+        <div className="absolute inset-x-5 top-[63%] h-[2px] rounded-full" style={{ backgroundColor: 'rgba(248,113,113,0.5)' }} />
 
         {/* Forwards row */}
         <div className="grid grid-cols-3 gap-3">
@@ -91,8 +90,8 @@ function RinkSlot({
       <div
         className="rounded-2xl py-4 px-2 text-center border"
         style={{
-          borderColor: `${playerColor}60`,
-          backgroundColor: `${playerColor}18`,
+          borderColor: `${playerColor}80`,
+          backgroundColor: `${playerColor}25`,
         }}
       >
         <div
@@ -143,10 +142,10 @@ function RinkSlot({
 
   // Empty, ineligible
   return (
-    <div className="rounded-2xl py-4 px-2 text-center border border-slate-700/20 cursor-default opacity-30">
-      <div className="w-11 h-11 rounded-xl mx-auto mb-2 bg-slate-800/40" />
-      <div className="text-slate-500 text-[12px] font-bold">{pos}</div>
-      <div className="text-slate-600 text-[10px] mt-0.5">{label}</div>
+    <div className="rounded-2xl py-4 px-2 text-center border border-white/10 cursor-default opacity-40">
+      <div className="w-11 h-11 rounded-xl mx-auto mb-2 bg-white/10" />
+      <div className="text-slate-400 text-[12px] font-bold">{pos}</div>
+      <div className="text-slate-500 text-[10px] mt-0.5">{label}</div>
     </div>
   );
 }

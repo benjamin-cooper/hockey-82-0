@@ -56,16 +56,16 @@ export default function SlotMachine({ franchiseAbbr, city, decade, spinCombos, o
 
   return (
     <div className="flex flex-col items-center gap-5 py-6">
-      <div className="text-slate-400 text-xs font-medium uppercase tracking-widest">
+      <div className="text-slate-300 text-xs font-medium uppercase tracking-widest">
         Spinning…
       </div>
 
       <div className="flex items-center gap-4">
         {/* Franchise reel */}
         <div
-          className="bg-slate-900 rounded-2xl px-6 py-4 min-w-[130px] text-center transition-all duration-300"
+          className="bg-slate-700/60 rounded-2xl px-6 py-4 min-w-[130px] text-center transition-all duration-300"
           style={{
-            border: `2px solid ${spinning ? 'rgba(255,255,255,0.08)' : teamColor}`,
+            border: `2px solid ${spinning ? 'rgba(255,255,255,0.18)' : teamColor}`,
             boxShadow: spinning ? 'none' : `0 0 24px ${teamColor}55`,
           }}
         >
@@ -79,13 +79,13 @@ export default function SlotMachine({ franchiseAbbr, city, decade, spinCombos, o
           )}
         </div>
 
-        <div className="text-slate-600 text-xl font-light">·</div>
+        <div className="text-slate-400 text-xl font-light">·</div>
 
         {/* Decade reel */}
         <div
-          className="bg-slate-900 rounded-2xl px-6 py-4 min-w-[100px] text-center transition-all duration-300"
+          className="bg-slate-700/60 rounded-2xl px-6 py-4 min-w-[100px] text-center transition-all duration-300"
           style={{
-            border: `2px solid ${spinning ? 'rgba(255,255,255,0.08)' : teamColor}`,
+            border: `2px solid ${spinning ? 'rgba(255,255,255,0.18)' : teamColor}`,
             boxShadow: spinning ? 'none' : `0 0 24px ${teamColor}55`,
           }}
         >
