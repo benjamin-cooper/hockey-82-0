@@ -88,10 +88,10 @@ function RinkSlot({
   if (player) {
     return (
       <div
-        className="rounded-2xl py-4 px-2 text-center border"
+        className="rounded-2xl py-4 px-2 text-center"
         style={{
-          borderColor: `${playerColor}80`,
-          backgroundColor: `${playerColor}25`,
+          border: `1px solid ${playerColor}`,
+          background: 'rgba(255,255,255,0.10)',
         }}
       >
         <div
@@ -104,7 +104,7 @@ function RinkSlot({
         <div className="text-white text-[11px] font-bold leading-tight truncate px-1 mt-0.5">
           {player.name.split(' ').slice(0, -1).join(' ') || player.name}
         </div>
-        <div className="text-[10px] leading-tight truncate px-1" style={{ color: `${playerColor}cc` }}>
+        <div className="text-white/60 text-[10px] leading-tight truncate px-1">
           {player.name.split(' ').slice(-1)[0]}
         </div>
       </div>

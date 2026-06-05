@@ -63,13 +63,14 @@ export default function SlotMachine({ franchiseAbbr, city, decade, spinCombos, o
       <div className="flex items-center gap-4">
         {/* Franchise reel */}
         <div
-          className="bg-white/[0.09] rounded-2xl px-6 py-4 min-w-[130px] text-center transition-all duration-300"
+          className="rounded-2xl px-6 py-4 min-w-[130px] text-center transition-all duration-300"
           style={{
-            border: `2px solid ${spinning ? 'rgba(255,255,255,0.18)' : teamColor}`,
-            boxShadow: spinning ? 'none' : `0 0 24px ${teamColor}55`,
+            background: 'rgba(255,255,255,0.10)',
+            border: `2px solid ${spinning ? 'rgba(255,255,255,0.2)' : teamColor}`,
+            boxShadow: spinning ? 'none' : `0 0 28px ${teamColor}60`,
           }}
         >
-          <div className={`text-3xl font-black tracking-tight transition-all duration-150 ${spinning ? 'text-slate-300 blur-[1.5px]' : 'text-white'}`}>
+          <div className={`text-3xl font-black tracking-tight transition-all duration-150 ${spinning ? 'text-white/70' : 'text-white'}`}>
             {displayAbbr}
           </div>
           {!spinning && (
@@ -83,13 +84,14 @@ export default function SlotMachine({ franchiseAbbr, city, decade, spinCombos, o
 
         {/* Decade reel */}
         <div
-          className="bg-white/[0.09] rounded-2xl px-6 py-4 min-w-[100px] text-center transition-all duration-300"
+          className="rounded-2xl px-6 py-4 min-w-[100px] text-center transition-all duration-300"
           style={{
-            border: `2px solid ${spinning ? 'rgba(255,255,255,0.18)' : teamColor}`,
-            boxShadow: spinning ? 'none' : `0 0 24px ${teamColor}55`,
+            background: 'rgba(255,255,255,0.10)',
+            border: `2px solid ${spinning ? 'rgba(255,255,255,0.2)' : teamColor}`,
+            boxShadow: spinning ? 'none' : `0 0 28px ${teamColor}60`,
           }}
         >
-          <div className={`text-3xl font-black tracking-tight transition-all duration-150 ${spinning ? 'text-slate-300 blur-[1.5px]' : 'text-white'}`}>
+          <div className={`text-3xl font-black tracking-tight transition-all duration-150 ${spinning ? 'text-white/70' : 'text-white'}`}>
             {displayDecade}
           </div>
         </div>
