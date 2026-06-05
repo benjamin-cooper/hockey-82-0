@@ -120,8 +120,9 @@ export default function DraftGame() {
     setLoading(true);
     try {
       const exclude = [...usedCombos, ...newRerolled];
+      const avoid = `&avoidFranchise=${phase.franchiseAbbr}`;
       const res = await fetch(
-        `/api/draft-slot?used=${exclude.join(',')}&unfilled=${unfilled.join(',')}${lock}`
+        `/api/draft-slot?used=${exclude.join(',')}&unfilled=${unfilled.join(',')}${lock}${avoid}`
       );
       if (!res.ok) throw new Error('No slots available');
       const slot = await res.json();
