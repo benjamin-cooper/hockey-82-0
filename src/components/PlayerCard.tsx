@@ -62,7 +62,16 @@ export default function PlayerCard({ player, onClick, compact }: Props) {
 
 function CompactStat({ stats }: { stats: PlayerStats }) {
   if (isGoalieStats(stats)) {
-    return <div className="text-slate-300 text-xs tabular-nums">{stats.wins}W · {stats.gaa.toFixed(2)} GAA · {stats.savePct.toFixed(3)}</div>;
+    // SV% is the goalie's "green number" — higher is better, like +/- for skaters
+    return (
+      <div className="flex items-center gap-2 text-xs tabular-nums">
+        <span className="text-slate-300">{stats.wins}W</span>
+        <span className="text-slate-500">·</span>
+        <span className="text-slate-300">{stats.gaa.toFixed(2)} GAA</span>
+        <span className="text-slate-500">·</span>
+        <span className="text-emerald-400">{stats.savePct.toFixed(3)}</span>
+      </div>
+    );
   }
   const pm = stats.plusMinus;
   const pmStr = pm > 0 ? `+${pm}` : `${pm}`;
@@ -80,11 +89,13 @@ function CompactStat({ stats }: { stats: PlayerStats }) {
 
 function StatsBlock({ stats }: { stats: PlayerStats }) {
   if (isGoalieStats(stats)) {
+    // SV% → green (higher = better); GAA → green if elite (<2.50), normal otherwise
+    const gaaGood = stats.gaa < 2.50;
     return (
       <div className="flex gap-3 flex-shrink-0">
         <Stat label="W"   value={stats.wins} />
-        <Stat label="GAA" value={stats.gaa.toFixed(2)} />
-        <Stat label="SV%" value={stats.savePct.toFixed(3)} />
+        <Stat label="GAA" value={stats.gaa.toFixed(2)} highlight={gaaGood ? 'pos' : undefined} />
+        <Stat label="SV%" value={stats.savePct.toFixed(3)} highlight="pos" />
         <Stat label="SO"  value={stats.shutouts} />
       </div>
     );
