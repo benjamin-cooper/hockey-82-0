@@ -161,7 +161,7 @@ def scrape_season(hr_abbr: str, year: int) -> tuple[list[dict], list[dict]]:
             pts = parse_int(pts_cell.text) if pts_cell else 0
             pm  = parse_int(pm_cell.text)  if pm_cell  else 0
 
-            if gp < 5 or pos not in ("C", "L", "LW", "R", "RW", "D", "F", "W"):
+            if gp < 10 or pos not in ("C", "L", "LW", "R", "RW", "D", "F", "W"):
                 continue
 
             if pos in ("F", "W", "L"):
@@ -210,7 +210,7 @@ def scrape_season(hr_abbr: str, year: int) -> tuple[list[dict], list[dict]]:
             sv  = parse_float(sv_cell.text)  if sv_cell  else 0.0
             so  = parse_int(so_cell.text)   if so_cell  else 0
 
-            if gp < 5:
+            if gp < 10:
                 continue
 
             goalies.append({
@@ -256,7 +256,7 @@ def aggregate_players(season_data: list[dict], is_goalie: bool) -> list[dict]:
 
     result = []
     for name, p in by_name.items():
-        if p["gp"] < 20:
+        if p["gp"] < 100:
             continue
         if not is_goalie:
             p["pointsPerGame"] = round(p["points"] / p["gp"], 3) if p["gp"] > 0 else 0
