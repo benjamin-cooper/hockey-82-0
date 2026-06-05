@@ -77,20 +77,24 @@ function StatsBlock({ stats }: { stats: PlayerStats }) {
       </div>
     );
   }
+  const pm = stats.plusMinus;
+  const pmStr = pm > 0 ? `+${pm}` : `${pm}`;
   return (
     <div className="flex gap-3 flex-shrink-0">
       <Stat label="G"   value={stats.goals} />
       <Stat label="A"   value={stats.assists} />
       <Stat label="PTS" value={stats.points} />
+      <Stat label="+/-" value={pmStr} highlight={pm > 0 ? 'pos' : pm < 0 ? 'neg' : undefined} />
       <Stat label="PPG" value={stats.pointsPerGame.toFixed(2)} />
     </div>
   );
 }
 
-function Stat({ label, value }: { label: string; value: string | number }) {
+function Stat({ label, value, highlight }: { label: string; value: string | number; highlight?: 'pos' | 'neg' }) {
+  const valueColor = highlight === 'pos' ? 'text-emerald-400' : highlight === 'neg' ? 'text-red-400' : 'text-white';
   return (
     <div className="text-center min-w-[2.5rem]">
-      <div className="text-white font-semibold text-sm tabular-nums">{value}</div>
+      <div className={`${valueColor} font-semibold text-sm tabular-nums`}>{value}</div>
       <div className="text-slate-500 text-[10px]">{label}</div>
     </div>
   );
