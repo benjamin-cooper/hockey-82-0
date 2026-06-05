@@ -67,25 +67,34 @@ export interface DraftSlotResult {
   spinCombos: { abbr: string; decade: string }[];
 }
 
+export interface RerollLock {
+  franchiseAbbr?: string; // lock franchise, reroll decade
+  decade?: string;        // lock decade, reroll franchise
+}
+
 /** Returns a random franchise+decade combo that:
  *  - hasn't been used yet
  *  - has at least one player for at least one unfilled position
+ *  - optionally locks franchise (reroll era) or decade (reroll team)
  *  Also returns the full set of valid combos for the spin animation.
  */
 export function randomDraftSlot(
   usedCombos: string[],
-  unfilledPositions: Position[]
+  unfilledPositions: Position[],
+  lock?: RerollLock
 ): DraftSlotResult | null {
   const players = loadPlayers();
 
-  // Build all combos that have players for at least one unfilled position
   const allValid = new Map<string, { franchiseAbbr: string; franchise: string; city: string; decade: string }>();
 
   for (const p of players) {
     const key = `${p.franchiseAbbr}-${p.decade}`;
     if (allValid.has(key)) continue;
 
-    // Check if this combo has at least one player eligible for an unfilled slot
+    // Apply lock constraints
+    if (lock?.franchiseAbbr && p.franchiseAbbr !== lock.franchiseAbbr) continue;
+    if (lock?.decade && p.decade !== lock.decade) continue;
+
     const comboPlayers = players.filter(
       q => q.franchiseAbbr === p.franchiseAbbr && q.decade === p.decade
     );
@@ -111,6 +120,7 @@ export function randomDraftSlot(
   if (available.length === 0) return null;
 
   const picked = available[Math.floor(Math.random() * available.length)];
+  // For spin animation: use lock-filtered valid combos so the reel only shows relevant options
   const spinCombos = Array.from(allValid.values()).map(c => ({ abbr: c.franchiseAbbr, decade: c.decade }));
 
   return { ...picked, spinCombos };

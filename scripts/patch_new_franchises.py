@@ -17,7 +17,7 @@ HEADERS   = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Appl
 # (game_abbr, display_name, city, {decade: hr_abbr | list[hr_abbr]})
 # list means "try all of these abbreviations for years in that decade"
 NEW_FRANCHISES = [
-    ("VGK", "Golden Knights", "Vegas",     {"2010s": "VGK", "2020s": "VGK"}),
+    ("VGK", "Golden Knights", "Vegas",     {"2010s": "VEG", "2020s": "VEG"}),
     ("SEA", "Kraken",         "Seattle",   {"2020s": "SEA"}),
     # UTA = Utah HC (2024-25 season only so far); ARI covers 2015-2024, PHX covers 1996-2014
     ("UTA", "Hockey Club",    "Utah",      {"2020s": ["UTA", "ARI"]}),

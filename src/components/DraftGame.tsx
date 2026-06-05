@@ -69,13 +69,32 @@ export default function DraftGame() {
     }
   }, [phase, unfilled]);
 
-  async function handleReroll() {
+  async function handleReroll(type: 'team' | 'era') {
     if (!phase || phase.type === 'results' || !rerollAvailable) return;
     const combo = `${phase.franchiseAbbr}-${phase.decade}`;
     const newRerolled = [...rerolledCombos, combo];
     setRerolledCombos(newRerolled);
     setRerollAvailable(false);
-    await spinNext(usedCombos, unfilled, newRerolled);
+
+    const lock = type === 'team'
+      ? `&lockDecade=${phase.decade}`         // keep era, swap franchise
+      : `&lockFranchise=${phase.franchiseAbbr}`; // keep franchise, swap era
+
+    setLoading(true);
+    try {
+      const exclude = [...usedCombos, ...newRerolled];
+      const res = await fetch(
+        `/api/draft-slot?used=${exclude.join(',')}&unfilled=${unfilled.join(',')}${lock}`
+      );
+      if (!res.ok) throw new Error('No slots available');
+      const slot = await res.json();
+      setPhase({ type: 'spinning', ...slot });
+    } catch {
+      setError('No other options available for that reroll.');
+      setPhase({ type: 'picking-player', ...phase as any }); // stay on current
+    } finally {
+      setLoading(false);
+    }
   }
 
   function handlePickPlayer(player: Player) {
@@ -194,15 +213,28 @@ export default function DraftGame() {
                   <span className="text-xs font-medium ml-2" style={{ color: teamColor }}>{phase.city}</span>
                 </div>
                 {canReroll && (
-                  <button
-                    onClick={handleReroll}
-                    disabled={loading}
-                    className="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg
-                               border border-slate-600 text-slate-300 hover:text-white hover:border-slate-400
-                               transition-colors disabled:opacity-40"
-                  >
-                    <RerollIcon /> Reroll
-                  </button>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => handleReroll('team')}
+                      disabled={loading}
+                      title="Keep this era, spin a new team"
+                      className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
+                                 text-slate-300 hover:text-white hover:border-slate-400
+                                 transition-colors disabled:opacity-40"
+                    >
+                      Team
+                    </button>
+                    <button
+                      onClick={() => handleReroll('era')}
+                      disabled={loading}
+                      title="Keep this team, spin a new era"
+                      className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-600
+                                 text-slate-300 hover:text-white hover:border-slate-400
+                                 transition-colors disabled:opacity-40"
+                    >
+                      Era
+                    </button>
+                  </div>
                 )}
               </div>
               <p className="text-slate-400 text-xs">Pick a player — then place them on the rink →</p>
@@ -254,11 +286,3 @@ export default function DraftGame() {
   );
 }
 
-function RerollIcon() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-      <path d="M3 3v5h5" />
-    </svg>
-  );
-}
