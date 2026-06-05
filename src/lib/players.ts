@@ -1,5 +1,5 @@
 import { Player, Position, FORWARD_POSITIONS, DEFENSE_POSITIONS, eligibleSlots, isGoalieStats } from '@/types';
-import { FRANCHISES } from '@/lib/franchises';
+import { FRANCHISES, ERA_AVERAGES } from '@/lib/franchises';
 import path from 'path';
 import fs from 'fs';
 
@@ -29,10 +29,18 @@ export function getPlayerById(id: number): Player | undefined {
  *  Keeps offensive production as the primary signal while surfacing
  *  two-way players and penalizing defensive liabilities. */
 function sortScore(p: Player): number {
-  if (isGoalieStats(p.stats)) return p.strengthScore;
+  if (isGoalieStats(p.stats)) {
+    // Use the same composite as the simulation engine: SV% + GAA + shutout rate.
+    // Stored strengthScore is SV%-only so two goalies with the same SV% need
+    // GAA and win rate as tiebreakers to avoid arbitrary ordering.
+    const era     = ERA_AVERAGES[p.decade] ?? ERA_AVERAGES['2010s'];
+    const svDiff  = p.stats.savePct - era.savePct;
+    const gaaGain = (era.goalsPerGame - p.stats.gaa) / era.goalsPerGame;
+    const soRate  = p.stats.shutouts / Math.max(p.stats.gp, 1);
+    const winRate = p.stats.wins    / Math.max(p.stats.gp, 1);
+    return 18 + svDiff * 250 + gaaGain * 30 + soRate * 15 + winRate * 20;
+  }
   const pmPerGame = p.stats.gp > 0 ? p.stats.plusMinus / p.stats.gp : 0;
-  // +/- per game typically ranges from ~-0.5 to +1.5 for elite D like Orr.
-  // Scale to add up to ±10 points on the 0–100 strength scale.
   return p.strengthScore + pmPerGame * 8;
 }
 
