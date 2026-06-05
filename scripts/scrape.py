@@ -256,7 +256,8 @@ def aggregate_players(season_data: list[dict], is_goalie: bool) -> list[dict]:
 
     result = []
     for name, p in by_name.items():
-        if p["gp"] < 100:
+        min_gp = 50 if is_goalie else 100
+        if p["gp"] < min_gp:
             continue
         if not is_goalie:
             p["pointsPerGame"] = round(p["points"] / p["gp"], 3) if p["gp"] > 0 else 0
@@ -410,8 +411,8 @@ def main():
                 player_id += 1
 
     print(f"\n\nTotal players scraped: {len(all_players)}")
-    with open(OUTPUT_PATH, "w") as f:
-        json.dump(all_players, f, indent=2)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(all_players, f, indent=2, ensure_ascii=False)
     print(f"Written to {OUTPUT_PATH}")
 
 

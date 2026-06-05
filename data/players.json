@@ -96,7 +96,7 @@
   },
   {
     "id": 10,
-    "name": "Jean B\u00c3\u00a9liveau",
+    "name": "Jean Béliveau",
     "initials": "JB",
     "position": "C",
     "franchise": "Canadiens",
@@ -343,7 +343,7 @@
   },
   {
     "id": 23,
-    "name": "Andr\u00c3\u00a9 Pronovost",
+    "name": "André Pronovost",
     "initials": "AP",
     "position": "LW",
     "franchise": "Canadiens",
@@ -477,7 +477,7 @@
   {
     "id": 32,
     "name": "Dollard St. Laurent",
-    "initials": "DL",
+    "initials": "DS",
     "position": "LD",
     "franchise": "Canadiens",
     "franchiseAbbr": "MTL",
@@ -626,7 +626,7 @@
   },
   {
     "id": 44,
-    "name": "Jean B\u00c3\u00a9liveau",
+    "name": "Jean Béliveau",
     "initials": "JB",
     "position": "C",
     "franchise": "Canadiens",
@@ -1006,7 +1006,7 @@
   },
   {
     "id": 74,
-    "name": "Jacques Laperri\u00c3\u00a8re",
+    "name": "Jacques Laperrière",
     "initials": "JL",
     "position": "LD",
     "franchise": "Canadiens",
@@ -1401,7 +1401,7 @@
   },
   {
     "id": 105,
-    "name": "R\u00c3\u00a9jean Houle",
+    "name": "Réjean Houle",
     "initials": "RH",
     "position": "LW",
     "franchise": "Canadiens",
@@ -1705,7 +1705,7 @@
   },
   {
     "id": 126,
-    "name": "Jacques Laperri\u00c3\u00a8re",
+    "name": "Jacques Laperrière",
     "initials": "JL",
     "position": "LD",
     "franchise": "Canadiens",
@@ -1892,8 +1892,26 @@
     "strengthScore": 63.5
   },
   {
+    "id": 138,
+    "name": "Wayne Thomas",
+    "initials": "WT",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1970s",
+    "stats": {
+      "gp": 52,
+      "wins": 31,
+      "gaa": 2.69,
+      "savePct": 0.906,
+      "shutouts": 2
+    },
+    "strengthScore": 90.4
+  },
+  {
     "id": 143,
-    "name": "Mats N\u00c3\u00a4slund",
+    "name": "Mats Näslund",
     "initials": "MN",
     "position": "LW",
     "franchise": "Canadiens",
@@ -1988,7 +2006,7 @@
   },
   {
     "id": 148,
-    "name": "R\u00c3\u00a9jean Houle",
+    "name": "Réjean Houle",
     "initials": "RH",
     "position": "LW",
     "franchise": "Canadiens",
@@ -2083,7 +2101,7 @@
   },
   {
     "id": 155,
-    "name": "St\u00c3\u00a9phane Richer",
+    "name": "Stéphane Richer",
     "initials": "SR",
     "position": "C",
     "franchise": "Canadiens",
@@ -2726,7 +2744,7 @@
   },
   {
     "id": 192,
-    "name": "Richard S\u00c3\u00a9vigny",
+    "name": "Richard Sévigny",
     "initials": "RS",
     "position": "G",
     "franchise": "Canadiens",
@@ -2741,6 +2759,60 @@
       "shutouts": 4
     },
     "strengthScore": 85.9
+  },
+  {
+    "id": 193,
+    "name": "Steve Penney",
+    "initials": "SP",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1980s",
+    "stats": {
+      "gp": 72,
+      "wins": 32,
+      "gaa": 3.41,
+      "savePct": 0.867,
+      "shutouts": 1
+    },
+    "strengthScore": 36.9
+  },
+  {
+    "id": 194,
+    "name": "Denis Herron",
+    "initials": "DH",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1980s",
+    "stats": {
+      "gp": 52,
+      "wins": 18,
+      "gaa": 3.06,
+      "savePct": 0.895,
+      "shutouts": 4
+    },
+    "strengthScore": 100
+  },
+  {
+    "id": 195,
+    "name": "Doug Soetaert",
+    "initials": "DS",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1980s",
+    "stats": {
+      "gp": 51,
+      "wins": 25,
+      "gaa": 3.12,
+      "savePct": 0.872,
+      "shutouts": 3
+    },
+    "strengthScore": 49.9
   },
   {
     "id": 197,
@@ -2763,7 +2835,7 @@
   },
   {
     "id": 198,
-    "name": "Martin Ru\u00c4\u008dinsk\u00c3\u00bd",
+    "name": "Martin Ručinský",
     "initials": "MR",
     "position": "LW",
     "franchise": "Canadiens",
@@ -2820,7 +2892,7 @@
   },
   {
     "id": 201,
-    "name": "Beno\u00c3\u00aet Brunet",
+    "name": "Benoît Brunet",
     "initials": "BB",
     "position": "LW",
     "franchise": "Canadiens",
@@ -2972,7 +3044,7 @@
   },
   {
     "id": 210,
-    "name": "St\u00c3\u00a9phane Richer",
+    "name": "Stéphane Richer",
     "initials": "SR",
     "position": "RW",
     "franchise": "Canadiens",
@@ -3105,7 +3177,7 @@
   },
   {
     "id": 219,
-    "name": "St\u00c3\u00a9phan Lebeau",
+    "name": "Stéphan Lebeau",
     "initials": "SL",
     "position": "C",
     "franchise": "Canadiens",
@@ -3276,8 +3348,8 @@
   },
   {
     "id": 228,
-    "name": "\u00c3\u0089ric Desjardins",
-    "initials": "\u00c3D",
+    "name": "Éric Desjardins",
+    "initials": "ÉD",
     "position": "RD",
     "franchise": "Canadiens",
     "franchiseAbbr": "MTL",
@@ -3314,7 +3386,7 @@
   },
   {
     "id": 230,
-    "name": "St\u00c3\u00a9phane Quintal",
+    "name": "Stéphane Quintal",
     "initials": "SQ",
     "position": "RD",
     "franchise": "Canadiens",
@@ -3576,6 +3648,42 @@
     "strengthScore": 100
   },
   {
+    "id": 250,
+    "name": "André Racicot",
+    "initials": "AR",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1990s",
+    "stats": {
+      "gp": 67,
+      "wins": 26,
+      "gaa": 3.47,
+      "savePct": 0.881,
+      "shutouts": 2
+    },
+    "strengthScore": 19.8
+  },
+  {
+    "id": 251,
+    "name": "José Théodore",
+    "initials": "JT",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "1990s",
+    "stats": {
+      "gp": 64,
+      "wins": 21,
+      "gaa": 2.88,
+      "savePct": 0.901,
+      "shutouts": 6
+    },
+    "strengthScore": 71.1
+  },
+  {
     "id": 254,
     "name": "Saku Koivu",
     "initials": "SK",
@@ -3653,7 +3761,7 @@
   },
   {
     "id": 258,
-    "name": "Jo\u00c3\u00a9 Juneau",
+    "name": "Joé Juneau",
     "initials": "JJ",
     "position": "C",
     "franchise": "Canadiens",
@@ -3729,7 +3837,7 @@
   },
   {
     "id": 262,
-    "name": "Steve B\u00c3\u00a9gin",
+    "name": "Steve Bégin",
     "initials": "SB",
     "position": "C",
     "franchise": "Canadiens",
@@ -3824,7 +3932,7 @@
   },
   {
     "id": 268,
-    "name": "Roman Hamrl\u00c3\u00adk",
+    "name": "Roman Hamrlík",
     "initials": "RH",
     "position": "LD",
     "franchise": "Canadiens",
@@ -3938,7 +4046,7 @@
   },
   {
     "id": 276,
-    "name": "Richard Zedn\u00c3\u00adk",
+    "name": "Richard Zedník",
     "initials": "RZ",
     "position": "RW",
     "franchise": "Canadiens",
@@ -4033,7 +4141,7 @@
   },
   {
     "id": 284,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Plekanec",
+    "name": "Tomáš Plekanec",
     "initials": "TP",
     "position": "LW",
     "franchise": "Canadiens",
@@ -4109,7 +4217,7 @@
   },
   {
     "id": 288,
-    "name": "Niklas Sundstr\u00c3\u00b6m",
+    "name": "Niklas Sundström",
     "initials": "NS",
     "position": "LW",
     "franchise": "Canadiens",
@@ -4204,7 +4312,7 @@
   },
   {
     "id": 298,
-    "name": "St\u00c3\u00a9phane Quintal",
+    "name": "Stéphane Quintal",
     "initials": "SQ",
     "position": "RD",
     "franchise": "Canadiens",
@@ -4223,7 +4331,7 @@
   },
   {
     "id": 299,
-    "name": "St\u00c3\u00a9phane Robidas",
+    "name": "Stéphane Robidas",
     "initials": "SR",
     "position": "RD",
     "franchise": "Canadiens",
@@ -4261,7 +4369,7 @@
   },
   {
     "id": 302,
-    "name": "Jos\u00c3\u00a9 Th\u00c3\u00a9odore",
+    "name": "José Théodore",
     "initials": "JT",
     "position": "G",
     "franchise": "Canadiens",
@@ -4315,7 +4423,7 @@
   },
   {
     "id": 305,
-    "name": "Jaroslav Hal\u00c3\u00a1k",
+    "name": "Jaroslav Halák",
     "initials": "JH",
     "position": "G",
     "franchise": "Canadiens",
@@ -4330,6 +4438,24 @@
       "shutouts": 9
     },
     "strengthScore": 91.8
+  },
+  {
+    "id": 306,
+    "name": "Jeff Hackett",
+    "initials": "JH",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "2000s",
+    "stats": {
+      "gp": 52,
+      "wins": 16,
+      "gaa": 2.98,
+      "savePct": 0.905,
+      "shutouts": 0
+    },
+    "strengthScore": 58.5
   },
   {
     "id": 309,
@@ -4523,7 +4649,7 @@
   },
   {
     "id": 319,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Plekanec",
+    "name": "Tomáš Plekanec",
     "initials": "TP",
     "position": "C",
     "franchise": "Canadiens",
@@ -4637,7 +4763,7 @@
   },
   {
     "id": 325,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Tatar",
+    "name": "Tomáš Tatar",
     "initials": "TT",
     "position": "C",
     "franchise": "Canadiens",
@@ -5072,6 +5198,42 @@
     "strengthScore": 69.1
   },
   {
+    "id": 360,
+    "name": "Mike Condon",
+    "initials": "MC",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "2010s",
+    "stats": {
+      "gp": 55,
+      "wins": 21,
+      "gaa": 2.71,
+      "savePct": 0.903,
+      "shutouts": 1
+    },
+    "strengthScore": 30.0
+  },
+  {
+    "id": 361,
+    "name": "Peter Budaj",
+    "initials": "PB",
+    "position": "G",
+    "franchise": "Canadiens",
+    "franchiseAbbr": "MTL",
+    "city": "Montreal",
+    "decade": "2010s",
+    "stats": {
+      "gp": 54,
+      "wins": 23,
+      "gaa": 2.47,
+      "savePct": 0.91,
+      "shutouts": 2
+    },
+    "strengthScore": 47.5
+  },
+  {
     "id": 365,
     "name": "Nick Suzuki",
     "initials": "NS",
@@ -5282,7 +5444,7 @@
   },
   {
     "id": 380,
-    "name": "Jesse Yl\u00c3\u00b6nen",
+    "name": "Jesse Ylönen",
     "initials": "JY",
     "position": "RW",
     "franchise": "Canadiens",
@@ -6983,6 +7145,42 @@
     "strengthScore": 63.8
   },
   {
+    "id": 509,
+    "name": "Terry Sawchuk",
+    "initials": "TS",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1960s",
+    "stats": {
+      "gp": 91,
+      "wins": 42,
+      "gaa": 2.81,
+      "savePct": 0.912,
+      "shutouts": 4
+    },
+    "strengthScore": 50.1
+  },
+  {
+    "id": 510,
+    "name": "Don Simmons",
+    "initials": "DS",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1960s",
+    "stats": {
+      "gp": 58,
+      "wins": 29,
+      "gaa": 2.71,
+      "savePct": 0.904,
+      "shutouts": 5
+    },
+    "strengthScore": 29.9
+  },
+  {
     "id": 512,
     "name": "Darryl Sittler",
     "initials": "DS",
@@ -7288,7 +7486,7 @@
   },
   {
     "id": 532,
-    "name": "B\u00c3\u00b6rje Salming",
+    "name": "Börje Salming",
     "initials": "BS",
     "position": "LD",
     "franchise": "Maple Leafs",
@@ -7592,7 +7790,7 @@
   },
   {
     "id": 553,
-    "name": "Inge Hammarstr\u00c3\u00b6m",
+    "name": "Inge Hammarström",
     "initials": "IH",
     "position": "LW",
     "franchise": "Maple Leafs",
@@ -7649,7 +7847,7 @@
   },
   {
     "id": 556,
-    "name": "Denis Dup\u00c3\u00a9r\u00c3\u00a9",
+    "name": "Denis Dupéré",
     "initials": "DD",
     "position": "LW",
     "franchise": "Maple Leafs",
@@ -7760,6 +7958,96 @@
     "strengthScore": 100
   },
   {
+    "id": 562,
+    "name": "Wayne Thomas",
+    "initials": "WT",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1970s",
+    "stats": {
+      "gp": 97,
+      "wins": 38,
+      "gaa": 3.43,
+      "savePct": 0.897,
+      "shutouts": 3
+    },
+    "strengthScore": 66.5
+  },
+  {
+    "id": 563,
+    "name": "Doug Favell",
+    "initials": "DF",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1970s",
+    "stats": {
+      "gp": 71,
+      "wins": 26,
+      "gaa": 3.45,
+      "savePct": 0.892,
+      "shutouts": 1
+    },
+    "strengthScore": 54.9
+  },
+  {
+    "id": 564,
+    "name": "Gord McRae",
+    "initials": "GM",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1970s",
+    "stats": {
+      "gp": 69,
+      "wins": 30,
+      "gaa": 3.47,
+      "savePct": 0.884,
+      "shutouts": 1
+    },
+    "strengthScore": 35.4
+  },
+  {
+    "id": 565,
+    "name": "Bernie Parent",
+    "initials": "BP",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1970s",
+    "stats": {
+      "gp": 65,
+      "wins": 24,
+      "gaa": 2.59,
+      "savePct": 0.915,
+      "shutouts": 3
+    },
+    "strengthScore": 100
+  },
+  {
+    "id": 566,
+    "name": "Paul Harrison",
+    "initials": "PH",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1970s",
+    "stats": {
+      "gp": 55,
+      "wins": 17,
+      "gaa": 4.02,
+      "savePct": 0.875,
+      "shutouts": 1
+    },
+    "strengthScore": 11.6
+  },
+  {
     "id": 568,
     "name": "Rick Vaive",
     "initials": "RV",
@@ -7780,7 +8068,7 @@
   },
   {
     "id": 569,
-    "name": "Miroslav Fry\u00c4\u008der",
+    "name": "Miroslav Fryčer",
     "initials": "MF",
     "position": "RW",
     "franchise": "Maple Leafs",
@@ -8008,7 +8296,7 @@
   },
   {
     "id": 588,
-    "name": "B\u00c3\u00b6rje Salming",
+    "name": "Börje Salming",
     "initials": "BS",
     "position": "LD",
     "franchise": "Maple Leafs",
@@ -8198,7 +8486,7 @@
   },
   {
     "id": 600,
-    "name": "Peter Ihna\u00c4\u008d\u00c3\u00a1k",
+    "name": "Peter Ihnačák",
     "initials": "PI",
     "position": "C",
     "franchise": "Maple Leafs",
@@ -8535,6 +8823,78 @@
       "shutouts": 2
     },
     "strengthScore": 47.0
+  },
+  {
+    "id": 620,
+    "name": "Mike Palmateer",
+    "initials": "MP",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1980s",
+    "stats": {
+      "gp": 87,
+      "wins": 30,
+      "gaa": 4.35,
+      "savePct": 0.862,
+      "shutouts": 0
+    },
+    "strengthScore": 25.0
+  },
+  {
+    "id": 621,
+    "name": "Michel Larocque",
+    "initials": "ML",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1980s",
+    "stats": {
+      "gp": 74,
+      "wins": 16,
+      "gaa": 4.8,
+      "savePct": 0.859,
+      "shutouts": 0
+    },
+    "strengthScore": 16.4
+  },
+  {
+    "id": 622,
+    "name": "Tim Bernhardt",
+    "initials": "TB",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1980s",
+    "stats": {
+      "gp": 60,
+      "wins": 17,
+      "gaa": 4.26,
+      "savePct": 0.868,
+      "shutouts": 0
+    },
+    "strengthScore": 41.0
+  },
+  {
+    "id": 623,
+    "name": "Jiří Crha",
+    "initials": "JC",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1980s",
+    "stats": {
+      "gp": 54,
+      "wins": 20,
+      "gaa": 4.08,
+      "savePct": 0.875,
+      "shutouts": 0
+    },
+    "strengthScore": 57.5
   },
   {
     "id": 626,
@@ -8899,7 +9259,7 @@
   },
   {
     "id": 649,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Kaberle",
+    "name": "Tomáš Kaberle",
     "initials": "TK",
     "position": "LD",
     "franchise": "Maple Leafs",
@@ -9317,7 +9677,7 @@
   },
   {
     "id": 676,
-    "name": "F\u00c3\u00a9lix Potvin",
+    "name": "Félix Potvin",
     "initials": "FP",
     "position": "G",
     "franchise": "Maple Leafs",
@@ -9350,6 +9710,60 @@
       "shutouts": 7
     },
     "strengthScore": 98.6
+  },
+  {
+    "id": 678,
+    "name": "Grant Fuhr",
+    "initials": "GF",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1990s",
+    "stats": {
+      "gp": 95,
+      "wins": 38,
+      "gaa": 3.5,
+      "savePct": 0.885,
+      "shutouts": 3
+    },
+    "strengthScore": 30.7
+  },
+  {
+    "id": 679,
+    "name": "Peter Ing",
+    "initials": "PI",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1990s",
+    "stats": {
+      "gp": 56,
+      "wins": 16,
+      "gaa": 3.84,
+      "savePct": 0.883,
+      "shutouts": 1
+    },
+    "strengthScore": 25.0
+  },
+  {
+    "id": 680,
+    "name": "Glenn Healy",
+    "initials": "GH",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "1990s",
+    "stats": {
+      "gp": 50,
+      "wins": 19,
+      "gaa": 3.0,
+      "savePct": 0.887,
+      "shutouts": 2
+    },
+    "strengthScore": 35.4
   },
   {
     "id": 683,
@@ -9505,7 +9919,7 @@
   },
   {
     "id": 693,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Kaberle",
+    "name": "Tomáš Kaberle",
     "initials": "TK",
     "position": "LD",
     "franchise": "Maple Leafs",
@@ -9809,7 +10223,7 @@
   },
   {
     "id": 715,
-    "name": "Jonas H\u00c3\u00b6glund",
+    "name": "Jonas Höglund",
     "initials": "JH",
     "position": "LW",
     "franchise": "Maple Leafs",
@@ -10088,6 +10502,24 @@
       "shutouts": 10
     },
     "strengthScore": 57.1
+  },
+  {
+    "id": 736,
+    "name": "Andrew Raycroft",
+    "initials": "AR",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "2000s",
+    "stats": {
+      "gp": 91,
+      "wins": 39,
+      "gaa": 3.18,
+      "savePct": 0.89,
+      "shutouts": 3
+    },
+    "strengthScore": 20.6
   },
   {
     "id": 741,
@@ -10377,7 +10809,7 @@
   {
     "id": 761,
     "name": "James van Riemsdyk",
-    "initials": "JR",
+    "initials": "JV",
     "position": "LW",
     "franchise": "Maple Leafs",
     "franchiseAbbr": "TOR",
@@ -10661,7 +11093,7 @@
   },
   {
     "id": 783,
-    "name": "Roman Pol\u00c3\u00a1k",
+    "name": "Roman Polák",
     "initials": "RP",
     "position": "RD",
     "franchise": "Maple Leafs",
@@ -10788,6 +11220,24 @@
       "shutouts": 6
     },
     "strengthScore": 59.1
+  },
+  {
+    "id": 794,
+    "name": "Jonas Gustavsson",
+    "initials": "JG",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "2010s",
+    "stats": {
+      "gp": 65,
+      "wins": 23,
+      "gaa": 3.05,
+      "savePct": 0.898,
+      "shutouts": 4
+    },
+    "strengthScore": 16.9
   },
   {
     "id": 799,
@@ -10924,7 +11374,7 @@
   },
   {
     "id": 808,
-    "name": "David K\u00c3\u00a4mpf",
+    "name": "David Kämpf",
     "initials": "DK",
     "position": "C",
     "franchise": "Maple Leafs",
@@ -10943,7 +11393,7 @@
   },
   {
     "id": 809,
-    "name": "Calle J\u00c3\u00a4rnkrok",
+    "name": "Calle Järnkrok",
     "initials": "CJ",
     "position": "C",
     "franchise": "Maple Leafs",
@@ -11301,6 +11751,60 @@
       "pointsPerGame": 0.317
     },
     "strengthScore": 23.8
+  },
+  {
+    "id": 842,
+    "name": "Ilya Samsonov",
+    "initials": "IS",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "2020s",
+    "stats": {
+      "gp": 82,
+      "wins": 50,
+      "gaa": 2.72,
+      "savePct": 0.905,
+      "shutouts": 7
+    },
+    "strengthScore": 47.1
+  },
+  {
+    "id": 843,
+    "name": "Joseph Woll",
+    "initials": "JW",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "2020s",
+    "stats": {
+      "gp": 74,
+      "wins": 45,
+      "gaa": 2.75,
+      "savePct": 0.911,
+      "shutouts": 1
+    },
+    "strengthScore": 61.3
+  },
+  {
+    "id": 844,
+    "name": "Jack Campbell",
+    "initials": "JC",
+    "position": "G",
+    "franchise": "Maple Leafs",
+    "franchiseAbbr": "TOR",
+    "city": "Toronto",
+    "decade": "2020s",
+    "stats": {
+      "gp": 71,
+      "wins": 48,
+      "gaa": 2.49,
+      "savePct": 0.916,
+      "shutouts": 7
+    },
+    "strengthScore": 75.4
   },
   {
     "id": 850,
@@ -11946,6 +12450,42 @@
     "strengthScore": 43.3
   },
   {
+    "id": 898,
+    "name": "Harry Lumley",
+    "initials": "HL",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1950s",
+    "stats": {
+      "gp": 77,
+      "wins": 35,
+      "gaa": 3.16,
+      "savePct": 0.904,
+      "shutouts": 6
+    },
+    "strengthScore": 9.8
+  },
+  {
+    "id": 899,
+    "name": "Jack Gelineau",
+    "initials": "JG",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1950s",
+    "stats": {
+      "gp": 70,
+      "wins": 22,
+      "gaa": 2.81,
+      "savePct": 0.0,
+      "shutouts": 4
+    },
+    "strengthScore": 0
+  },
+  {
     "id": 901,
     "name": "Johnny Bucyk",
     "initials": "JB",
@@ -12061,7 +12601,7 @@
   },
   {
     "id": 907,
-    "name": "Andr\u00c3\u00a9 Pronovost",
+    "name": "André Pronovost",
     "initials": "AP",
     "position": "LW",
     "franchise": "Bruins",
@@ -12685,6 +13225,42 @@
     "strengthScore": 36.5
   },
   {
+    "id": 950,
+    "name": "Bruce Gamble",
+    "initials": "BG",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1960s",
+    "stats": {
+      "gp": 80,
+      "wins": 18,
+      "gaa": 3.92,
+      "savePct": 0.887,
+      "shutouts": 1
+    },
+    "strengthScore": 0
+  },
+  {
+    "id": 951,
+    "name": "Bernie Parent",
+    "initials": "BP",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1960s",
+    "stats": {
+      "gp": 57,
+      "wins": 16,
+      "gaa": 3.68,
+      "savePct": 0.896,
+      "shutouts": 1
+    },
+    "strengthScore": 9.5
+  },
+  {
     "id": 955,
     "name": "Phil Esposito",
     "initials": "PE",
@@ -12838,7 +13414,7 @@
   },
   {
     "id": 963,
-    "name": "Andr\u00c3\u00a9 Savard",
+    "name": "André Savard",
     "initials": "AS",
     "position": "C",
     "franchise": "Bruins",
@@ -13442,6 +14018,24 @@
     "strengthScore": 72.2
   },
   {
+    "id": 1003,
+    "name": "Ross Brooks",
+    "initials": "RB",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1970s",
+    "stats": {
+      "gp": 54,
+      "wins": 37,
+      "gaa": 2.64,
+      "savePct": 0.903,
+      "shutouts": 4
+    },
+    "strengthScore": 81.9
+  },
+  {
     "id": 1006,
     "name": "Ray Bourque",
     "initials": "RB",
@@ -13975,7 +14569,7 @@
   },
   {
     "id": 1037,
-    "name": "Michael Thelv\u00c3\u00a9n",
+    "name": "Michael Thelvén",
     "initials": "MT",
     "position": "RD",
     "franchise": "Bruins",
@@ -14258,7 +14852,7 @@
   },
   {
     "id": 1056,
-    "name": "R\u00c3\u00a9jean Lemelin",
+    "name": "Réjean Lemelin",
     "initials": "RL",
     "position": "G",
     "franchise": "Bruins",
@@ -14273,6 +14867,60 @@
       "shutouts": 5
     },
     "strengthScore": 93.4
+  },
+  {
+    "id": 1057,
+    "name": "Andy Moog",
+    "initials": "AM",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1980s",
+    "stats": {
+      "gp": 93,
+      "wins": 46,
+      "gaa": 3.03,
+      "savePct": 0.887,
+      "shutouts": 5
+    },
+    "strengthScore": 87.0
+  },
+  {
+    "id": 1058,
+    "name": "Rogie Vachon",
+    "initials": "RV",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1980s",
+    "stats": {
+      "gp": 91,
+      "wins": 44,
+      "gaa": 3.47,
+      "savePct": 0.861,
+      "shutouts": 2
+    },
+    "strengthScore": 21.9
+  },
+  {
+    "id": 1059,
+    "name": "Marco Baron",
+    "initials": "MB",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1980s",
+    "stats": {
+      "gp": 63,
+      "wins": 31,
+      "gaa": 3.4,
+      "savePct": 0.867,
+      "shutouts": 1
+    },
+    "strengthScore": 37.1
   },
   {
     "id": 1062,
@@ -14353,7 +15001,7 @@
   {
     "id": 1066,
     "name": "Darren Van Impe",
-    "initials": "DI",
+    "initials": "DV",
     "position": "LD",
     "franchise": "Bruins",
     "franchiseAbbr": "BOS",
@@ -14523,7 +15171,7 @@
   },
   {
     "id": 1075,
-    "name": "Jo\u00c3\u00a9 Juneau",
+    "name": "Joé Juneau",
     "initials": "JJ",
     "position": "C",
     "franchise": "Bruins",
@@ -14561,7 +15209,7 @@
   },
   {
     "id": 1077,
-    "name": "Vladim\u00c3\u00adr R\u00c5\u00af\u00c5\u00bei\u00c4\u008dka",
+    "name": "Vladimír Růžička",
     "initials": "VR",
     "position": "C",
     "franchise": "Bruins",
@@ -14694,7 +15342,7 @@
   },
   {
     "id": 1084,
-    "name": "Jozef St\u00c3\u00bcmpel",
+    "name": "Jozef Stümpel",
     "initials": "JS",
     "position": "RW",
     "franchise": "Bruins",
@@ -14938,6 +15586,78 @@
     "strengthScore": 32.8
   },
   {
+    "id": 1114,
+    "name": "Robbie Tallas",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1990s",
+    "stats": {
+      "gp": 86,
+      "wins": 25,
+      "gaa": 2.89,
+      "savePct": 0.893,
+      "shutouts": 3
+    },
+    "strengthScore": 50.7
+  },
+  {
+    "id": 1115,
+    "name": "Bill Ranford",
+    "initials": "BR",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1990s",
+    "stats": {
+      "gp": 77,
+      "wins": 33,
+      "gaa": 3.15,
+      "savePct": 0.891,
+      "shutouts": 3
+    },
+    "strengthScore": 44.1
+  },
+  {
+    "id": 1116,
+    "name": "Jon Casey",
+    "initials": "JC",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1990s",
+    "stats": {
+      "gp": 57,
+      "wins": 30,
+      "gaa": 2.88,
+      "savePct": 0.881,
+      "shutouts": 4
+    },
+    "strengthScore": 20.0
+  },
+  {
+    "id": 1117,
+    "name": "Réjean Lemelin",
+    "initials": "RL",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "1990s",
+    "stats": {
+      "gp": 51,
+      "wins": 27,
+      "gaa": 3.56,
+      "savePct": 0.87,
+      "shutouts": 1
+    },
+    "strengthScore": 0
+  },
+  {
     "id": 1120,
     "name": "Joe Thornton",
     "initials": "JT",
@@ -14996,7 +15716,7 @@
   },
   {
     "id": 1123,
-    "name": "David Krej\u00c4\u008d\u00c3\u00ad",
+    "name": "David Krejčí",
     "initials": "DK",
     "position": "C",
     "franchise": "Bruins",
@@ -15015,7 +15735,7 @@
   },
   {
     "id": 1124,
-    "name": "Jozef St\u00c3\u00bcmpel",
+    "name": "Jozef Stümpel",
     "initials": "JS",
     "position": "C",
     "franchise": "Bruins",
@@ -15072,7 +15792,7 @@
   },
   {
     "id": 1129,
-    "name": "Vladim\u00c3\u00adr Sobotka",
+    "name": "Vladimír Sobotka",
     "initials": "VS",
     "position": "C",
     "franchise": "Bruins",
@@ -15395,7 +16115,7 @@
   },
   {
     "id": 1150,
-    "name": "Zdeno Ch\u00c3\u00a1ra",
+    "name": "Zdeno Chára",
     "initials": "ZC",
     "position": "LD",
     "franchise": "Bruins",
@@ -15695,6 +16415,24 @@
     "strengthScore": 63.5
   },
   {
+    "id": 1173,
+    "name": "John Grahame",
+    "initials": "JG",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "2000s",
+    "stats": {
+      "gp": 52,
+      "wins": 22,
+      "gaa": 2.94,
+      "savePct": 0.893,
+      "shutouts": 2
+    },
+    "strengthScore": 28.6
+  },
+  {
     "id": 1178,
     "name": "Brad Marchand",
     "initials": "BM",
@@ -15734,7 +16472,7 @@
   },
   {
     "id": 1180,
-    "name": "David Krej\u00c4\u008d\u00c3\u00ad",
+    "name": "David Krejčí",
     "initials": "DK",
     "position": "C",
     "franchise": "Bruins",
@@ -15829,7 +16567,7 @@
   },
   {
     "id": 1185,
-    "name": "Carl S\u00c3\u00b6derberg",
+    "name": "Carl Söderberg",
     "initials": "CS",
     "position": "C",
     "franchise": "Bruins",
@@ -15886,7 +16624,7 @@
   },
   {
     "id": 1188,
-    "name": "David Pastr\u00c5\u0088\u00c3\u00a1k",
+    "name": "David Pastrňák",
     "initials": "DP",
     "position": "RW",
     "franchise": "Bruins",
@@ -16038,7 +16776,7 @@
   },
   {
     "id": 1199,
-    "name": "Zdeno Ch\u00c3\u00a1ra",
+    "name": "Zdeno Chára",
     "initials": "ZC",
     "position": "LD",
     "franchise": "Bruins",
@@ -16396,8 +17134,44 @@
     "strengthScore": 94.6
   },
   {
+    "id": 1229,
+    "name": "Jaroslav Halák",
+    "initials": "JH",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "2010s",
+    "stats": {
+      "gp": 71,
+      "wins": 40,
+      "gaa": 2.36,
+      "savePct": 0.921,
+      "shutouts": 8
+    },
+    "strengthScore": 74.2
+  },
+  {
+    "id": 1230,
+    "name": "Anton Khudobin",
+    "initials": "AK",
+    "position": "G",
+    "franchise": "Bruins",
+    "franchiseAbbr": "BOS",
+    "city": "Boston",
+    "decade": "2010s",
+    "stats": {
+      "gp": 61,
+      "wins": 32,
+      "gaa": 2.53,
+      "savePct": 0.912,
+      "shutouts": 2
+    },
+    "strengthScore": 53.1
+  },
+  {
     "id": 1233,
-    "name": "David Pastr\u00c5\u0088\u00c3\u00a1k",
+    "name": "David Pastrňák",
     "initials": "DP",
     "position": "RW",
     "franchise": "Bruins",
@@ -16625,7 +17399,7 @@
   },
   {
     "id": 1257,
-    "name": "David Krej\u00c4\u008d\u00c3\u00ad",
+    "name": "David Krejčí",
     "initials": "DK",
     "position": "C",
     "franchise": "Bruins",
@@ -16682,7 +17456,7 @@
   },
   {
     "id": 1262,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Nosek",
+    "name": "Tomáš Nosek",
     "initials": "TN",
     "position": "C",
     "franchise": "Bruins",
@@ -17951,7 +18725,7 @@
   },
   {
     "id": 1362,
-    "name": "Andr\u00c3\u00a9 Pronovost",
+    "name": "André Pronovost",
     "initials": "AP",
     "position": "LW",
     "franchise": "Red Wings",
@@ -18097,6 +18871,24 @@
       "shutouts": 6
     },
     "strengthScore": 32.7
+  },
+  {
+    "id": 1375,
+    "name": "Hank Bassen",
+    "initials": "HB",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1960s",
+    "stats": {
+      "gp": 98,
+      "wins": 34,
+      "gaa": 2.93,
+      "savePct": 0.898,
+      "shutouts": 3
+    },
+    "strengthScore": 15.4
   },
   {
     "id": 1377,
@@ -18423,8 +19215,8 @@
   },
   {
     "id": 1395,
-    "name": "Andr\u00c3\u00a9 St. Laurent",
-    "initials": "AL",
+    "name": "André St. Laurent",
+    "initials": "AS",
     "position": "C",
     "franchise": "Red Wings",
     "franchiseAbbr": "DET",
@@ -18480,7 +19272,7 @@
   },
   {
     "id": 1398,
-    "name": "V\u00c3\u00a1clav Nedomansk\u00c3\u00bd",
+    "name": "Václav Nedomanský",
     "initials": "VN",
     "position": "RW",
     "franchise": "Red Wings",
@@ -18876,6 +19668,42 @@
     "strengthScore": 0
   },
   {
+    "id": 1429,
+    "name": "Roy Edwards",
+    "initials": "RE",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1970s",
+    "stats": {
+      "gp": 89,
+      "wins": 38,
+      "gaa": 2.96,
+      "savePct": 0.899,
+      "shutouts": 6
+    },
+    "strengthScore": 73.6
+  },
+  {
+    "id": 1430,
+    "name": "Ed Giacomin",
+    "initials": "EG",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1970s",
+    "stats": {
+      "gp": 71,
+      "wins": 23,
+      "gaa": 3.48,
+      "savePct": 0.882,
+      "shutouts": 5
+    },
+    "strengthScore": 30.0
+  },
+  {
     "id": 1435,
     "name": "Steve Yzerman",
     "initials": "SY",
@@ -19105,7 +19933,7 @@
   },
   {
     "id": 1447,
-    "name": "Petr Kl\u00c3\u00adma",
+    "name": "Petr Klíma",
     "initials": "PK",
     "position": "LW",
     "franchise": "Red Wings",
@@ -19485,7 +20313,7 @@
   },
   {
     "id": 1471,
-    "name": "V\u00c3\u00a1clav Nedomansk\u00c3\u00bd",
+    "name": "Václav Nedomanský",
     "initials": "VN",
     "position": "RW",
     "franchise": "Red Wings",
@@ -19709,6 +20537,24 @@
     "strengthScore": 10.8
   },
   {
+    "id": 1486,
+    "name": "Gilles Gilbert",
+    "initials": "GG",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1980s",
+    "stats": {
+      "gp": 95,
+      "wins": 21,
+      "gaa": 4.19,
+      "savePct": 0.858,
+      "shutouts": 0
+    },
+    "strengthScore": 13.8
+  },
+  {
     "id": 1491,
     "name": "Steve Yzerman",
     "initials": "SY",
@@ -19900,7 +20746,7 @@
   },
   {
     "id": 1501,
-    "name": "Nicklas Lidstr\u00c3\u00b6m",
+    "name": "Nicklas Lidström",
     "initials": "NL",
     "position": "LD",
     "franchise": "Red Wings",
@@ -20128,7 +20974,7 @@
   },
   {
     "id": 1515,
-    "name": "Tomas Holmstr\u00c3\u00b6m",
+    "name": "Tomas Holmström",
     "initials": "TH",
     "position": "LW",
     "franchise": "Red Wings",
@@ -20505,6 +21351,24 @@
     "strengthScore": 23.5
   },
   {
+    "id": 1543,
+    "name": "Mike Vernon",
+    "initials": "MV",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "1990s",
+    "stats": {
+      "gp": 95,
+      "wins": 53,
+      "gaa": 2.4,
+      "savePct": 0.898,
+      "shutouts": 4
+    },
+    "strengthScore": 63.6
+  },
+  {
     "id": 1547,
     "name": "Pavel Datsyuk",
     "initials": "PD",
@@ -20582,7 +21446,7 @@
   },
   {
     "id": 1551,
-    "name": "Johan Franz\u00c3\u00a9n",
+    "name": "Johan Franzén",
     "initials": "JF",
     "position": "C",
     "franchise": "Red Wings",
@@ -20620,7 +21484,7 @@
   },
   {
     "id": 1553,
-    "name": "Ji\u00c5\u0099\u00c3\u00ad Hudler",
+    "name": "Jiří Hudler",
     "initials": "JH",
     "position": "C",
     "franchise": "Red Wings",
@@ -20677,7 +21541,7 @@
   },
   {
     "id": 1557,
-    "name": "Nicklas Lidstr\u00c3\u00b6m",
+    "name": "Nicklas Lidström",
     "initials": "NL",
     "position": "LD",
     "franchise": "Red Wings",
@@ -20772,7 +21636,7 @@
   },
   {
     "id": 1562,
-    "name": "Ji\u00c5\u0099\u00c3\u00ad Fischer",
+    "name": "Jiří Fischer",
     "initials": "JF",
     "position": "LD",
     "franchise": "Red Wings",
@@ -20867,7 +21731,7 @@
   },
   {
     "id": 1568,
-    "name": "Tomas Holmstr\u00c3\u00b6m",
+    "name": "Tomas Holmström",
     "initials": "TH",
     "position": "LW",
     "franchise": "Red Wings",
@@ -21057,7 +21921,7 @@
   },
   {
     "id": 1585,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Kopeck\u00c3\u00bd",
+    "name": "Tomáš Kopecký",
     "initials": "TK",
     "position": "RW",
     "franchise": "Red Wings",
@@ -21151,7 +22015,7 @@
   },
   {
     "id": 1595,
-    "name": "Dominik Ha\u00c5\u00a1ek",
+    "name": "Dominik Hašek",
     "initials": "DH",
     "position": "G",
     "franchise": "Red Wings",
@@ -21184,6 +22048,42 @@
       "shutouts": 13
     },
     "strengthScore": 90.6
+  },
+  {
+    "id": 1597,
+    "name": "Curtis Joseph",
+    "initials": "CJ",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "2000s",
+    "stats": {
+      "gp": 92,
+      "wins": 50,
+      "gaa": 2.46,
+      "savePct": 0.911,
+      "shutouts": 7
+    },
+    "strengthScore": 72.5
+  },
+  {
+    "id": 1598,
+    "name": "Jimmy Howard",
+    "initials": "JH",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "2000s",
+    "stats": {
+      "gp": 63,
+      "wins": 37,
+      "gaa": 2.26,
+      "savePct": 0.924,
+      "shutouts": 3
+    },
+    "strengthScore": 100
   },
   {
     "id": 1600,
@@ -21244,7 +22144,7 @@
   },
   {
     "id": 1603,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Tatar",
+    "name": "Tomáš Tatar",
     "initials": "TT",
     "position": "C",
     "franchise": "Red Wings",
@@ -21282,7 +22182,7 @@
   },
   {
     "id": 1605,
-    "name": "Johan Franz\u00c3\u00a9n",
+    "name": "Johan Franzén",
     "initials": "JF",
     "position": "C",
     "franchise": "Red Wings",
@@ -21491,7 +22391,7 @@
   },
   {
     "id": 1616,
-    "name": "Tomas Holmstr\u00c3\u00b6m",
+    "name": "Tomas Holmström",
     "initials": "TH",
     "position": "LW",
     "franchise": "Red Wings",
@@ -21567,7 +22467,7 @@
   },
   {
     "id": 1623,
-    "name": "Nicklas Lidstr\u00c3\u00b6m",
+    "name": "Nicklas Lidström",
     "initials": "NL",
     "position": "LD",
     "franchise": "Red Wings",
@@ -21719,7 +22619,7 @@
   },
   {
     "id": 1633,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Jur\u00c4\u008do",
+    "name": "Tomáš Jurčo",
     "initials": "TJ",
     "position": "RW",
     "franchise": "Red Wings",
@@ -21870,7 +22770,7 @@
   },
   {
     "id": 1651,
-    "name": "Petr Mr\u00c3\u00a1zek",
+    "name": "Petr Mrázek",
     "initials": "PM",
     "position": "G",
     "franchise": "Red Wings",
@@ -21885,6 +22785,24 @@
       "shutouts": 13
     },
     "strengthScore": 55.6
+  },
+  {
+    "id": 1652,
+    "name": "Jonathan Bernier",
+    "initials": "JB",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "2010s",
+    "stats": {
+      "gp": 81,
+      "wins": 24,
+      "gaa": 3.04,
+      "savePct": 0.906,
+      "shutouts": 2
+    },
+    "strengthScore": 36.8
   },
   {
     "id": 1656,
@@ -22192,7 +23110,7 @@
   },
   {
     "id": 1679,
-    "name": "Gustav Lindstr\u00c3\u00b6m",
+    "name": "Gustav Lindström",
     "initials": "GL",
     "position": "RD",
     "franchise": "Red Wings",
@@ -22363,7 +23281,7 @@
   },
   {
     "id": 1695,
-    "name": "Olli M\u00c3\u00a4\u00c3\u00a4tt\u00c3\u00a4",
+    "name": "Olli Määttä",
     "initials": "OM",
     "position": "LD",
     "franchise": "Red Wings",
@@ -22436,6 +23354,78 @@
       "pointsPerGame": 0.217
     },
     "strengthScore": 17.1
+  },
+  {
+    "id": 1702,
+    "name": "Ville Husso",
+    "initials": "VH",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "2020s",
+    "stats": {
+      "gp": 84,
+      "wins": 36,
+      "gaa": 3.27,
+      "savePct": 0.892,
+      "shutouts": 4
+    },
+    "strengthScore": 14.7
+  },
+  {
+    "id": 1703,
+    "name": "Alex Lyon",
+    "initials": "AL",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "2020s",
+    "stats": {
+      "gp": 74,
+      "wins": 35,
+      "gaa": 2.95,
+      "savePct": 0.901,
+      "shutouts": 3
+    },
+    "strengthScore": 36.9
+  },
+  {
+    "id": 1704,
+    "name": "Alex Nedeljkovic",
+    "initials": "AN",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "2020s",
+    "stats": {
+      "gp": 74,
+      "wins": 25,
+      "gaa": 3.35,
+      "savePct": 0.9,
+      "shutouts": 4
+    },
+    "strengthScore": 34.5
+  },
+  {
+    "id": 1705,
+    "name": "Thomas Greiss",
+    "initials": "TG",
+    "position": "G",
+    "franchise": "Red Wings",
+    "franchiseAbbr": "DET",
+    "city": "Detroit",
+    "decade": "2020s",
+    "stats": {
+      "gp": 65,
+      "wins": 18,
+      "gaa": 3.16,
+      "savePct": 0.902,
+      "shutouts": 2
+    },
+    "strengthScore": 40.0
   },
   {
     "id": 1709,
@@ -22894,6 +23884,42 @@
     "strengthScore": 10.0
   },
   {
+    "id": 1751,
+    "name": "Darren Pang",
+    "initials": "DP",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "1980s",
+    "stats": {
+      "gp": 80,
+      "wins": 27,
+      "gaa": 4.08,
+      "savePct": 0.881,
+      "shutouts": 0
+    },
+    "strengthScore": 73.4
+  },
+  {
+    "id": 1752,
+    "name": "Alain Chevrier",
+    "initials": "AC",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "1980s",
+    "stats": {
+      "gp": 66,
+      "wins": 29,
+      "gaa": 3.91,
+      "savePct": 0.862,
+      "shutouts": 0
+    },
+    "strengthScore": 25.0
+  },
+  {
     "id": 1758,
     "name": "Jeremy Roenick",
     "initials": "JR",
@@ -23313,8 +24339,8 @@
   },
   {
     "id": 1788,
-    "name": "\u00c3\u0089ric Daz\u00c3\u00a9",
-    "initials": "\u00c3D",
+    "name": "Éric Dazé",
+    "initials": "ÉD",
     "position": "LW",
     "franchise": "Blackhawks",
     "franchiseAbbr": "CHI",
@@ -23370,7 +24396,7 @@
   },
   {
     "id": 1791,
-    "name": "St\u00c3\u00a9phane Matteau",
+    "name": "Stéphane Matteau",
     "initials": "SM",
     "position": "LW",
     "franchise": "Blackhawks",
@@ -23541,7 +24567,7 @@
   },
   {
     "id": 1801,
-    "name": "Franti\u00c5\u00a1ek Ku\u00c4\u008dera",
+    "name": "František Kučera",
     "initials": "FK",
     "position": "LD",
     "franchise": "Blackhawks",
@@ -23728,7 +24754,7 @@
   },
   {
     "id": 1818,
-    "name": "Martin Havl\u00c3\u00a1t",
+    "name": "Martin Havlát",
     "initials": "MH",
     "position": "RW",
     "franchise": "Blackhawks",
@@ -24108,8 +25134,8 @@
   },
   {
     "id": 1840,
-    "name": "Jaroslav \u00c5\u00a0pa\u00c4\u008dek",
-    "initials": "JP",
+    "name": "Jaroslav Špaček",
+    "initials": "JŠ",
     "position": "LD",
     "franchise": "Blackhawks",
     "franchiseAbbr": "CHI",
@@ -24184,8 +25210,8 @@
   },
   {
     "id": 1846,
-    "name": "\u00c3\u0089ric Daz\u00c3\u00a9",
-    "initials": "\u00c3D",
+    "name": "Éric Dazé",
+    "initials": "ÉD",
     "position": "LW",
     "franchise": "Blackhawks",
     "franchiseAbbr": "CHI",
@@ -24466,6 +25492,42 @@
     "strengthScore": 53.3
   },
   {
+    "id": 1868,
+    "name": "Cristobal Huet",
+    "initials": "CH",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2000s",
+    "stats": {
+      "gp": 89,
+      "wins": 46,
+      "gaa": 2.51,
+      "savePct": 0.901,
+      "shutouts": 7
+    },
+    "strengthScore": 48.6
+  },
+  {
+    "id": 1869,
+    "name": "Craig Anderson",
+    "initials": "CA",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2000s",
+    "stats": {
+      "gp": 56,
+      "wins": 12,
+      "gaa": 3.21,
+      "savePct": 0.89,
+      "shutouts": 2
+    },
+    "strengthScore": 19.8
+  },
+  {
     "id": 1874,
     "name": "Patrick Kane",
     "initials": "PK",
@@ -24486,7 +25548,7 @@
   },
   {
     "id": 1875,
-    "name": "Mari\u00c3\u00a1n Hossa",
+    "name": "Marián Hossa",
     "initials": "MH",
     "position": "RW",
     "franchise": "Blackhawks",
@@ -24524,7 +25586,7 @@
   },
   {
     "id": 1877,
-    "name": "Richard P\u00c3\u00a1nik",
+    "name": "Richard Pánik",
     "initials": "RP",
     "position": "RW",
     "franchise": "Blackhawks",
@@ -24676,7 +25738,7 @@
   },
   {
     "id": 1888,
-    "name": "Marcus Kr\u00c3\u00bcger",
+    "name": "Marcus Krüger",
     "initials": "MK",
     "position": "C",
     "franchise": "Blackhawks",
@@ -24733,7 +25795,7 @@
   },
   {
     "id": 1891,
-    "name": "David K\u00c3\u00a4mpf",
+    "name": "David Kämpf",
     "initials": "DK",
     "position": "C",
     "franchise": "Blackhawks",
@@ -24923,7 +25985,7 @@
   },
   {
     "id": 1905,
-    "name": "Michal Rozs\u00c3\u00adval",
+    "name": "Michal Rozsíval",
     "initials": "MR",
     "position": "RD",
     "franchise": "Blackhawks",
@@ -24962,7 +26024,7 @@
   {
     "id": 1907,
     "name": "Trevor van Riemsdyk",
-    "initials": "TR",
+    "initials": "TV",
     "position": "RD",
     "franchise": "Blackhawks",
     "franchiseAbbr": "CHI",
@@ -25056,7 +26118,7 @@
   },
   {
     "id": 1918,
-    "name": "Viktor St\u00c3\u00a5lberg",
+    "name": "Viktor Stålberg",
     "initials": "VS",
     "position": "LW",
     "franchise": "Blackhawks",
@@ -25075,7 +26137,7 @@
   },
   {
     "id": 1920,
-    "name": "Teuvo Ter\u00c3\u00a4v\u00c3\u00a4inen",
+    "name": "Teuvo Teräväinen",
     "initials": "TT",
     "position": "LW",
     "franchise": "Blackhawks",
@@ -25109,6 +26171,42 @@
       "shutouts": 25
     },
     "strengthScore": 66.7
+  },
+  {
+    "id": 1925,
+    "name": "Scott Darling",
+    "initials": "SD",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 75,
+      "wins": 39,
+      "gaa": 2.38,
+      "savePct": 0.923,
+      "shutouts": 4
+    },
+    "strengthScore": 79.4
+  },
+  {
+    "id": 1926,
+    "name": "Ray Emery",
+    "initials": "RE",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2010s",
+    "stats": {
+      "gp": 55,
+      "wins": 32,
+      "gaa": 2.48,
+      "savePct": 0.908,
+      "shutouts": 3
+    },
+    "strengthScore": 43.5
   },
   {
     "id": 1932,
@@ -25397,7 +26495,7 @@
   },
   {
     "id": 1955,
-    "name": "Dominik Kubal\u00c3\u00adk",
+    "name": "Dominik Kubalík",
     "initials": "DK",
     "position": "LW",
     "franchise": "Blackhawks",
@@ -25512,7 +26610,7 @@
   {
     "id": 1967,
     "name": "Calvin de Haan",
-    "initials": "CH",
+    "initials": "CD",
     "position": "LD",
     "franchise": "Blackhawks",
     "franchiseAbbr": "CHI",
@@ -25530,7 +26628,7 @@
   },
   {
     "id": 1974,
-    "name": "Petr Mr\u00c3\u00a1zek",
+    "name": "Petr Mrázek",
     "initials": "PM",
     "position": "G",
     "franchise": "Blackhawks",
@@ -25545,6 +26643,42 @@
       "shutouts": 1
     },
     "strengthScore": 31.6
+  },
+  {
+    "id": 1975,
+    "name": "Arvid Söderblom",
+    "initials": "AS",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2020s",
+    "stats": {
+      "gp": 83,
+      "wins": 17,
+      "gaa": 3.51,
+      "savePct": 0.89,
+      "shutouts": 0
+    },
+    "strengthScore": 9.9
+  },
+  {
+    "id": 1976,
+    "name": "Kevin Lankinen",
+    "initials": "KL",
+    "position": "G",
+    "franchise": "Blackhawks",
+    "franchiseAbbr": "CHI",
+    "city": "Chicago",
+    "decade": "2020s",
+    "stats": {
+      "gp": 69,
+      "wins": 25,
+      "gaa": 3.24,
+      "savePct": 0.901,
+      "shutouts": 2
+    },
+    "strengthScore": 36.6
   },
   {
     "id": 1979,
@@ -26248,6 +27382,42 @@
     "strengthScore": 0
   },
   {
+    "id": 2026,
+    "name": "Johnny Bower",
+    "initials": "JB",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1950s",
+    "stats": {
+      "gp": 75,
+      "wins": 31,
+      "gaa": 2.54,
+      "savePct": 0.0,
+      "shutouts": 5
+    },
+    "strengthScore": 0
+  },
+  {
+    "id": 2027,
+    "name": "Marcel Paille",
+    "initials": "MP",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1950s",
+    "stats": {
+      "gp": 50,
+      "wins": 17,
+      "gaa": 3.38,
+      "savePct": 0.894,
+      "shutouts": 2
+    },
+    "strengthScore": 0
+  },
+  {
     "id": 2028,
     "name": "Rod Gilbert",
     "initials": "RG",
@@ -26871,6 +28041,24 @@
       "shutouts": 5
     },
     "strengthScore": 52.6
+  },
+  {
+    "id": 2074,
+    "name": "Jacques Plante",
+    "initials": "JP",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1960s",
+    "stats": {
+      "gp": 98,
+      "wins": 32,
+      "gaa": 3.39,
+      "savePct": 0.907,
+      "shutouts": 5
+    },
+    "strengthScore": 38.3
   },
   {
     "id": 2078,
@@ -27668,6 +28856,42 @@
     "strengthScore": 82.3
   },
   {
+    "id": 2130,
+    "name": "Wayne Thomas",
+    "initials": "WT",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1970s",
+    "stats": {
+      "gp": 84,
+      "wins": 31,
+      "gaa": 3.67,
+      "savePct": 0.875,
+      "shutouts": 5
+    },
+    "strengthScore": 13.2
+  },
+  {
+    "id": 2131,
+    "name": "Doug Soetaert",
+    "initials": "DS",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1970s",
+    "stats": {
+      "gp": 51,
+      "wins": 17,
+      "gaa": 3.9,
+      "savePct": 0.875,
+      "shutouts": 1
+    },
+    "strengthScore": 13.1
+  },
+  {
     "id": 2135,
     "name": "Don Maloney",
     "initials": "DM",
@@ -27688,7 +28912,7 @@
   },
   {
     "id": 2136,
-    "name": "Tomas Sandstr\u00c3\u00b6m",
+    "name": "Tomas Sandström",
     "initials": "TS",
     "position": "LW",
     "franchise": "Rangers",
@@ -27783,7 +29007,7 @@
   },
   {
     "id": 2141,
-    "name": "Peter Sundstr\u00c3\u00b6m",
+    "name": "Peter Sundström",
     "initials": "PS",
     "position": "LW",
     "franchise": "Rangers",
@@ -28144,7 +29368,7 @@
   },
   {
     "id": 2160,
-    "name": "Andr\u00c3\u00a9 Dor\u00c3\u00a9",
+    "name": "André Doré",
     "initials": "AD",
     "position": "RD",
     "franchise": "Rangers",
@@ -28391,7 +29615,7 @@
   },
   {
     "id": 2178,
-    "name": "Ulf Dahl\u00c3\u00a9n",
+    "name": "Ulf Dahlén",
     "initials": "UD",
     "position": "RW",
     "franchise": "Rangers",
@@ -28519,6 +29743,78 @@
       "shutouts": 1
     },
     "strengthScore": 89.0
+  },
+  {
+    "id": 2187,
+    "name": "Bob Froese",
+    "initials": "BF",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 98,
+      "wins": 36,
+      "gaa": 3.64,
+      "savePct": 0.876,
+      "shutouts": 1
+    },
+    "strengthScore": 60.5
+  },
+  {
+    "id": 2188,
+    "name": "Steve Weeks",
+    "initials": "SW",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 93,
+      "wins": 42,
+      "gaa": 3.86,
+      "savePct": 0.866,
+      "shutouts": 1
+    },
+    "strengthScore": 34.3
+  },
+  {
+    "id": 2189,
+    "name": "Eddie Mio",
+    "initials": "EM",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 66,
+      "wins": 29,
+      "gaa": 3.5,
+      "savePct": 0.883,
+      "shutouts": 2
+    },
+    "strengthScore": 77.8
+  },
+  {
+    "id": 2190,
+    "name": "Doug Soetaert",
+    "initials": "DS",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 52,
+      "wins": 18,
+      "gaa": 4.25,
+      "savePct": 0.851,
+      "shutouts": 0
+    },
+    "strengthScore": 0
   },
   {
     "id": 2193,
@@ -28731,7 +30027,7 @@
   },
   {
     "id": 2207,
-    "name": "Niklas Sundstr\u00c3\u00b6m",
+    "name": "Niklas Sundström",
     "initials": "NS",
     "position": "C",
     "franchise": "Rangers",
@@ -28750,7 +30046,7 @@
   },
   {
     "id": 2208,
-    "name": "Petr Nedv\u00c4\u009bd",
+    "name": "Petr Nedvěd",
     "initials": "PN",
     "position": "C",
     "franchise": "Rangers",
@@ -29279,7 +30575,7 @@
   },
   {
     "id": 2248,
-    "name": "Jarom\u00c3\u00adr J\u00c3\u00a1gr",
+    "name": "Jaromír Jágr",
     "initials": "JJ",
     "position": "RW",
     "franchise": "Rangers",
@@ -29317,7 +30613,7 @@
   },
   {
     "id": 2250,
-    "name": "Radek Dvo\u00c5\u0099\u00c3\u00a1k",
+    "name": "Radek Dvořák",
     "initials": "RD",
     "position": "RW",
     "franchise": "Rangers",
@@ -29393,7 +30689,7 @@
   },
   {
     "id": 2258,
-    "name": "Petr Nedv\u00c4\u009bd",
+    "name": "Petr Nedvěd",
     "initials": "PN",
     "position": "C",
     "franchise": "Rangers",
@@ -29526,7 +30822,7 @@
   },
   {
     "id": 2265,
-    "name": "Bobby Hol\u00c3\u00adk",
+    "name": "Bobby Holík",
     "initials": "BH",
     "position": "C",
     "franchise": "Rangers",
@@ -29659,7 +30955,7 @@
   },
   {
     "id": 2273,
-    "name": "Marek Mal\u00c3\u00adk",
+    "name": "Marek Malík",
     "initials": "MM",
     "position": "LD",
     "franchise": "Rangers",
@@ -29754,7 +31050,7 @@
   },
   {
     "id": 2279,
-    "name": "Petr Pr\u00c5\u00afcha",
+    "name": "Petr Průcha",
     "initials": "PP",
     "position": "LW",
     "franchise": "Rangers",
@@ -29773,7 +31069,7 @@
   },
   {
     "id": 2280,
-    "name": "Martin Ru\u00c4\u008dinsk\u00c3\u00bd",
+    "name": "Martin Ručinský",
     "initials": "MR",
     "position": "LW",
     "franchise": "Rangers",
@@ -29830,7 +31126,7 @@
   },
   {
     "id": 2283,
-    "name": "Jan Hlav\u00c3\u00a1\u00c4\u008d",
+    "name": "Jan Hlaváč",
     "initials": "JH",
     "position": "LW",
     "franchise": "Rangers",
@@ -29906,7 +31202,7 @@
   },
   {
     "id": 2288,
-    "name": "Michal Rozs\u00c3\u00adval",
+    "name": "Michal Rozsíval",
     "initials": "MR",
     "position": "RD",
     "franchise": "Rangers",
@@ -30014,6 +31310,24 @@
       "shutouts": 7
     },
     "strengthScore": 65.1
+  },
+  {
+    "id": 2299,
+    "name": "Dan Blackburn",
+    "initials": "DB",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "2000s",
+    "stats": {
+      "gp": 63,
+      "wins": 20,
+      "gaa": 3.22,
+      "savePct": 0.894,
+      "shutouts": 1
+    },
+    "strengthScore": 29.8
   },
   {
     "id": 2304,
@@ -30379,7 +31693,7 @@
   {
     "id": 2327,
     "name": "Michael Del Zotto",
-    "initials": "MZ",
+    "initials": "MD",
     "position": "LD",
     "franchise": "Rangers",
     "franchiseAbbr": "NYR",
@@ -30549,7 +31863,7 @@
   },
   {
     "id": 2338,
-    "name": "Mari\u00c3\u00a1n G\u00c3\u00a1bor\u00c3\u00adk",
+    "name": "Marián Gáborík",
     "initials": "MG",
     "position": "RW",
     "franchise": "Rangers",
@@ -30701,7 +32015,7 @@
   },
   {
     "id": 2351,
-    "name": "Anton Str\u00c3\u00a5lman",
+    "name": "Anton Strålman",
     "initials": "AS",
     "position": "RD",
     "franchise": "Rangers",
@@ -30735,6 +32049,60 @@
       "shutouts": 40
     },
     "strengthScore": 68.7
+  },
+  {
+    "id": 2355,
+    "name": "Alexandar Georgiev",
+    "initials": "AG",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "2010s",
+    "stats": {
+      "gp": 77,
+      "wins": 35,
+      "gaa": 3.0,
+      "savePct": 0.913,
+      "shutouts": 4
+    },
+    "strengthScore": 54.4
+  },
+  {
+    "id": 2356,
+    "name": "Cam Talbot",
+    "initials": "CT",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "2010s",
+    "stats": {
+      "gp": 57,
+      "wins": 33,
+      "gaa": 2.0,
+      "savePct": 0.932,
+      "shutouts": 8
+    },
+    "strengthScore": 100
+  },
+  {
+    "id": 2357,
+    "name": "Antti Raanta",
+    "initials": "AR",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "2010s",
+    "stats": {
+      "gp": 55,
+      "wins": 27,
+      "gaa": 2.25,
+      "savePct": 0.921,
+      "shutouts": 5
+    },
+    "strengthScore": 74.1
   },
   {
     "id": 2359,
@@ -30776,7 +32144,7 @@
   },
   {
     "id": 2361,
-    "name": "Alexis Lafreni\u00c3\u00a8re",
+    "name": "Alexis Lafrenière",
     "initials": "AL",
     "position": "LW",
     "franchise": "Rangers",
@@ -31133,6 +32501,42 @@
       "shutouts": 21
     },
     "strengthScore": 76.1
+  },
+  {
+    "id": 2403,
+    "name": "Alexandar Georgiev",
+    "initials": "AG",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "2020s",
+    "stats": {
+      "gp": 52,
+      "wins": 23,
+      "gaa": 2.84,
+      "savePct": 0.901,
+      "shutouts": 4
+    },
+    "strengthScore": 36.4
+  },
+  {
+    "id": 2404,
+    "name": "Jonathan Quick",
+    "initials": "JQ",
+    "position": "G",
+    "franchise": "Rangers",
+    "franchiseAbbr": "NYR",
+    "city": "New York",
+    "decade": "2020s",
+    "stats": {
+      "gp": 51,
+      "wins": 29,
+      "gaa": 2.88,
+      "savePct": 0.903,
+      "shutouts": 5
+    },
+    "strengthScore": 41.3
   },
   {
     "id": 2428,
@@ -31535,7 +32939,7 @@
   },
   {
     "id": 2452,
-    "name": "Willy Lindstr\u00c3\u00b6m",
+    "name": "Willy Lindström",
     "initials": "WL",
     "position": "RW",
     "franchise": "Oilers",
@@ -31836,6 +33240,42 @@
     "strengthScore": 84.7
   },
   {
+    "id": 2478,
+    "name": "Bill Ranford",
+    "initials": "BR",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 91,
+      "wins": 42,
+      "gaa": 3.27,
+      "savePct": 0.885,
+      "shutouts": 2
+    },
+    "strengthScore": 81.5
+  },
+  {
+    "id": 2479,
+    "name": "Ron Low",
+    "initials": "RL",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1980s",
+    "stats": {
+      "gp": 53,
+      "wins": 22,
+      "gaa": 4.12,
+      "savePct": 0.866,
+      "shutouts": 0
+    },
+    "strengthScore": 34.6
+  },
+  {
     "id": 2481,
     "name": "Doug Weight",
     "initials": "DW",
@@ -31913,7 +33353,7 @@
   },
   {
     "id": 2485,
-    "name": "Josef Ber\u00c3\u00a1nek",
+    "name": "Josef Beránek",
     "initials": "JB",
     "position": "C",
     "franchise": "Oilers",
@@ -32103,7 +33543,7 @@
   },
   {
     "id": 2497,
-    "name": "Martin G\u00c3\u00a9linas",
+    "name": "Martin Gélinas",
     "initials": "MG",
     "position": "LW",
     "franchise": "Oilers",
@@ -32179,7 +33619,7 @@
   },
   {
     "id": 2511,
-    "name": "Petr Kl\u00c3\u00adma",
+    "name": "Petr Klíma",
     "initials": "PK",
     "position": "RW",
     "franchise": "Oilers",
@@ -32198,7 +33638,7 @@
   },
   {
     "id": 2512,
-    "name": "Zdeno C\u00c3\u00adger",
+    "name": "Zdeno Cíger",
     "initials": "ZC",
     "position": "RW",
     "franchise": "Oilers",
@@ -32369,7 +33809,7 @@
   },
   {
     "id": 2522,
-    "name": "Roman Hamrl\u00c3\u00adk",
+    "name": "Roman Hamrlík",
     "initials": "RH",
     "position": "LD",
     "franchise": "Oilers",
@@ -32537,6 +33977,42 @@
     "strengthScore": 72.9
   },
   {
+    "id": 2533,
+    "name": "Tommy Salo",
+    "initials": "TS",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1990s",
+    "stats": {
+      "gp": 83,
+      "wins": 35,
+      "gaa": 2.33,
+      "savePct": 0.912,
+      "shutouts": 2
+    },
+    "strengthScore": 98.2
+  },
+  {
+    "id": 2534,
+    "name": "Bob Essensa",
+    "initials": "BE",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "1990s",
+    "stats": {
+      "gp": 74,
+      "wins": 22,
+      "gaa": 2.73,
+      "savePct": 0.903,
+      "shutouts": 1
+    },
+    "strengthScore": 75.2
+  },
+  {
     "id": 2538,
     "name": "Shawn Horcoff",
     "initials": "SH",
@@ -32576,7 +34052,7 @@
   },
   {
     "id": 2540,
-    "name": "Ale\u00c5\u00a1 Hemsk\u00c3\u00bd",
+    "name": "Aleš Hemský",
     "initials": "AH",
     "position": "RW",
     "franchise": "Oilers",
@@ -32652,7 +34128,7 @@
   },
   {
     "id": 2544,
-    "name": "Radek Dvo\u00c5\u0099\u00c3\u00a1k",
+    "name": "Radek Dvořák",
     "initials": "RD",
     "position": "RW",
     "franchise": "Oilers",
@@ -33108,7 +34584,7 @@
   },
   {
     "id": 2575,
-    "name": "Marc-Andr\u00c3\u00a9 Bergeron",
+    "name": "Marc-André Bergeron",
     "initials": "MB",
     "position": "LD",
     "franchise": "Oilers",
@@ -33165,8 +34641,8 @@
   },
   {
     "id": 2578,
-    "name": "\u00c4\u00bdubom\u00c3\u00adr Vi\u00c5\u00a1\u00c5\u0088ovsk\u00c3\u00bd",
-    "initials": "\u00c4V",
+    "name": "Ľubomír Višňovský",
+    "initials": "ĽV",
     "position": "LD",
     "franchise": "Oilers",
     "franchiseAbbr": "EDM",
@@ -33222,8 +34698,8 @@
   },
   {
     "id": 2582,
-    "name": "Ladislav \u00c5\u00a0m\u00c3\u00add",
-    "initials": "LM",
+    "name": "Ladislav Šmíd",
+    "initials": "LŠ",
     "position": "LD",
     "franchise": "Oilers",
     "franchiseAbbr": "EDM",
@@ -33292,6 +34768,60 @@
       "shutouts": 5
     },
     "strengthScore": 37.3
+  },
+  {
+    "id": 2586,
+    "name": "Mathieu Garon",
+    "initials": "MG",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2000s",
+    "stats": {
+      "gp": 62,
+      "wins": 32,
+      "gaa": 2.78,
+      "savePct": 0.909,
+      "shutouts": 4
+    },
+    "strengthScore": 66.6
+  },
+  {
+    "id": 2587,
+    "name": "Jeff Deslauriers",
+    "initials": "JD",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2000s",
+    "stats": {
+      "gp": 58,
+      "wins": 20,
+      "gaa": 3.27,
+      "savePct": 0.901,
+      "shutouts": 3
+    },
+    "strengthScore": 47.5
+  },
+  {
+    "id": 2588,
+    "name": "Ty Conklin",
+    "initials": "TC",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2000s",
+    "stats": {
+      "gp": 56,
+      "wins": 25,
+      "gaa": 2.54,
+      "savePct": 0.902,
+      "shutouts": 2
+    },
+    "strengthScore": 49.3
   },
   {
     "id": 2590,
@@ -33523,7 +35053,7 @@
   },
   {
     "id": 2603,
-    "name": "Beno\u00c3\u00aet Pouliot",
+    "name": "Benoît Pouliot",
     "initials": "BP",
     "position": "LW",
     "franchise": "Oilers",
@@ -33599,7 +35129,7 @@
   },
   {
     "id": 2607,
-    "name": "Magnus P\u00c3\u00a4\u00c3\u00a4j\u00c3\u00a4rvi",
+    "name": "Magnus Pääjärvi",
     "initials": "MP",
     "position": "LW",
     "franchise": "Oilers",
@@ -33770,8 +35300,8 @@
   },
   {
     "id": 2616,
-    "name": "Ladislav \u00c5\u00a0m\u00c3\u00add",
-    "initials": "LM",
+    "name": "Ladislav Šmíd",
+    "initials": "LŠ",
     "position": "LD",
     "franchise": "Oilers",
     "franchiseAbbr": "EDM",
@@ -33846,7 +35376,7 @@
   },
   {
     "id": 2620,
-    "name": "Ale\u00c5\u00a1 Hemsk\u00c3\u00bd",
+    "name": "Aleš Hemský",
     "initials": "AH",
     "position": "RW",
     "franchise": "Oilers",
@@ -33941,7 +35471,7 @@
   },
   {
     "id": 2626,
-    "name": "Jesse Puljuj\u00c3\u00a4rvi",
+    "name": "Jesse Puljujärvi",
     "initials": "JP",
     "position": "RW",
     "franchise": "Oilers",
@@ -34183,6 +35713,60 @@
       "shutouts": 8
     },
     "strengthScore": 51.9
+  },
+  {
+    "id": 2642,
+    "name": "Nikolai Khabibulin",
+    "initials": "NK",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2010s",
+    "stats": {
+      "gp": 99,
+      "wins": 26,
+      "gaa": 2.99,
+      "savePct": 0.902,
+      "shutouts": 5
+    },
+    "strengthScore": 27.7
+  },
+  {
+    "id": 2643,
+    "name": "Mikko Koskinen",
+    "initials": "MK",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2010s",
+    "stats": {
+      "gp": 93,
+      "wins": 43,
+      "gaa": 2.86,
+      "savePct": 0.91,
+      "shutouts": 5
+    },
+    "strengthScore": 48.7
+  },
+  {
+    "id": 2644,
+    "name": "Ben Scrivens",
+    "initials": "BS",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2010s",
+    "stats": {
+      "gp": 78,
+      "wins": 24,
+      "gaa": 3.12,
+      "savePct": 0.897,
+      "shutouts": 2
+    },
+    "strengthScore": 15.0
   },
   {
     "id": 2648,
@@ -34547,7 +36131,7 @@
   },
   {
     "id": 2687,
-    "name": "Jesse Puljuj\u00c3\u00a4rvi",
+    "name": "Jesse Puljujärvi",
     "initials": "JP",
     "position": "RW",
     "franchise": "Oilers",
@@ -34619,6 +36203,60 @@
       "shutouts": 7
     },
     "strengthScore": 48.2
+  },
+  {
+    "id": 2696,
+    "name": "Mikko Koskinen",
+    "initials": "MK",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 71,
+      "wins": 40,
+      "gaa": 3.13,
+      "savePct": 0.902,
+      "shutouts": 1
+    },
+    "strengthScore": 38.8
+  },
+  {
+    "id": 2697,
+    "name": "Mike Smith",
+    "initials": "MS",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 60,
+      "wins": 37,
+      "gaa": 2.54,
+      "savePct": 0.919,
+      "shutouts": 5
+    },
+    "strengthScore": 83.2
+  },
+  {
+    "id": 2698,
+    "name": "Calvin Pickard",
+    "initials": "CP",
+    "position": "G",
+    "franchise": "Oilers",
+    "franchiseAbbr": "EDM",
+    "city": "Edmonton",
+    "decade": "2020s",
+    "stats": {
+      "gp": 59,
+      "wins": 34,
+      "gaa": 2.61,
+      "savePct": 0.904,
+      "shutouts": 1
+    },
+    "strengthScore": 43.8
   },
   {
     "id": 2700,
@@ -35662,6 +37300,78 @@
     "strengthScore": 63.7
   },
   {
+    "id": 2792,
+    "name": "Michel Plasse",
+    "initials": "MP",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1970s",
+    "stats": {
+      "gp": 75,
+      "wins": 33,
+      "gaa": 3.61,
+      "savePct": 0.889,
+      "shutouts": 2
+    },
+    "strengthScore": 48.7
+  },
+  {
+    "id": 2793,
+    "name": "Greg Millen",
+    "initials": "GM",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1970s",
+    "stats": {
+      "gp": 72,
+      "wins": 32,
+      "gaa": 3.54,
+      "savePct": 0.884,
+      "shutouts": 4
+    },
+    "strengthScore": 34.3
+  },
+  {
+    "id": 2794,
+    "name": "Dunc Wilson",
+    "initials": "DW",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1970s",
+    "stats": {
+      "gp": 66,
+      "wins": 23,
+      "gaa": 3.55,
+      "savePct": 0.886,
+      "shutouts": 5
+    },
+    "strengthScore": 39.1
+  },
+  {
+    "id": 2795,
+    "name": "Les Binkley",
+    "initials": "LB",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1970s",
+    "stats": {
+      "gp": 65,
+      "wins": 18,
+      "gaa": 3.18,
+      "savePct": 0.89,
+      "shutouts": 2
+    },
+    "strengthScore": 51.2
+  },
+  {
     "id": 2797,
     "name": "Mario Lemieux",
     "initials": "ML",
@@ -35948,7 +37658,7 @@
   },
   {
     "id": 2814,
-    "name": "Willy Lindstr\u00c3\u00b6m",
+    "name": "Willy Lindström",
     "initials": "WL",
     "position": "RW",
     "franchise": "Penguins",
@@ -36119,7 +37829,7 @@
   },
   {
     "id": 2824,
-    "name": "Ville Sir\u00c3\u00a9n",
+    "name": "Ville Sirén",
     "initials": "VS",
     "position": "LD",
     "franchise": "Penguins",
@@ -36551,8 +38261,80 @@
     "strengthScore": 63.0
   },
   {
+    "id": 2851,
+    "name": "Tom Barrasso",
+    "initials": "TB",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1980s",
+    "stats": {
+      "gp": 68,
+      "wins": 25,
+      "gaa": 4.27,
+      "savePct": 0.88,
+      "shutouts": 0
+    },
+    "strengthScore": 69.7
+  },
+  {
+    "id": 2852,
+    "name": "Wendell Young",
+    "initials": "WY",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1980s",
+    "stats": {
+      "gp": 65,
+      "wins": 28,
+      "gaa": 4.38,
+      "savePct": 0.87,
+      "shutouts": 1
+    },
+    "strengthScore": 44.0
+  },
+  {
+    "id": 2853,
+    "name": "Greg Millen",
+    "initials": "GM",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1980s",
+    "stats": {
+      "gp": 63,
+      "wins": 25,
+      "gaa": 4.17,
+      "savePct": 0.864,
+      "shutouts": 0
+    },
+    "strengthScore": 30.0
+  },
+  {
+    "id": 2854,
+    "name": "Frank Pietrangelo",
+    "initials": "FP",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1980s",
+    "stats": {
+      "gp": 57,
+      "wins": 22,
+      "gaa": 4.13,
+      "savePct": 0.873,
+      "shutouts": 1
+    },
+    "strengthScore": 52.6
+  },
+  {
     "id": 2855,
-    "name": "Jarom\u00c3\u00adr J\u00c3\u00a1gr",
+    "name": "Jaromír Jágr",
     "initials": "JJ",
     "position": "RW",
     "franchise": "Penguins",
@@ -36685,7 +38467,7 @@
   },
   {
     "id": 2862,
-    "name": "Markus N\u00c3\u00a4slund",
+    "name": "Markus Näslund",
     "initials": "MN",
     "position": "RW",
     "franchise": "Penguins",
@@ -36932,7 +38714,7 @@
   },
   {
     "id": 2876,
-    "name": "Petr Nedv\u00c4\u009bd",
+    "name": "Petr Nedvěd",
     "initials": "PN",
     "position": "LW",
     "franchise": "Penguins",
@@ -36951,7 +38733,7 @@
   },
   {
     "id": 2877,
-    "name": "Tomas Sandstr\u00c3\u00b6m",
+    "name": "Tomas Sandström",
     "initials": "TS",
     "position": "LW",
     "franchise": "Penguins",
@@ -37255,8 +39037,8 @@
   },
   {
     "id": 2897,
-    "name": "Ji\u00c5\u0099\u00c3\u00ad \u00c5\u00a0l\u00c3\u00a9gr",
-    "initials": "JL",
+    "name": "Jiří Šlégr",
+    "initials": "JŠ",
     "position": "LD",
     "franchise": "Penguins",
     "franchiseAbbr": "PIT",
@@ -37383,6 +39165,42 @@
       "shutouts": 6
     },
     "strengthScore": 59.9
+  },
+  {
+    "id": 2907,
+    "name": "Pēteris Skudra",
+    "initials": "PS",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 74,
+      "wins": 26,
+      "gaa": 2.66,
+      "savePct": 0.894,
+      "shutouts": 4
+    },
+    "strengthScore": 52.4
+  },
+  {
+    "id": 2908,
+    "name": "Jean-Sébastien Aubin",
+    "initials": "JA",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "1990s",
+    "stats": {
+      "gp": 68,
+      "wins": 27,
+      "gaa": 2.49,
+      "savePct": 0.912,
+      "shutouts": 4
+    },
+    "strengthScore": 98.7
   },
   {
     "id": 2912,
@@ -37557,7 +39375,7 @@
   },
   {
     "id": 2921,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Surov\u00c3\u00bd",
+    "name": "Tomáš Surový",
     "initials": "TS",
     "position": "C",
     "franchise": "Penguins",
@@ -37766,7 +39584,7 @@
   },
   {
     "id": 2934,
-    "name": "Dick T\u00c3\u00a4rnstr\u00c3\u00b6m",
+    "name": "Dick Tärnström",
     "initials": "DT",
     "position": "LD",
     "franchise": "Penguins",
@@ -37975,7 +39793,7 @@
   },
   {
     "id": 2946,
-    "name": "Petr S\u00c3\u00bdkora",
+    "name": "Petr Sýkora",
     "initials": "PS",
     "position": "RW",
     "franchise": "Penguins",
@@ -38051,7 +39869,7 @@
   },
   {
     "id": 2954,
-    "name": "Michal Rozs\u00c3\u00adval",
+    "name": "Michal Rozsíval",
     "initials": "MR",
     "position": "RD",
     "franchise": "Penguins",
@@ -38089,7 +39907,7 @@
   },
   {
     "id": 2961,
-    "name": "Marc-Andr\u00c3\u00a9 Fleury",
+    "name": "Marc-André Fleury",
     "initials": "MF",
     "position": "G",
     "franchise": "Penguins",
@@ -38125,7 +39943,7 @@
   },
   {
     "id": 2963,
-    "name": "Jean-S\u00c3\u00a9bastien Aubin",
+    "name": "Jean-Sébastien Aubin",
     "initials": "JA",
     "position": "G",
     "franchise": "Penguins",
@@ -38140,6 +39958,24 @@
       "shutouts": 2
     },
     "strengthScore": 29.4
+  },
+  {
+    "id": 2964,
+    "name": "Sébastien Caron",
+    "initials": "SC",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "2000s",
+    "stats": {
+      "gp": 90,
+      "wins": 24,
+      "gaa": 3.52,
+      "savePct": 0.891,
+      "shutouts": 4
+    },
+    "strengthScore": 23.1
   },
   {
     "id": 2969,
@@ -38409,7 +40245,7 @@
   },
   {
     "id": 2984,
-    "name": "Zbyn\u00c4\u009bk Mich\u00c3\u00a1lek",
+    "name": "Zbyněk Michálek",
     "initials": "ZM",
     "position": "RD",
     "franchise": "Penguins",
@@ -38618,7 +40454,7 @@
   },
   {
     "id": 3000,
-    "name": "Patric H\u00c3\u00b6rnqvist",
+    "name": "Patric Hörnqvist",
     "initials": "PH",
     "position": "RW",
     "franchise": "Penguins",
@@ -38694,7 +40530,7 @@
   },
   {
     "id": 3004,
-    "name": "Tom K\u00c3\u00bchnhackl",
+    "name": "Tom Kühnhackl",
     "initials": "TK",
     "position": "RW",
     "franchise": "Penguins",
@@ -38751,7 +40587,7 @@
   },
   {
     "id": 3010,
-    "name": "Olli M\u00c3\u00a4\u00c3\u00a4tt\u00c3\u00a4",
+    "name": "Olli Määttä",
     "initials": "OM",
     "position": "LD",
     "franchise": "Penguins",
@@ -38884,7 +40720,7 @@
   },
   {
     "id": 3019,
-    "name": "Marc-Andr\u00c3\u00a9 Fleury",
+    "name": "Marc-André Fleury",
     "initials": "MF",
     "position": "G",
     "franchise": "Penguins",
@@ -38917,6 +40753,42 @@
       "shutouts": 11
     },
     "strengthScore": 57.3
+  },
+  {
+    "id": 3021,
+    "name": "Tristan Jarry",
+    "initials": "TJ",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "2010s",
+    "stats": {
+      "gp": 59,
+      "wins": 34,
+      "gaa": 2.58,
+      "savePct": 0.915,
+      "shutouts": 5
+    },
+    "strengthScore": 60.7
+  },
+  {
+    "id": 3022,
+    "name": "Casey DeSmith",
+    "initials": "CD",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "2010s",
+    "stats": {
+      "gp": 50,
+      "wins": 21,
+      "gaa": 2.65,
+      "savePct": 0.917,
+      "shutouts": 4
+    },
+    "strengthScore": 66.0
   },
   {
     "id": 3027,
@@ -39355,8 +41227,44 @@
     "strengthScore": 53.8
   },
   {
+    "id": 3072,
+    "name": "Casey DeSmith",
+    "initials": "CD",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "2020s",
+    "stats": {
+      "gp": 84,
+      "wins": 37,
+      "gaa": 2.9,
+      "savePct": 0.909,
+      "shutouts": 5
+    },
+    "strengthScore": 58.6
+  },
+  {
+    "id": 3073,
+    "name": "Alex Nedeljkovic",
+    "initials": "AN",
+    "position": "G",
+    "franchise": "Penguins",
+    "franchiseAbbr": "PIT",
+    "city": "Pittsburgh",
+    "decade": "2020s",
+    "stats": {
+      "gp": 76,
+      "wins": 32,
+      "gaa": 3.04,
+      "savePct": 0.898,
+      "shutouts": 2
+    },
+    "strengthScore": 30.0
+  },
+  {
     "id": 3074,
-    "name": "Andr\u00c3\u00a9 Lacroix",
+    "name": "André Lacroix",
     "initials": "AL",
     "position": "C",
     "franchise": "Flyers",
@@ -39547,7 +41455,7 @@
   {
     "id": 3096,
     "name": "Ed Van Impe",
-    "initials": "EI",
+    "initials": "EV",
     "position": "LD",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -39656,6 +41564,24 @@
       "shutouts": 8
     },
     "strengthScore": 79.2
+  },
+  {
+    "id": 3109,
+    "name": "Doug Favell",
+    "initials": "DF",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1960s",
+    "stats": {
+      "gp": 73,
+      "wins": 23,
+      "gaa": 2.83,
+      "savePct": 0.92,
+      "shutouts": 6
+    },
+    "strengthScore": 70.2
   },
   {
     "id": 3110,
@@ -40172,7 +42098,7 @@
   },
   {
     "id": 3148,
-    "name": "Andr\u00c3\u00a9 Dupont",
+    "name": "André Dupont",
     "initials": "AD",
     "position": "LD",
     "franchise": "Flyers",
@@ -40249,7 +42175,7 @@
   {
     "id": 3152,
     "name": "Ed Van Impe",
-    "initials": "EI",
+    "initials": "EV",
     "position": "LD",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -40853,7 +42779,7 @@
   },
   {
     "id": 3192,
-    "name": "Miroslav Dvo\u00c5\u0099\u00c3\u00a1k",
+    "name": "Miroslav Dvořák",
     "initials": "MD",
     "position": "LD",
     "franchise": "Flyers",
@@ -41226,6 +43152,42 @@
       "shutouts": 3
     },
     "strengthScore": 76.6
+  },
+  {
+    "id": 3220,
+    "name": "Rick St. Croix",
+    "initials": "RS",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1980s",
+    "stats": {
+      "gp": 72,
+      "wins": 35,
+      "gaa": 3.27,
+      "savePct": 0.887,
+      "shutouts": 2
+    },
+    "strengthScore": 88.1
+  },
+  {
+    "id": 3221,
+    "name": "Ken Wregget",
+    "initials": "KW",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1980s",
+    "stats": {
+      "gp": 51,
+      "wins": 22,
+      "gaa": 3.42,
+      "savePct": 0.891,
+      "shutouts": 0
+    },
+    "strengthScore": 97.5
   },
   {
     "id": 3224,
@@ -41647,7 +43609,7 @@
   },
   {
     "id": 3249,
-    "name": "Josef Ber\u00c3\u00a1nek",
+    "name": "Josef Beránek",
     "initials": "JB",
     "position": "RW",
     "franchise": "Flyers",
@@ -41723,8 +43685,8 @@
   },
   {
     "id": 3254,
-    "name": "\u00c3\u0089ric Desjardins",
-    "initials": "\u00c3D",
+    "name": "Éric Desjardins",
+    "initials": "ÉD",
     "position": "RD",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -42004,8 +43966,62 @@
     "strengthScore": 77.0
   },
   {
+    "id": 3276,
+    "name": "Garth Snow",
+    "initials": "GS",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1990s",
+    "stats": {
+      "gp": 90,
+      "wins": 40,
+      "gaa": 2.6,
+      "savePct": 0.9,
+      "shutouts": 3
+    },
+    "strengthScore": 67.7
+  },
+  {
+    "id": 3277,
+    "name": "Tommy Söderström",
+    "initials": "TS",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1990s",
+    "stats": {
+      "gp": 78,
+      "wins": 26,
+      "gaa": 3.68,
+      "savePct": 0.88,
+      "shutouts": 7
+    },
+    "strengthScore": 17.0
+  },
+  {
+    "id": 3278,
+    "name": "Ken Wregget",
+    "initials": "KW",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "1990s",
+    "stats": {
+      "gp": 53,
+      "wins": 19,
+      "gaa": 3.56,
+      "savePct": 0.866,
+      "shutouts": 0
+    },
+    "strengthScore": 0
+  },
+  {
     "id": 3281,
-    "name": "Simon Gagn\u00c3\u00a9",
+    "name": "Simon Gagné",
     "initials": "SG",
     "position": "LW",
     "franchise": "Flyers",
@@ -42100,7 +44116,7 @@
   },
   {
     "id": 3287,
-    "name": "Radovan Som\u00c3\u00adk",
+    "name": "Radovan Somík",
     "initials": "RS",
     "position": "LW",
     "franchise": "Flyers",
@@ -42214,7 +44230,7 @@
   },
   {
     "id": 3295,
-    "name": "Daniel Bri\u00c3\u00a8re",
+    "name": "Daniel Brière",
     "initials": "DB",
     "position": "C",
     "franchise": "Flyers",
@@ -42233,7 +44249,7 @@
   },
   {
     "id": 3296,
-    "name": "Michal Handzu\u00c5\u00a1",
+    "name": "Michal Handzuš",
     "initials": "MH",
     "position": "C",
     "franchise": "Flyers",
@@ -42499,8 +44515,8 @@
   },
   {
     "id": 3312,
-    "name": "\u00c3\u0089ric Desjardins",
-    "initials": "\u00c3D",
+    "name": "Éric Desjardins",
+    "initials": "ÉD",
     "position": "LD",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -42537,7 +44553,7 @@
   },
   {
     "id": 3314,
-    "name": "Joni Pitk\u00c3\u00a4nen",
+    "name": "Joni Pitkänen",
     "initials": "JP",
     "position": "LD",
     "franchise": "Flyers",
@@ -42651,8 +44667,8 @@
   },
   {
     "id": 3322,
-    "name": "Roman \u00c4\u008cechm\u00c3\u00a1nek",
-    "initials": "R\u00c4",
+    "name": "Roman Čechmánek",
+    "initials": "RČ",
     "position": "G",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -42669,7 +44685,7 @@
   },
   {
     "id": 3323,
-    "name": "Antero Niittym\u00c3\u00a4ki",
+    "name": "Antero Niittymäki",
     "initials": "AN",
     "position": "G",
     "franchise": "Flyers",
@@ -42760,7 +44776,7 @@
   },
   {
     "id": 3331,
-    "name": "Jakub Vor\u00c3\u00a1\u00c4\u008dek",
+    "name": "Jakub Voráček",
     "initials": "JV",
     "position": "RW",
     "franchise": "Flyers",
@@ -42912,7 +44928,7 @@
   },
   {
     "id": 3343,
-    "name": "Daniel Bri\u00c3\u00a8re",
+    "name": "Daniel Brière",
     "initials": "DB",
     "position": "C",
     "franchise": "Flyers",
@@ -43102,7 +45118,7 @@
   },
   {
     "id": 3355,
-    "name": "Andrej Mesz\u00c3\u00a1ro\u00c5\u00a1",
+    "name": "Andrej Meszároš",
     "initials": "AM",
     "position": "LD",
     "franchise": "Flyers",
@@ -43179,7 +45195,7 @@
   {
     "id": 3359,
     "name": "Michael Del Zotto",
-    "initials": "MZ",
+    "initials": "MD",
     "position": "LD",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -43198,7 +45214,7 @@
   {
     "id": 3360,
     "name": "James van Riemsdyk",
-    "initials": "JR",
+    "initials": "JV",
     "position": "LW",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -43254,7 +45270,7 @@
   },
   {
     "id": 3364,
-    "name": "Pierre-\u00c3\u0089douard Bellemare",
+    "name": "Pierre-Édouard Bellemare",
     "initials": "PB",
     "position": "LW",
     "franchise": "Flyers",
@@ -43363,6 +45379,96 @@
       "shutouts": 4
     },
     "strengthScore": 35.9
+  },
+  {
+    "id": 3380,
+    "name": "Ilya Bryzgalov",
+    "initials": "IB",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "2010s",
+    "stats": {
+      "gp": 99,
+      "wins": 52,
+      "gaa": 2.61,
+      "savePct": 0.905,
+      "shutouts": 7
+    },
+    "strengthScore": 35.9
+  },
+  {
+    "id": 3381,
+    "name": "Michal Neuvirth",
+    "initials": "MN",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "2010s",
+    "stats": {
+      "gp": 89,
+      "wins": 39,
+      "gaa": 2.68,
+      "savePct": 0.906,
+      "shutouts": 4
+    },
+    "strengthScore": 38.2
+  },
+  {
+    "id": 3382,
+    "name": "Sergei Bobrovsky",
+    "initials": "SB",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "2010s",
+    "stats": {
+      "gp": 83,
+      "wins": 42,
+      "gaa": 2.74,
+      "savePct": 0.909,
+      "shutouts": 0
+    },
+    "strengthScore": 46.0
+  },
+  {
+    "id": 3383,
+    "name": "Carter Hart",
+    "initials": "CH",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "2010s",
+    "stats": {
+      "gp": 74,
+      "wins": 40,
+      "gaa": 2.59,
+      "savePct": 0.915,
+      "shutouts": 1
+    },
+    "strengthScore": 60.6
+  },
+  {
+    "id": 3384,
+    "name": "Ray Emery",
+    "initials": "RE",
+    "position": "G",
+    "franchise": "Flyers",
+    "franchiseAbbr": "PHI",
+    "city": "Philadelphia",
+    "decade": "2010s",
+    "stats": {
+      "gp": 59,
+      "wins": 19,
+      "gaa": 3.01,
+      "savePct": 0.898,
+      "shutouts": 2
+    },
+    "strengthScore": 18.2
   },
   {
     "id": 3386,
@@ -43519,7 +45625,7 @@
   {
     "id": 3397,
     "name": "James van Riemsdyk",
-    "initials": "JR",
+    "initials": "JV",
     "position": "LW",
     "franchise": "Flyers",
     "franchiseAbbr": "PHI",
@@ -44105,8 +46211,8 @@
   },
   {
     "id": 3455,
-    "name": "Andr\u00c3\u00a9 St. Laurent",
-    "initials": "AL",
+    "name": "André St. Laurent",
+    "initials": "AS",
     "position": "C",
     "franchise": "Islanders",
     "franchiseAbbr": "NYI",
@@ -44333,7 +46439,7 @@
   },
   {
     "id": 3472,
-    "name": "J.P. Paris\u00c3\u00a9",
+    "name": "J.P. Parisé",
     "initials": "JP",
     "position": "LW",
     "franchise": "Islanders",
@@ -44482,6 +46588,24 @@
     "strengthScore": 100
   },
   {
+    "id": 3486,
+    "name": "Gerry Desjardins",
+    "initials": "GD",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1970s",
+    "stats": {
+      "gp": 80,
+      "wins": 14,
+      "gaa": 3.98,
+      "savePct": 0.882,
+      "shutouts": 0
+    },
+    "strengthScore": 30.5
+  },
+  {
     "id": 3487,
     "name": "Bryan Trottier",
     "initials": "BT",
@@ -44540,7 +46664,7 @@
   },
   {
     "id": 3490,
-    "name": "Mikko M\u00c3\u00a4kel\u00c3\u00a4",
+    "name": "Mikko Mäkelä",
     "initials": "MM",
     "position": "C",
     "franchise": "Islanders",
@@ -45220,6 +47344,24 @@
     "strengthScore": 100
   },
   {
+    "id": 3536,
+    "name": "Mark Fitzpatrick",
+    "initials": "MF",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1980s",
+    "stats": {
+      "gp": 58,
+      "wins": 22,
+      "gaa": 3.49,
+      "savePct": 0.892,
+      "shutouts": 3
+    },
+    "strengthScore": 100
+  },
+  {
     "id": 3539,
     "name": "Derek King",
     "initials": "DK",
@@ -45240,8 +47382,8 @@
   },
   {
     "id": 3540,
-    "name": "\u00c5\u00bdigmund P\u00c3\u00a1lffy",
-    "initials": "\u00c5P",
+    "name": "Žigmund Pálffy",
+    "initials": "ŽP",
     "position": "LW",
     "franchise": "Islanders",
     "franchiseAbbr": "NYI",
@@ -45259,7 +47401,7 @@
   },
   {
     "id": 3541,
-    "name": "Beno\u00c3\u00aet Hogue",
+    "name": "Benoît Hogue",
     "initials": "BH",
     "position": "LW",
     "franchise": "Islanders",
@@ -45734,7 +47876,7 @@
   },
   {
     "id": 3571,
-    "name": "Kenny J\u00c3\u00b6nsson",
+    "name": "Kenny Jönsson",
     "initials": "KJ",
     "position": "LD",
     "franchise": "Islanders",
@@ -45978,6 +48120,96 @@
     "strengthScore": 38.5
   },
   {
+    "id": 3588,
+    "name": "Tommy Söderström",
+    "initials": "TS",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1990s",
+    "stats": {
+      "gp": 77,
+      "wins": 19,
+      "gaa": 3.61,
+      "savePct": 0.886,
+      "shutouts": 3
+    },
+    "strengthScore": 32.8
+  },
+  {
+    "id": 3589,
+    "name": "Éric Fichaud",
+    "initials": "ÉF",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1990s",
+    "stats": {
+      "gp": 75,
+      "wins": 19,
+      "gaa": 3.14,
+      "savePct": 0.9,
+      "shutouts": 1
+    },
+    "strengthScore": 66.8
+  },
+  {
+    "id": 3590,
+    "name": "Mark Fitzpatrick",
+    "initials": "MF",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1990s",
+    "stats": {
+      "gp": 69,
+      "wins": 28,
+      "gaa": 3.35,
+      "savePct": 0.888,
+      "shutouts": 0
+    },
+    "strengthScore": 38.6
+  },
+  {
+    "id": 3591,
+    "name": "Ron Hextall",
+    "initials": "RH",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1990s",
+    "stats": {
+      "gp": 65,
+      "wins": 27,
+      "gaa": 3.08,
+      "savePct": 0.898,
+      "shutouts": 5
+    },
+    "strengthScore": 62.5
+  },
+  {
+    "id": 3592,
+    "name": "Jamie McLennan",
+    "initials": "JM",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "1990s",
+    "stats": {
+      "gp": 56,
+      "wins": 17,
+      "gaa": 3.24,
+      "savePct": 0.89,
+      "shutouts": 0
+    },
+    "strengthScore": 41.8
+  },
+  {
     "id": 3594,
     "name": "Alexei Yashin",
     "initials": "AY",
@@ -46207,8 +48439,8 @@
   },
   {
     "id": 3606,
-    "name": "Miroslav \u00c5\u00a0atan",
-    "initials": "MA",
+    "name": "Miroslav Šatan",
+    "initials": "MŠ",
     "position": "RW",
     "franchise": "Islanders",
     "franchiseAbbr": "NYI",
@@ -46473,7 +48705,7 @@
   },
   {
     "id": 3624,
-    "name": "Roman Hamrl\u00c3\u00adk",
+    "name": "Roman Hamrlík",
     "initials": "RH",
     "position": "LD",
     "franchise": "Islanders",
@@ -46492,7 +48724,7 @@
   },
   {
     "id": 3625,
-    "name": "Kenny J\u00c3\u00b6nsson",
+    "name": "Kenny Jönsson",
     "initials": "KJ",
     "position": "LD",
     "franchise": "Islanders",
@@ -46625,7 +48857,7 @@
   },
   {
     "id": 3635,
-    "name": "Radek Mart\u00c3\u00adnek",
+    "name": "Radek Martínek",
     "initials": "RM",
     "position": "RD",
     "franchise": "Islanders",
@@ -46714,6 +48946,24 @@
       "shutouts": 6
     },
     "strengthScore": 55.6
+  },
+  {
+    "id": 3644,
+    "name": "Dwayne Roloson",
+    "initials": "DR",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "2000s",
+    "stats": {
+      "gp": 50,
+      "wins": 23,
+      "gaa": 3.0,
+      "savePct": 0.907,
+      "shutouts": 1
+    },
+    "strengthScore": 62.5
   },
   {
     "id": 3649,
@@ -47041,7 +49291,7 @@
   {
     "id": 3672,
     "name": "Calvin de Haan",
-    "initials": "CH",
+    "initials": "CD",
     "position": "LD",
     "franchise": "Islanders",
     "franchiseAbbr": "NYI",
@@ -47116,8 +49366,8 @@
   },
   {
     "id": 3676,
-    "name": "\u00c4\u00bdubom\u00c3\u00adr Vi\u00c5\u00a1\u00c5\u0088ovsk\u00c3\u00bd",
-    "initials": "\u00c4V",
+    "name": "Ľubomír Višňovský",
+    "initials": "ĽV",
     "position": "LD",
     "franchise": "Islanders",
     "franchiseAbbr": "NYI",
@@ -47382,7 +49632,7 @@
   },
   {
     "id": 3693,
-    "name": "Milan Jur\u00c4\u008dina",
+    "name": "Milan Jurčina",
     "initials": "MJ",
     "position": "RD",
     "franchise": "Islanders",
@@ -47419,7 +49669,7 @@
   },
   {
     "id": 3700,
-    "name": "Jaroslav Hal\u00c3\u00a1k",
+    "name": "Jaroslav Halák",
     "initials": "JH",
     "position": "G",
     "franchise": "Islanders",
@@ -47452,6 +49702,24 @@
       "shutouts": 9
     },
     "strengthScore": 46.8
+  },
+  {
+    "id": 3702,
+    "name": "Al Montoya",
+    "initials": "AM",
+    "position": "G",
+    "franchise": "Islanders",
+    "franchiseAbbr": "NYI",
+    "city": "New York",
+    "decade": "2010s",
+    "stats": {
+      "gp": 51,
+      "wins": 18,
+      "gaa": 2.83,
+      "savePct": 0.904,
+      "shutouts": 1
+    },
+    "strengthScore": 32.5
   },
   {
     "id": 3707,
@@ -47759,7 +50027,7 @@
   },
   {
     "id": 3731,
-    "name": "Simon Holmstr\u00c3\u00b6m",
+    "name": "Simon Holmström",
     "initials": "SH",
     "position": "RW",
     "franchise": "Islanders",
@@ -48023,7 +50291,7 @@
   },
   {
     "id": 3753,
-    "name": "Andr\u00c3\u00a9 Savard",
+    "name": "André Savard",
     "initials": "AS",
     "position": "C",
     "franchise": "Sabres",
@@ -48270,7 +50538,7 @@
   },
   {
     "id": 3769,
-    "name": "Ren\u00c3\u00a9 Robert",
+    "name": "René Robert",
     "initials": "RR",
     "position": "RW",
     "franchise": "Sabres",
@@ -48759,6 +51027,42 @@
     "strengthScore": 63.8
   },
   {
+    "id": 3803,
+    "name": "Bob Sauvé",
+    "initials": "BS",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "1970s",
+    "stats": {
+      "gp": 72,
+      "wins": 36,
+      "gaa": 2.93,
+      "savePct": 0.892,
+      "shutouts": 4
+    },
+    "strengthScore": 56.1
+  },
+  {
+    "id": 3804,
+    "name": "Gary Bromley",
+    "initials": "GB",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "1970s",
+    "stats": {
+      "gp": 62,
+      "wins": 29,
+      "gaa": 3.14,
+      "savePct": 0.874,
+      "shutouts": 4
+    },
+    "strengthScore": 10.4
+  },
+  {
     "id": 3807,
     "name": "Phil Housley",
     "initials": "PH",
@@ -49045,7 +51349,7 @@
   },
   {
     "id": 3822,
-    "name": "Andr\u00c3\u00a9 Savard",
+    "name": "André Savard",
     "initials": "AS",
     "position": "C",
     "franchise": "Sabres",
@@ -49368,7 +51672,7 @@
   },
   {
     "id": 3844,
-    "name": "Beno\u00c3\u00aet Hogue",
+    "name": "Benoît Hogue",
     "initials": "BH",
     "position": "LW",
     "franchise": "Sabres",
@@ -49388,7 +51692,7 @@
   {
     "id": 3847,
     "name": "John Van Boxmeer",
-    "initials": "JB",
+    "initials": "JV",
     "position": "RD",
     "franchise": "Sabres",
     "franchiseAbbr": "BUF",
@@ -49443,7 +51747,7 @@
   },
   {
     "id": 3852,
-    "name": "Bob Sauv\u00c3\u00a9",
+    "name": "Bob Sauvé",
     "initials": "BS",
     "position": "G",
     "franchise": "Sabres",
@@ -49781,8 +52085,8 @@
   },
   {
     "id": 3878,
-    "name": "Miroslav \u00c5\u00a0atan",
-    "initials": "MA",
+    "name": "Miroslav Šatan",
+    "initials": "MŠ",
     "position": "LW",
     "franchise": "Sabres",
     "franchiseAbbr": "BUF",
@@ -49800,7 +52104,7 @@
   },
   {
     "id": 3879,
-    "name": "Michal Gro\u00c5\u00a1ek",
+    "name": "Michal Grošek",
     "initials": "MG",
     "position": "LW",
     "franchise": "Sabres",
@@ -49933,7 +52237,7 @@
   },
   {
     "id": 3886,
-    "name": "V\u00c3\u00a1clav Vara\u00c4\u008fa",
+    "name": "Václav Varaďa",
     "initials": "VV",
     "position": "LW",
     "franchise": "Sabres",
@@ -49990,8 +52294,8 @@
   },
   {
     "id": 3889,
-    "name": "Richard \u00c5\u00a0mehl\u00c3\u00adk",
-    "initials": "RM",
+    "name": "Richard Šmehlík",
+    "initials": "RŠ",
     "position": "LD",
     "franchise": "Sabres",
     "franchiseAbbr": "BUF",
@@ -50218,7 +52522,7 @@
   },
   {
     "id": 3907,
-    "name": "Dominik Ha\u00c5\u00a1ek",
+    "name": "Dominik Hašek",
     "initials": "DH",
     "position": "G",
     "franchise": "Sabres",
@@ -50233,6 +52537,60 @@
       "shutouts": 44
     },
     "strengthScore": 100
+  },
+  {
+    "id": 3908,
+    "name": "Daren Puppa",
+    "initials": "DP",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "1990s",
+    "stats": {
+      "gp": 95,
+      "wins": 37,
+      "gaa": 3.61,
+      "savePct": 0.884,
+      "shutouts": 2
+    },
+    "strengthScore": 27.1
+  },
+  {
+    "id": 3909,
+    "name": "Clint Malarchuk",
+    "initials": "CM",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "1990s",
+    "stats": {
+      "gp": 66,
+      "wins": 22,
+      "gaa": 3.52,
+      "savePct": 0.889,
+      "shutouts": 1
+    },
+    "strengthScore": 40.6
+  },
+  {
+    "id": 3910,
+    "name": "Grant Fuhr",
+    "initials": "GF",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "1990s",
+    "stats": {
+      "gp": 61,
+      "wins": 24,
+      "gaa": 3.59,
+      "savePct": 0.887,
+      "shutouts": 2
+    },
+    "strengthScore": 34.5
   },
   {
     "id": 3915,
@@ -50274,7 +52632,7 @@
   },
   {
     "id": 3917,
-    "name": "Daniel Bri\u00c3\u00a8re",
+    "name": "Daniel Brière",
     "initials": "DB",
     "position": "C",
     "franchise": "Sabres",
@@ -50597,8 +52955,8 @@
   },
   {
     "id": 3937,
-    "name": "Miroslav \u00c5\u00a0atan",
-    "initials": "MA",
+    "name": "Miroslav Šatan",
+    "initials": "MŠ",
     "position": "RW",
     "franchise": "Sabres",
     "franchiseAbbr": "BUF",
@@ -50616,7 +52974,7 @@
   },
   {
     "id": 3938,
-    "name": "Ale\u00c5\u00a1 Kotal\u00c3\u00adk",
+    "name": "Aleš Kotalík",
     "initials": "AK",
     "position": "RW",
     "franchise": "Sabres",
@@ -50654,7 +53012,7 @@
   },
   {
     "id": 3940,
-    "name": "V\u00c3\u00a1clav Vara\u00c4\u008fa",
+    "name": "Václav Varaďa",
     "initials": "VV",
     "position": "RW",
     "franchise": "Sabres",
@@ -50825,8 +53183,8 @@
   },
   {
     "id": 3950,
-    "name": "Jaroslav \u00c5\u00a0pa\u00c4\u008dek",
-    "initials": "JP",
+    "name": "Jaroslav Špaček",
+    "initials": "JŠ",
     "position": "LD",
     "franchise": "Sabres",
     "franchiseAbbr": "BUF",
@@ -51029,6 +53387,42 @@
       "shutouts": 13
     },
     "strengthScore": 70.1
+  },
+  {
+    "id": 3964,
+    "name": "Dominik Hašek",
+    "initials": "DH",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "2000s",
+    "stats": {
+      "gp": 67,
+      "wins": 37,
+      "gaa": 2.11,
+      "savePct": 0.921,
+      "shutouts": 11
+    },
+    "strengthScore": 97.5
+  },
+  {
+    "id": 3965,
+    "name": "Mika Noronen",
+    "initials": "MN",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "2000s",
+    "stats": {
+      "gp": 61,
+      "wins": 19,
+      "gaa": 2.55,
+      "savePct": 0.906,
+      "shutouts": 3
+    },
+    "strengthScore": 59.0
   },
   {
     "id": 3967,
@@ -51807,6 +54201,60 @@
     "strengthScore": 47.9
   },
   {
+    "id": 4020,
+    "name": "Linus Ullmark",
+    "initials": "LU",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "2010s",
+    "stats": {
+      "gp": 96,
+      "wins": 41,
+      "gaa": 2.8,
+      "savePct": 0.912,
+      "shutouts": 3
+    },
+    "strengthScore": 51.9
+  },
+  {
+    "id": 4021,
+    "name": "Chad Johnson",
+    "initials": "CJ",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "2010s",
+    "stats": {
+      "gp": 81,
+      "wins": 32,
+      "gaa": 2.89,
+      "savePct": 0.907,
+      "shutouts": 1
+    },
+    "strengthScore": 40.3
+  },
+  {
+    "id": 4022,
+    "name": "Carter Hutton",
+    "initials": "CH",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "2010s",
+    "stats": {
+      "gp": 81,
+      "wins": 30,
+      "gaa": 3.07,
+      "savePct": 0.904,
+      "shutouts": 2
+    },
+    "strengthScore": 32.9
+  },
+  {
     "id": 4025,
     "name": "Tage Thompson",
     "initials": "TT",
@@ -52243,6 +54691,24 @@
     "strengthScore": 29.7
   },
   {
+    "id": 4070,
+    "name": "Craig Anderson",
+    "initials": "CA",
+    "position": "G",
+    "franchise": "Sabres",
+    "franchiseAbbr": "BUF",
+    "city": "Buffalo",
+    "decade": "2020s",
+    "stats": {
+      "gp": 57,
+      "wins": 28,
+      "gaa": 3.09,
+      "savePct": 0.902,
+      "shutouts": 1
+    },
+    "strengthScore": 40.0
+  },
+  {
     "id": 4076,
     "name": "Red Berenson",
     "initials": "RB",
@@ -52321,7 +54787,7 @@
   {
     "id": 4081,
     "name": "Frank St. Marseille",
-    "initials": "FM",
+    "initials": "FS",
     "position": "RW",
     "franchise": "Blues",
     "franchiseAbbr": "STL",
@@ -52565,6 +55031,24 @@
     "strengthScore": 61.4
   },
   {
+    "id": 4106,
+    "name": "Jacques Plante",
+    "initials": "JP",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1960s",
+    "stats": {
+      "gp": 69,
+      "wins": 36,
+      "gaa": 2.07,
+      "savePct": 0.93,
+      "shutouts": 10
+    },
+    "strengthScore": 94.5
+  },
+  {
     "id": 4109,
     "name": "Garry Unger",
     "initials": "GU",
@@ -52662,7 +55146,7 @@
   {
     "id": 4114,
     "name": "Frank St. Marseille",
-    "initials": "FM",
+    "initials": "FS",
     "position": "C",
     "franchise": "Blues",
     "franchiseAbbr": "STL",
@@ -52946,7 +55430,7 @@
   },
   {
     "id": 4133,
-    "name": "Inge Hammarstr\u00c3\u00b6m",
+    "name": "Inge Hammarström",
     "initials": "IH",
     "position": "LW",
     "franchise": "Blues",
@@ -53285,6 +55769,114 @@
     "strengthScore": 0
   },
   {
+    "id": 4161,
+    "name": "Wayne Stephenson",
+    "initials": "WS",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1970s",
+    "stats": {
+      "gp": 85,
+      "wins": 31,
+      "gaa": 3.08,
+      "savePct": 0.897,
+      "shutouts": 3
+    },
+    "strengthScore": 68.7
+  },
+  {
+    "id": 4162,
+    "name": "Phil Myre",
+    "initials": "PM",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1970s",
+    "stats": {
+      "gp": 83,
+      "wins": 20,
+      "gaa": 3.97,
+      "savePct": 0.874,
+      "shutouts": 2
+    },
+    "strengthScore": 10.2
+  },
+  {
+    "id": 4163,
+    "name": "Ernie Wakely",
+    "initials": "EW",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1970s",
+    "stats": {
+      "gp": 81,
+      "wins": 28,
+      "gaa": 3.02,
+      "savePct": 0.899,
+      "shutouts": 4
+    },
+    "strengthScore": 72.6
+  },
+  {
+    "id": 4164,
+    "name": "John Davidson",
+    "initials": "JD",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1970s",
+    "stats": {
+      "gp": 79,
+      "wins": 30,
+      "gaa": 3.37,
+      "savePct": 0.894,
+      "shutouts": 0
+    },
+    "strengthScore": 61.0
+  },
+  {
+    "id": 4165,
+    "name": "Mike Liut",
+    "initials": "ML",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1970s",
+    "stats": {
+      "gp": 64,
+      "wins": 32,
+      "gaa": 3.18,
+      "savePct": 0.895,
+      "shutouts": 2
+    },
+    "strengthScore": 62.5
+  },
+  {
+    "id": 4166,
+    "name": "Jacques Caron",
+    "initials": "JC",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1970s",
+    "stats": {
+      "gp": 58,
+      "wins": 22,
+      "gaa": 3.07,
+      "savePct": 0.899,
+      "shutouts": 2
+    },
+    "strengthScore": 71.4
+  },
+  {
     "id": 4167,
     "name": "Bernie Federko",
     "initials": "BF",
@@ -53476,7 +56068,7 @@
   },
   {
     "id": 4178,
-    "name": "J\u00c3\u00b6rgen Pettersson",
+    "name": "Jörgen Pettersson",
     "initials": "JP",
     "position": "LW",
     "franchise": "Blues",
@@ -54118,6 +56710,24 @@
     "strengthScore": 88.8
   },
   {
+    "id": 4220,
+    "name": "Vincent Riendeau",
+    "initials": "VR",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1980s",
+    "stats": {
+      "gp": 75,
+      "wins": 28,
+      "gaa": 3.51,
+      "savePct": 0.877,
+      "shutouts": 1
+    },
+    "strengthScore": 63.6
+  },
+  {
     "id": 4222,
     "name": "Brett Hull",
     "initials": "BH",
@@ -54347,7 +56957,7 @@
   },
   {
     "id": 4237,
-    "name": "St\u00c3\u00a9phane Matteau",
+    "name": "Stéphane Matteau",
     "initials": "SM",
     "position": "LW",
     "franchise": "Blues",
@@ -54461,7 +57071,7 @@
   },
   {
     "id": 4247,
-    "name": "St\u00c3\u00a9phane Quintal",
+    "name": "Stéphane Quintal",
     "initials": "SQ",
     "position": "RD",
     "franchise": "Blues",
@@ -54651,7 +57261,7 @@
   },
   {
     "id": 4260,
-    "name": "Michal Handzu\u00c5\u00a1",
+    "name": "Michal Handzuš",
     "initials": "MH",
     "position": "C",
     "franchise": "Blues",
@@ -54857,6 +57467,42 @@
     "strengthScore": 66.3
   },
   {
+    "id": 4274,
+    "name": "Jamie McLennan",
+    "initials": "JM",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1990s",
+    "stats": {
+      "gp": 82,
+      "wins": 38,
+      "gaa": 2.21,
+      "savePct": 0.898,
+      "shutouts": 7
+    },
+    "strengthScore": 62.9
+  },
+  {
+    "id": 4275,
+    "name": "Roman Turek",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "1990s",
+    "stats": {
+      "gp": 67,
+      "wins": 42,
+      "gaa": 1.95,
+      "savePct": 0.912,
+      "shutouts": 7
+    },
+    "strengthScore": 97.5
+  },
+  {
     "id": 4280,
     "name": "Keith Tkachuk",
     "initials": "KT",
@@ -54953,7 +57599,7 @@
   },
   {
     "id": 4285,
-    "name": "Martin Ru\u00c4\u008dinsk\u00c3\u00bd",
+    "name": "Martin Ručinský",
     "initials": "MR",
     "position": "LW",
     "franchise": "Blues",
@@ -55067,8 +57713,8 @@
   },
   {
     "id": 4293,
-    "name": "Petr \u00c4\u008caj\u00c3\u00a1nek",
-    "initials": "P\u00c4",
+    "name": "Petr Čajánek",
+    "initials": "PČ",
     "position": "C",
     "franchise": "Blues",
     "franchiseAbbr": "STL",
@@ -55390,7 +58036,7 @@
   },
   {
     "id": 4313,
-    "name": "Roman Pol\u00c3\u00a1k",
+    "name": "Roman Polák",
     "initials": "RP",
     "position": "RD",
     "franchise": "Blues",
@@ -55523,7 +58169,7 @@
   },
   {
     "id": 4324,
-    "name": "Christian B\u00c3\u00a4ckman",
+    "name": "Christian Bäckman",
     "initials": "CB",
     "position": "LD",
     "franchise": "Blues",
@@ -55671,6 +58317,78 @@
     "strengthScore": 81.1
   },
   {
+    "id": 4333,
+    "name": "Chris Osgood",
+    "initials": "CO",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2000s",
+    "stats": {
+      "gp": 76,
+      "wins": 35,
+      "gaa": 2.34,
+      "savePct": 0.907,
+      "shutouts": 5
+    },
+    "strengthScore": 63.5
+  },
+  {
+    "id": 4334,
+    "name": "Curtis Sanford",
+    "initials": "CS",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2000s",
+    "stats": {
+      "gp": 73,
+      "wins": 26,
+      "gaa": 2.8,
+      "savePct": 0.9,
+      "shutouts": 4
+    },
+    "strengthScore": 44.9
+  },
+  {
+    "id": 4335,
+    "name": "Fred Brathwaite",
+    "initials": "FB",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2000s",
+    "stats": {
+      "gp": 55,
+      "wins": 21,
+      "gaa": 2.52,
+      "savePct": 0.891,
+      "shutouts": 4
+    },
+    "strengthScore": 23.0
+  },
+  {
+    "id": 4336,
+    "name": "Roman Turek",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2000s",
+    "stats": {
+      "gp": 54,
+      "wins": 24,
+      "gaa": 2.28,
+      "savePct": 0.901,
+      "shutouts": 6
+    },
+    "strengthScore": 47.5
+  },
+  {
     "id": 4338,
     "name": "Alex Pietrangelo",
     "initials": "AP",
@@ -55729,7 +58447,7 @@
   },
   {
     "id": 4341,
-    "name": "Roman Pol\u00c3\u00a1k",
+    "name": "Roman Polák",
     "initials": "RP",
     "position": "RD",
     "franchise": "Blues",
@@ -55843,7 +58561,7 @@
   },
   {
     "id": 4350,
-    "name": "Dmitrij Ja\u00c5\u00a1kin",
+    "name": "Dmitrij Jaškin",
     "initials": "DJ",
     "position": "RW",
     "franchise": "Blues",
@@ -56052,7 +58770,7 @@
   },
   {
     "id": 4363,
-    "name": "Vladim\u00c3\u00adr Sobotka",
+    "name": "Vladimír Sobotka",
     "initials": "VS",
     "position": "C",
     "franchise": "Blues",
@@ -56071,7 +58789,7 @@
   },
   {
     "id": 4364,
-    "name": "Jori Lehter\u00c3\u00a4",
+    "name": "Jori Lehterä",
     "initials": "JL",
     "position": "C",
     "franchise": "Blues",
@@ -56147,7 +58865,7 @@
   },
   {
     "id": 4368,
-    "name": "Magnus P\u00c3\u00a4\u00c3\u00a4j\u00c3\u00a4rvi",
+    "name": "Magnus Pääjärvi",
     "initials": "MP",
     "position": "LW",
     "franchise": "Blues",
@@ -56335,7 +59053,7 @@
   },
   {
     "id": 4387,
-    "name": "Jaroslav Hal\u00c3\u00a1k",
+    "name": "Jaroslav Halák",
     "initials": "JH",
     "position": "G",
     "franchise": "Blues",
@@ -56350,6 +59068,42 @@
       "shutouts": 20
     },
     "strengthScore": 60.7
+  },
+  {
+    "id": 4388,
+    "name": "Jordan Binnington",
+    "initials": "JB",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2010s",
+    "stats": {
+      "gp": 82,
+      "wins": 54,
+      "gaa": 2.3,
+      "savePct": 0.918,
+      "shutouts": 8
+    },
+    "strengthScore": 67.1
+  },
+  {
+    "id": 4389,
+    "name": "Carter Hutton",
+    "initials": "CH",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2010s",
+    "stats": {
+      "gp": 62,
+      "wins": 30,
+      "gaa": 2.24,
+      "savePct": 0.922,
+      "shutouts": 7
+    },
+    "strengthScore": 78.2
   },
   {
     "id": 4391,
@@ -56788,6 +59542,42 @@
     "strengthScore": 43.2
   },
   {
+    "id": 4431,
+    "name": "Joel Hofer",
+    "initials": "JH",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2020s",
+    "stats": {
+      "gp": 67,
+      "wins": 34,
+      "gaa": 2.7,
+      "savePct": 0.908,
+      "shutouts": 2
+    },
+    "strengthScore": 55.3
+  },
+  {
+    "id": 4432,
+    "name": "Ville Husso",
+    "initials": "VH",
+    "position": "G",
+    "franchise": "Blues",
+    "franchiseAbbr": "STL",
+    "city": "St. Louis",
+    "decade": "2020s",
+    "stats": {
+      "gp": 57,
+      "wins": 34,
+      "gaa": 2.75,
+      "savePct": 0.911,
+      "shutouts": 3
+    },
+    "strengthScore": 63.1
+  },
+  {
     "id": 4434,
     "name": "Don Lever",
     "initials": "DL",
@@ -56808,7 +59598,7 @@
   },
   {
     "id": 4435,
-    "name": "Andr\u00c3\u00a9 Boudrias",
+    "name": "André Boudrias",
     "initials": "AB",
     "position": "C",
     "franchise": "Canucks",
@@ -57622,6 +60412,96 @@
     "strengthScore": 30.7
   },
   {
+    "id": 4486,
+    "name": "Curt Ridley",
+    "initials": "CR",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1970s",
+    "stats": {
+      "gp": 96,
+      "wins": 25,
+      "gaa": 3.81,
+      "savePct": 0.873,
+      "shutouts": 1
+    },
+    "strengthScore": 8.4
+  },
+  {
+    "id": 4487,
+    "name": "Cesare Maniago",
+    "initials": "CM",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1970s",
+    "stats": {
+      "gp": 93,
+      "wins": 27,
+      "gaa": 3.69,
+      "savePct": 0.882,
+      "shutouts": 2
+    },
+    "strengthScore": 30.3
+  },
+  {
+    "id": 4488,
+    "name": "Glen Hanlon",
+    "initials": "GH",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1970s",
+    "stats": {
+      "gp": 88,
+      "wins": 29,
+      "gaa": 3.35,
+      "savePct": 0.888,
+      "shutouts": 3
+    },
+    "strengthScore": 45.7
+  },
+  {
+    "id": 4489,
+    "name": "Ken Lockett",
+    "initials": "KL",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1970s",
+    "stats": {
+      "gp": 55,
+      "wins": 13,
+      "gaa": 3.34,
+      "savePct": 0.889,
+      "shutouts": 2
+    },
+    "strengthScore": 48.2
+  },
+  {
+    "id": 4490,
+    "name": "Gary Bromley",
+    "initials": "GB",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1970s",
+    "stats": {
+      "gp": 53,
+      "wins": 19,
+      "gaa": 3.58,
+      "savePct": 0.878,
+      "shutouts": 3
+    },
+    "strengthScore": 20.9
+  },
+  {
     "id": 4492,
     "name": "Stan Smyl",
     "initials": "SS",
@@ -57661,7 +60541,7 @@
   },
   {
     "id": 4494,
-    "name": "Patrik Sundstr\u00c3\u00b6m",
+    "name": "Patrik Sundström",
     "initials": "PS",
     "position": "RW",
     "franchise": "Canucks",
@@ -58174,7 +61054,7 @@
   },
   {
     "id": 4525,
-    "name": "Ji\u00c5\u0099\u00c3\u00ad Bubla",
+    "name": "Jiří Bubla",
     "initials": "JB",
     "position": "RD",
     "franchise": "Canucks",
@@ -58474,6 +61354,42 @@
     "strengthScore": 18.7
   },
   {
+    "id": 4545,
+    "name": "Steve Weeks",
+    "initials": "SW",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1980s",
+    "stats": {
+      "gp": 65,
+      "wins": 19,
+      "gaa": 3.41,
+      "savePct": 0.886,
+      "shutouts": 0
+    },
+    "strengthScore": 83.8
+  },
+  {
+    "id": 4546,
+    "name": "John Garrett",
+    "initials": "JG",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1980s",
+    "stats": {
+      "gp": 56,
+      "wins": 22,
+      "gaa": 4.23,
+      "savePct": 0.861,
+      "shutouts": 1
+    },
+    "strengthScore": 23.3
+  },
+  {
     "id": 4550,
     "name": "Pavel Bure",
     "initials": "PB",
@@ -58532,7 +61448,7 @@
   },
   {
     "id": 4553,
-    "name": "Martin G\u00c3\u00a9linas",
+    "name": "Martin Gélinas",
     "initials": "MG",
     "position": "RW",
     "franchise": "Canucks",
@@ -58703,7 +61619,7 @@
   },
   {
     "id": 4562,
-    "name": "Petr Nedv\u00c4\u009bd",
+    "name": "Petr Nedvěd",
     "initials": "PN",
     "position": "C",
     "franchise": "Canucks",
@@ -58874,8 +61790,8 @@
   },
   {
     "id": 4575,
-    "name": "Mattias \u00c3\u0096hlund",
-    "initials": "M\u00c3",
+    "name": "Mattias Öhlund",
+    "initials": "MÖ",
     "position": "LD",
     "franchise": "Canucks",
     "franchiseAbbr": "VAN",
@@ -58893,8 +61809,8 @@
   },
   {
     "id": 4576,
-    "name": "Ji\u00c5\u0099\u00c3\u00ad \u00c5\u00a0l\u00c3\u00a9gr",
-    "initials": "JL",
+    "name": "Jiří Šlégr",
+    "initials": "JŠ",
     "position": "LD",
     "franchise": "Canucks",
     "franchiseAbbr": "VAN",
@@ -58988,7 +61904,7 @@
   },
   {
     "id": 4582,
-    "name": "Markus N\u00c3\u00a4slund",
+    "name": "Markus Näslund",
     "initials": "MN",
     "position": "LW",
     "franchise": "Canucks",
@@ -59288,6 +62204,42 @@
     "strengthScore": 59.7
   },
   {
+    "id": 4603,
+    "name": "Kay Whitmore",
+    "initials": "KW",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1990s",
+    "stats": {
+      "gp": 74,
+      "wins": 36,
+      "gaa": 3.42,
+      "savePct": 0.877,
+      "shutouts": 1
+    },
+    "strengthScore": 9.1
+  },
+  {
+    "id": 4604,
+    "name": "Troy Gamble",
+    "initials": "TG",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "1990s",
+    "stats": {
+      "gp": 66,
+      "wins": 20,
+      "gaa": 3.71,
+      "savePct": 0.873,
+      "shutouts": 1
+    },
+    "strengthScore": 0.6
+  },
+  {
     "id": 4608,
     "name": "Henrik Sedin",
     "initials": "HS",
@@ -59422,7 +62374,7 @@
   },
   {
     "id": 4618,
-    "name": "Markus N\u00c3\u00a4slund",
+    "name": "Markus Näslund",
     "initials": "MN",
     "position": "RW",
     "franchise": "Canucks",
@@ -59669,8 +62621,8 @@
   },
   {
     "id": 4638,
-    "name": "Mattias \u00c3\u0096hlund",
-    "initials": "M\u00c3",
+    "name": "Mattias Öhlund",
+    "initials": "MÖ",
     "position": "LD",
     "franchise": "Canucks",
     "franchiseAbbr": "VAN",
@@ -59745,7 +62697,7 @@
   },
   {
     "id": 4643,
-    "name": "Marek Mal\u00c3\u00adk",
+    "name": "Marek Malík",
     "initials": "MM",
     "position": "LD",
     "franchise": "Canucks",
@@ -59783,7 +62735,7 @@
   },
   {
     "id": 4645,
-    "name": "Luk\u00c3\u00a1\u00c5\u00a1 Kraj\u00c3\u00ad\u00c4\u008dek",
+    "name": "Lukáš Krajíček",
     "initials": "LK",
     "position": "LD",
     "franchise": "Canucks",
@@ -59930,6 +62882,24 @@
       "shutouts": 14
     },
     "strengthScore": 58.9
+  },
+  {
+    "id": 4660,
+    "name": "Alex Auld",
+    "initials": "AA",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "2000s",
+    "stats": {
+      "gp": 80,
+      "wins": 38,
+      "gaa": 2.75,
+      "savePct": 0.907,
+      "shutouts": 1
+    },
+    "strengthScore": 63.2
   },
   {
     "id": 4666,
@@ -60390,7 +63360,7 @@
   {
     "id": 4695,
     "name": "Michael Del Zotto",
-    "initials": "MZ",
+    "initials": "MD",
     "position": "LD",
     "franchise": "Canucks",
     "franchiseAbbr": "VAN",
@@ -60693,7 +63663,7 @@
   },
   {
     "id": 4716,
-    "name": "Jacob Markstr\u00c3\u00b6m",
+    "name": "Jacob Markström",
     "initials": "JM",
     "position": "G",
     "franchise": "Canucks",
@@ -60744,6 +63714,42 @@
       "shutouts": 10
     },
     "strengthScore": 57.0
+  },
+  {
+    "id": 4719,
+    "name": "Cory Schneider",
+    "initials": "CS",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "2010s",
+    "stats": {
+      "gp": 88,
+      "wins": 53,
+      "gaa": 2.09,
+      "savePct": 0.931,
+      "shutouts": 9
+    },
+    "strengthScore": 100
+  },
+  {
+    "id": 4720,
+    "name": "Eddie Läck",
+    "initials": "EL",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "2010s",
+    "stats": {
+      "gp": 82,
+      "wins": 34,
+      "gaa": 2.43,
+      "savePct": 0.917,
+      "shutouts": 6
+    },
+    "strengthScore": 63.8
   },
   {
     "id": 4723,
@@ -60842,8 +63848,8 @@
   },
   {
     "id": 4728,
-    "name": "Nils \u00c3\u0085man",
-    "initials": "NM",
+    "name": "Nils Åman",
+    "initials": "NÅ",
     "position": "C",
     "franchise": "Canucks",
     "franchiseAbbr": "VAN",
@@ -60956,7 +63962,7 @@
   },
   {
     "id": 4753,
-    "name": "Nils H\u00c3\u00b6glander",
+    "name": "Nils Höglander",
     "initials": "NH",
     "position": "LW",
     "franchise": "Canucks",
@@ -61052,7 +64058,7 @@
   {
     "id": 4760,
     "name": "Phillip Di Giuseppe",
-    "initials": "PG",
+    "initials": "PD",
     "position": "LW",
     "franchise": "Canucks",
     "franchiseAbbr": "VAN",
@@ -61161,6 +64167,24 @@
       "shutouts": 9
     },
     "strengthScore": 61.6
+  },
+  {
+    "id": 4774,
+    "name": "Kevin Lankinen",
+    "initials": "KL",
+    "position": "G",
+    "franchise": "Canucks",
+    "franchiseAbbr": "VAN",
+    "city": "Vancouver",
+    "decade": "2020s",
+    "stats": {
+      "gp": 51,
+      "wins": 25,
+      "gaa": 2.62,
+      "savePct": 0.902,
+      "shutouts": 4
+    },
+    "strengthScore": 40.0
   },
   {
     "id": 4779,
@@ -61487,7 +64511,7 @@
   },
   {
     "id": 4799,
-    "name": "H\u00c3\u00a5kan Loob",
+    "name": "Håkan Loob",
     "initials": "HL",
     "position": "RW",
     "franchise": "Flames",
@@ -61962,7 +64986,7 @@
   },
   {
     "id": 4829,
-    "name": "R\u00c3\u00a9jean Lemelin",
+    "name": "Réjean Lemelin",
     "initials": "RL",
     "position": "G",
     "franchise": "Flames",
@@ -62013,6 +65037,42 @@
       "shutouts": 2
     },
     "strengthScore": 53.2
+  },
+  {
+    "id": 4832,
+    "name": "Pat Riggin",
+    "initials": "PR",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1980s",
+    "stats": {
+      "gp": 94,
+      "wins": 40,
+      "gaa": 4.07,
+      "savePct": 0.876,
+      "shutouts": 2
+    },
+    "strengthScore": 60.9
+  },
+  {
+    "id": 4833,
+    "name": "Rick Wamsley",
+    "initials": "RW",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1980s",
+    "stats": {
+      "gp": 71,
+      "wins": 35,
+      "gaa": 3.11,
+      "savePct": 0.878,
+      "shutouts": 4
+    },
+    "strengthScore": 64.9
   },
   {
     "id": 4835,
@@ -62073,7 +65133,7 @@
   },
   {
     "id": 4838,
-    "name": "Patrik Sundstr\u00c3\u00b6m",
+    "name": "Patrik Sundström",
     "initials": "PS",
     "position": "C",
     "franchise": "Devils",
@@ -62377,7 +65437,7 @@
   },
   {
     "id": 4858,
-    "name": "Paul Gagn\u00c3\u00a9",
+    "name": "Paul Gagné",
     "initials": "PG",
     "position": "LW",
     "franchise": "Devils",
@@ -62753,6 +65813,42 @@
     "strengthScore": 62.2
   },
   {
+    "id": 4886,
+    "name": "Ron Low",
+    "initials": "RL",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1980s",
+    "stats": {
+      "gp": 81,
+      "wins": 16,
+      "gaa": 4.16,
+      "savePct": 0.863,
+      "shutouts": 1
+    },
+    "strengthScore": 27.3
+  },
+  {
+    "id": 4887,
+    "name": "Chris Terreri",
+    "initials": "CT",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1980s",
+    "stats": {
+      "gp": 50,
+      "wins": 15,
+      "gaa": 3.44,
+      "savePct": 0.889,
+      "shutouts": 0
+    },
+    "strengthScore": 92.0
+  },
+  {
     "id": 4890,
     "name": "Wilf Paiement",
     "initials": "WP",
@@ -62963,7 +66059,7 @@
   },
   {
     "id": 4912,
-    "name": "Denis Dup\u00c3\u00a9r\u00c3\u00a9",
+    "name": "Denis Dupéré",
     "initials": "DD",
     "position": "LW",
     "franchise": "Devils",
@@ -62983,7 +66079,7 @@
   {
     "id": 4920,
     "name": "John Van Boxmeer",
-    "initials": "JB",
+    "initials": "JV",
     "position": "RD",
     "franchise": "Devils",
     "franchiseAbbr": "NJD",
@@ -63132,6 +66228,42 @@
     "strengthScore": 19.9
   },
   {
+    "id": 4939,
+    "name": "Doug Favell",
+    "initials": "DF",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1970s",
+    "stats": {
+      "gp": 84,
+      "wins": 21,
+      "gaa": 3.85,
+      "savePct": 0.884,
+      "shutouts": 1
+    },
+    "strengthScore": 36.2
+  },
+  {
+    "id": 4940,
+    "name": "Bill Oleschuk",
+    "initials": "BO",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1970s",
+    "stats": {
+      "gp": 52,
+      "wins": 7,
+      "gaa": 3.94,
+      "savePct": 0.871,
+      "shutouts": 1
+    },
+    "strengthScore": 1.3
+  },
+  {
     "id": 4943,
     "name": "Peter Forsberg",
     "initials": "PF",
@@ -63228,7 +66360,7 @@
   },
   {
     "id": 4951,
-    "name": "St\u00c3\u00a9phane Yelle",
+    "name": "Stéphane Yelle",
     "initials": "SY",
     "position": "LW",
     "franchise": "Avalanche",
@@ -63247,7 +66379,7 @@
   },
   {
     "id": 4952,
-    "name": "Ren\u00c3\u00a9 Corbet",
+    "name": "René Corbet",
     "initials": "RC",
     "position": "LW",
     "franchise": "Avalanche",
@@ -63304,7 +66436,7 @@
   },
   {
     "id": 4960,
-    "name": "Sandis Ozoli\u00c5\u0086\u00c5\u00a1",
+    "name": "Sandis Ozoliņš",
     "initials": "SO",
     "position": "LD",
     "franchise": "Avalanche",
@@ -63361,8 +66493,8 @@
   },
   {
     "id": 4963,
-    "name": "\u00c3\u0089ric Messier",
-    "initials": "\u00c3M",
+    "name": "Éric Messier",
+    "initials": "ÉM",
     "position": "LD",
     "franchise": "Avalanche",
     "franchiseAbbr": "COL",
@@ -63381,7 +66513,7 @@
   {
     "id": 4967,
     "name": "Greg de Vries",
-    "initials": "GV",
+    "initials": "GD",
     "position": "LD",
     "franchise": "Avalanche",
     "franchiseAbbr": "COL",
@@ -63644,9 +66776,27 @@
     "strengthScore": 100
   },
   {
+    "id": 4986,
+    "name": "Craig Billington",
+    "initials": "CB",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1990s",
+    "stats": {
+      "gp": 67,
+      "wins": 30,
+      "gaa": 2.61,
+      "savePct": 0.909,
+      "shutouts": 2
+    },
+    "strengthScore": 90.3
+  },
+  {
     "id": 4989,
-    "name": "Peter \u00c5\u00a0\u00c5\u00a5astn\u00c3\u00bd",
-    "initials": "P\u00c5",
+    "name": "Peter Šťastný",
+    "initials": "PŠ",
     "position": "C",
     "franchise": "Avalanche",
     "franchiseAbbr": "COL",
@@ -63721,7 +66871,7 @@
   },
   {
     "id": 4993,
-    "name": "J.F. Sauv\u00c3\u00a9",
+    "name": "J.F. Sauvé",
     "initials": "JS",
     "position": "C",
     "franchise": "Avalanche",
@@ -63778,8 +66928,8 @@
   },
   {
     "id": 5000,
-    "name": "Mari\u00c3\u00a1n \u00c5\u00a0\u00c5\u00a5astn\u00c3\u00bd",
-    "initials": "M\u00c5",
+    "name": "Marián Šťastný",
+    "initials": "MŠ",
     "position": "RW",
     "franchise": "Avalanche",
     "franchiseAbbr": "COL",
@@ -63816,7 +66966,7 @@
   },
   {
     "id": 5002,
-    "name": "R\u00c3\u00a9al Cloutier",
+    "name": "Réal Cloutier",
     "initials": "RC",
     "position": "RW",
     "franchise": "Avalanche",
@@ -63873,7 +67023,7 @@
   },
   {
     "id": 5006,
-    "name": "Iiro J\u00c3\u00a4rvi",
+    "name": "Iiro Järvi",
     "initials": "IJ",
     "position": "RW",
     "franchise": "Avalanche",
@@ -63892,8 +67042,8 @@
   },
   {
     "id": 5009,
-    "name": "Anton \u00c5\u00a0\u00c5\u00a5astn\u00c3\u00bd",
-    "initials": "A\u00c5",
+    "name": "Anton Šťastný",
+    "initials": "AŠ",
     "position": "LW",
     "franchise": "Avalanche",
     "franchiseAbbr": "COL",
@@ -63911,7 +67061,7 @@
   },
   {
     "id": 5010,
-    "name": "Alain C\u00c3\u00b4t\u00c3\u00a9",
+    "name": "Alain Côté",
     "initials": "AC",
     "position": "LW",
     "franchise": "Avalanche",
@@ -63987,7 +67137,7 @@
   },
   {
     "id": 5014,
-    "name": "Ga\u00c3\u00a9tan Duchesne",
+    "name": "Gaétan Duchesne",
     "initials": "GD",
     "position": "LW",
     "franchise": "Avalanche",
@@ -64253,7 +67403,7 @@
   },
   {
     "id": 5034,
-    "name": "Andr\u00c3\u00a9 Dupont",
+    "name": "André Dupont",
     "initials": "AD",
     "position": "LD",
     "franchise": "Avalanche",
@@ -64363,6 +67513,24 @@
     "strengthScore": 75.9
   },
   {
+    "id": 5042,
+    "name": "Ron Tugnutt",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "1980s",
+    "stats": {
+      "gp": 67,
+      "wins": 17,
+      "gaa": 4.11,
+      "savePct": 0.872,
+      "shutouts": 0
+    },
+    "strengthScore": 51.0
+  },
+  {
     "id": 5047,
     "name": "Joe Sakic",
     "initials": "JS",
@@ -64421,7 +67589,7 @@
   },
   {
     "id": 5050,
-    "name": "Ian Laperri\u00c3\u00a8re",
+    "name": "Ian Laperrière",
     "initials": "IL",
     "position": "C",
     "franchise": "Avalanche",
@@ -64535,7 +67703,7 @@
   },
   {
     "id": 5058,
-    "name": "Marek Svato\u00c5\u00a1",
+    "name": "Marek Svatoš",
     "initials": "MS",
     "position": "RW",
     "franchise": "Avalanche",
@@ -64839,8 +68007,8 @@
   },
   {
     "id": 5079,
-    "name": "Martin \u00c5\u00a0koula",
-    "initials": "MK",
+    "name": "Martin Škoula",
+    "initials": "MŠ",
     "position": "LD",
     "franchise": "Avalanche",
     "franchiseAbbr": "COL",
@@ -64859,7 +68027,7 @@
   {
     "id": 5080,
     "name": "Greg de Vries",
-    "initials": "GV",
+    "initials": "GD",
     "position": "LD",
     "franchise": "Avalanche",
     "franchiseAbbr": "COL",
@@ -64896,7 +68064,7 @@
   },
   {
     "id": 5083,
-    "name": "K\u00c4\u0081rlis Skrasti\u00c5\u0086\u00c5\u00a1",
+    "name": "Kārlis Skrastiņš",
     "initials": "KS",
     "position": "LD",
     "franchise": "Avalanche",
@@ -65082,6 +68250,42 @@
     "strengthScore": 81.9
   },
   {
+    "id": 5100,
+    "name": "José Théodore",
+    "initials": "JT",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "2000s",
+    "stats": {
+      "gp": 91,
+      "wins": 42,
+      "gaa": 2.77,
+      "savePct": 0.902,
+      "shutouts": 3
+    },
+    "strengthScore": 49.6
+  },
+  {
+    "id": 5101,
+    "name": "Craig Anderson",
+    "initials": "CA",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "2000s",
+    "stats": {
+      "gp": 71,
+      "wins": 38,
+      "gaa": 2.63,
+      "savePct": 0.917,
+      "shutouts": 7
+    },
+    "strengthScore": 87.5
+  },
+  {
     "id": 5103,
     "name": "Nathan MacKinnon",
     "initials": "NM",
@@ -65159,7 +68363,7 @@
   },
   {
     "id": 5107,
-    "name": "Carl S\u00c3\u00b6derberg",
+    "name": "Carl Söderberg",
     "initials": "CS",
     "position": "C",
     "franchise": "Avalanche",
@@ -65710,7 +68914,7 @@
   },
   {
     "id": 5147,
-    "name": "Fran\u00c3\u00a7ois Beauchemin",
+    "name": "François Beauchemin",
     "initials": "FB",
     "position": "LD",
     "franchise": "Avalanche",
@@ -65782,6 +68986,60 @@
       "shutouts": 21
     },
     "strengthScore": 60.4
+  },
+  {
+    "id": 5154,
+    "name": "Calvin Pickard",
+    "initials": "CP",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "2010s",
+    "stats": {
+      "gp": 86,
+      "wins": 28,
+      "gaa": 2.77,
+      "savePct": 0.913,
+      "shutouts": 3
+    },
+    "strengthScore": 56.0
+  },
+  {
+    "id": 5155,
+    "name": "Philipp Grubauer",
+    "initials": "PG",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "2010s",
+    "stats": {
+      "gp": 73,
+      "wins": 36,
+      "gaa": 2.64,
+      "savePct": 0.917,
+      "shutouts": 5
+    },
+    "strengthScore": 63.8
+  },
+  {
+    "id": 5156,
+    "name": "Jean-Sébastien Giguère",
+    "initials": "JG",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "2010s",
+    "stats": {
+      "gp": 72,
+      "wins": 31,
+      "gaa": 2.52,
+      "savePct": 0.914,
+      "shutouts": 4
+    },
+    "strengthScore": 58.5
   },
   {
     "id": 5161,
@@ -66127,7 +69385,7 @@
   },
   {
     "id": 5196,
-    "name": "Andr\u00c3\u00a9 Burakovsky",
+    "name": "André Burakovsky",
     "initials": "AB",
     "position": "LW",
     "franchise": "Avalanche",
@@ -66256,6 +69514,24 @@
       "shutouts": 7
     },
     "strengthScore": 43.0
+  },
+  {
+    "id": 5205,
+    "name": "Darcy Kuemper",
+    "initials": "DK",
+    "position": "G",
+    "franchise": "Avalanche",
+    "franchiseAbbr": "COL",
+    "city": "Colorado",
+    "decade": "2020s",
+    "stats": {
+      "gp": 57,
+      "wins": 37,
+      "gaa": 2.54,
+      "savePct": 0.921,
+      "shutouts": 5
+    },
+    "strengthScore": 87.5
   },
   {
     "id": 5210,
@@ -66772,7 +70048,7 @@
   },
   {
     "id": 5248,
-    "name": "Beno\u00c3\u00aet Hogue",
+    "name": "Benoît Hogue",
     "initials": "BH",
     "position": "LW",
     "franchise": "Stars",
@@ -66862,6 +70138,42 @@
       "shutouts": 8
     },
     "strengthScore": 78.3
+  },
+  {
+    "id": 5258,
+    "name": "Darcy Wakaluk",
+    "initials": "DW",
+    "position": "G",
+    "franchise": "Stars",
+    "franchiseAbbr": "DAL",
+    "city": "Dallas",
+    "decade": "1990s",
+    "stats": {
+      "gp": 88,
+      "wins": 31,
+      "gaa": 3.05,
+      "savePct": 0.897,
+      "shutouts": 6
+    },
+    "strengthScore": 61.0
+  },
+  {
+    "id": 5259,
+    "name": "Roman Turek",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Stars",
+    "franchiseAbbr": "DAL",
+    "city": "Dallas",
+    "decade": "1990s",
+    "stats": {
+      "gp": 55,
+      "wins": 30,
+      "gaa": 2.14,
+      "savePct": 0.911,
+      "shutouts": 2
+    },
+    "strengthScore": 94.5
   },
   {
     "id": 5262,
@@ -67245,7 +70557,7 @@
   },
   {
     "id": 5285,
-    "name": "Franti\u00c5\u00a1ek Musil",
+    "name": "František Musil",
     "initials": "FM",
     "position": "LD",
     "franchise": "Stars",
@@ -67944,7 +71256,7 @@
   },
   {
     "id": 5337,
-    "name": "J.P. Paris\u00c3\u00a9",
+    "name": "J.P. Parisé",
     "initials": "JP",
     "position": "LW",
     "franchise": "Stars",
@@ -68415,6 +71727,42 @@
     "strengthScore": 52.6
   },
   {
+    "id": 5369,
+    "name": "Gump Worsley",
+    "initials": "GW",
+    "position": "G",
+    "franchise": "Stars",
+    "franchiseAbbr": "DAL",
+    "city": "Dallas",
+    "decade": "1970s",
+    "stats": {
+      "gp": 99,
+      "wins": 34,
+      "gaa": 2.63,
+      "savePct": 0.917,
+      "shutouts": 2
+    },
+    "strengthScore": 100
+  },
+  {
+    "id": 5370,
+    "name": "Gary Edwards",
+    "initials": "GE",
+    "position": "G",
+    "franchise": "Stars",
+    "franchiseAbbr": "DAL",
+    "city": "Dallas",
+    "decade": "1970s",
+    "stats": {
+      "gp": 51,
+      "wins": 15,
+      "gaa": 3.46,
+      "savePct": 0.872,
+      "shutouts": 0
+    },
+    "strengthScore": 5.2
+  },
+  {
     "id": 5374,
     "name": "Mike Modano",
     "initials": "MM",
@@ -68777,7 +72125,7 @@
   },
   {
     "id": 5396,
-    "name": "St\u00c3\u00a9phane Robidas",
+    "name": "Stéphane Robidas",
     "initials": "SR",
     "position": "RD",
     "franchise": "Stars",
@@ -69440,7 +72788,7 @@
   },
   {
     "id": 5447,
-    "name": "St\u00c3\u00a9phane Robidas",
+    "name": "Stéphane Robidas",
     "initials": "SR",
     "position": "RD",
     "franchise": "Stars",
@@ -69497,7 +72845,7 @@
   },
   {
     "id": 5454,
-    "name": "Roman Pol\u00c3\u00a1k",
+    "name": "Roman Polák",
     "initials": "RP",
     "position": "RD",
     "franchise": "Stars",
@@ -69725,7 +73073,7 @@
   },
   {
     "id": 5468,
-    "name": "Ale\u00c5\u00a1 Hemsk\u00c3\u00bd",
+    "name": "Aleš Hemský",
     "initials": "AH",
     "position": "RW",
     "franchise": "Stars",
@@ -69872,6 +73220,42 @@
       "shutouts": 14
     },
     "strengthScore": 80.1
+  },
+  {
+    "id": 5478,
+    "name": "Antti Niemi",
+    "initials": "AN",
+    "position": "G",
+    "franchise": "Stars",
+    "franchiseAbbr": "DAL",
+    "city": "Dallas",
+    "decade": "2010s",
+    "stats": {
+      "gp": 85,
+      "wins": 37,
+      "gaa": 2.94,
+      "savePct": 0.899,
+      "shutouts": 3
+    },
+    "strengthScore": 20.9
+  },
+  {
+    "id": 5479,
+    "name": "Anton Khudobin",
+    "initials": "AK",
+    "position": "G",
+    "franchise": "Stars",
+    "franchiseAbbr": "DAL",
+    "city": "Dallas",
+    "decade": "2010s",
+    "stats": {
+      "gp": 71,
+      "wins": 32,
+      "gaa": 2.42,
+      "savePct": 0.926,
+      "shutouts": 2
+    },
+    "strengthScore": 87.4
   },
   {
     "id": 5482,
@@ -70236,7 +73620,7 @@
   },
   {
     "id": 5511,
-    "name": "Jani Hakanp\u00c3\u00a4\u00c3\u00a4",
+    "name": "Jani Hakanpää",
     "initials": "JH",
     "position": "RD",
     "franchise": "Stars",
@@ -70327,6 +73711,24 @@
       "shutouts": 12
     },
     "strengthScore": 64.5
+  },
+  {
+    "id": 5526,
+    "name": "Scott Wedgewood",
+    "initials": "SW",
+    "position": "G",
+    "franchise": "Stars",
+    "franchiseAbbr": "DAL",
+    "city": "Dallas",
+    "decade": "2020s",
+    "stats": {
+      "gp": 61,
+      "wins": 28,
+      "gaa": 2.83,
+      "savePct": 0.906,
+      "shutouts": 2
+    },
+    "strengthScore": 50.9
   },
   {
     "id": 5530,
@@ -70463,7 +73865,7 @@
   },
   {
     "id": 5548,
-    "name": "R\u00c3\u00a9al Lemieux",
+    "name": "Réal Lemieux",
     "initials": "RL",
     "position": "LW",
     "franchise": "Kings",
@@ -70611,6 +74013,24 @@
       "shutouts": 7
     },
     "strengthScore": 3.6
+  },
+  {
+    "id": 5566,
+    "name": "Wayne Rutledge",
+    "initials": "WR",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1960s",
+    "stats": {
+      "gp": 82,
+      "wins": 28,
+      "gaa": 3.39,
+      "savePct": 0.893,
+      "shutouts": 2
+    },
+    "strengthScore": 1.6
   },
   {
     "id": 5569,
@@ -70862,7 +74282,7 @@
   {
     "id": 5584,
     "name": "Frank St. Marseille",
-    "initials": "FM",
+    "initials": "FS",
     "position": "RW",
     "franchise": "Kings",
     "franchiseAbbr": "LAK",
@@ -71108,7 +74528,7 @@
   },
   {
     "id": 5597,
-    "name": "R\u00c3\u00a9al Lemieux",
+    "name": "Réal Lemieux",
     "initials": "RL",
     "position": "LW",
     "franchise": "Kings",
@@ -71426,6 +74846,60 @@
       "shutouts": 7
     },
     "strengthScore": 48.2
+  },
+  {
+    "id": 5621,
+    "name": "Mario Lessard",
+    "initials": "ML",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1970s",
+    "stats": {
+      "gp": 99,
+      "wins": 41,
+      "gaa": 3.52,
+      "savePct": 0.881,
+      "shutouts": 4
+    },
+    "strengthScore": 27.2
+  },
+  {
+    "id": 5622,
+    "name": "Denis DeJordy",
+    "initials": "DD",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1970s",
+    "stats": {
+      "gp": 65,
+      "wins": 18,
+      "gaa": 3.88,
+      "savePct": 0.885,
+      "shutouts": 1
+    },
+    "strengthScore": 36.9
+  },
+  {
+    "id": 5623,
+    "name": "Ron Grahame",
+    "initials": "RG",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1970s",
+    "stats": {
+      "gp": 60,
+      "wins": 20,
+      "gaa": 4.2,
+      "savePct": 0.868,
+      "shutouts": 2
+    },
+    "strengthScore": 0
   },
   {
     "id": 5625,
@@ -71867,7 +75341,7 @@
   {
     "id": 5650,
     "name": "John Paul Kelly",
-    "initials": "JK",
+    "initials": "JP",
     "position": "LW",
     "franchise": "Kings",
     "franchiseAbbr": "LAK",
@@ -72242,6 +75716,78 @@
     "strengthScore": 34.9
   },
   {
+    "id": 5673,
+    "name": "Darren Eliot",
+    "initials": "DE",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1980s",
+    "stats": {
+      "gp": 83,
+      "wins": 24,
+      "gaa": 4.59,
+      "savePct": 0.85,
+      "shutouts": 1
+    },
+    "strengthScore": 0
+  },
+  {
+    "id": 5674,
+    "name": "Glenn Healy",
+    "initials": "GH",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1980s",
+    "stats": {
+      "gp": 82,
+      "wins": 37,
+      "gaa": 4.3,
+      "savePct": 0.87,
+      "shutouts": 1
+    },
+    "strengthScore": 43.8
+  },
+  {
+    "id": 5675,
+    "name": "Kelly Hrudey",
+    "initials": "KH",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1980s",
+    "stats": {
+      "gp": 68,
+      "wins": 32,
+      "gaa": 3.79,
+      "savePct": 0.88,
+      "shutouts": 3
+    },
+    "strengthScore": 70.7
+  },
+  {
+    "id": 5676,
+    "name": "Gary Laskoski",
+    "initials": "GL",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1980s",
+    "stats": {
+      "gp": 59,
+      "wins": 19,
+      "gaa": 4.65,
+      "savePct": 0.851,
+      "shutouts": 0
+    },
+    "strengthScore": 0
+  },
+  {
     "id": 5678,
     "name": "Wayne Gretzky",
     "initials": "WG",
@@ -72262,7 +75808,7 @@
   },
   {
     "id": 5679,
-    "name": "Jozef St\u00c3\u00bcmpel",
+    "name": "Jozef Stümpel",
     "initials": "JS",
     "position": "C",
     "franchise": "Kings",
@@ -72319,7 +75865,7 @@
   },
   {
     "id": 5682,
-    "name": "Ian Laperri\u00c3\u00a8re",
+    "name": "Ian Laperrière",
     "initials": "IL",
     "position": "C",
     "franchise": "Kings",
@@ -72623,7 +76169,7 @@
   },
   {
     "id": 5709,
-    "name": "Tomas Sandstr\u00c3\u00b6m",
+    "name": "Tomas Sandström",
     "initials": "TS",
     "position": "RW",
     "franchise": "Kings",
@@ -72889,7 +76435,7 @@
   },
   {
     "id": 5726,
-    "name": "Mattias Norstr\u00c3\u00b6m",
+    "name": "Mattias Norström",
     "initials": "MN",
     "position": "LD",
     "franchise": "Kings",
@@ -72945,7 +76491,7 @@
   },
   {
     "id": 5729,
-    "name": "St\u00c3\u00a9phane Fiset",
+    "name": "Stéphane Fiset",
     "initials": "SF",
     "position": "G",
     "franchise": "Kings",
@@ -72978,6 +76524,60 @@
       "shutouts": 7
     },
     "strengthScore": 100
+  },
+  {
+    "id": 5731,
+    "name": "Byron Dafoe",
+    "initials": "BD",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1990s",
+    "stats": {
+      "gp": 87,
+      "wins": 27,
+      "gaa": 3.52,
+      "savePct": 0.896,
+      "shutouts": 1
+    },
+    "strengthScore": 57.0
+  },
+  {
+    "id": 5732,
+    "name": "Daniel Berthiaume",
+    "initials": "DB",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1990s",
+    "stats": {
+      "gp": 56,
+      "wins": 27,
+      "gaa": 3.56,
+      "savePct": 0.887,
+      "shutouts": 1
+    },
+    "strengthScore": 35.6
+  },
+  {
+    "id": 5733,
+    "name": "Robb Stauber",
+    "initials": "RS",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "1990s",
+    "stats": {
+      "gp": 53,
+      "wins": 19,
+      "gaa": 3.66,
+      "savePct": 0.896,
+      "shutouts": 1
+    },
+    "strengthScore": 58.3
   },
   {
     "id": 5734,
@@ -73133,7 +76733,7 @@
   },
   {
     "id": 5744,
-    "name": "An\u00c5\u00bee Kopitar",
+    "name": "Anže Kopitar",
     "initials": "AK",
     "position": "C",
     "franchise": "Kings",
@@ -73190,8 +76790,8 @@
   },
   {
     "id": 5747,
-    "name": "\u00c3\u0089ric B\u00c3\u00a9langer",
-    "initials": "\u00c3B",
+    "name": "Éric Bélanger",
+    "initials": "ÉB",
     "position": "C",
     "franchise": "Kings",
     "franchiseAbbr": "LAK",
@@ -73228,7 +76828,7 @@
   },
   {
     "id": 5749,
-    "name": "Michal Handzu\u00c5\u00a1",
+    "name": "Michal Handzuš",
     "initials": "MH",
     "position": "C",
     "franchise": "Kings",
@@ -73266,7 +76866,7 @@
   },
   {
     "id": 5752,
-    "name": "Jozef St\u00c3\u00bcmpel",
+    "name": "Jozef Stümpel",
     "initials": "JS",
     "position": "C",
     "franchise": "Kings",
@@ -73304,8 +76904,8 @@
   },
   {
     "id": 5754,
-    "name": "\u00c4\u00bdubom\u00c3\u00adr Vi\u00c5\u00a1\u00c5\u0088ovsk\u00c3\u00bd",
-    "initials": "\u00c4V",
+    "name": "Ľubomír Višňovský",
+    "initials": "ĽV",
     "position": "LD",
     "franchise": "Kings",
     "franchiseAbbr": "LAK",
@@ -73323,7 +76923,7 @@
   },
   {
     "id": 5755,
-    "name": "Jaroslav Modr\u00c3\u00bd",
+    "name": "Jaroslav Modrý",
     "initials": "JM",
     "position": "LD",
     "franchise": "Kings",
@@ -73380,7 +76980,7 @@
   },
   {
     "id": 5758,
-    "name": "Mattias Norstr\u00c3\u00b6m",
+    "name": "Mattias Norström",
     "initials": "MN",
     "position": "LD",
     "franchise": "Kings",
@@ -73456,8 +77056,8 @@
   },
   {
     "id": 5764,
-    "name": "\u00c5\u00bdigmund P\u00c3\u00a1lffy",
-    "initials": "\u00c5P",
+    "name": "Žigmund Pálffy",
+    "initials": "ŽP",
     "position": "RW",
     "franchise": "Kings",
     "franchiseAbbr": "LAK",
@@ -73513,7 +77113,7 @@
   },
   {
     "id": 5767,
-    "name": "Ian Laperri\u00c3\u00a8re",
+    "name": "Ian Laperrière",
     "initials": "IL",
     "position": "RW",
     "franchise": "Kings",
@@ -73703,7 +77303,7 @@
   },
   {
     "id": 5784,
-    "name": "F\u00c3\u00a9lix Potvin",
+    "name": "Félix Potvin",
     "initials": "FP",
     "position": "G",
     "franchise": "Kings",
@@ -73756,8 +77356,80 @@
     "strengthScore": 58.8
   },
   {
+    "id": 5787,
+    "name": "Mathieu Garon",
+    "initials": "MG",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2000s",
+    "stats": {
+      "gp": 95,
+      "wins": 44,
+      "gaa": 3.03,
+      "savePct": 0.898,
+      "shutouts": 6
+    },
+    "strengthScore": 40.9
+  },
+  {
+    "id": 5788,
+    "name": "Jason LaBarbera",
+    "initials": "JL",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2000s",
+    "stats": {
+      "gp": 93,
+      "wins": 33,
+      "gaa": 2.93,
+      "savePct": 0.903,
+      "shutouts": 4
+    },
+    "strengthScore": 53.5
+  },
+  {
+    "id": 5789,
+    "name": "Erik Ersberg",
+    "initials": "EE",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2000s",
+    "stats": {
+      "gp": 53,
+      "wins": 18,
+      "gaa": 2.55,
+      "savePct": 0.908,
+      "shutouts": 2
+    },
+    "strengthScore": 65.9
+  },
+  {
+    "id": 5790,
+    "name": "Cristobal Huet",
+    "initials": "CH",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2000s",
+    "stats": {
+      "gp": 53,
+      "wins": 14,
+      "gaa": 2.41,
+      "savePct": 0.908,
+      "shutouts": 4
+    },
+    "strengthScore": 65.9
+  },
+  {
     "id": 5792,
-    "name": "An\u00c5\u00bee Kopitar",
+    "name": "Anže Kopitar",
     "initials": "AK",
     "position": "C",
     "franchise": "Kings",
@@ -74061,7 +77733,7 @@
   },
   {
     "id": 5813,
-    "name": "Mari\u00c3\u00a1n G\u00c3\u00a1bor\u00c3\u00adk",
+    "name": "Marián Gáborík",
     "initials": "MG",
     "position": "RW",
     "franchise": "Kings",
@@ -74382,8 +78054,62 @@
     "strengthScore": 59.1
   },
   {
+    "id": 5842,
+    "name": "Jack Campbell",
+    "initials": "JC",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2010s",
+    "stats": {
+      "gp": 56,
+      "wins": 20,
+      "gaa": 2.51,
+      "savePct": 0.918,
+      "shutouts": 2
+    },
+    "strengthScore": 66.6
+  },
+  {
+    "id": 5843,
+    "name": "Jonathan Bernier",
+    "initials": "JB",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2010s",
+    "stats": {
+      "gp": 55,
+      "wins": 25,
+      "gaa": 2.29,
+      "savePct": 0.914,
+      "shutouts": 5
+    },
+    "strengthScore": 57.8
+  },
+  {
+    "id": 5844,
+    "name": "Peter Budaj",
+    "initials": "PB",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2010s",
+    "stats": {
+      "gp": 53,
+      "wins": 27,
+      "gaa": 2.12,
+      "savePct": 0.917,
+      "shutouts": 7
+    },
+    "strengthScore": 65.0
+  },
+  {
     "id": 5846,
-    "name": "An\u00c5\u00bee Kopitar",
+    "name": "Anže Kopitar",
     "initials": "AK",
     "position": "C",
     "franchise": "Kings",
@@ -74782,7 +78508,7 @@
   },
   {
     "id": 5878,
-    "name": "Tobias Bj\u00c3\u00b6rnfot",
+    "name": "Tobias Björnfot",
     "initials": "TB",
     "position": "LD",
     "franchise": "Kings",
@@ -74801,7 +78527,7 @@
   },
   {
     "id": 5879,
-    "name": "Olli M\u00c3\u00a4\u00c3\u00a4tt\u00c3\u00a4",
+    "name": "Olli Määttä",
     "initials": "OM",
     "position": "LD",
     "franchise": "Kings",
@@ -74877,7 +78603,7 @@
   },
   {
     "id": 5887,
-    "name": "Carl Grundstr\u00c3\u00b6m",
+    "name": "Carl Grundström",
     "initials": "CG",
     "position": "RW",
     "franchise": "Kings",
@@ -74893,6 +78619,96 @@
       "pointsPerGame": 0.274
     },
     "strengthScore": 20.9
+  },
+  {
+    "id": 5888,
+    "name": "Jonathan Quick",
+    "initials": "JQ",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2020s",
+    "stats": {
+      "gp": 99,
+      "wins": 45,
+      "gaa": 2.93,
+      "savePct": 0.897,
+      "shutouts": 5
+    },
+    "strengthScore": 26.7
+  },
+  {
+    "id": 5889,
+    "name": "Calvin Petersen",
+    "initials": "CP",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2020s",
+    "stats": {
+      "gp": 82,
+      "wins": 34,
+      "gaa": 2.99,
+      "savePct": 0.899,
+      "shutouts": 3
+    },
+    "strengthScore": 31.3
+  },
+  {
+    "id": 5890,
+    "name": "David Rittich",
+    "initials": "DR",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2020s",
+    "stats": {
+      "gp": 58,
+      "wins": 29,
+      "gaa": 2.55,
+      "savePct": 0.9,
+      "shutouts": 3
+    },
+    "strengthScore": 36.2
+  },
+  {
+    "id": 5891,
+    "name": "Cam Talbot",
+    "initials": "CT",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2020s",
+    "stats": {
+      "gp": 54,
+      "wins": 27,
+      "gaa": 2.5,
+      "savePct": 0.913,
+      "shutouts": 3
+    },
+    "strengthScore": 67.5
+  },
+  {
+    "id": 5892,
+    "name": "Darcy Kuemper",
+    "initials": "DK",
+    "position": "G",
+    "franchise": "Kings",
+    "franchiseAbbr": "LAK",
+    "city": "Los Angeles",
+    "decade": "2020s",
+    "stats": {
+      "gp": 50,
+      "wins": 31,
+      "gaa": 2.02,
+      "savePct": 0.921,
+      "shutouts": 5
+    },
+    "strengthScore": 87.5
   },
   {
     "id": 5894,
@@ -75482,6 +79298,60 @@
     "strengthScore": 15.6
   },
   {
+    "id": 5941,
+    "name": "Jim Bedard",
+    "initials": "JB",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1970s",
+    "stats": {
+      "gp": 73,
+      "wins": 17,
+      "gaa": 3.95,
+      "savePct": 0.872,
+      "shutouts": 1
+    },
+    "strengthScore": 6.1
+  },
+  {
+    "id": 5942,
+    "name": "Wayne Stephenson",
+    "initials": "WS",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1970s",
+    "stats": {
+      "gp": 56,
+      "wins": 18,
+      "gaa": 3.58,
+      "savePct": 0.88,
+      "shutouts": 0
+    },
+    "strengthScore": 25.0
+  },
+  {
+    "id": 5943,
+    "name": "Gary Inness",
+    "initials": "GI",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1970s",
+    "stats": {
+      "gp": 51,
+      "wins": 16,
+      "gaa": 3.69,
+      "savePct": 0.878,
+      "shutouts": 0
+    },
+    "strengthScore": 20.9
+  },
+  {
     "id": 5945,
     "name": "Mike Gartner",
     "initials": "MG",
@@ -75502,7 +79372,7 @@
   },
   {
     "id": 5946,
-    "name": "Bengt-\u00c3\u0085ke Gustafsson",
+    "name": "Bengt-Åke Gustafsson",
     "initials": "BG",
     "position": "RW",
     "franchise": "Capitals",
@@ -75768,7 +79638,7 @@
   },
   {
     "id": 5969,
-    "name": "Michal Pivo\u00c5\u0088ka",
+    "name": "Michal Pivoňka",
     "initials": "MP",
     "position": "C",
     "franchise": "Capitals",
@@ -75901,7 +79771,7 @@
   },
   {
     "id": 5977,
-    "name": "Ga\u00c3\u00a9tan Duchesne",
+    "name": "Gaétan Duchesne",
     "initials": "GD",
     "position": "LW",
     "franchise": "Capitals",
@@ -76015,7 +79885,7 @@
   },
   {
     "id": 5984,
-    "name": "Peter Sundstr\u00c3\u00b6m",
+    "name": "Peter Sundström",
     "initials": "PS",
     "position": "LW",
     "franchise": "Capitals",
@@ -76201,6 +80071,96 @@
     "strengthScore": 86.9
   },
   {
+    "id": 5998,
+    "name": "Clint Malarchuk",
+    "initials": "CM",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1980s",
+    "stats": {
+      "gp": 96,
+      "wins": 40,
+      "gaa": 3.3,
+      "savePct": 0.881,
+      "shutouts": 5
+    },
+    "strengthScore": 73.7
+  },
+  {
+    "id": 5999,
+    "name": "Dave Parro",
+    "initials": "DP",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1980s",
+    "stats": {
+      "gp": 76,
+      "wins": 21,
+      "gaa": 4.09,
+      "savePct": 0.875,
+      "shutouts": 2
+    },
+    "strengthScore": 58.4
+  },
+  {
+    "id": 6000,
+    "name": "Bob Mason",
+    "initials": "BM",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1980s",
+    "stats": {
+      "gp": 73,
+      "wins": 32,
+      "gaa": 3.23,
+      "savePct": 0.887,
+      "shutouts": 1
+    },
+    "strengthScore": 88.0
+  },
+  {
+    "id": 6001,
+    "name": "Mike Palmateer",
+    "initials": "MP",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1980s",
+    "stats": {
+      "gp": 60,
+      "wins": 20,
+      "gaa": 4.04,
+      "savePct": 0.873,
+      "shutouts": 2
+    },
+    "strengthScore": 52.2
+  },
+  {
+    "id": 6002,
+    "name": "Don Beaupre",
+    "initials": "DB",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1980s",
+    "stats": {
+      "gp": 59,
+      "wins": 28,
+      "gaa": 3.16,
+      "savePct": 0.891,
+      "shutouts": 3
+    },
+    "strengthScore": 97.8
+  },
+  {
     "id": 6003,
     "name": "Peter Bondra",
     "initials": "PB",
@@ -76335,7 +80295,7 @@
   },
   {
     "id": 6010,
-    "name": "Richard Zedn\u00c3\u00adk",
+    "name": "Richard Zedník",
     "initials": "RZ",
     "position": "LW",
     "franchise": "Capitals",
@@ -76373,7 +80333,7 @@
   },
   {
     "id": 6013,
-    "name": "Michal Pivo\u00c5\u0088ka",
+    "name": "Michal Pivoňka",
     "initials": "MP",
     "position": "C",
     "franchise": "Capitals",
@@ -76449,7 +80409,7 @@
   },
   {
     "id": 6017,
-    "name": "Jo\u00c3\u00a9 Juneau",
+    "name": "Joé Juneau",
     "initials": "JJ",
     "position": "C",
     "franchise": "Capitals",
@@ -76715,7 +80675,7 @@
   },
   {
     "id": 6034,
-    "name": "Sylvain C\u00c3\u00b4t\u00c3\u00a9",
+    "name": "Sylvain Côté",
     "initials": "SC",
     "position": "RD",
     "franchise": "Capitals",
@@ -76867,7 +80827,7 @@
   },
   {
     "id": 6049,
-    "name": "Olaf K\u00c3\u00b6lzig",
+    "name": "Olaf Kölzig",
     "initials": "OK",
     "position": "G",
     "franchise": "Capitals",
@@ -76918,6 +80878,42 @@
       "shutouts": 14
     },
     "strengthScore": 76.7
+  },
+  {
+    "id": 6052,
+    "name": "Rick Tabaracci",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1990s",
+    "stats": {
+      "gp": 69,
+      "wins": 21,
+      "gaa": 2.7,
+      "savePct": 0.899,
+      "shutouts": 6
+    },
+    "strengthScore": 65.4
+  },
+  {
+    "id": 6053,
+    "name": "Mike Liut",
+    "initials": "ML",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "1990s",
+    "stats": {
+      "gp": 56,
+      "wins": 23,
+      "gaa": 3.73,
+      "savePct": 0.863,
+      "shutouts": 1
+    },
+    "strengthScore": 0
   },
   {
     "id": 6056,
@@ -77092,7 +81088,7 @@
   },
   {
     "id": 6066,
-    "name": "Nicklas B\u00c3\u00a4ckstr\u00c3\u00b6m",
+    "name": "Nicklas Bäckström",
     "initials": "NB",
     "position": "C",
     "franchise": "Capitals",
@@ -77187,7 +81183,7 @@
   },
   {
     "id": 6071,
-    "name": "Tom\u00c3\u00a1\u00c5\u00a1 Fleischmann",
+    "name": "Tomáš Fleischmann",
     "initials": "TF",
     "position": "C",
     "franchise": "Capitals",
@@ -77548,7 +81544,7 @@
   },
   {
     "id": 6091,
-    "name": "Milan Jur\u00c4\u008dina",
+    "name": "Milan Jurčina",
     "initials": "MJ",
     "position": "RD",
     "franchise": "Capitals",
@@ -77567,7 +81563,7 @@
   },
   {
     "id": 6092,
-    "name": "Sylvain C\u00c3\u00b4t\u00c3\u00a9",
+    "name": "Sylvain Côté",
     "initials": "SC",
     "position": "RD",
     "franchise": "Capitals",
@@ -77624,7 +81620,7 @@
   },
   {
     "id": 6097,
-    "name": "Jarom\u00c3\u00adr J\u00c3\u00a1gr",
+    "name": "Jaromír Jágr",
     "initials": "JJ",
     "position": "RW",
     "franchise": "Capitals",
@@ -77662,7 +81658,7 @@
   },
   {
     "id": 6099,
-    "name": "Ulf Dahl\u00c3\u00a9n",
+    "name": "Ulf Dahlén",
     "initials": "UD",
     "position": "RW",
     "franchise": "Capitals",
@@ -77757,7 +81753,7 @@
   },
   {
     "id": 6106,
-    "name": "Olaf K\u00c3\u00b6lzig",
+    "name": "Olaf Kölzig",
     "initials": "OK",
     "position": "G",
     "franchise": "Capitals",
@@ -77775,7 +81771,7 @@
   },
   {
     "id": 6107,
-    "name": "Jos\u00c3\u00a9 Th\u00c3\u00a9odore",
+    "name": "José Théodore",
     "initials": "JT",
     "position": "G",
     "franchise": "Capitals",
@@ -77790,6 +81786,24 @@
       "shutouts": 3
     },
     "strengthScore": 57.4
+  },
+  {
+    "id": 6108,
+    "name": "Brent Johnson",
+    "initials": "BJ",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2000s",
+    "stats": {
+      "gp": 96,
+      "wins": 34,
+      "gaa": 3.2,
+      "savePct": 0.901,
+      "shutouts": 1
+    },
+    "strengthScore": 48.1
   },
   {
     "id": 6113,
@@ -77831,7 +81845,7 @@
   },
   {
     "id": 6115,
-    "name": "Andr\u00c3\u00a9 Burakovsky",
+    "name": "André Burakovsky",
     "initials": "AB",
     "position": "LW",
     "franchise": "Capitals",
@@ -77850,7 +81864,7 @@
   },
   {
     "id": 6116,
-    "name": "Jakub Vr\u00c3\u00a1na",
+    "name": "Jakub Vrána",
     "initials": "JV",
     "position": "LW",
     "franchise": "Capitals",
@@ -77888,7 +81902,7 @@
   },
   {
     "id": 6123,
-    "name": "Nicklas B\u00c3\u00a4ckstr\u00c3\u00b6m",
+    "name": "Nicklas Bäckström",
     "initials": "NB",
     "position": "C",
     "franchise": "Capitals",
@@ -78344,7 +82358,7 @@
   },
   {
     "id": 6155,
-    "name": "Michal Kempn\u00c3\u00bd",
+    "name": "Michal Kempný",
     "initials": "MK",
     "position": "LD",
     "franchise": "Capitals",
@@ -78472,6 +82486,24 @@
       "shutouts": 7
     },
     "strengthScore": 47.0
+  },
+  {
+    "id": 6164,
+    "name": "Philipp Grubauer",
+    "initials": "PG",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2010s",
+    "stats": {
+      "gp": 98,
+      "wins": 42,
+      "gaa": 2.27,
+      "savePct": 0.923,
+      "shutouts": 6
+    },
+    "strengthScore": 79.9
   },
   {
     "id": 6169,
@@ -78609,7 +82641,7 @@
   {
     "id": 6181,
     "name": "Trevor van Riemsdyk",
-    "initials": "TR",
+    "initials": "TV",
     "position": "RD",
     "franchise": "Capitals",
     "franchiseAbbr": "WSH",
@@ -78760,7 +82792,7 @@
   },
   {
     "id": 6192,
-    "name": "Nicklas B\u00c3\u00a4ckstr\u00c3\u00b6m",
+    "name": "Nicklas Bäckström",
     "initials": "NB",
     "position": "C",
     "franchise": "Capitals",
@@ -78855,7 +82887,7 @@
   },
   {
     "id": 6200,
-    "name": "Nicolas Aub\u00c3\u00a9-Kubel",
+    "name": "Nicolas Aubé-Kubel",
     "initials": "NA",
     "position": "RW",
     "franchise": "Capitals",
@@ -78893,7 +82925,7 @@
   },
   {
     "id": 6206,
-    "name": "Martin Feh\u00c3\u00a9rv\u00c3\u00a1ry",
+    "name": "Martin Fehérváry",
     "initials": "MF",
     "position": "LD",
     "franchise": "Capitals",
@@ -78946,6 +82978,60 @@
       "shutouts": 7
     },
     "strengthScore": 40.9
+  },
+  {
+    "id": 6216,
+    "name": "Darcy Kuemper",
+    "initials": "DK",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2020s",
+    "stats": {
+      "gp": 90,
+      "wins": 35,
+      "gaa": 3.03,
+      "savePct": 0.901,
+      "shutouts": 6
+    },
+    "strengthScore": 38.5
+  },
+  {
+    "id": 6217,
+    "name": "Vítek Vaněček",
+    "initials": "VV",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2020s",
+    "stats": {
+      "gp": 79,
+      "wins": 41,
+      "gaa": 2.68,
+      "savePct": 0.908,
+      "shutouts": 6
+    },
+    "strengthScore": 55.0
+  },
+  {
+    "id": 6218,
+    "name": "Ilya Samsonov",
+    "initials": "IS",
+    "position": "G",
+    "franchise": "Capitals",
+    "franchiseAbbr": "WSH",
+    "city": "Washington",
+    "decade": "2020s",
+    "stats": {
+      "gp": 63,
+      "wins": 36,
+      "gaa": 2.92,
+      "savePct": 0.898,
+      "shutouts": 5
+    },
+    "strengthScore": 29.5
   },
   {
     "id": 6220,
@@ -79196,7 +83282,7 @@
   },
   {
     "id": 6234,
-    "name": "St\u00c3\u00a9phane Richer",
+    "name": "Stéphane Richer",
     "initials": "SR",
     "position": "LW",
     "franchise": "Lightning",
@@ -79272,7 +83358,7 @@
   },
   {
     "id": 6240,
-    "name": "Roman Hamrl\u00c3\u00adk",
+    "name": "Roman Hamrlík",
     "initials": "RH",
     "position": "LD",
     "franchise": "Lightning",
@@ -79462,7 +83548,7 @@
   },
   {
     "id": 6251,
-    "name": "Petr Kl\u00c3\u00adma",
+    "name": "Petr Klíma",
     "initials": "PK",
     "position": "RW",
     "franchise": "Lightning",
@@ -79612,9 +83698,99 @@
     "strengthScore": 80.0
   },
   {
+    "id": 6271,
+    "name": "Corey Schwab",
+    "initials": "CS",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "1990s",
+    "stats": {
+      "gp": 87,
+      "wins": 21,
+      "gaa": 3.24,
+      "savePct": 0.893,
+      "shutouts": 3
+    },
+    "strengthScore": 50.8
+  },
+  {
+    "id": 6272,
+    "name": "Pat Jablonski",
+    "initials": "PJ",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "1990s",
+    "stats": {
+      "gp": 58,
+      "wins": 13,
+      "gaa": 3.95,
+      "savePct": 0.869,
+      "shutouts": 1
+    },
+    "strengthScore": 0
+  },
+  {
+    "id": 6273,
+    "name": "Rick Tabaracci",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "1990s",
+    "stats": {
+      "gp": 55,
+      "wins": 20,
+      "gaa": 2.75,
+      "savePct": 0.902,
+      "shutouts": 4
+    },
+    "strengthScore": 72.5
+  },
+  {
+    "id": 6274,
+    "name": "Dan Cloutier",
+    "initials": "DC",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "1990s",
+    "stats": {
+      "gp": 52,
+      "wins": 9,
+      "gaa": 3.49,
+      "savePct": 0.885,
+      "shutouts": 0
+    },
+    "strengthScore": 30.0
+  },
+  {
+    "id": 6275,
+    "name": "Jean-Claude Bergeron",
+    "initials": "JB",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "1990s",
+    "stats": {
+      "gp": 50,
+      "wins": 13,
+      "gaa": 3.68,
+      "savePct": 0.863,
+      "shutouts": 1
+    },
+    "strengthScore": 0
+  },
+  {
     "id": 6278,
     "name": "Martin St. Louis",
-    "initials": "ML",
+    "initials": "MS",
     "position": "LW",
     "franchise": "Lightning",
     "franchiseAbbr": "TBL",
@@ -79746,7 +83922,7 @@
   },
   {
     "id": 6287,
-    "name": "Andr\u00c3\u00a9 Roy",
+    "name": "André Roy",
     "initials": "AR",
     "position": "LW",
     "franchise": "Lightning",
@@ -79803,7 +83979,7 @@
   },
   {
     "id": 6290,
-    "name": "V\u00c3\u00a1clav Prospal",
+    "name": "Václav Prospal",
     "initials": "VP",
     "position": "C",
     "franchise": "Lightning",
@@ -79898,7 +84074,7 @@
   },
   {
     "id": 6296,
-    "name": "Martin Cib\u00c3\u00a1k",
+    "name": "Martin Cibák",
     "initials": "MC",
     "position": "C",
     "franchise": "Lightning",
@@ -80050,7 +84226,7 @@
   },
   {
     "id": 6311,
-    "name": "Andrej Mesz\u00c3\u00a1ro\u00c5\u00a1",
+    "name": "Andrej Meszároš",
     "initials": "AM",
     "position": "LD",
     "franchise": "Lightning",
@@ -80202,8 +84378,8 @@
   },
   {
     "id": 6327,
-    "name": "Jimmie \u00c3\u0096lvestad",
-    "initials": "J\u00c3",
+    "name": "Jimmie Ölvestad",
+    "initials": "JÖ",
     "position": "RW",
     "franchise": "Lightning",
     "franchiseAbbr": "TBL",
@@ -80254,6 +84430,78 @@
       "shutouts": 8
     },
     "strengthScore": 47.2
+  },
+  {
+    "id": 6330,
+    "name": "Mike Smith",
+    "initials": "MS",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2000s",
+    "stats": {
+      "gp": 96,
+      "wins": 30,
+      "gaa": 2.85,
+      "savePct": 0.906,
+      "shutouts": 5
+    },
+    "strengthScore": 59.7
+  },
+  {
+    "id": 6331,
+    "name": "Johan Holmqvist",
+    "initials": "JH",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2000s",
+    "stats": {
+      "gp": 93,
+      "wins": 47,
+      "gaa": 2.93,
+      "savePct": 0.892,
+      "shutouts": 3
+    },
+    "strengthScore": 23.9
+  },
+  {
+    "id": 6332,
+    "name": "Kevin Weekes",
+    "initials": "KW",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2000s",
+    "stats": {
+      "gp": 80,
+      "wins": 23,
+      "gaa": 3.08,
+      "savePct": 0.902,
+      "shutouts": 6
+    },
+    "strengthScore": 50.1
+  },
+  {
+    "id": 6333,
+    "name": "Marc Denis",
+    "initials": "MD",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2000s",
+    "stats": {
+      "gp": 54,
+      "wins": 18,
+      "gaa": 3.35,
+      "savePct": 0.879,
+      "shutouts": 1
+    },
+    "strengthScore": 0
   },
   {
     "id": 6336,
@@ -80428,7 +84676,7 @@
   },
   {
     "id": 6345,
-    "name": "C\u00c3\u00a9dric Paquette",
+    "name": "Cédric Paquette",
     "initials": "CP",
     "position": "C",
     "franchise": "Lightning",
@@ -80467,7 +84715,7 @@
   {
     "id": 6347,
     "name": "Martin St. Louis",
-    "initials": "ML",
+    "initials": "MS",
     "position": "RW",
     "franchise": "Lightning",
     "franchiseAbbr": "TBL",
@@ -80770,7 +85018,7 @@
   },
   {
     "id": 6366,
-    "name": "Ond\u00c5\u0099ej Pal\u00c3\u00a1t",
+    "name": "Ondřej Palát",
     "initials": "OP",
     "position": "LW",
     "franchise": "Lightning",
@@ -80865,7 +85113,7 @@
   },
   {
     "id": 6376,
-    "name": "Anton Str\u00c3\u00a5lman",
+    "name": "Anton Strålman",
     "initials": "AS",
     "position": "RD",
     "franchise": "Lightning",
@@ -80884,8 +85132,8 @@
   },
   {
     "id": 6377,
-    "name": "Andrej \u00c5\u00a0ustr",
-    "initials": "AU",
+    "name": "Andrej Šustr",
+    "initials": "AŠ",
     "position": "RD",
     "franchise": "Lightning",
     "franchiseAbbr": "TBL",
@@ -80979,8 +85227,8 @@
   },
   {
     "id": 6383,
-    "name": "Erik \u00c4\u008cern\u00c3\u00a1k",
-    "initials": "E\u00c4",
+    "name": "Erik Černák",
+    "initials": "EČ",
     "position": "RD",
     "franchise": "Lightning",
     "franchiseAbbr": "TBL",
@@ -81031,6 +85279,42 @@
       "shutouts": 17
     },
     "strengthScore": 73.1
+  },
+  {
+    "id": 6388,
+    "name": "Dwayne Roloson",
+    "initials": "DR",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 74,
+      "wins": 31,
+      "gaa": 3.15,
+      "savePct": 0.898,
+      "shutouts": 5
+    },
+    "strengthScore": 17.4
+  },
+  {
+    "id": 6389,
+    "name": "Mathieu Garon",
+    "initials": "MG",
+    "position": "G",
+    "franchise": "Lightning",
+    "franchiseAbbr": "TBL",
+    "city": "Tampa Bay",
+    "decade": "2010s",
+    "stats": {
+      "gp": 66,
+      "wins": 28,
+      "gaa": 2.86,
+      "savePct": 0.9,
+      "shutouts": 1
+    },
+    "strengthScore": 22.3
   },
   {
     "id": 6394,
@@ -81263,7 +85547,7 @@
   {
     "id": 6413,
     "name": "Emil Martinsen Lilleberg",
-    "initials": "EL",
+    "initials": "EM",
     "position": "LD",
     "franchise": "Lightning",
     "franchiseAbbr": "TBL",
@@ -81319,7 +85603,7 @@
   },
   {
     "id": 6420,
-    "name": "Ond\u00c5\u0099ej Pal\u00c3\u00a1t",
+    "name": "Ondřej Palát",
     "initials": "OP",
     "position": "LW",
     "franchise": "Lightning",
@@ -81357,7 +85641,7 @@
   },
   {
     "id": 6422,
-    "name": "Pierre-\u00c3\u0089douard Bellemare",
+    "name": "Pierre-Édouard Bellemare",
     "initials": "PB",
     "position": "LW",
     "franchise": "Lightning",
@@ -81376,8 +85660,8 @@
   },
   {
     "id": 6428,
-    "name": "Erik \u00c4\u008cern\u00c3\u00a1k",
-    "initials": "E\u00c4",
+    "name": "Erik Černák",
+    "initials": "EČ",
     "position": "RD",
     "franchise": "Lightning",
     "franchiseAbbr": "TBL",
@@ -81489,8 +85773,8 @@
   },
   {
     "id": 6438,
-    "name": "Peter \u00c5\u00a0\u00c5\u00a5astn\u00c3\u00bd",
-    "initials": "P\u00c5",
+    "name": "Peter Šťastný",
+    "initials": "PŠ",
     "position": "C",
     "franchise": "Nordiques",
     "franchiseAbbr": "QUE",
@@ -81565,7 +85849,7 @@
   },
   {
     "id": 6442,
-    "name": "J.F. Sauv\u00c3\u00a9",
+    "name": "J.F. Sauvé",
     "initials": "JS",
     "position": "C",
     "franchise": "Nordiques",
@@ -81622,8 +85906,8 @@
   },
   {
     "id": 6449,
-    "name": "Mari\u00c3\u00a1n \u00c5\u00a0\u00c5\u00a5astn\u00c3\u00bd",
-    "initials": "M\u00c5",
+    "name": "Marián Šťastný",
+    "initials": "MŠ",
     "position": "RW",
     "franchise": "Nordiques",
     "franchiseAbbr": "QUE",
@@ -81660,7 +85944,7 @@
   },
   {
     "id": 6451,
-    "name": "R\u00c3\u00a9al Cloutier",
+    "name": "Réal Cloutier",
     "initials": "RC",
     "position": "RW",
     "franchise": "Nordiques",
@@ -81717,7 +86001,7 @@
   },
   {
     "id": 6455,
-    "name": "Iiro J\u00c3\u00a4rvi",
+    "name": "Iiro Järvi",
     "initials": "IJ",
     "position": "RW",
     "franchise": "Nordiques",
@@ -81736,8 +86020,8 @@
   },
   {
     "id": 6458,
-    "name": "Anton \u00c5\u00a0\u00c5\u00a5astn\u00c3\u00bd",
-    "initials": "A\u00c5",
+    "name": "Anton Šťastný",
+    "initials": "AŠ",
     "position": "LW",
     "franchise": "Nordiques",
     "franchiseAbbr": "QUE",
@@ -81755,7 +86039,7 @@
   },
   {
     "id": 6459,
-    "name": "Alain C\u00c3\u00b4t\u00c3\u00a9",
+    "name": "Alain Côté",
     "initials": "AC",
     "position": "LW",
     "franchise": "Nordiques",
@@ -81831,7 +86115,7 @@
   },
   {
     "id": 6463,
-    "name": "Ga\u00c3\u00a9tan Duchesne",
+    "name": "Gaétan Duchesne",
     "initials": "GD",
     "position": "LW",
     "franchise": "Nordiques",
@@ -82097,7 +86381,7 @@
   },
   {
     "id": 6483,
-    "name": "Andr\u00c3\u00a9 Dupont",
+    "name": "André Dupont",
     "initials": "AD",
     "position": "LD",
     "franchise": "Nordiques",
@@ -82205,6 +86489,24 @@
       "shutouts": 5
     },
     "strengthScore": 75.9
+  },
+  {
+    "id": 6491,
+    "name": "Ron Tugnutt",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1980s",
+    "stats": {
+      "gp": 67,
+      "wins": 17,
+      "gaa": 4.11,
+      "savePct": 0.872,
+      "shutouts": 0
+    },
+    "strengthScore": 51.0
   },
   {
     "id": 6496,
@@ -82379,7 +86681,7 @@
   },
   {
     "id": 6518,
-    "name": "Martin Ru\u00c4\u008dinsk\u00c3\u00bd",
+    "name": "Martin Ručinský",
     "initials": "MR",
     "position": "LW",
     "franchise": "Nordiques",
@@ -82512,7 +86814,7 @@
   },
   {
     "id": 6543,
-    "name": "St\u00c3\u00a9phane Fiset",
+    "name": "Stéphane Fiset",
     "initials": "SF",
     "position": "G",
     "franchise": "Nordiques",
@@ -82527,6 +86829,60 @@
       "shutouts": 5
     },
     "strengthScore": 49.9
+  },
+  {
+    "id": 6544,
+    "name": "Ron Tugnutt",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1990s",
+    "stats": {
+      "gp": 86,
+      "wins": 18,
+      "gaa": 4.04,
+      "savePct": 0.878,
+      "shutouts": 1
+    },
+    "strengthScore": 11.7
+  },
+  {
+    "id": 6545,
+    "name": "Jacques Cloutier",
+    "initials": "JC",
+    "position": "G",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1990s",
+    "stats": {
+      "gp": 55,
+      "wins": 12,
+      "gaa": 3.83,
+      "savePct": 0.884,
+      "shutouts": 0
+    },
+    "strengthScore": 26.3
+  },
+  {
+    "id": 6546,
+    "name": "Ron Hextall",
+    "initials": "RH",
+    "position": "G",
+    "franchise": "Nordiques",
+    "franchiseAbbr": "QUE",
+    "city": "Quebec",
+    "decade": "1990s",
+    "stats": {
+      "gp": 54,
+      "wins": 29,
+      "gaa": 3.45,
+      "savePct": 0.888,
+      "shutouts": 0
+    },
+    "strengthScore": 37.5
   },
   {
     "id": 6549,
@@ -82872,7 +87228,7 @@
   },
   {
     "id": 6569,
-    "name": "J.P. Paris\u00c3\u00a9",
+    "name": "J.P. Parisé",
     "initials": "JP",
     "position": "LW",
     "franchise": "North Stars",
@@ -83343,6 +87699,42 @@
     "strengthScore": 52.6
   },
   {
+    "id": 6601,
+    "name": "Gump Worsley",
+    "initials": "GW",
+    "position": "G",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1970s",
+    "stats": {
+      "gp": 99,
+      "wins": 34,
+      "gaa": 2.63,
+      "savePct": 0.917,
+      "shutouts": 2
+    },
+    "strengthScore": 100
+  },
+  {
+    "id": 6602,
+    "name": "Gary Edwards",
+    "initials": "GE",
+    "position": "G",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1970s",
+    "stats": {
+      "gp": 51,
+      "wins": 15,
+      "gaa": 3.46,
+      "savePct": 0.872,
+      "shutouts": 0
+    },
+    "strengthScore": 5.2
+  },
+  {
     "id": 6606,
     "name": "Neal Broten",
     "initials": "NB",
@@ -83724,7 +88116,7 @@
   },
   {
     "id": 6629,
-    "name": "Franti\u00c5\u00a1ek Musil",
+    "name": "František Musil",
     "initials": "FM",
     "position": "LD",
     "franchise": "North Stars",
@@ -84100,7 +88492,7 @@
   },
   {
     "id": 6662,
-    "name": "Ulf Dahl\u00c3\u00a9n",
+    "name": "Ulf Dahlén",
     "initials": "UD",
     "position": "RW",
     "franchise": "North Stars",
@@ -84271,7 +88663,7 @@
   },
   {
     "id": 6677,
-    "name": "Ga\u00c3\u00a9tan Duchesne",
+    "name": "Gaétan Duchesne",
     "initials": "GD",
     "position": "LW",
     "franchise": "North Stars",
@@ -84438,6 +88830,24 @@
       "shutouts": 8
     },
     "strengthScore": 32.6
+  },
+  {
+    "id": 6698,
+    "name": "Darcy Wakaluk",
+    "initials": "DW",
+    "position": "G",
+    "franchise": "North Stars",
+    "franchiseAbbr": "MNS",
+    "city": "Minnesota",
+    "decade": "1990s",
+    "stats": {
+      "gp": 65,
+      "wins": 23,
+      "gaa": 3.45,
+      "savePct": 0.88,
+      "shutouts": 2
+    },
+    "strengthScore": 17.8
   },
   {
     "id": 6700,
@@ -84612,7 +89022,7 @@
   },
   {
     "id": 6713,
-    "name": "Willy Lindstr\u00c3\u00b6m",
+    "name": "Willy Lindström",
     "initials": "WL",
     "position": "RW",
     "franchise": "Jets",
@@ -84688,7 +89098,7 @@
   },
   {
     "id": 6719,
-    "name": "Hannu J\u00c3\u00a4rvenp\u00c3\u00a4\u00c3\u00a4",
+    "name": "Hannu Järvenpää",
     "initials": "HJ",
     "position": "RW",
     "franchise": "Jets",
@@ -85215,8 +89625,44 @@
     "strengthScore": 50.3
   },
   {
+    "id": 6749,
+    "name": "Ed Staniowski",
+    "initials": "ES",
+    "position": "G",
+    "franchise": "Jets",
+    "franchiseAbbr": "WIN",
+    "city": "Winnipeg",
+    "decade": "1980s",
+    "stats": {
+      "gp": 62,
+      "wins": 24,
+      "gaa": 4.17,
+      "savePct": 0.867,
+      "shutouts": 2
+    },
+    "strengthScore": 37.4
+  },
+  {
+    "id": 6750,
+    "name": "Bob Essensa",
+    "initials": "BE",
+    "position": "G",
+    "franchise": "Jets",
+    "franchiseAbbr": "WIN",
+    "city": "Winnipeg",
+    "decade": "1980s",
+    "stats": {
+      "gp": 56,
+      "wins": 24,
+      "gaa": 3.35,
+      "savePct": 0.887,
+      "shutouts": 2
+    },
+    "strengthScore": 88.6
+  },
+  {
     "id": 6753,
-    "name": "Teemu Sel\u00c3\u00a4nne",
+    "name": "Teemu Selänne",
     "initials": "TS",
     "position": "RW",
     "franchise": "Jets",
@@ -85748,7 +90194,7 @@
   },
   {
     "id": 6795,
-    "name": "St\u00c3\u00a9phane Quintal",
+    "name": "Stéphane Quintal",
     "initials": "SQ",
     "position": "RD",
     "franchise": "Jets",
@@ -85801,5 +90247,77 @@
       "shutouts": 12
     },
     "strengthScore": 55.7
+  },
+  {
+    "id": 6803,
+    "name": "Nikolai Khabibulin",
+    "initials": "NK",
+    "position": "G",
+    "franchise": "Jets",
+    "franchiseAbbr": "WIN",
+    "city": "Winnipeg",
+    "decade": "1990s",
+    "stats": {
+      "gp": 79,
+      "wins": 34,
+      "gaa": 3.22,
+      "savePct": 0.904,
+      "shutouts": 2
+    },
+    "strengthScore": 76.8
+  },
+  {
+    "id": 6804,
+    "name": "Tim Cheveldae",
+    "initials": "TC",
+    "position": "G",
+    "franchise": "Jets",
+    "franchiseAbbr": "WIN",
+    "city": "Winnipeg",
+    "decade": "1990s",
+    "stats": {
+      "gp": 74,
+      "wins": 21,
+      "gaa": 3.84,
+      "savePct": 0.884,
+      "shutouts": 1
+    },
+    "strengthScore": 27.7
+  },
+  {
+    "id": 6805,
+    "name": "Rick Tabaracci",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Jets",
+    "franchiseAbbr": "WIN",
+    "city": "Winnipeg",
+    "decade": "1990s",
+    "stats": {
+      "gp": 61,
+      "wins": 15,
+      "gaa": 3.85,
+      "savePct": 0.874,
+      "shutouts": 1
+    },
+    "strengthScore": 2.9
+  },
+  {
+    "id": 6806,
+    "name": "Stéphane Beauregard",
+    "initials": "SB",
+    "position": "G",
+    "franchise": "Jets",
+    "franchiseAbbr": "WIN",
+    "city": "Winnipeg",
+    "decade": "1990s",
+    "stats": {
+      "gp": 55,
+      "wins": 9,
+      "gaa": 3.67,
+      "savePct": 0.877,
+      "shutouts": 2
+    },
+    "strengthScore": 9.6
   }
 ]
