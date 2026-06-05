@@ -66,6 +66,7 @@ def scrape_season(hr_abbr, year):
         r.raise_for_status()
     except: return [], []
 
+    r.encoding = 'utf-8'
     soup = BeautifulSoup(r.text, "html.parser")
     skaters, goalies = [], []
 

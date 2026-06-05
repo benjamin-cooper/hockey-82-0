@@ -52,6 +52,7 @@ def scrape_season(hr_abbr, year):
     except Exception as e:
         print(f"    Error: {e}"); return [], []
 
+    resp.encoding = 'utf-8'
     soup = BeautifulSoup(resp.text, "html.parser")
     skaters, goalies = [], []
 

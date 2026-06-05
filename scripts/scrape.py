@@ -82,6 +82,7 @@ def get_page(url: str, retries=3) -> BeautifulSoup | None:
                 time.sleep(60)
                 continue
             resp.raise_for_status()
+            resp.encoding = 'utf-8'
             return BeautifulSoup(resp.text, "html.parser")
         except Exception as e:
             print(f"  Error fetching {url}: {e} (attempt {attempt+1})")
