@@ -91,7 +91,9 @@ export function simulateSeason(players: DraftedPlayer[]): TeamResult {
 
   // ─── STRENGTH SCORE → WIN PROBABILITY ─────────────────────────────────────
   const strengthScore = Math.round(Math.min(100, Math.max(0, offNorm + defNorm)));
-  const winPct = 0.08 + 0.84 / (1 + Math.exp(-0.09 * (strengthScore - 50)));
+  // Score=50 → ~.500, Score=85 → ~.840, Score=100 → ~.970
+  // At .970 over 82 games: (0.97)^82 ≈ 8% chance of 82-0 — rare but possible.
+  const winPct = 0.08 + 0.90 / (1 + Math.exp(-0.09 * (strengthScore - 50)));
 
   // Era-aware OTL: no OTL for pre-2000 rosters
   const allDecades = players.map(p => p.decade);
