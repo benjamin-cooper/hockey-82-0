@@ -10,19 +10,22 @@ import ResultsScreen from './ResultsScreen';
 type SpinCombo = { abbr: string; decade: string };
 
 type GamePhase =
-  | { type: 'spinning';        franchiseAbbr: string; city: string; decade: string; spinCombos: SpinCombo[] }
-  | { type: 'picking-player';  franchiseAbbr: string; city: string; decade: string; players: Player[] }
-  | { type: 'placing-player';  franchiseAbbr: string; city: string; decade: string; player: Player; slots: Position[] }
-  | { type: 'results';         result: TeamResult };
+  | { type: 'spinning';       franchiseAbbr: string; city: string; decade: string; spinCombos: SpinCombo[] }
+  | { type: 'picking-player'; franchiseAbbr: string; city: string; decade: string; players: Player[] }
+  | { type: 'placing-player'; franchiseAbbr: string; city: string; decade: string; player: Player; slots: Position[] }
+  | { type: 'results';        result: TeamResult };
 
 type Roster = Partial<Record<Position, DraftedPlayer>>;
 
 export default function DraftGame() {
-  const [phase,       setPhase]       = useState<GamePhase | null>(null);
-  const [roster,      setRoster]      = useState<Roster>({});
-  const [usedCombos,  setUsedCombos]  = useState<string[]>([]);
-  const [loading,     setLoading]     = useState(false);
-  const [error,       setError]       = useState<string | null>(null);
+  const [phase,           setPhase]           = useState<GamePhase | null>(null);
+  const [roster,          setRoster]          = useState<Roster>({});
+  const [usedCombos,      setUsedCombos]      = useState<string[]>([]);
+  // Reroll: one per round. Track combos already rerolled so they can't be rerolled again.
+  const [rerollAvailable, setRerollAvailable] = useState(false);
+  const [rerolledCombos,  setRerolledCombos]  = useState<string[]>([]);
+  const [loading,         setLoading]         = useState(false);
+  const [error,           setError]           = useState<string | null>(null);
 
   const filled   = Object.keys(roster) as Position[];
   const unfilled = POSITIONS.filter(p => !filled.includes(p));
@@ -30,19 +33,24 @@ export default function DraftGame() {
   async function startDraft() {
     setRoster({});
     setUsedCombos([]);
+    setRerolledCombos([]);
     setError(null);
-    await spinNext([], POSITIONS);
+    await spinNext([], POSITIONS, []);
   }
 
-  async function spinNext(used: string[], remaining: Position[]) {
+  async function spinNext(used: string[], remaining: Position[], rerolled: string[]) {
     setLoading(true);
+    setRerollAvailable(true); // fresh round — reroll available
     try {
-      const res = await fetch(`/api/draft-slot?used=${used.join(',')}&unfilled=${remaining.join(',')}`);
-      if (!res.ok) throw new Error('No slots');
+      // Exclude both permanently used combos and temporarily rerolled ones
+      const exclude = [...used, ...rerolled];
+      const res = await fetch(`/api/draft-slot?used=${exclude.join(',')}&unfilled=${remaining.join(',')}`);
+      if (!res.ok) throw new Error('No slots available');
       const slot = await res.json();
       setPhase({ type: 'spinning', ...slot });
     } catch {
       setError('Something went wrong. Try again.');
+      setPhase(null); // reset to start screen so user can retry
     } finally {
       setLoading(false);
     }
@@ -57,24 +65,44 @@ export default function DraftGame() {
       setPhase({ type: 'picking-player', franchiseAbbr, city, decade, players: data.players ?? [] });
     } catch {
       setError('Failed to load players.');
+      setPhase(null);
     }
   }, [phase, unfilled]);
 
+  async function handleReroll() {
+    if (!phase || phase.type === 'results' || !rerollAvailable) return;
+    const combo = `${phase.franchiseAbbr}-${phase.decade}`;
+    const newRerolled = [...rerolledCombos, combo];
+    setRerolledCombos(newRerolled);
+    setRerollAvailable(false);
+    await spinNext(usedCombos, unfilled, newRerolled);
+  }
+
   function handlePickPlayer(player: Player) {
     if (!phase || phase.type !== 'picking-player') return;
-    // Which unfilled slots is this player eligible for?
     const slots = (eligibleSlots(player.position as Position) as Position[]).filter(s => unfilled.includes(s));
     setPhase({ type: 'placing-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, player, slots });
+  }
+
+  async function handleBack() {
+    if (!phase || phase.type !== 'placing-player') return;
+    try {
+      const res = await fetch(`/api/players?franchise=${phase.franchiseAbbr}&decade=${phase.decade}&unfilled=${unfilled.join(',')}`);
+      const data = await res.json();
+      setPhase({ type: 'picking-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, players: data.players ?? [] });
+    } catch {
+      setError('Failed to reload players.');
+    }
   }
 
   async function handlePlace(pos: Position) {
     if (!phase || phase.type !== 'placing-player') return;
     const { player, franchiseAbbr, decade } = phase;
 
-    const drafted: DraftedPlayer = { ...player, slotPosition: pos };
-    const newRoster   = { ...roster, [pos]: drafted };
-    const newUsed     = [...usedCombos, `${franchiseAbbr}-${decade}`];
-    const newUnfilled = POSITIONS.filter(p => !(p in newRoster));
+    const drafted: DraftedPlayer    = { ...player, slotPosition: pos };
+    const newRoster: Roster         = { ...roster, [pos]: drafted };
+    const newUsed                   = [...usedCombos, `${franchiseAbbr}-${decade}`];
+    const newUnfilled               = POSITIONS.filter(p => !(p in newRoster));
 
     setRoster(newRoster);
     setUsedCombos(newUsed);
@@ -92,23 +120,25 @@ export default function DraftGame() {
         result.players = orderedPlayers;
         setPhase({ type: 'results', result });
       } catch {
-        setError('Simulation failed.');
+        setError('Simulation failed. Try again.');
+        setPhase(null);
       } finally {
         setLoading(false);
       }
     } else {
-      await spinNext(newUsed, newUnfilled);
+      await spinNext(newUsed, newUnfilled, rerolledCombos);
     }
   }
 
-  // ── RENDER ───────────────────────────────────────────────────────────────────
+  // ── RENDER ─────────────────────────────────────────────────────────────────
 
   if (!phase) {
     return (
       <div className="flex flex-col items-center gap-6 py-12">
         <p className="text-slate-400 text-center max-w-sm text-sm leading-relaxed">
           Each round, the slot machine picks a franchise and decade. Pick any player from that
-          era, then place them on the rink. Can you build a team good enough to go 82-0?
+          era, then place them on the rink. One reroll per round.
+          Can you build a team good enough to go 82-0?
         </p>
         <button
           onClick={startDraft}
@@ -117,7 +147,12 @@ export default function DraftGame() {
         >
           {loading ? 'Loading…' : 'Start Draft'}
         </button>
-        {error && <p className="text-red-400 text-sm">{error}</p>}
+        {error && (
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-red-400 text-sm">{error}</p>
+            <button onClick={() => setError(null)} className="text-slate-500 text-xs hover:text-slate-300">Dismiss</button>
+          </div>
+        )}
       </div>
     );
   }
@@ -126,13 +161,15 @@ export default function DraftGame() {
     return <ResultsScreen result={phase.result} onBuildAnother={startDraft} />;
   }
 
-  const teamColor = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
+  const teamColor     = FRANCHISE_MAP.get(phase.franchiseAbbr)?.color ?? '#4a9eff';
+  const currentCombo  = `${phase.franchiseAbbr}-${phase.decade}`;
+  const canReroll     = rerollAvailable && !rerolledCombos.includes(currentCombo);
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4">
       <div className="grid grid-cols-[1fr_320px] gap-6 items-start">
 
-        {/* LEFT — slot machine / player list / placing prompt */}
+        {/* LEFT */}
         <div className="flex flex-col gap-4 min-w-0">
 
           {/* Slot machine */}
@@ -154,8 +191,19 @@ export default function DraftGame() {
                   <span className="text-white font-bold">{phase.franchiseAbbr}</span>
                   <span className="text-slate-500 mx-1.5">·</span>
                   <span className="text-white font-bold">{phase.decade}</span>
+                  <span className="text-xs font-medium ml-2" style={{ color: teamColor }}>{phase.city}</span>
                 </div>
-                <div className="text-xs font-medium" style={{ color: teamColor }}>{phase.city}</div>
+                {canReroll && (
+                  <button
+                    onClick={handleReroll}
+                    disabled={loading}
+                    className="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg
+                               border border-slate-600 text-slate-300 hover:text-white hover:border-slate-400
+                               transition-colors disabled:opacity-40"
+                  >
+                    <RerollIcon /> Reroll
+                  </button>
+                )}
               </div>
               <p className="text-slate-400 text-xs">Pick a player — then place them on the rink →</p>
               {phase.players.length === 0 ? (
@@ -168,18 +216,11 @@ export default function DraftGame() {
             </div>
           )}
 
-          {/* Placing phase */}
+          {/* Placing */}
           {phase.type === 'placing-player' && (
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
-                <button
-                  className="text-slate-500 hover:text-slate-300 text-sm transition-colors"
-                  onClick={async () => {
-                    const res = await fetch(`/api/players?franchise=${phase.franchiseAbbr}&decade=${phase.decade}&unfilled=${unfilled.join(',')}`);
-                    const data = await res.json();
-                    setPhase({ type: 'picking-player', franchiseAbbr: phase.franchiseAbbr, city: phase.city, decade: phase.decade, players: data.players ?? [] });
-                  }}
-                >
+                <button onClick={handleBack} className="text-slate-500 hover:text-slate-300 text-sm transition-colors">
                   ← Back
                 </button>
                 <p className="text-slate-400 text-sm">
@@ -198,7 +239,7 @@ export default function DraftGame() {
           {error && <p className="text-red-400 text-sm">{error}</p>}
         </div>
 
-        {/* RIGHT — rink, always visible */}
+        {/* RIGHT — rink */}
         <div className="sticky top-6">
           <RinkLayout
             roster={roster}
@@ -210,5 +251,14 @@ export default function DraftGame() {
 
       </div>
     </div>
+  );
+}
+
+function RerollIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+      <path d="M3 3v5h5" />
+    </svg>
   );
 }

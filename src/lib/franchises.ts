@@ -26,7 +26,7 @@ export const FRANCHISES: Franchise[] = [
   { abbr: 'NJD', name: 'Devils', city: 'New Jersey', color: '#CE1126', decades: ['1980s','1990s','2000s','2010s','2020s'] },
   { abbr: 'COL', name: 'Avalanche', city: 'Colorado', color: '#6F263D', decades: ['1990s','2000s','2010s','2020s'] },
   { abbr: 'DAL', name: 'Stars', city: 'Dallas', color: '#006847', decades: ['1990s','2000s','2010s','2020s'] },
-  { abbr: 'LAK', name: 'Kings', city: 'Los Angeles', color: '#111111', decades: ['1970s','1980s','1990s','2000s','2010s','2020s'] },
+  { abbr: 'LAK', name: 'Kings', city: 'Los Angeles', color: '#A2AAAD', decades: ['1970s','1980s','1990s','2000s','2010s','2020s'] },
   { abbr: 'WSH', name: 'Capitals', city: 'Washington', color: '#C8102E', decades: ['1980s','1990s','2000s','2010s','2020s'] },
   { abbr: 'TBL', name: 'Lightning', city: 'Tampa Bay', color: '#002868', decades: ['1990s','2000s','2010s','2020s'] },
   // Historic/defunct (makes draft more interesting/challenging)

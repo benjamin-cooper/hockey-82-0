@@ -90319,5 +90319,6076 @@
       "shutouts": 2
     },
     "strengthScore": 9.6
+  },
+  {
+    "id": 6807,
+    "name": "Theo Fleury",
+    "initials": "TF",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 675,
+      "goals": 319,
+      "assists": 411,
+      "points": 730,
+      "plusMinus": 121,
+      "pointsPerGame": 1.081
+    },
+    "strengthScore": 75.3
+  },
+  {
+    "id": 6808,
+    "name": "Ronnie Stern",
+    "initials": "RS",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 396,
+      "goals": 59,
+      "assists": 66,
+      "points": 125,
+      "plusMinus": 12,
+      "pointsPerGame": 0.316
+    },
+    "strengthScore": 23.8
+  },
+  {
+    "id": 6809,
+    "name": "Jarome Iginla",
+    "initials": "JI",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 311,
+      "goals": 91,
+      "assists": 105,
+      "points": 196,
+      "plusMinus": -13,
+      "pointsPerGame": 0.63
+    },
+    "strengthScore": 44.9
+  },
+  {
+    "id": 6810,
+    "name": "Sandy McCarthy",
+    "initials": "SM",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 276,
+      "goals": 30,
+      "assists": 25,
+      "points": 55,
+      "plusMinus": -36,
+      "pointsPerGame": 0.199
+    },
+    "strengthScore": 15.9
+  },
+  {
+    "id": 6811,
+    "name": "Sergei Makarov",
+    "initials": "SM",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 217,
+      "goals": 70,
+      "assists": 136,
+      "points": 206,
+      "plusMinus": 29,
+      "pointsPerGame": 0.949
+    },
+    "strengthScore": 66.4
+  },
+  {
+    "id": 6812,
+    "name": "Ed Ward",
+    "initials": "EW",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 213,
+      "goals": 15,
+      "assists": 23,
+      "points": 38,
+      "plusMinus": -10,
+      "pointsPerGame": 0.178
+    },
+    "strengthScore": 14.5
+  },
+  {
+    "id": 6813,
+    "name": "Valeri Bure",
+    "initials": "VB",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 178,
+      "goals": 66,
+      "assists": 71,
+      "points": 137,
+      "plusMinus": -7,
+      "pointsPerGame": 0.77
+    },
+    "strengthScore": 54.3
+  },
+  {
+    "id": 6814,
+    "name": "Robert Reichel",
+    "initials": "RR",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 425,
+      "goals": 153,
+      "assists": 201,
+      "points": 354,
+      "plusMinus": 59,
+      "pointsPerGame": 0.833
+    },
+    "strengthScore": 58.6
+  },
+  {
+    "id": 6815,
+    "name": "German Titov",
+    "initials": "GT",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 345,
+      "goals": 107,
+      "assists": 121,
+      "points": 228,
+      "plusMinus": 22,
+      "pointsPerGame": 0.661
+    },
+    "strengthScore": 47.0
+  },
+  {
+    "id": 6816,
+    "name": "Gary Roberts",
+    "initials": "GR",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 322,
+      "goals": 176,
+      "assists": 172,
+      "points": 348,
+      "plusMinus": 131,
+      "pointsPerGame": 1.081
+    },
+    "strengthScore": 75.3
+  },
+  {
+    "id": 6817,
+    "name": "Paul Ranheim",
+    "initials": "PR",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 269,
+      "goals": 68,
+      "assists": 72,
+      "points": 140,
+      "plusMinus": 25,
+      "pointsPerGame": 0.52
+    },
+    "strengthScore": 37.5
+  },
+  {
+    "id": 6818,
+    "name": "Paul Kruse",
+    "initials": "PK",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 245,
+      "goals": 24,
+      "assists": 29,
+      "points": 53,
+      "plusMinus": 1,
+      "pointsPerGame": 0.216
+    },
+    "strengthScore": 17.0
+  },
+  {
+    "id": 6819,
+    "name": "Mike Sullivan",
+    "initials": "MS",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 205,
+      "goals": 20,
+      "assists": 28,
+      "points": 48,
+      "plusMinus": -17,
+      "pointsPerGame": 0.234
+    },
+    "strengthScore": 18.2
+  },
+  {
+    "id": 6820,
+    "name": "Jason Wiemer",
+    "initials": "JW",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 154,
+      "goals": 23,
+      "assists": 25,
+      "points": 48,
+      "plusMinus": -23,
+      "pointsPerGame": 0.312
+    },
+    "strengthScore": 23.5
+  },
+  {
+    "id": 6821,
+    "name": "Michael Nylander",
+    "initials": "MN",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 153,
+      "goals": 32,
+      "assists": 70,
+      "points": 102,
+      "plusMinus": 20,
+      "pointsPerGame": 0.667
+    },
+    "strengthScore": 47.4
+  },
+  {
+    "id": 6822,
+    "name": "Jonas HÃ¶glund",
+    "initials": "JH",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 118,
+      "goals": 25,
+      "assists": 24,
+      "points": 49,
+      "plusMinus": -13,
+      "pointsPerGame": 0.415
+    },
+    "strengthScore": 30.4
+  },
+  {
+    "id": 6823,
+    "name": "Craig Berube",
+    "initials": "CB",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 113,
+      "goals": 5,
+      "assists": 12,
+      "points": 17,
+      "plusMinus": -9,
+      "pointsPerGame": 0.15
+    },
+    "strengthScore": 12.6
+  },
+  {
+    "id": 6824,
+    "name": "Joel Otto",
+    "initials": "JO",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 357,
+      "goals": 70,
+      "assists": 99,
+      "points": 169,
+      "plusMinus": -21,
+      "pointsPerGame": 0.473
+    },
+    "strengthScore": 34.3
+  },
+  {
+    "id": 6825,
+    "name": "Joe Nieuwendyk",
+    "initials": "JN",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 337,
+      "goals": 162,
+      "assists": 179,
+      "points": 341,
+      "plusMinus": 57,
+      "pointsPerGame": 1.012
+    },
+    "strengthScore": 70.6
+  },
+  {
+    "id": 6826,
+    "name": "Cory Stillman",
+    "initials": "CS",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 327,
+      "goals": 88,
+      "assists": 102,
+      "points": 190,
+      "plusMinus": -21,
+      "pointsPerGame": 0.581
+    },
+    "strengthScore": 41.6
+  },
+  {
+    "id": 6827,
+    "name": "Clarke Wilm",
+    "initials": "CW",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 156,
+      "goals": 20,
+      "assists": 20,
+      "points": 40,
+      "plusMinus": 5,
+      "pointsPerGame": 0.256
+    },
+    "strengthScore": 19.7
+  },
+  {
+    "id": 6828,
+    "name": "Andrew Cassels",
+    "initials": "AC",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 151,
+      "goals": 29,
+      "assists": 52,
+      "points": 81,
+      "plusMinus": -19,
+      "pointsPerGame": 0.536
+    },
+    "strengthScore": 38.6
+  },
+  {
+    "id": 6829,
+    "name": "Jeff Shantz",
+    "initials": "JS",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 143,
+      "goals": 25,
+      "assists": 35,
+      "points": 60,
+      "plusMinus": 2,
+      "pointsPerGame": 0.42
+    },
+    "strengthScore": 30.8
+  },
+  {
+    "id": 6830,
+    "name": "Doug Gilmour",
+    "initials": "DG",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 116,
+      "goals": 31,
+      "assists": 88,
+      "points": 119,
+      "plusMinus": 39,
+      "pointsPerGame": 1.026
+    },
+    "strengthScore": 71.6
+  },
+  {
+    "id": 6831,
+    "name": "FrantiÅ¡ek Musil",
+    "initials": "FM",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 335,
+      "goals": 18,
+      "assists": 45,
+      "points": 63,
+      "plusMinus": 96,
+      "pointsPerGame": 0.188
+    },
+    "strengthScore": 15.2
+  },
+  {
+    "id": 6832,
+    "name": "Trent Yawney",
+    "initials": "TY",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 274,
+      "goals": 11,
+      "assists": 45,
+      "points": 56,
+      "plusMinus": 20,
+      "pointsPerGame": 0.204
+    },
+    "strengthScore": 16.2
+  },
+  {
+    "id": 6833,
+    "name": "Tommy Albelin",
+    "initials": "TA",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 262,
+      "goals": 11,
+      "assists": 40,
+      "points": 51,
+      "plusMinus": -12,
+      "pointsPerGame": 0.195
+    },
+    "strengthScore": 15.6
+  },
+  {
+    "id": 6834,
+    "name": "Phil Housley",
+    "initials": "PH",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 259,
+      "goals": 46,
+      "assists": 158,
+      "points": 204,
+      "plusMinus": 17,
+      "pointsPerGame": 0.788
+    },
+    "strengthScore": 55.5
+  },
+  {
+    "id": 6835,
+    "name": "Gary Suter",
+    "initials": "GS",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 255,
+      "goals": 51,
+      "assists": 168,
+      "points": 219,
+      "plusMinus": 23,
+      "pointsPerGame": 0.859
+    },
+    "strengthScore": 60.3
+  },
+  {
+    "id": 6836,
+    "name": "Todd Simpson",
+    "initials": "TS",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 208,
+      "goals": 4,
+      "assists": 26,
+      "points": 30,
+      "plusMinus": -6,
+      "pointsPerGame": 0.144
+    },
+    "strengthScore": 12.2
+  },
+  {
+    "id": 6837,
+    "name": "Zarley Zalapski",
+    "initials": "ZZ",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 176,
+      "goals": 21,
+      "assists": 55,
+      "points": 76,
+      "plusMinus": 8,
+      "pointsPerGame": 0.432
+    },
+    "strengthScore": 31.6
+  },
+  {
+    "id": 6838,
+    "name": "Steve Chiasson",
+    "initials": "SC",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 168,
+      "goals": 15,
+      "assists": 59,
+      "points": 74,
+      "plusMinus": 2,
+      "pointsPerGame": 0.44
+    },
+    "strengthScore": 32.1
+  },
+  {
+    "id": 6839,
+    "name": "Chris Dahlquist",
+    "initials": "CD",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 151,
+      "goals": 4,
+      "assists": 18,
+      "points": 22,
+      "plusMinus": 5,
+      "pointsPerGame": 0.146
+    },
+    "strengthScore": 12.3
+  },
+  {
+    "id": 6840,
+    "name": "JoÃ«l Bouchard",
+    "initials": "JB",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 120,
+      "goals": 9,
+      "assists": 12,
+      "points": 21,
+      "plusMinus": -23,
+      "pointsPerGame": 0.175
+    },
+    "strengthScore": 14.3
+  },
+  {
+    "id": 6841,
+    "name": "Al MacInnis",
+    "initials": "AM",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 275,
+      "goals": 87,
+      "assists": 229,
+      "points": 316,
+      "plusMinus": 105,
+      "pointsPerGame": 1.149
+    },
+    "strengthScore": 79.8
+  },
+  {
+    "id": 6842,
+    "name": "Cale Hulse",
+    "initials": "CH",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 262,
+      "goals": 10,
+      "assists": 43,
+      "points": 53,
+      "plusMinus": -20,
+      "pointsPerGame": 0.202
+    },
+    "strengthScore": 16.1
+  },
+  {
+    "id": 6843,
+    "name": "Derek Morris",
+    "initials": "DM",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 231,
+      "goals": 25,
+      "assists": 76,
+      "points": 101,
+      "plusMinus": 7,
+      "pointsPerGame": 0.437
+    },
+    "strengthScore": 31.9
+  },
+  {
+    "id": 6844,
+    "name": "James Patrick",
+    "initials": "JP",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 217,
+      "goals": 14,
+      "assists": 56,
+      "points": 70,
+      "plusMinus": 6,
+      "pointsPerGame": 0.323
+    },
+    "strengthScore": 24.2
+  },
+  {
+    "id": 6845,
+    "name": "Kevin Dahl",
+    "initials": "KD",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 179,
+      "goals": 7,
+      "assists": 22,
+      "points": 29,
+      "plusMinus": 10,
+      "pointsPerGame": 0.162
+    },
+    "strengthScore": 13.4
+  },
+  {
+    "id": 6846,
+    "name": "Michel Petit",
+    "initials": "MP",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 134,
+      "goals": 8,
+      "assists": 40,
+      "points": 48,
+      "plusMinus": 2,
+      "pointsPerGame": 0.358
+    },
+    "strengthScore": 26.6
+  },
+  {
+    "id": 6847,
+    "name": "Jamie Huscroft",
+    "initials": "JH",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 109,
+      "goals": 3,
+      "assists": 13,
+      "points": 16,
+      "plusMinus": 16,
+      "pointsPerGame": 0.147
+    },
+    "strengthScore": 12.4
+  },
+  {
+    "id": 6848,
+    "name": "Mike Vernon",
+    "initials": "MV",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 229,
+      "wins": 110,
+      "gaa": 3.27,
+      "savePct": 0.885,
+      "shutouts": 6
+    },
+    "strengthScore": 45.5
+  },
+  {
+    "id": 6849,
+    "name": "Trevor Kidd",
+    "initials": "TK",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 176,
+      "wins": 71,
+      "gaa": 2.82,
+      "savePct": 0.899,
+      "shutouts": 10
+    },
+    "strengthScore": 54.4
+  },
+  {
+    "id": 6850,
+    "name": "Fred Brathwaite",
+    "initials": "FB",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 89,
+      "wins": 36,
+      "gaa": 2.66,
+      "savePct": 0.908,
+      "shutouts": 6
+    },
+    "strengthScore": 58.8
+  },
+  {
+    "id": 6851,
+    "name": "Rick Tabaracci",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 85,
+      "wins": 32,
+      "gaa": 2.91,
+      "savePct": 0.892,
+      "shutouts": 3
+    },
+    "strengthScore": 51.3
+  },
+  {
+    "id": 6852,
+    "name": "Dwayne Roloson",
+    "initials": "DR",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "1990s",
+    "stats": {
+      "gp": 70,
+      "wins": 20,
+      "gaa": 2.95,
+      "savePct": 0.893,
+      "shutouts": 1
+    },
+    "strengthScore": 50.5
+  },
+  {
+    "id": 6853,
+    "name": "Jarome Iginla",
+    "initials": "JI",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 713,
+      "goals": 350,
+      "assists": 374,
+      "points": 724,
+      "plusMinus": 76,
+      "pointsPerGame": 1.015
+    },
+    "strengthScore": 76.5
+  },
+  {
+    "id": 6854,
+    "name": "Chris Clark",
+    "initials": "CC",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 256,
+      "goals": 35,
+      "assists": 35,
+      "points": 70,
+      "plusMinus": -26,
+      "pointsPerGame": 0.273
+    },
+    "strengthScore": 22.4
+  },
+  {
+    "id": 6855,
+    "name": "Chuck Kobasew",
+    "initials": "CK",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 210,
+      "goals": 34,
+      "assists": 37,
+      "points": 71,
+      "plusMinus": -18,
+      "pointsPerGame": 0.338
+    },
+    "strengthScore": 27.1
+  },
+  {
+    "id": 6856,
+    "name": "Oleg Saprykin",
+    "initials": "OS",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 180,
+      "goals": 29,
+      "assists": 46,
+      "points": 75,
+      "plusMinus": 10,
+      "pointsPerGame": 0.417
+    },
+    "strengthScore": 32.9
+  },
+  {
+    "id": 6857,
+    "name": "Shean Donovan",
+    "initials": "SD",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 175,
+      "goals": 28,
+      "assists": 37,
+      "points": 65,
+      "plusMinus": 21,
+      "pointsPerGame": 0.371
+    },
+    "strengthScore": 29.6
+  },
+  {
+    "id": 6858,
+    "name": "Tony Amonte",
+    "initials": "TA",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 161,
+      "goals": 24,
+      "assists": 48,
+      "points": 72,
+      "plusMinus": -1,
+      "pointsPerGame": 0.447
+    },
+    "strengthScore": 35.1
+  },
+  {
+    "id": 6859,
+    "name": "Ronald PetrovickÃ½",
+    "initials": "RP",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 107,
+      "goals": 9,
+      "assists": 12,
+      "points": 21,
+      "plusMinus": 0,
+      "pointsPerGame": 0.196
+    },
+    "strengthScore": 16.8
+  },
+  {
+    "id": 6860,
+    "name": "Robyn Regehr",
+    "initials": "RR",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 690,
+      "goals": 22,
+      "assists": 112,
+      "points": 134,
+      "plusMinus": 30,
+      "pointsPerGame": 0.194
+    },
+    "strengthScore": 16.6
+  },
+  {
+    "id": 6861,
+    "name": "Dion Phaneuf",
+    "initials": "DP",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 378,
+      "goals": 75,
+      "assists": 153,
+      "points": 228,
+      "plusMinus": 19,
+      "pointsPerGame": 0.603
+    },
+    "strengthScore": 46.5
+  },
+  {
+    "id": 6862,
+    "name": "Toni Lydman",
+    "initials": "TL",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 289,
+      "goals": 19,
+      "assists": 74,
+      "points": 93,
+      "plusMinus": -16,
+      "pointsPerGame": 0.322
+    },
+    "strengthScore": 26.0
+  },
+  {
+    "id": 6863,
+    "name": "Denis Gauthier",
+    "initials": "DG",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 280,
+      "goals": 9,
+      "assists": 40,
+      "points": 49,
+      "plusMinus": 21,
+      "pointsPerGame": 0.175
+    },
+    "strengthScore": 15.3
+  },
+  {
+    "id": 6864,
+    "name": "Jordan Leopold",
+    "initials": "JL",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 233,
+      "goals": 16,
+      "assists": 55,
+      "points": 71,
+      "plusMinus": -6,
+      "pointsPerGame": 0.305
+    },
+    "strengthScore": 24.7
+  },
+  {
+    "id": 6865,
+    "name": "Andrew Ference",
+    "initials": "AF",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 224,
+      "goals": 10,
+      "assists": 53,
+      "points": 63,
+      "plusMinus": 1,
+      "pointsPerGame": 0.281
+    },
+    "strengthScore": 23.0
+  },
+  {
+    "id": 6866,
+    "name": "Mark Giordano",
+    "initials": "MG",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 188,
+      "goals": 20,
+      "assists": 44,
+      "points": 64,
+      "plusMinus": 26,
+      "pointsPerGame": 0.34
+    },
+    "strengthScore": 27.3
+  },
+  {
+    "id": 6867,
+    "name": "Bob Boughner",
+    "initials": "BB",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 148,
+      "goals": 5,
+      "assists": 18,
+      "points": 23,
+      "plusMinus": 14,
+      "pointsPerGame": 0.155
+    },
+    "strengthScore": 13.8
+  },
+  {
+    "id": 6868,
+    "name": "Roman HamrlÃ­k",
+    "initials": "RH",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 126,
+      "goals": 14,
+      "assists": 50,
+      "points": 64,
+      "plusMinus": 30,
+      "pointsPerGame": 0.508
+    },
+    "strengthScore": 39.5
+  },
+  {
+    "id": 6869,
+    "name": "Adam Pardy",
+    "initials": "AP",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 117,
+      "goals": 3,
+      "assists": 16,
+      "points": 19,
+      "plusMinus": 0,
+      "pointsPerGame": 0.162
+    },
+    "strengthScore": 14.3
+  },
+  {
+    "id": 6870,
+    "name": "Craig Conroy",
+    "initials": "CC",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 489,
+      "goals": 95,
+      "assists": 211,
+      "points": 306,
+      "plusMinus": 63,
+      "pointsPerGame": 0.626
+    },
+    "strengthScore": 48.1
+  },
+  {
+    "id": 6871,
+    "name": "Daymond Langkow",
+    "initials": "DL",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 388,
+      "goals": 123,
+      "assists": 164,
+      "points": 287,
+      "plusMinus": 44,
+      "pointsPerGame": 0.74
+    },
+    "strengthScore": 56.5
+  },
+  {
+    "id": 6872,
+    "name": "Matthew Lombardi",
+    "initials": "ML",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 347,
+      "goals": 65,
+      "assists": 102,
+      "points": 167,
+      "plusMinus": 18,
+      "pointsPerGame": 0.481
+    },
+    "strengthScore": 37.6
+  },
+  {
+    "id": 6873,
+    "name": "StÃ©phane Yelle",
+    "initials": "SY",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 339,
+      "goals": 31,
+      "assists": 65,
+      "points": 96,
+      "plusMinus": 2,
+      "pointsPerGame": 0.283
+    },
+    "strengthScore": 23.1
+  },
+  {
+    "id": 6874,
+    "name": "Dustin Boyd",
+    "initials": "DB",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 192,
+      "goals": 28,
+      "assists": 29,
+      "points": 57,
+      "plusMinus": -12,
+      "pointsPerGame": 0.297
+    },
+    "strengthScore": 24.2
+  },
+  {
+    "id": 6875,
+    "name": "Clarke Wilm",
+    "initials": "CW",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 147,
+      "goals": 11,
+      "assists": 22,
+      "points": 33,
+      "plusMinus": -12,
+      "pointsPerGame": 0.224
+    },
+    "strengthScore": 18.8
+  },
+  {
+    "id": 6876,
+    "name": "Marc Savard",
+    "initials": "MS",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 143,
+      "goals": 38,
+      "assists": 63,
+      "points": 101,
+      "plusMinus": -33,
+      "pointsPerGame": 0.706
+    },
+    "strengthScore": 54.0
+  },
+  {
+    "id": 6877,
+    "name": "Scott Nichol",
+    "initials": "SN",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 128,
+      "goals": 13,
+      "assists": 14,
+      "points": 27,
+      "plusMinus": -16,
+      "pointsPerGame": 0.211
+    },
+    "strengthScore": 17.9
+  },
+  {
+    "id": 6878,
+    "name": "Jeff Shantz",
+    "initials": "JS",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 113,
+      "goals": 8,
+      "assists": 18,
+      "points": 26,
+      "plusMinus": -10,
+      "pointsPerGame": 0.23
+    },
+    "strengthScore": 19.3
+  },
+  {
+    "id": 6879,
+    "name": "Byron Ritchie",
+    "initials": "BR",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 109,
+      "goals": 12,
+      "assists": 8,
+      "points": 20,
+      "plusMinus": 1,
+      "pointsPerGame": 0.183
+    },
+    "strengthScore": 15.8
+  },
+  {
+    "id": 6880,
+    "name": "Rhett Warrener",
+    "initials": "RW",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 231,
+      "goals": 11,
+      "assists": 26,
+      "points": 37,
+      "plusMinus": 19,
+      "pointsPerGame": 0.16
+    },
+    "strengthScore": 14.2
+  },
+  {
+    "id": 6881,
+    "name": "Cory Sarich",
+    "initials": "CS",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 213,
+      "goals": 5,
+      "assists": 28,
+      "points": 33,
+      "plusMinus": 18,
+      "pointsPerGame": 0.155
+    },
+    "strengthScore": 13.8
+  },
+  {
+    "id": 6882,
+    "name": "Adrian Aucoin",
+    "initials": "AA",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 157,
+      "goals": 20,
+      "assists": 49,
+      "points": 69,
+      "plusMinus": 5,
+      "pointsPerGame": 0.439
+    },
+    "strengthScore": 34.5
+  },
+  {
+    "id": 6883,
+    "name": "Derek Morris",
+    "initials": "DM",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 112,
+      "goals": 9,
+      "assists": 53,
+      "points": 62,
+      "plusMinus": -19,
+      "pointsPerGame": 0.554
+    },
+    "strengthScore": 42.9
+  },
+  {
+    "id": 6884,
+    "name": "Dave Moss",
+    "initials": "DM",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 227,
+      "goals": 42,
+      "assists": 43,
+      "points": 85,
+      "plusMinus": -13,
+      "pointsPerGame": 0.374
+    },
+    "strengthScore": 29.8
+  },
+  {
+    "id": 6885,
+    "name": "Kristian Huselius",
+    "initials": "KH",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 216,
+      "goals": 74,
+      "assists": 108,
+      "points": 182,
+      "plusMinus": 33,
+      "pointsPerGame": 0.843
+    },
+    "strengthScore": 64.0
+  },
+  {
+    "id": 6886,
+    "name": "Eric Nystrom",
+    "initials": "EN",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 202,
+      "goals": 19,
+      "assists": 20,
+      "points": 39,
+      "plusMinus": -12,
+      "pointsPerGame": 0.193
+    },
+    "strengthScore": 16.6
+  },
+  {
+    "id": 6887,
+    "name": "Marcus Nilson",
+    "initials": "MN",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 194,
+      "goals": 19,
+      "assists": 23,
+      "points": 42,
+      "plusMinus": 25,
+      "pointsPerGame": 0.216
+    },
+    "strengthScore": 18.2
+  },
+  {
+    "id": 6888,
+    "name": "Dave Lowry",
+    "initials": "DL",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 193,
+      "goals": 31,
+      "assists": 38,
+      "points": 69,
+      "plusMinus": -24,
+      "pointsPerGame": 0.358
+    },
+    "strengthScore": 28.6
+  },
+  {
+    "id": 6889,
+    "name": "Alex Tanguay",
+    "initials": "AT",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 159,
+      "goals": 40,
+      "assists": 99,
+      "points": 139,
+      "plusMinus": 23,
+      "pointsPerGame": 0.874
+    },
+    "strengthScore": 66.2
+  },
+  {
+    "id": 6890,
+    "name": "Martin GÃ©linas",
+    "initials": "MG",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 157,
+      "goals": 38,
+      "assists": 49,
+      "points": 87,
+      "plusMinus": 7,
+      "pointsPerGame": 0.554
+    },
+    "strengthScore": 42.9
+  },
+  {
+    "id": 6891,
+    "name": "Curtis Glencross",
+    "initials": "CG",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 141,
+      "goals": 28,
+      "assists": 45,
+      "points": 73,
+      "plusMinus": 25,
+      "pointsPerGame": 0.518
+    },
+    "strengthScore": 40.3
+  },
+  {
+    "id": 6892,
+    "name": "Dean McAmmond",
+    "initials": "DM",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 137,
+      "goals": 38,
+      "assists": 43,
+      "points": 81,
+      "plusMinus": 11,
+      "pointsPerGame": 0.591
+    },
+    "strengthScore": 45.6
+  },
+  {
+    "id": 6893,
+    "name": "Rene Bourque",
+    "initials": "RB",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 131,
+      "goals": 48,
+      "assists": 50,
+      "points": 98,
+      "plusMinus": 25,
+      "pointsPerGame": 0.748
+    },
+    "strengthScore": 57.0
+  },
+  {
+    "id": 6894,
+    "name": "Miikka Kiprusoff",
+    "initials": "MK",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 411,
+      "wins": 225,
+      "gaa": 2.41,
+      "savePct": 0.915,
+      "shutouts": 31
+    },
+    "strengthScore": 59.1
+  },
+  {
+    "id": 6895,
+    "name": "Roman Turek",
+    "initials": "RT",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 152,
+      "wins": 63,
+      "gaa": 2.52,
+      "savePct": 0.905,
+      "shutouts": 12
+    },
+    "strengthScore": 55.3
+  },
+  {
+    "id": 6896,
+    "name": "Mike Vernon",
+    "initials": "MV",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2000s",
+    "stats": {
+      "gp": 59,
+      "wins": 14,
+      "gaa": 3.09,
+      "savePct": 0.888,
+      "shutouts": 4
+    },
+    "strengthScore": 44.5
+  },
+  {
+    "id": 6897,
+    "name": "Mark Giordano",
+    "initials": "MG",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 698,
+      "goals": 114,
+      "assists": 304,
+      "points": 418,
+      "plusMinus": 68,
+      "pointsPerGame": 0.599
+    },
+    "strengthScore": 46.2
+  },
+  {
+    "id": 6898,
+    "name": "T.J. Brodie",
+    "initials": "TB",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 631,
+      "goals": 48,
+      "assists": 218,
+      "points": 266,
+      "plusMinus": 17,
+      "pointsPerGame": 0.422
+    },
+    "strengthScore": 33.3
+  },
+  {
+    "id": 6899,
+    "name": "Kris Russell",
+    "initials": "KR",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 198,
+      "goals": 15,
+      "assists": 63,
+      "points": 78,
+      "plusMinus": 3,
+      "pointsPerGame": 0.394
+    },
+    "strengthScore": 31.2
+  },
+  {
+    "id": 6900,
+    "name": "Jay Bouwmeester",
+    "initials": "JB",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 197,
+      "goals": 15,
+      "assists": 53,
+      "points": 68,
+      "plusMinus": -34,
+      "pointsPerGame": 0.345
+    },
+    "strengthScore": 27.7
+  },
+  {
+    "id": 6901,
+    "name": "Chris Butler",
+    "initials": "CB",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 194,
+      "goals": 5,
+      "assists": 34,
+      "points": 39,
+      "plusMinus": -42,
+      "pointsPerGame": 0.201
+    },
+    "strengthScore": 17.2
+  },
+  {
+    "id": 6902,
+    "name": "Noah Hanifin",
+    "initials": "NH",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 150,
+      "goals": 10,
+      "assists": 45,
+      "points": 55,
+      "plusMinus": 6,
+      "pointsPerGame": 0.367
+    },
+    "strengthScore": 29.3
+  },
+  {
+    "id": 6903,
+    "name": "Ladislav Å mÃ­d",
+    "initials": "LM",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 109,
+      "goals": 1,
+      "assists": 6,
+      "points": 7,
+      "plusMinus": -23,
+      "pointsPerGame": 0.064
+    },
+    "strengthScore": 7.2
+  },
+  {
+    "id": 6904,
+    "name": "Mikael Backlund",
+    "initials": "MB",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 666,
+      "goals": 144,
+      "assists": 211,
+      "points": 355,
+      "plusMinus": 28,
+      "pointsPerGame": 0.533
+    },
+    "strengthScore": 41.4
+  },
+  {
+    "id": 6905,
+    "name": "Sean Monahan",
+    "initials": "SM",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 541,
+      "goals": 194,
+      "assists": 217,
+      "points": 411,
+      "plusMinus": -25,
+      "pointsPerGame": 0.76
+    },
+    "strengthScore": 57.9
+  },
+  {
+    "id": 6906,
+    "name": "Matt Stajan",
+    "initials": "MS",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 531,
+      "goals": 56,
+      "assists": 118,
+      "points": 174,
+      "plusMinus": 2,
+      "pointsPerGame": 0.328
+    },
+    "strengthScore": 26.4
+  },
+  {
+    "id": 6907,
+    "name": "Sam Bennett",
+    "initials": "SB",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 363,
+      "goals": 63,
+      "assists": 64,
+      "points": 127,
+      "plusMinus": -52,
+      "pointsPerGame": 0.35
+    },
+    "strengthScore": 28.0
+  },
+  {
+    "id": 6908,
+    "name": "Lance Bouma",
+    "initials": "LB",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 304,
+      "goals": 27,
+      "assists": 40,
+      "points": 67,
+      "plusMinus": -8,
+      "pointsPerGame": 0.22
+    },
+    "strengthScore": 18.5
+  },
+  {
+    "id": 6909,
+    "name": "JiÅÃ­ Hudler",
+    "initials": "JH",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 248,
+      "goals": 68,
+      "assists": 124,
+      "points": 192,
+      "plusMinus": 7,
+      "pointsPerGame": 0.774
+    },
+    "strengthScore": 58.9
+  },
+  {
+    "id": 6910,
+    "name": "Joe Colborne",
+    "initials": "JC",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 217,
+      "goals": 37,
+      "assists": 63,
+      "points": 100,
+      "plusMinus": -19,
+      "pointsPerGame": 0.461
+    },
+    "strengthScore": 36.1
+  },
+  {
+    "id": 6911,
+    "name": "Mark Jankowski",
+    "initials": "MJ",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 207,
+      "goals": 36,
+      "assists": 28,
+      "points": 64,
+      "plusMinus": -13,
+      "pointsPerGame": 0.309
+    },
+    "strengthScore": 25.0
+  },
+  {
+    "id": 6912,
+    "name": "Olli Jokinen",
+    "initials": "OJ",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 161,
+      "goals": 40,
+      "assists": 75,
+      "points": 115,
+      "plusMinus": -29,
+      "pointsPerGame": 0.714
+    },
+    "strengthScore": 54.6
+  },
+  {
+    "id": 6913,
+    "name": "Elias Lindholm",
+    "initials": "EL",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 151,
+      "goals": 56,
+      "assists": 76,
+      "points": 132,
+      "plusMinus": 22,
+      "pointsPerGame": 0.874
+    },
+    "strengthScore": 66.2
+  },
+  {
+    "id": 6914,
+    "name": "Johnny Gaudreau",
+    "initials": "JG",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 463,
+      "goals": 150,
+      "assists": 294,
+      "points": 444,
+      "plusMinus": 18,
+      "pointsPerGame": 0.959
+    },
+    "strengthScore": 72.4
+  },
+  {
+    "id": 6915,
+    "name": "Matthew Tkachuk",
+    "initials": "MT",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 293,
+      "goals": 94,
+      "assists": 141,
+      "points": 235,
+      "plusMinus": 22,
+      "pointsPerGame": 0.802
+    },
+    "strengthScore": 61.0
+  },
+  {
+    "id": 6916,
+    "name": "Curtis Glencross",
+    "initials": "CG",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 277,
+      "goals": 86,
+      "assists": 83,
+      "points": 169,
+      "plusMinus": -23,
+      "pointsPerGame": 0.61
+    },
+    "strengthScore": 47.0
+  },
+  {
+    "id": 6917,
+    "name": "Micheal Ferland",
+    "initials": "MF",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 250,
+      "goals": 42,
+      "assists": 47,
+      "points": 89,
+      "plusMinus": -10,
+      "pointsPerGame": 0.356
+    },
+    "strengthScore": 28.5
+  },
+  {
+    "id": 6918,
+    "name": "Alex Tanguay",
+    "initials": "AT",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 183,
+      "goals": 46,
+      "assists": 99,
+      "points": 145,
+      "plusMinus": -6,
+      "pointsPerGame": 0.792
+    },
+    "strengthScore": 60.3
+  },
+  {
+    "id": 6919,
+    "name": "Andrew Mangiapane",
+    "initials": "AM",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 122,
+      "goals": 25,
+      "assists": 20,
+      "points": 45,
+      "plusMinus": 12,
+      "pointsPerGame": 0.369
+    },
+    "strengthScore": 29.4
+  },
+  {
+    "id": 6920,
+    "name": "Rene Bourque",
+    "initials": "RB",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 118,
+      "goals": 40,
+      "assists": 26,
+      "points": 66,
+      "plusMinus": -20,
+      "pointsPerGame": 0.559
+    },
+    "strengthScore": 43.3
+  },
+  {
+    "id": 6921,
+    "name": "Brandon Bollig",
+    "initials": "BB",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 116,
+      "goals": 3,
+      "assists": 6,
+      "points": 9,
+      "plusMinus": -19,
+      "pointsPerGame": 0.078
+    },
+    "strengthScore": 8.2
+  },
+  {
+    "id": 6922,
+    "name": "Michael FrolÃ­k",
+    "initials": "MF",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 319,
+      "goals": 63,
+      "assists": 82,
+      "points": 145,
+      "plusMinus": 9,
+      "pointsPerGame": 0.455
+    },
+    "strengthScore": 35.7
+  },
+  {
+    "id": 6923,
+    "name": "Tim Jackman",
+    "initials": "TJ",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 209,
+      "goals": 13,
+      "assists": 23,
+      "points": 36,
+      "plusMinus": -27,
+      "pointsPerGame": 0.172
+    },
+    "strengthScore": 15.0
+  },
+  {
+    "id": 6924,
+    "name": "Jarome Iginla",
+    "initials": "JI",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 195,
+      "goals": 84,
+      "assists": 91,
+      "points": 175,
+      "plusMinus": -17,
+      "pointsPerGame": 0.897
+    },
+    "strengthScore": 67.9
+  },
+  {
+    "id": 6925,
+    "name": "Garnet Hathaway",
+    "initials": "GH",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 175,
+      "goals": 16,
+      "assists": 24,
+      "points": 40,
+      "plusMinus": 16,
+      "pointsPerGame": 0.229
+    },
+    "strengthScore": 19.2
+  },
+  {
+    "id": 6926,
+    "name": "David Jones",
+    "initials": "DJ",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 174,
+      "goals": 32,
+      "assists": 30,
+      "points": 62,
+      "plusMinus": -10,
+      "pointsPerGame": 0.356
+    },
+    "strengthScore": 28.5
+  },
+  {
+    "id": 6927,
+    "name": "Lee Stempniak",
+    "initials": "LS",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 160,
+      "goals": 31,
+      "assists": 52,
+      "points": 83,
+      "plusMinus": -21,
+      "pointsPerGame": 0.519
+    },
+    "strengthScore": 40.3
+  },
+  {
+    "id": 6928,
+    "name": "Troy Brouwer",
+    "initials": "TB",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 150,
+      "goals": 19,
+      "assists": 28,
+      "points": 47,
+      "plusMinus": -18,
+      "pointsPerGame": 0.313
+    },
+    "strengthScore": 25.3
+  },
+  {
+    "id": 6929,
+    "name": "Tom Kostopoulos",
+    "initials": "TK",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 140,
+      "goals": 11,
+      "assists": 15,
+      "points": 26,
+      "plusMinus": -18,
+      "pointsPerGame": 0.186
+    },
+    "strengthScore": 16.1
+  },
+  {
+    "id": 6930,
+    "name": "Josh Jooris",
+    "initials": "JJ",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 119,
+      "goals": 16,
+      "assists": 21,
+      "points": 37,
+      "plusMinus": 0,
+      "pointsPerGame": 0.311
+    },
+    "strengthScore": 25.2
+  },
+  {
+    "id": 6931,
+    "name": "Dennis Wideman",
+    "initials": "DW",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 280,
+      "goals": 32,
+      "assists": 104,
+      "points": 136,
+      "plusMinus": -33,
+      "pointsPerGame": 0.486
+    },
+    "strengthScore": 37.9
+  },
+  {
+    "id": 6932,
+    "name": "Dougie Hamilton",
+    "initials": "DH",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 245,
+      "goals": 42,
+      "assists": 95,
+      "points": 137,
+      "plusMinus": -1,
+      "pointsPerGame": 0.559
+    },
+    "strengthScore": 43.3
+  },
+  {
+    "id": 6933,
+    "name": "Deryk Engelland",
+    "initials": "DE",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 226,
+      "goals": 9,
+      "assists": 30,
+      "points": 39,
+      "plusMinus": -7,
+      "pointsPerGame": 0.173
+    },
+    "strengthScore": 15.1
+  },
+  {
+    "id": 6934,
+    "name": "Travis Hamonic",
+    "initials": "TH",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 193,
+      "goals": 11,
+      "assists": 31,
+      "points": 42,
+      "plusMinus": 9,
+      "pointsPerGame": 0.218
+    },
+    "strengthScore": 18.4
+  },
+  {
+    "id": 6935,
+    "name": "Cory Sarich",
+    "initials": "CS",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 166,
+      "goals": 5,
+      "assists": 21,
+      "points": 26,
+      "plusMinus": 4,
+      "pointsPerGame": 0.157
+    },
+    "strengthScore": 13.9
+  },
+  {
+    "id": 6936,
+    "name": "Rasmus Andersson",
+    "initials": "RA",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 159,
+      "goals": 7,
+      "assists": 34,
+      "points": 41,
+      "plusMinus": 9,
+      "pointsPerGame": 0.258
+    },
+    "strengthScore": 21.3
+  },
+  {
+    "id": 6937,
+    "name": "Michael Stone",
+    "initials": "MS",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 148,
+      "goals": 7,
+      "assists": 21,
+      "points": 28,
+      "plusMinus": -11,
+      "pointsPerGame": 0.189
+    },
+    "strengthScore": 16.3
+  },
+  {
+    "id": 6938,
+    "name": "Miikka Kiprusoff",
+    "initials": "MK",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 165,
+      "wins": 80,
+      "gaa": 2.63,
+      "savePct": 0.909,
+      "shutouts": 10
+    },
+    "strengthScore": 52.4
+  },
+  {
+    "id": 6939,
+    "name": "David Rittich",
+    "initials": "DR",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 114,
+      "wins": 59,
+      "gaa": 2.82,
+      "savePct": 0.908,
+      "shutouts": 3
+    },
+    "strengthScore": 49.1
+  },
+  {
+    "id": 6940,
+    "name": "Karri RÃ¤mÃ¶",
+    "initials": "KR",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 111,
+      "wins": 49,
+      "gaa": 2.63,
+      "savePct": 0.911,
+      "shutouts": 5
+    },
+    "strengthScore": 52.4
+  },
+  {
+    "id": 6941,
+    "name": "Mike Smith",
+    "initials": "MS",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 97,
+      "wins": 48,
+      "gaa": 2.68,
+      "savePct": 0.908,
+      "shutouts": 5
+    },
+    "strengthScore": 51.4
+  },
+  {
+    "id": 6942,
+    "name": "Jonas Hiller",
+    "initials": "JH",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2010s",
+    "stats": {
+      "gp": 78,
+      "wins": 35,
+      "gaa": 2.74,
+      "savePct": 0.905,
+      "shutouts": 2
+    },
+    "strengthScore": 49.1
+  },
+  {
+    "id": 6943,
+    "name": "Mikael Backlund",
+    "initials": "MB",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 376,
+      "goals": 70,
+      "assists": 128,
+      "points": 198,
+      "plusMinus": 33,
+      "pointsPerGame": 0.527
+    },
+    "strengthScore": 38.0
+  },
+  {
+    "id": 6944,
+    "name": "Blake Coleman",
+    "initials": "BC",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 323,
+      "goals": 79,
+      "assists": 85,
+      "points": 164,
+      "plusMinus": 42,
+      "pointsPerGame": 0.508
+    },
+    "strengthScore": 36.7
+  },
+  {
+    "id": 6945,
+    "name": "Elias Lindholm",
+    "initials": "EL",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 267,
+      "goals": 92,
+      "assists": 133,
+      "points": 225,
+      "plusMinus": 69,
+      "pointsPerGame": 0.843
+    },
+    "strengthScore": 59.2
+  },
+  {
+    "id": 6946,
+    "name": "Dillon DubÃ©",
+    "initials": "DD",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 255,
+      "goals": 50,
+      "assists": 56,
+      "points": 106,
+      "plusMinus": -19,
+      "pointsPerGame": 0.416
+    },
+    "strengthScore": 30.5
+  },
+  {
+    "id": 6947,
+    "name": "Nazem Kadri",
+    "initials": "NK",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 246,
+      "goals": 88,
+      "assists": 110,
+      "points": 198,
+      "plusMinus": -36,
+      "pointsPerGame": 0.805
+    },
+    "strengthScore": 56.7
+  },
+  {
+    "id": 6948,
+    "name": "Trevor Lewis",
+    "initials": "TL",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 162,
+      "goals": 15,
+      "assists": 21,
+      "points": 36,
+      "plusMinus": -8,
+      "pointsPerGame": 0.222
+    },
+    "strengthScore": 17.4
+  },
+  {
+    "id": 6949,
+    "name": "Yegor Sharangovich",
+    "initials": "YS",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 155,
+      "goals": 48,
+      "assists": 43,
+      "points": 91,
+      "plusMinus": -38,
+      "pointsPerGame": 0.587
+    },
+    "strengthScore": 42.0
+  },
+  {
+    "id": 6950,
+    "name": "Martin Pospisil",
+    "initials": "MP",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 144,
+      "goals": 12,
+      "assists": 37,
+      "points": 49,
+      "plusMinus": 17,
+      "pointsPerGame": 0.34
+    },
+    "strengthScore": 25.4
+  },
+  {
+    "id": 6951,
+    "name": "Kevin Rooney",
+    "initials": "KR",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 120,
+      "goals": 8,
+      "assists": 7,
+      "points": 15,
+      "plusMinus": -12,
+      "pointsPerGame": 0.125
+    },
+    "strengthScore": 10.9
+  },
+  {
+    "id": 6952,
+    "name": "Tyler Toffoli",
+    "initials": "TT",
+    "position": "C",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 119,
+      "goals": 45,
+      "assists": 51,
+      "points": 96,
+      "plusMinus": 19,
+      "pointsPerGame": 0.807
+    },
+    "strengthScore": 56.8
+  },
+  {
+    "id": 6953,
+    "name": "Rasmus Andersson",
+    "initials": "RA",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 376,
+      "goals": 40,
+      "assists": 150,
+      "points": 190,
+      "plusMinus": -23,
+      "pointsPerGame": 0.505
+    },
+    "strengthScore": 36.5
+  },
+  {
+    "id": 6954,
+    "name": "Chris Tanev",
+    "initials": "CT",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 259,
+      "goals": 10,
+      "assists": 57,
+      "points": 67,
+      "plusMinus": 73,
+      "pointsPerGame": 0.259
+    },
+    "strengthScore": 19.9
+  },
+  {
+    "id": 6955,
+    "name": "MacKenzie Weegar",
+    "initials": "MW",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 244,
+      "goals": 32,
+      "assists": 98,
+      "points": 130,
+      "plusMinus": 35,
+      "pointsPerGame": 0.533
+    },
+    "strengthScore": 38.4
+  },
+  {
+    "id": 6956,
+    "name": "Brayden Pachal",
+    "initials": "BP",
+    "position": "RD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 109,
+      "goals": 4,
+      "assists": 14,
+      "points": 18,
+      "plusMinus": 4,
+      "pointsPerGame": 0.165
+    },
+    "strengthScore": 13.6
+  },
+  {
+    "id": 6957,
+    "name": "Andrew Mangiapane",
+    "initials": "AM",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 295,
+      "goals": 84,
+      "assists": 86,
+      "points": 170,
+      "plusMinus": 40,
+      "pointsPerGame": 0.576
+    },
+    "strengthScore": 41.3
+  },
+  {
+    "id": 6958,
+    "name": "Jonathan Huberdeau",
+    "initials": "JH",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 241,
+      "goals": 55,
+      "assists": 114,
+      "points": 169,
+      "plusMinus": -40,
+      "pointsPerGame": 0.701
+    },
+    "strengthScore": 49.7
+  },
+  {
+    "id": 6959,
+    "name": "Milan Lucic",
+    "initials": "ML",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 215,
+      "goals": 27,
+      "assists": 36,
+      "points": 63,
+      "plusMinus": -30,
+      "pointsPerGame": 0.293
+    },
+    "strengthScore": 22.2
+  },
+  {
+    "id": 6960,
+    "name": "Johnny Gaudreau",
+    "initials": "JG",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 138,
+      "goals": 59,
+      "assists": 105,
+      "points": 164,
+      "plusMinus": 66,
+      "pointsPerGame": 1.188
+    },
+    "strengthScore": 82.5
+  },
+  {
+    "id": 6961,
+    "name": "Matthew Tkachuk",
+    "initials": "MT",
+    "position": "LW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 138,
+      "goals": 58,
+      "assists": 89,
+      "points": 147,
+      "plusMinus": 63,
+      "pointsPerGame": 1.065
+    },
+    "strengthScore": 74.2
+  },
+  {
+    "id": 6962,
+    "name": "Noah Hanifin",
+    "initials": "NH",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 270,
+      "goals": 32,
+      "assists": 104,
+      "points": 136,
+      "plusMinus": 40,
+      "pointsPerGame": 0.504
+    },
+    "strengthScore": 36.4
+  },
+  {
+    "id": 6963,
+    "name": "Nikita Zadorov",
+    "initials": "NZ",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 177,
+      "goals": 19,
+      "assists": 30,
+      "points": 49,
+      "plusMinus": 15,
+      "pointsPerGame": 0.277
+    },
+    "strengthScore": 21.1
+  },
+  {
+    "id": 6964,
+    "name": "Oliver Kylington",
+    "initials": "OK",
+    "position": "LD",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 106,
+      "goals": 12,
+      "assists": 27,
+      "points": 39,
+      "plusMinus": 28,
+      "pointsPerGame": 0.368
+    },
+    "strengthScore": 27.3
+  },
+  {
+    "id": 6965,
+    "name": "Matthew Coronato",
+    "initials": "MC",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 111,
+      "goals": 27,
+      "assists": 29,
+      "points": 56,
+      "plusMinus": -9,
+      "pointsPerGame": 0.505
+    },
+    "strengthScore": 36.5
+  },
+  {
+    "id": 6966,
+    "name": "Brett Ritchie",
+    "initials": "BR",
+    "position": "RW",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 107,
+      "goals": 13,
+      "assists": 7,
+      "points": 20,
+      "plusMinus": -9,
+      "pointsPerGame": 0.187
+    },
+    "strengthScore": 15.1
+  },
+  {
+    "id": 6967,
+    "name": "Jacob MarkstrÃ¶m",
+    "initials": "JM",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 213,
+      "wins": 105,
+      "gaa": 2.63,
+      "savePct": 0.906,
+      "shutouts": 15
+    },
+    "strengthScore": 55.9
+  },
+  {
+    "id": 6968,
+    "name": "Daniel VladaÅ",
+    "initials": "DV",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 100,
+      "wins": 47,
+      "gaa": 2.97,
+      "savePct": 0.896,
+      "shutouts": 4
+    },
+    "strengthScore": 48.9
+  },
+  {
+    "id": 6969,
+    "name": "Dustin Wolf",
+    "initials": "DW",
+    "position": "G",
+    "franchise": "Flames",
+    "franchiseAbbr": "CGY",
+    "city": "Calgary",
+    "decade": "2020s",
+    "stats": {
+      "gp": 70,
+      "wins": 36,
+      "gaa": 2.77,
+      "savePct": 0.906,
+      "shutouts": 3
+    },
+    "strengthScore": 53.6
+  },
+  {
+    "id": 6970,
+    "name": "Ken Daneyko",
+    "initials": "KD",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 701,
+      "goals": 15,
+      "assists": 72,
+      "points": 87,
+      "plusMinus": 89,
+      "pointsPerGame": 0.124
+    },
+    "strengthScore": 10.8
+  },
+  {
+    "id": 6971,
+    "name": "Scott Stevens",
+    "initials": "SS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 674,
+      "goals": 76,
+      "assists": 274,
+      "points": 350,
+      "plusMinus": 206,
+      "pointsPerGame": 0.519
+    },
+    "strengthScore": 37.4
+  },
+  {
+    "id": 6972,
+    "name": "Scott Niedermayer",
+    "initials": "SN",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 593,
+      "goals": 70,
+      "assists": 244,
+      "points": 314,
+      "plusMinus": 102,
+      "pointsPerGame": 0.53
+    },
+    "strengthScore": 38.2
+  },
+  {
+    "id": 6973,
+    "name": "Bruce Driver",
+    "initials": "BD",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 341,
+      "goals": 42,
+      "assists": 147,
+      "points": 189,
+      "plusMinus": 34,
+      "pointsPerGame": 0.554
+    },
+    "strengthScore": 39.8
+  },
+  {
+    "id": 6974,
+    "name": "Viacheslav Fetisov",
+    "initials": "VF",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 265,
+      "goals": 11,
+      "assists": 76,
+      "points": 87,
+      "plusMinus": 37,
+      "pointsPerGame": 0.328
+    },
+    "strengthScore": 24.6
+  },
+  {
+    "id": 6975,
+    "name": "Tommy Albelin",
+    "initials": "TA",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 265,
+      "goals": 11,
+      "assists": 60,
+      "points": 71,
+      "plusMinus": 37,
+      "pointsPerGame": 0.268
+    },
+    "strengthScore": 20.5
+  },
+  {
+    "id": 6976,
+    "name": "Alexei Kasatonov",
+    "initials": "AK",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 218,
+      "goals": 25,
+      "assists": 73,
+      "points": 98,
+      "plusMinus": 41,
+      "pointsPerGame": 0.45
+    },
+    "strengthScore": 32.8
+  },
+  {
+    "id": 6977,
+    "name": "Kevin Dean",
+    "initials": "KD",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 198,
+      "goals": 4,
+      "assists": 29,
+      "points": 33,
+      "plusMinus": 28,
+      "pointsPerGame": 0.167
+    },
+    "strengthScore": 13.7
+  },
+  {
+    "id": 6978,
+    "name": "Sheldon Souray",
+    "initials": "SS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 182,
+      "goals": 4,
+      "assists": 22,
+      "points": 26,
+      "plusMinus": 17,
+      "pointsPerGame": 0.143
+    },
+    "strengthScore": 12.1
+  },
+  {
+    "id": 6979,
+    "name": "Shawn Chambers",
+    "initials": "SC",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 158,
+      "goals": 8,
+      "assists": 43,
+      "points": 51,
+      "plusMinus": 20,
+      "pointsPerGame": 0.323
+    },
+    "strengthScore": 24.2
+  },
+  {
+    "id": 6980,
+    "name": "Randy McKay",
+    "initials": "RM",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 628,
+      "goals": 122,
+      "assists": 144,
+      "points": 266,
+      "plusMinus": 110,
+      "pointsPerGame": 0.424
+    },
+    "strengthScore": 31.0
+  },
+  {
+    "id": 6981,
+    "name": "John MacLean",
+    "initials": "JM",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 466,
+      "goals": 175,
+      "assists": 163,
+      "points": 338,
+      "plusMinus": 53,
+      "pointsPerGame": 0.725
+    },
+    "strengthScore": 51.3
+  },
+  {
+    "id": 6982,
+    "name": "Claude Lemieux",
+    "initials": "CL",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 423,
+      "goals": 142,
+      "assists": 155,
+      "points": 297,
+      "plusMinus": 16,
+      "pointsPerGame": 0.702
+    },
+    "strengthScore": 49.8
+  },
+  {
+    "id": 6983,
+    "name": "Bill Guerin",
+    "initials": "BG",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 375,
+      "goals": 108,
+      "assists": 105,
+      "points": 213,
+      "plusMinus": 39,
+      "pointsPerGame": 0.568
+    },
+    "strengthScore": 40.7
+  },
+  {
+    "id": 6984,
+    "name": "StÃ©phane Richer",
+    "initials": "SR",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 350,
+      "goals": 146,
+      "assists": 134,
+      "points": 280,
+      "plusMinus": 29,
+      "pointsPerGame": 0.8
+    },
+    "strengthScore": 56.3
+  },
+  {
+    "id": 6985,
+    "name": "Patrik EliÃ¡Å¡",
+    "initials": "PE",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 237,
+      "goals": 72,
+      "assists": 92,
+      "points": 164,
+      "plusMinus": 49,
+      "pointsPerGame": 0.692
+    },
+    "strengthScore": 49.1
+  },
+  {
+    "id": 6986,
+    "name": "Krzysztof Oliwa",
+    "initials": "KO",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 206,
+      "goals": 13,
+      "assists": 20,
+      "points": 33,
+      "plusMinus": 5,
+      "pointsPerGame": 0.16
+    },
+    "strengthScore": 13.3
+  },
+  {
+    "id": 6987,
+    "name": "Jason Arnott",
+    "initials": "JA",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 185,
+      "goals": 54,
+      "assists": 71,
+      "points": 125,
+      "plusMinus": 24,
+      "pointsPerGame": 0.676
+    },
+    "strengthScore": 48.0
+  },
+  {
+    "id": 6988,
+    "name": "Doug Brown",
+    "initials": "DB",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 144,
+      "goals": 25,
+      "assists": 38,
+      "points": 63,
+      "plusMinus": 38,
+      "pointsPerGame": 0.438
+    },
+    "strengthScore": 32.0
+  },
+  {
+    "id": 6989,
+    "name": "Bobby HolÃ­k",
+    "initials": "BH",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 563,
+      "goals": 158,
+      "assists": 201,
+      "points": 359,
+      "plusMinus": 110,
+      "pointsPerGame": 0.638
+    },
+    "strengthScore": 45.4
+  },
+  {
+    "id": 6990,
+    "name": "Valeri Zelepukin",
+    "initials": "VZ",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 371,
+      "goals": 84,
+      "assists": 131,
+      "points": 215,
+      "plusMinus": 46,
+      "pointsPerGame": 0.58
+    },
+    "strengthScore": 41.5
+  },
+  {
+    "id": 6991,
+    "name": "Tom Chorske",
+    "initials": "TC",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 244,
+      "goals": 57,
+      "assists": 57,
+      "points": 114,
+      "plusMinus": 17,
+      "pointsPerGame": 0.467
+    },
+    "strengthScore": 33.9
+  },
+  {
+    "id": 6992,
+    "name": "Dave Andreychuk",
+    "initials": "DA",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 224,
+      "goals": 64,
+      "assists": 86,
+      "points": 150,
+      "plusMinus": 60,
+      "pointsPerGame": 0.67
+    },
+    "strengthScore": 47.6
+  },
+  {
+    "id": 6993,
+    "name": "Jay Pandolfo",
+    "initials": "JP",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 210,
+      "goals": 28,
+      "assists": 32,
+      "points": 60,
+      "plusMinus": -2,
+      "pointsPerGame": 0.286
+    },
+    "strengthScore": 21.7
+  },
+  {
+    "id": 6994,
+    "name": "Steve Thomas",
+    "initials": "ST",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 193,
+      "goals": 55,
+      "assists": 64,
+      "points": 119,
+      "plusMinus": 11,
+      "pointsPerGame": 0.617
+    },
+    "strengthScore": 44.0
+  },
+  {
+    "id": 6995,
+    "name": "Mike Peluso",
+    "initials": "MP",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 192,
+      "goals": 9,
+      "assists": 35,
+      "points": 44,
+      "plusMinus": 28,
+      "pointsPerGame": 0.229
+    },
+    "strengthScore": 17.9
+  },
+  {
+    "id": 6996,
+    "name": "David Maley",
+    "initials": "DM",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 101,
+      "goals": 15,
+      "assists": 25,
+      "points": 40,
+      "plusMinus": 9,
+      "pointsPerGame": 0.396
+    },
+    "strengthScore": 29.2
+  },
+  {
+    "id": 6997,
+    "name": "Bobby Carpenter",
+    "initials": "BC",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 353,
+      "goals": 35,
+      "assists": 71,
+      "points": 106,
+      "plusMinus": -5,
+      "pointsPerGame": 0.3
+    },
+    "strengthScore": 22.7
+  },
+  {
+    "id": 6998,
+    "name": "Brian Rolston",
+    "initials": "BR",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 348,
+      "goals": 81,
+      "assists": 97,
+      "points": 178,
+      "plusMinus": 36,
+      "pointsPerGame": 0.511
+    },
+    "strengthScore": 36.9
+  },
+  {
+    "id": 6999,
+    "name": "Petr SÃ½kora",
+    "initials": "PS",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 299,
+      "goals": 89,
+      "assists": 132,
+      "points": 221,
+      "plusMinus": 39,
+      "pointsPerGame": 0.739
+    },
+    "strengthScore": 52.2
+  },
+  {
+    "id": 7000,
+    "name": "Denis Pederson",
+    "initials": "DP",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 271,
+      "goals": 44,
+      "assists": 49,
+      "points": 93,
+      "plusMinus": -17,
+      "pointsPerGame": 0.343
+    },
+    "strengthScore": 25.6
+  },
+  {
+    "id": 7001,
+    "name": "Sergei Brylin",
+    "initials": "SB",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 234,
+      "goals": 28,
+      "assists": 39,
+      "points": 67,
+      "plusMinus": 9,
+      "pointsPerGame": 0.286
+    },
+    "strengthScore": 21.7
+  },
+  {
+    "id": 7002,
+    "name": "Peter Å Å¥astnÃ½",
+    "initials": "PÅ",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 205,
+      "goals": 59,
+      "assists": 103,
+      "points": 162,
+      "plusMinus": 1,
+      "pointsPerGame": 0.79
+    },
+    "strengthScore": 55.7
+  },
+  {
+    "id": 7003,
+    "name": "Alexander Semak",
+    "initials": "AS",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 180,
+      "goals": 56,
+      "assists": 71,
+      "points": 127,
+      "plusMinus": 31,
+      "pointsPerGame": 0.706
+    },
+    "strengthScore": 50.0
+  },
+  {
+    "id": 7004,
+    "name": "Laurie Boschman",
+    "initials": "LB",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 153,
+      "goals": 19,
+      "assists": 29,
+      "points": 48,
+      "plusMinus": 8,
+      "pointsPerGame": 0.314
+    },
+    "strengthScore": 23.6
+  },
+  {
+    "id": 7005,
+    "name": "Brendan Morrison",
+    "initials": "BM",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 131,
+      "goals": 23,
+      "assists": 58,
+      "points": 81,
+      "plusMinus": 7,
+      "pointsPerGame": 0.618
+    },
+    "strengthScore": 44.1
+  },
+  {
+    "id": 7006,
+    "name": "Kevin Todd",
+    "initials": "KT",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 110,
+      "goals": 26,
+      "assists": 47,
+      "points": 73,
+      "plusMinus": 4,
+      "pointsPerGame": 0.664
+    },
+    "strengthScore": 47.2
+  },
+  {
+    "id": 7007,
+    "name": "Lyle Odelein",
+    "initials": "LO",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 285,
+      "goals": 13,
+      "assists": 73,
+      "points": 86,
+      "plusMinus": 23,
+      "pointsPerGame": 0.302
+    },
+    "strengthScore": 22.8
+  },
+  {
+    "id": 7008,
+    "name": "Jason Smith",
+    "initials": "JS",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 162,
+      "goals": 3,
+      "assists": 8,
+      "points": 11,
+      "plusMinus": 4,
+      "pointsPerGame": 0.068
+    },
+    "strengthScore": 7.1
+  },
+  {
+    "id": 7009,
+    "name": "Martin Brodeur",
+    "initials": "MB",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 443,
+      "wins": 242,
+      "gaa": 2.19,
+      "savePct": 0.913,
+      "shutouts": 42
+    },
+    "strengthScore": 65.6
+  },
+  {
+    "id": 7010,
+    "name": "Chris Terreri",
+    "initials": "CT",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 238,
+      "wins": 98,
+      "gaa": 3.01,
+      "savePct": 0.893,
+      "shutouts": 7
+    },
+    "strengthScore": 50.2
+  },
+  {
+    "id": 7011,
+    "name": "Craig Billington",
+    "initials": "CB",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "1990s",
+    "stats": {
+      "gp": 68,
+      "wins": 34,
+      "gaa": 3.43,
+      "savePct": 0.882,
+      "shutouts": 4
+    },
+    "strengthScore": 44.2
+  },
+  {
+    "id": 7012,
+    "name": "Colin White",
+    "initials": "CW",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 653,
+      "goals": 18,
+      "assists": 98,
+      "points": 116,
+      "plusMinus": 78,
+      "pointsPerGame": 0.178
+    },
+    "strengthScore": 15.5
+  },
+  {
+    "id": 7013,
+    "name": "Paul Martin",
+    "initials": "PM",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 400,
+      "goals": 26,
+      "assists": 137,
+      "points": 163,
+      "plusMinus": 55,
+      "pointsPerGame": 0.407
+    },
+    "strengthScore": 32.2
+  },
+  {
+    "id": 7014,
+    "name": "Scott Niedermayer",
+    "initials": "SN",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 295,
+      "goals": 42,
+      "assists": 119,
+      "points": 161,
+      "plusMinus": 69,
+      "pointsPerGame": 0.546
+    },
+    "strengthScore": 42.3
+  },
+  {
+    "id": 7015,
+    "name": "Scott Stevens",
+    "initials": "SS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 282,
+      "goals": 17,
+      "assists": 63,
+      "points": 80,
+      "plusMinus": 76,
+      "pointsPerGame": 0.284
+    },
+    "strengthScore": 23.2
+  },
+  {
+    "id": 7016,
+    "name": "Johnny Oduya",
+    "initials": "JO",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 273,
+      "goals": 17,
+      "assists": 53,
+      "points": 70,
+      "plusMinus": 45,
+      "pointsPerGame": 0.256
+    },
+    "strengthScore": 21.2
+  },
+  {
+    "id": 7017,
+    "name": "Mike Mottau",
+    "initials": "MM",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 235,
+      "goals": 7,
+      "assists": 43,
+      "points": 50,
+      "plusMinus": 17,
+      "pointsPerGame": 0.213
+    },
+    "strengthScore": 18.0
+  },
+  {
+    "id": 7018,
+    "name": "Ken Daneyko",
+    "initials": "KD",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 213,
+      "goals": 2,
+      "assists": 17,
+      "points": 19,
+      "plusMinus": 16,
+      "pointsPerGame": 0.089
+    },
+    "strengthScore": 9.0
+  },
+  {
+    "id": 7019,
+    "name": "Andy Greene",
+    "initials": "AG",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 209,
+      "goals": 11,
+      "assists": 51,
+      "points": 62,
+      "plusMinus": 11,
+      "pointsPerGame": 0.297
+    },
+    "strengthScore": 24.2
+  },
+  {
+    "id": 7020,
+    "name": "Tommy Albelin",
+    "initials": "TA",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 160,
+      "goals": 3,
+      "assists": 18,
+      "points": 21,
+      "plusMinus": 21,
+      "pointsPerGame": 0.131
+    },
+    "strengthScore": 12.1
+  },
+  {
+    "id": 7021,
+    "name": "Bryce Salvador",
+    "initials": "BS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 155,
+      "goals": 7,
+      "assists": 23,
+      "points": 30,
+      "plusMinus": 7,
+      "pointsPerGame": 0.194
+    },
+    "strengthScore": 16.6
+  },
+  {
+    "id": 7022,
+    "name": "Patrik EliÃ¡Å¡",
+    "initials": "PE",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 642,
+      "goals": 242,
+      "assists": 348,
+      "points": 590,
+      "plusMinus": 150,
+      "pointsPerGame": 0.919
+    },
+    "strengthScore": 69.5
+  },
+  {
+    "id": 7023,
+    "name": "John Madden",
+    "initials": "JM",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 634,
+      "goals": 124,
+      "assists": 147,
+      "points": 271,
+      "plusMinus": 30,
+      "pointsPerGame": 0.427
+    },
+    "strengthScore": 33.6
+  },
+  {
+    "id": 7024,
+    "name": "Jay Pandolfo",
+    "initials": "JP",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 609,
+      "goals": 71,
+      "assists": 92,
+      "points": 163,
+      "plusMinus": 17,
+      "pointsPerGame": 0.268
+    },
+    "strengthScore": 22.0
+  },
+  {
+    "id": 7025,
+    "name": "Sergei Brylin",
+    "initials": "SB",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 531,
+      "goals": 101,
+      "assists": 140,
+      "points": 241,
+      "plusMinus": 40,
+      "pointsPerGame": 0.454
+    },
+    "strengthScore": 35.6
+  },
+  {
+    "id": 7026,
+    "name": "Erik Rasmussen",
+    "initials": "ER",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 207,
+      "goals": 15,
+      "assists": 18,
+      "points": 33,
+      "plusMinus": -2,
+      "pointsPerGame": 0.159
+    },
+    "strengthScore": 14.1
+  },
+  {
+    "id": 7027,
+    "name": "Jim McKenzie",
+    "initials": "JM",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 196,
+      "goals": 9,
+      "assists": 15,
+      "points": 24,
+      "plusMinus": 3,
+      "pointsPerGame": 0.122
+    },
+    "strengthScore": 11.4
+  },
+  {
+    "id": 7028,
+    "name": "Brian Rolston",
+    "initials": "BR",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 144,
+      "goals": 35,
+      "assists": 34,
+      "points": 69,
+      "plusMinus": 4,
+      "pointsPerGame": 0.479
+    },
+    "strengthScore": 37.4
+  },
+  {
+    "id": 7029,
+    "name": "Jamie Langenbrunner",
+    "initials": "JL",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 533,
+      "goals": 138,
+      "assists": 233,
+      "points": 371,
+      "plusMinus": 48,
+      "pointsPerGame": 0.696
+    },
+    "strengthScore": 53.2
+  },
+  {
+    "id": 7030,
+    "name": "Brian Gionta",
+    "initials": "BG",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 473,
+      "goals": 152,
+      "assists": 160,
+      "points": 312,
+      "plusMinus": 62,
+      "pointsPerGame": 0.66
+    },
+    "strengthScore": 50.6
+  },
+  {
+    "id": 7031,
+    "name": "Turner Stevenson",
+    "initials": "TS",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 228,
+      "goals": 29,
+      "assists": 46,
+      "points": 75,
+      "plusMinus": 15,
+      "pointsPerGame": 0.329
+    },
+    "strengthScore": 26.5
+  },
+  {
+    "id": 7032,
+    "name": "David Clarkson",
+    "initials": "DC",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 209,
+      "goals": 37,
+      "assists": 41,
+      "points": 78,
+      "plusMinus": 3,
+      "pointsPerGame": 0.373
+    },
+    "strengthScore": 29.7
+  },
+  {
+    "id": 7033,
+    "name": "Jeff Friesen",
+    "initials": "JF",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 162,
+      "goals": 40,
+      "assists": 48,
+      "points": 88,
+      "plusMinus": 31,
+      "pointsPerGame": 0.543
+    },
+    "strengthScore": 42.1
+  },
+  {
+    "id": 7034,
+    "name": "Grant Marshall",
+    "initials": "GM",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 151,
+      "goals": 17,
+      "assists": 27,
+      "points": 44,
+      "plusMinus": -30,
+      "pointsPerGame": 0.291
+    },
+    "strengthScore": 23.7
+  },
+  {
+    "id": 7035,
+    "name": "Petr SÃ½kora",
+    "initials": "PS",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 146,
+      "goals": 56,
+      "assists": 73,
+      "points": 129,
+      "plusMinus": 48,
+      "pointsPerGame": 0.884
+    },
+    "strengthScore": 67.0
+  },
+  {
+    "id": 7036,
+    "name": "Randy McKay",
+    "initials": "RM",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 132,
+      "goals": 29,
+      "assists": 27,
+      "points": 56,
+      "plusMinus": 5,
+      "pointsPerGame": 0.424
+    },
+    "strengthScore": 33.4
+  },
+  {
+    "id": 7037,
+    "name": "Alexander Mogilny",
+    "initials": "AM",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 109,
+      "goals": 55,
+      "assists": 53,
+      "points": 108,
+      "plusMinus": 3,
+      "pointsPerGame": 0.991
+    },
+    "strengthScore": 74.8
+  },
+  {
+    "id": 7038,
+    "name": "Scott Gomez",
+    "initials": "SG",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 466,
+      "goals": 97,
+      "assists": 283,
+      "points": 380,
+      "plusMinus": 45,
+      "pointsPerGame": 0.815
+    },
+    "strengthScore": 61.9
+  },
+  {
+    "id": 7039,
+    "name": "Zach Parise",
+    "initials": "ZP",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 407,
+      "goals": 160,
+      "assists": 175,
+      "points": 335,
+      "plusMinus": 63,
+      "pointsPerGame": 0.823
+    },
+    "strengthScore": 62.5
+  },
+  {
+    "id": 7040,
+    "name": "Travis Zajac",
+    "initials": "TZ",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 326,
+      "goals": 76,
+      "assists": 129,
+      "points": 205,
+      "plusMinus": 45,
+      "pointsPerGame": 0.629
+    },
+    "strengthScore": 48.4
+  },
+  {
+    "id": 7041,
+    "name": "Mike Rupp",
+    "initials": "MR",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 289,
+      "goals": 23,
+      "assists": 23,
+      "points": 46,
+      "plusMinus": -21,
+      "pointsPerGame": 0.159
+    },
+    "strengthScore": 14.1
+  },
+  {
+    "id": 7042,
+    "name": "Bobby HolÃ­k",
+    "initials": "BH",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 223,
+      "goals": 44,
+      "assists": 69,
+      "points": 113,
+      "plusMinus": 24,
+      "pointsPerGame": 0.507
+    },
+    "strengthScore": 39.5
+  },
+  {
+    "id": 7043,
+    "name": "Dainius Zubrus",
+    "initials": "DZ",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 215,
+      "goals": 38,
+      "assists": 67,
+      "points": 105,
+      "plusMinus": 12,
+      "pointsPerGame": 0.488
+    },
+    "strengthScore": 38.1
+  },
+  {
+    "id": 7044,
+    "name": "Sergei Nemchinov",
+    "initials": "SN",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 133,
+      "goals": 13,
+      "assists": 27,
+      "points": 40,
+      "plusMinus": 2,
+      "pointsPerGame": 0.301
+    },
+    "strengthScore": 24.4
+  },
+  {
+    "id": 7045,
+    "name": "Rod Pelley",
+    "initials": "RP",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 121,
+      "goals": 4,
+      "assists": 12,
+      "points": 16,
+      "plusMinus": -7,
+      "pointsPerGame": 0.132
+    },
+    "strengthScore": 12.1
+  },
+  {
+    "id": 7046,
+    "name": "Jason Arnott",
+    "initials": "JA",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 117,
+      "goals": 43,
+      "assists": 53,
+      "points": 96,
+      "plusMinus": 26,
+      "pointsPerGame": 0.821
+    },
+    "strengthScore": 62.4
+  },
+  {
+    "id": 7047,
+    "name": "Brian Rafalski",
+    "initials": "BR",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 466,
+      "goals": 39,
+      "assists": 240,
+      "points": 279,
+      "plusMinus": 79,
+      "pointsPerGame": 0.599
+    },
+    "strengthScore": 46.2
+  },
+  {
+    "id": 7048,
+    "name": "Martin Brodeur",
+    "initials": "MB",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 629,
+      "wins": 358,
+      "gaa": 2.22,
+      "savePct": 0.914,
+      "shutouts": 68
+    },
+    "strengthScore": 61.8
+  },
+  {
+    "id": 7049,
+    "name": "Scott Clemmensen",
+    "initials": "SC",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2000s",
+    "stats": {
+      "gp": 53,
+      "wins": 28,
+      "gaa": 2.63,
+      "savePct": 0.908,
+      "shutouts": 2
+    },
+    "strengthScore": 53.7
+  },
+  {
+    "id": 7050,
+    "name": "Andy Greene",
+    "initials": "AG",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 714,
+      "goals": 38,
+      "assists": 146,
+      "points": 184,
+      "plusMinus": -30,
+      "pointsPerGame": 0.258
+    },
+    "strengthScore": 21.3
+  },
+  {
+    "id": 7051,
+    "name": "Anton Volchenkov",
+    "initials": "AV",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 222,
+      "goals": 3,
+      "assists": 29,
+      "points": 32,
+      "plusMinus": 8,
+      "pointsPerGame": 0.144
+    },
+    "strengthScore": 13.0
+  },
+  {
+    "id": 7052,
+    "name": "John Moore",
+    "initials": "JM",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 217,
+      "goals": 23,
+      "assists": 36,
+      "points": 59,
+      "plusMinus": -16,
+      "pointsPerGame": 0.272
+    },
+    "strengthScore": 22.3
+  },
+  {
+    "id": 7053,
+    "name": "Jonathon Merrill",
+    "initials": "JM",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 216,
+      "goals": 6,
+      "assists": 30,
+      "points": 36,
+      "plusMinus": -41,
+      "pointsPerGame": 0.167
+    },
+    "strengthScore": 14.7
+  },
+  {
+    "id": 7054,
+    "name": "Will Butcher",
+    "initials": "WB",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 215,
+      "goals": 13,
+      "assists": 82,
+      "points": 95,
+      "plusMinus": -24,
+      "pointsPerGame": 0.442
+    },
+    "strengthScore": 34.7
+  },
+  {
+    "id": 7055,
+    "name": "Bryce Salvador",
+    "initials": "BS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 176,
+      "goals": 1,
+      "assists": 16,
+      "points": 17,
+      "plusMinus": -1,
+      "pointsPerGame": 0.097
+    },
+    "strengthScore": 9.6
+  },
+  {
+    "id": 7056,
+    "name": "Ãric GÃ©linas",
+    "initials": "ÃG",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 155,
+      "goals": 14,
+      "assists": 40,
+      "points": 54,
+      "plusMinus": -13,
+      "pointsPerGame": 0.348
+    },
+    "strengthScore": 27.9
+  },
+  {
+    "id": 7057,
+    "name": "Henrik Tallinder",
+    "initials": "HT",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 146,
+      "goals": 6,
+      "assists": 20,
+      "points": 26,
+      "plusMinus": -17,
+      "pointsPerGame": 0.178
+    },
+    "strengthScore": 15.5
+  },
+  {
+    "id": 7058,
+    "name": "Mirco MÃ¼ller",
+    "initials": "MM",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 131,
+      "goals": 3,
+      "assists": 19,
+      "points": 22,
+      "plusMinus": -15,
+      "pointsPerGame": 0.168
+    },
+    "strengthScore": 14.8
+  },
+  {
+    "id": 7059,
+    "name": "Travis Zajac",
+    "initials": "TZ",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 665,
+      "goals": 119,
+      "assists": 208,
+      "points": 327,
+      "plusMinus": -64,
+      "pointsPerGame": 0.492
+    },
+    "strengthScore": 38.4
+  },
+  {
+    "id": 7060,
+    "name": "Adam Henrique",
+    "initials": "AH",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 454,
+      "goals": 122,
+      "assists": 135,
+      "points": 257,
+      "plusMinus": -14,
+      "pointsPerGame": 0.566
+    },
+    "strengthScore": 43.8
+  },
+  {
+    "id": 7061,
+    "name": "Jacob Josefson",
+    "initials": "JJ",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 276,
+      "goals": 18,
+      "assists": 42,
+      "points": 60,
+      "plusMinus": -17,
+      "pointsPerGame": 0.217
+    },
+    "strengthScore": 18.3
+  },
+  {
+    "id": 7062,
+    "name": "Pavel Zacha",
+    "initials": "PZ",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 265,
+      "goals": 37,
+      "assists": 69,
+      "points": 106,
+      "plusMinus": -38,
+      "pointsPerGame": 0.4
+    },
+    "strengthScore": 31.7
+  },
+  {
+    "id": 7063,
+    "name": "Blake Coleman",
+    "initials": "BC",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 237,
+      "goals": 57,
+      "assists": 37,
+      "points": 94,
+      "plusMinus": -21,
+      "pointsPerGame": 0.397
+    },
+    "strengthScore": 31.4
+  },
+  {
+    "id": 7064,
+    "name": "Nico Hischier",
+    "initials": "NH",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 209,
+      "goals": 51,
+      "assists": 84,
+      "points": 135,
+      "plusMinus": -6,
+      "pointsPerGame": 0.646
+    },
+    "strengthScore": 49.6
+  },
+  {
+    "id": 7065,
+    "name": "Ryan Carter",
+    "initials": "RC",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 171,
+      "goals": 17,
+      "assists": 16,
+      "points": 33,
+      "plusMinus": -20,
+      "pointsPerGame": 0.193
+    },
+    "strengthScore": 16.6
+  },
+  {
+    "id": 7066,
+    "name": "Sergey Kalinin",
+    "initials": "SK",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 121,
+      "goals": 10,
+      "assists": 9,
+      "points": 19,
+      "plusMinus": -23,
+      "pointsPerGame": 0.157
+    },
+    "strengthScore": 13.9
+  },
+  {
+    "id": 7067,
+    "name": "Brian Boyle",
+    "initials": "BB",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 116,
+      "goals": 26,
+      "assists": 16,
+      "points": 42,
+      "plusMinus": -22,
+      "pointsPerGame": 0.362
+    },
+    "strengthScore": 28.9
+  },
+  {
+    "id": 7068,
+    "name": "Damon Severson",
+    "initials": "DS",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 430,
+      "goals": 37,
+      "assists": 126,
+      "points": 163,
+      "plusMinus": -107,
+      "pointsPerGame": 0.379
+    },
+    "strengthScore": 30.1
+  },
+  {
+    "id": 7069,
+    "name": "Adam Larsson",
+    "initials": "AL",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 274,
+      "goals": 9,
+      "assists": 60,
+      "points": 69,
+      "plusMinus": 13,
+      "pointsPerGame": 0.252
+    },
+    "strengthScore": 20.9
+  },
+  {
+    "id": 7070,
+    "name": "Mark Fayne",
+    "initials": "MF",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 242,
+      "goals": 13,
+      "assists": 35,
+      "points": 48,
+      "plusMinus": 7,
+      "pointsPerGame": 0.198
+    },
+    "strengthScore": 16.9
+  },
+  {
+    "id": 7071,
+    "name": "Marek Å½idlickÃ½",
+    "initials": "MÅ",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 214,
+      "goals": 22,
+      "assists": 70,
+      "points": 92,
+      "plusMinus": -22,
+      "pointsPerGame": 0.43
+    },
+    "strengthScore": 33.9
+  },
+  {
+    "id": 7072,
+    "name": "Ben Lovejoy",
+    "initials": "BL",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 190,
+      "goals": 5,
+      "assists": 17,
+      "points": 22,
+      "plusMinus": 1,
+      "pointsPerGame": 0.116
+    },
+    "strengthScore": 11.0
+  },
+  {
+    "id": 7073,
+    "name": "Sami Vatanen",
+    "initials": "SV",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 154,
+      "goals": 12,
+      "assists": 56,
+      "points": 68,
+      "plusMinus": -30,
+      "pointsPerGame": 0.442
+    },
+    "strengthScore": 34.7
+  },
+  {
+    "id": 7074,
+    "name": "Steven Santini",
+    "initials": "SS",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 113,
+      "goals": 5,
+      "assists": 16,
+      "points": 21,
+      "plusMinus": -12,
+      "pointsPerGame": 0.186
+    },
+    "strengthScore": 16.1
+  },
+  {
+    "id": 7075,
+    "name": "Peter Harrold",
+    "initials": "PH",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 110,
+      "goals": 5,
+      "assists": 11,
+      "points": 16,
+      "plusMinus": -20,
+      "pointsPerGame": 0.145
+    },
+    "strengthScore": 13.1
+  },
+  {
+    "id": 7076,
+    "name": "Kyle Palmieri",
+    "initials": "KP",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 363,
+      "goals": 132,
+      "assists": 117,
+      "points": 249,
+      "plusMinus": -9,
+      "pointsPerGame": 0.686
+    },
+    "strengthScore": 52.5
+  },
+  {
+    "id": 7077,
+    "name": "Dainius Zubrus",
+    "initials": "DZ",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 339,
+      "goals": 49,
+      "assists": 70,
+      "points": 119,
+      "plusMinus": -15,
+      "pointsPerGame": 0.351
+    },
+    "strengthScore": 28.1
+  },
+  {
+    "id": 7078,
+    "name": "Stephen Gionta",
+    "initials": "SG",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 269,
+      "goals": 14,
+      "assists": 35,
+      "points": 49,
+      "plusMinus": -18,
+      "pointsPerGame": 0.182
+    },
+    "strengthScore": 15.8
+  },
+  {
+    "id": 7079,
+    "name": "Steve Bernier",
+    "initials": "SB",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 224,
+      "goals": 28,
+      "assists": 37,
+      "points": 65,
+      "plusMinus": -14,
+      "pointsPerGame": 0.29
+    },
+    "strengthScore": 23.6
+  },
+  {
+    "id": 7080,
+    "name": "David Clarkson",
+    "initials": "DC",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 210,
+      "goals": 57,
+      "assists": 31,
+      "points": 88,
+      "plusMinus": -34,
+      "pointsPerGame": 0.419
+    },
+    "strengthScore": 33.1
+  },
+  {
+    "id": 7081,
+    "name": "Stefan Noesen",
+    "initials": "SN",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 145,
+      "goals": 22,
+      "assists": 21,
+      "points": 43,
+      "plusMinus": -3,
+      "pointsPerGame": 0.297
+    },
+    "strengthScore": 24.2
+  },
+  {
+    "id": 7082,
+    "name": "JaromÃ­r JÃ¡gr",
+    "initials": "JJ",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 139,
+      "goals": 35,
+      "assists": 61,
+      "points": 96,
+      "plusMinus": 6,
+      "pointsPerGame": 0.691
+    },
+    "strengthScore": 52.9
+  },
+  {
+    "id": 7083,
+    "name": "Jordin Tootoo",
+    "initials": "JT",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 134,
+      "goals": 14,
+      "assists": 10,
+      "points": 24,
+      "plusMinus": -25,
+      "pointsPerGame": 0.179
+    },
+    "strengthScore": 15.6
+  },
+  {
+    "id": 7084,
+    "name": "Michael Ryder",
+    "initials": "MR",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 129,
+      "goals": 24,
+      "assists": 29,
+      "points": 53,
+      "plusMinus": -7,
+      "pointsPerGame": 0.411
+    },
+    "strengthScore": 32.5
+  },
+  {
+    "id": 7085,
+    "name": "Tuomo Ruutu",
+    "initials": "TR",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 129,
+      "goals": 10,
+      "assists": 12,
+      "points": 22,
+      "plusMinus": -9,
+      "pointsPerGame": 0.171
+    },
+    "strengthScore": 15.0
+  },
+  {
+    "id": 7086,
+    "name": "Patrik EliÃ¡Å¡",
+    "initials": "PE",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 360,
+      "goals": 94,
+      "assists": 177,
+      "points": 271,
+      "plusMinus": -26,
+      "pointsPerGame": 0.753
+    },
+    "strengthScore": 57.4
+  },
+  {
+    "id": 7087,
+    "name": "Miles Wood",
+    "initials": "MW",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 267,
+      "goals": 48,
+      "assists": 48,
+      "points": 96,
+      "plusMinus": -56,
+      "pointsPerGame": 0.36
+    },
+    "strengthScore": 28.8
+  },
+  {
+    "id": 7088,
+    "name": "Taylor Hall",
+    "initials": "TH",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 211,
+      "goals": 76,
+      "assists": 132,
+      "points": 208,
+      "plusMinus": -12,
+      "pointsPerGame": 0.986
+    },
+    "strengthScore": 74.4
+  },
+  {
+    "id": 7089,
+    "name": "Ilya Kovalchuk",
+    "initials": "IK",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 195,
+      "goals": 79,
+      "assists": 95,
+      "points": 174,
+      "plusMinus": -41,
+      "pointsPerGame": 0.892
+    },
+    "strengthScore": 67.5
+  },
+  {
+    "id": 7090,
+    "name": "Jesper Bratt",
+    "initials": "JB",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 185,
+      "goals": 37,
+      "assists": 63,
+      "points": 100,
+      "plusMinus": -30,
+      "pointsPerGame": 0.541
+    },
+    "strengthScore": 41.9
+  },
+  {
+    "id": 7091,
+    "name": "Mike Cammalleri",
+    "initials": "MC",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 171,
+      "goals": 51,
+      "assists": 60,
+      "points": 111,
+      "plusMinus": 8,
+      "pointsPerGame": 0.649
+    },
+    "strengthScore": 49.8
+  },
+  {
+    "id": 7092,
+    "name": "Mattias Tedenby",
+    "initials": "MT",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 116,
+      "goals": 10,
+      "assists": 19,
+      "points": 29,
+      "plusMinus": -20,
+      "pointsPerGame": 0.25
+    },
+    "strengthScore": 20.7
+  },
+  {
+    "id": 7093,
+    "name": "Cory Schneider",
+    "initials": "CS",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 311,
+      "wins": 115,
+      "gaa": 2.51,
+      "savePct": 0.915,
+      "shutouts": 17
+    },
+    "strengthScore": 55.1
+  },
+  {
+    "id": 7094,
+    "name": "Martin Brodeur",
+    "initials": "MB",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 183,
+      "wins": 86,
+      "gaa": 2.41,
+      "savePct": 0.904,
+      "shutouts": 14
+    },
+    "strengthScore": 54.0
+  },
+  {
+    "id": 7095,
+    "name": "Keith Kinkaid",
+    "initials": "KK",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 150,
+      "wins": 64,
+      "gaa": 2.89,
+      "savePct": 0.906,
+      "shutouts": 7
+    },
+    "strengthScore": 48.5
+  },
+  {
+    "id": 7096,
+    "name": "Johan Hedberg",
+    "initials": "JH",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 80,
+      "wins": 38,
+      "gaa": 2.42,
+      "savePct": 0.907,
+      "shutouts": 8
+    },
+    "strengthScore": 55.5
+  },
+  {
+    "id": 7097,
+    "name": "Mackenzie Blackwood",
+    "initials": "MB",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2010s",
+    "stats": {
+      "gp": 70,
+      "wins": 32,
+      "gaa": 2.72,
+      "savePct": 0.916,
+      "shutouts": 5
+    },
+    "strengthScore": 53.5
+  },
+  {
+    "id": 7098,
+    "name": "Jesper Bratt",
+    "initials": "JB",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 367,
+      "goals": 113,
+      "assists": 234,
+      "points": 347,
+      "plusMinus": 17,
+      "pointsPerGame": 0.946
+    },
+    "strengthScore": 66.2
+  },
+  {
+    "id": 7099,
+    "name": "TomÃ¡Å¡ Tatar",
+    "initials": "TT",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 232,
+      "goals": 42,
+      "assists": 53,
+      "points": 95,
+      "plusMinus": 12,
+      "pointsPerGame": 0.409
+    },
+    "strengthScore": 30.0
+  },
+  {
+    "id": 7100,
+    "name": "Erik Haula",
+    "initials": "EH",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 225,
+      "goals": 41,
+      "assists": 56,
+      "points": 97,
+      "plusMinus": 6,
+      "pointsPerGame": 0.431
+    },
+    "strengthScore": 31.5
+  },
+  {
+    "id": 7101,
+    "name": "OndÅej PalÃ¡t",
+    "initials": "OP",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 197,
+      "goals": 34,
+      "assists": 48,
+      "points": 82,
+      "plusMinus": -9,
+      "pointsPerGame": 0.416
+    },
+    "strengthScore": 30.5
+  },
+  {
+    "id": 7102,
+    "name": "Miles Wood",
+    "initials": "MW",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 131,
+      "goals": 30,
+      "assists": 22,
+      "points": 52,
+      "plusMinus": -5,
+      "pointsPerGame": 0.397
+    },
+    "strengthScore": 29.2
+  },
+  {
+    "id": 7103,
+    "name": "Andreas Johnsson",
+    "initials": "AJ",
+    "position": "LW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 121,
+      "goals": 18,
+      "assists": 28,
+      "points": 46,
+      "plusMinus": 3,
+      "pointsPerGame": 0.38
+    },
+    "strengthScore": 28.1
+  },
+  {
+    "id": 7104,
+    "name": "Dawson Mercer",
+    "initials": "DM",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 328,
+      "goals": 83,
+      "assists": 84,
+      "points": 167,
+      "plusMinus": -25,
+      "pointsPerGame": 0.509
+    },
+    "strengthScore": 36.8
+  },
+  {
+    "id": 7105,
+    "name": "Nico Hischier",
+    "initials": "NH",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 318,
+      "goals": 120,
+      "assists": 167,
+      "points": 287,
+      "plusMinus": 27,
+      "pointsPerGame": 0.903
+    },
+    "strengthScore": 63.3
+  },
+  {
+    "id": 7106,
+    "name": "Jack Hughes",
+    "initials": "JH",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 307,
+      "goals": 134,
+      "assists": 196,
+      "points": 330,
+      "plusMinus": -9,
+      "pointsPerGame": 1.075
+    },
+    "strengthScore": 74.9
+  },
+  {
+    "id": 7107,
+    "name": "Michael McLeod",
+    "initials": "MM",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 254,
+      "goals": 29,
+      "assists": 51,
+      "points": 80,
+      "plusMinus": -13,
+      "pointsPerGame": 0.315
+    },
+    "strengthScore": 23.7
+  },
+  {
+    "id": 7108,
+    "name": "Yegor Sharangovich",
+    "initials": "YS",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 205,
+      "goals": 53,
+      "assists": 53,
+      "points": 106,
+      "plusMinus": -21,
+      "pointsPerGame": 0.517
+    },
+    "strengthScore": 37.3
+  },
+  {
+    "id": 7109,
+    "name": "Jesper Boqvist",
+    "initials": "JB",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 154,
+      "goals": 24,
+      "assists": 27,
+      "points": 51,
+      "plusMinus": -6,
+      "pointsPerGame": 0.331
+    },
+    "strengthScore": 24.8
+  },
+  {
+    "id": 7110,
+    "name": "Pavel Zacha",
+    "initials": "PZ",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 120,
+      "goals": 32,
+      "assists": 39,
+      "points": 71,
+      "plusMinus": -32,
+      "pointsPerGame": 0.592
+    },
+    "strengthScore": 42.3
+  },
+  {
+    "id": 7111,
+    "name": "Curtis Lazar",
+    "initials": "CL",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 119,
+      "goals": 9,
+      "assists": 21,
+      "points": 30,
+      "plusMinus": 4,
+      "pointsPerGame": 0.252
+    },
+    "strengthScore": 19.5
+  },
+  {
+    "id": 7112,
+    "name": "Janne Kuokkanen",
+    "initials": "JK",
+    "position": "C",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 107,
+      "goals": 14,
+      "assists": 28,
+      "points": 42,
+      "plusMinus": -21,
+      "pointsPerGame": 0.393
+    },
+    "strengthScore": 29.0
+  },
+  {
+    "id": 7113,
+    "name": "Jonas Siegenthaler",
+    "initials": "JS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 262,
+      "goals": 8,
+      "assists": 45,
+      "points": 53,
+      "plusMinus": 24,
+      "pointsPerGame": 0.202
+    },
+    "strengthScore": 16.1
+  },
+  {
+    "id": 7114,
+    "name": "Ryan Graves",
+    "initials": "RG",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 153,
+      "goals": 14,
+      "assists": 40,
+      "points": 54,
+      "plusMinus": 25,
+      "pointsPerGame": 0.353
+    },
+    "strengthScore": 26.3
+  },
+  {
+    "id": 7115,
+    "name": "Luke Hughes",
+    "initials": "LH",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 153,
+      "goals": 16,
+      "assists": 75,
+      "points": 91,
+      "plusMinus": -34,
+      "pointsPerGame": 0.595
+    },
+    "strengthScore": 42.5
+  },
+  {
+    "id": 7116,
+    "name": "Kevin Bahl",
+    "initials": "KB",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 141,
+      "goals": 4,
+      "assists": 19,
+      "points": 23,
+      "plusMinus": -1,
+      "pointsPerGame": 0.163
+    },
+    "strengthScore": 13.5
+  },
+  {
+    "id": 7117,
+    "name": "Brendan Smith",
+    "initials": "BS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 123,
+      "goals": 5,
+      "assists": 15,
+      "points": 20,
+      "plusMinus": 0,
+      "pointsPerGame": 0.163
+    },
+    "strengthScore": 13.5
+  },
+  {
+    "id": 7118,
+    "name": "Ty Smith",
+    "initials": "TS",
+    "position": "LD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 114,
+      "goals": 7,
+      "assists": 36,
+      "points": 43,
+      "plusMinus": -35,
+      "pointsPerGame": 0.377
+    },
+    "strengthScore": 27.9
+  },
+  {
+    "id": 7119,
+    "name": "Nathan Bastian",
+    "initials": "NB",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 257,
+      "goals": 29,
+      "assists": 34,
+      "points": 63,
+      "plusMinus": -18,
+      "pointsPerGame": 0.245
+    },
+    "strengthScore": 19.0
+  },
+  {
+    "id": 7120,
+    "name": "Timo Meier",
+    "initials": "TM",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 170,
+      "goals": 63,
+      "assists": 56,
+      "points": 119,
+      "plusMinus": -21,
+      "pointsPerGame": 0.7
+    },
+    "strengthScore": 49.6
+  },
+  {
+    "id": 7121,
+    "name": "Alexander Holtz",
+    "initials": "AH",
+    "position": "RW",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 101,
+      "goals": 19,
+      "assists": 13,
+      "points": 32,
+      "plusMinus": -21,
+      "pointsPerGame": 0.317
+    },
+    "strengthScore": 23.8
+  },
+  {
+    "id": 7122,
+    "name": "Dougie Hamilton",
+    "initials": "DH",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 228,
+      "goals": 45,
+      "assists": 115,
+      "points": 160,
+      "plusMinus": 4,
+      "pointsPerGame": 0.702
+    },
+    "strengthScore": 49.8
+  },
+  {
+    "id": 7123,
+    "name": "Damon Severson",
+    "initials": "DS",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 217,
+      "goals": 21,
+      "assists": 79,
+      "points": 100,
+      "plusMinus": -13,
+      "pointsPerGame": 0.461
+    },
+    "strengthScore": 33.5
+  },
+  {
+    "id": 7124,
+    "name": "John Marino",
+    "initials": "JM",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 139,
+      "goals": 8,
+      "assists": 35,
+      "points": 43,
+      "plusMinus": 15,
+      "pointsPerGame": 0.309
+    },
+    "strengthScore": 23.3
+  },
+  {
+    "id": 7125,
+    "name": "P.K. Subban",
+    "initials": "PS",
+    "position": "RD",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 121,
+      "goals": 10,
+      "assists": 31,
+      "points": 41,
+      "plusMinus": -24,
+      "pointsPerGame": 0.339
+    },
+    "strengthScore": 25.3
+  },
+  {
+    "id": 7126,
+    "name": "VÃ­tek VanÄÄek",
+    "initials": "VV",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 84,
+      "wins": 50,
+      "gaa": 2.73,
+      "savePct": 0.903,
+      "shutouts": 3
+    },
+    "strengthScore": 53.0
+  },
+  {
+    "id": 7127,
+    "name": "Mackenzie Blackwood",
+    "initials": "MB",
+    "position": "G",
+    "franchise": "Devils",
+    "franchiseAbbr": "NJD",
+    "city": "New Jersey",
+    "decade": "2020s",
+    "stats": {
+      "gp": 82,
+      "wins": 33,
+      "gaa": 3.19,
+      "savePct": 0.897,
+      "shutouts": 3
+    },
+    "strengthScore": 46.8
   }
 ]

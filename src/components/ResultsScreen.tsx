@@ -1,5 +1,5 @@
 'use client';
-import { TeamResult, DraftedPlayer } from '@/types';
+import { TeamResult } from '@/types';
 import PlayerCard from './PlayerCard';
 
 interface Props {
@@ -26,12 +26,15 @@ const RATING_BG: Record<string, string> = {
 export default function ResultsScreen({ result, onBuildAnother }: Props) {
   const { wins, losses, otl, points, rating, players } = result;
   const ratingColor = RATING_COLORS[rating] ?? 'text-white';
-  const ratingBg = RATING_BG[rating] ?? 'bg-white/10';
+  const ratingBg    = RATING_BG[rating]    ?? 'bg-white/10';
+
+  // NHL always shows W-L-OTL (three numbers)
+  const record = `${wins}-${losses}-${otl}`;
 
   function handleShare() {
-    const record = otl > 0 ? `${wins}-${losses}-${otl}` : `${wins}-${losses}`;
     const teamStr = players.map(p => `${p.slotPosition}: ${p.name} (${p.franchiseAbbr} ${p.decade})`).join('\n');
-    const text = `My hockey 82-0 team went ${record} (${points} pts) — ${rating}!\n\n${teamStr}\n\nhttps://hockey82-0.vercel.app`;
+    const url = typeof window !== 'undefined' ? window.location.origin : 'https://hockey82-0.vercel.app';
+    const text = `My hockey 82-0 team went ${record} (${points} pts) — ${rating}!\n\n${teamStr}\n\n${url}`;
     if (navigator.share) {
       navigator.share({ title: 'Hockey 82-0', text });
     } else {
@@ -41,31 +44,25 @@ export default function ResultsScreen({ result, onBuildAnother }: Props) {
 
   return (
     <div className="flex flex-col items-center gap-6 w-full max-w-2xl mx-auto px-4 py-8">
-      {/* Projected record */}
       <div className="text-slate-400 text-xs font-medium uppercase tracking-widest">
         Projected Record
       </div>
 
-      <div className="flex items-center gap-4">
+      {/* W - L - OTL always shown */}
+      <div className="flex items-center gap-3">
         <span className="text-8xl font-black text-white tabular-nums">{wins}</span>
         <span className="text-4xl text-slate-500 font-light">—</span>
         <span className="text-8xl font-black text-white tabular-nums">{losses}</span>
-        {otl > 0 && (
-          <>
-            <span className="text-4xl text-slate-500 font-light">—</span>
-            <span className="text-8xl font-black text-white tabular-nums">{otl}</span>
-          </>
-        )}
+        <span className="text-4xl text-slate-500 font-light">—</span>
+        <span className="text-8xl font-black text-white tabular-nums">{otl}</span>
       </div>
 
-      {/* Rating */}
       <div className={`flex items-center gap-2 px-4 py-2 rounded-full ${ratingBg}`}>
         <div className={`w-2 h-2 rounded-full ${ratingColor.replace('text-', 'bg-')}`} />
         <span className={`font-bold text-sm tracking-wider ${ratingColor}`}>{rating}</span>
         <span className="text-slate-500 text-sm">· {points} pts</span>
       </div>
 
-      {/* CTA buttons */}
       <div className="flex gap-3 w-full">
         <button
           onClick={handleShare}
@@ -82,10 +79,10 @@ export default function ResultsScreen({ result, onBuildAnother }: Props) {
         </button>
       </div>
 
-      {/* Player list */}
-      <div className="w-full flex flex-col gap-3">
+      {/* Roster list — compact on results screen */}
+      <div className="w-full flex flex-col gap-2">
         {players.map(player => (
-          <PlayerCard key={player.id} player={player} />
+          <PlayerCard key={player.id} player={player} compact />
         ))}
       </div>
     </div>

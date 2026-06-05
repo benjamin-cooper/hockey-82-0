@@ -60,8 +60,27 @@ export default function PlayerCard({ player, onClick, compact }: Props) {
         </div>
       </div>
 
-      {/* Stats */}
+      {/* Stats — full in draft list, compact summary on results */}
       {!compact && <StatsBlock stats={player.stats} />}
+      {compact && <CompactStat stats={player.stats} />}
+    </div>
+  );
+}
+
+function CompactStat({ stats }: { stats: PlayerStats }) {
+  if (isGoalieStats(stats)) {
+    return <div className="text-slate-400 text-xs tabular-nums">{stats.wins}W · {stats.gaa.toFixed(2)} GAA · {stats.savePct.toFixed(3)}</div>;
+  }
+  const pm = stats.plusMinus;
+  const pmStr = pm > 0 ? `+${pm}` : `${pm}`;
+  const pmColor = pm > 0 ? 'text-emerald-400' : pm < 0 ? 'text-red-400' : 'text-slate-400';
+  return (
+    <div className="flex items-center gap-2 text-xs tabular-nums">
+      <span className="text-slate-400">{stats.points} PTS</span>
+      <span className="text-slate-600">·</span>
+      <span className={pmColor}>{pmStr}</span>
+      <span className="text-slate-600">·</span>
+      <span className="text-slate-400">{stats.pointsPerGame.toFixed(2)} PPG</span>
     </div>
   );
 }
