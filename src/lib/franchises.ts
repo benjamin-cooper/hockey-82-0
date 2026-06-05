@@ -29,11 +29,25 @@ export const FRANCHISES: Franchise[] = [
   { abbr: 'LAK', name: 'Kings', city: 'Los Angeles', color: '#A2AAAD', decades: ['1970s','1980s','1990s','2000s','2010s','2020s'] },
   { abbr: 'WSH', name: 'Capitals', city: 'Washington', color: '#C8102E', decades: ['1980s','1990s','2000s','2010s','2020s'] },
   { abbr: 'TBL', name: 'Lightning', city: 'Tampa Bay', color: '#002868', decades: ['1990s','2000s','2010s','2020s'] },
-  // Historic/defunct (makes draft more interesting/challenging)
-  { abbr: 'QUE', name: 'Nordiques', city: 'Quebec', color: '#003DA5', decades: ['1980s','1990s'] },
-  { abbr: 'HFD', name: 'Whalers', city: 'Hartford', color: '#007A33', decades: ['1980s','1990s'] },
-  { abbr: 'MNS', name: 'North Stars', city: 'Minnesota', color: '#154734', decades: ['1970s','1980s','1990s'] },
-  { abbr: 'WIN', name: 'Jets', city: 'Winnipeg (WHA)', color: '#041E42', decades: ['1980s','1990s'] },
+  // Modern expansion / relocation
+  { abbr: 'VGK', name: 'Golden Knights', city: 'Vegas',      color: '#B4975A', decades: ['2010s','2020s'] },
+  { abbr: 'SEA', name: 'Kraken',         city: 'Seattle',    color: '#99D9D9', decades: ['2020s'] },
+  { abbr: 'UTA', name: 'Hockey Club',    city: 'Utah',       color: '#6CACE4', decades: ['2020s'] },
+  { abbr: 'WPG', name: 'Jets',           city: 'Winnipeg',   color: '#AC162C', decades: ['2010s','2020s'] },
+  { abbr: 'NSH', name: 'Predators',      city: 'Nashville',  color: '#FFB81C', decades: ['1990s','2000s','2010s','2020s'] },
+  { abbr: 'FLA', name: 'Panthers',       city: 'Florida',    color: '#C8102E', decades: ['1990s','2000s','2010s','2020s'] },
+  { abbr: 'CBJ', name: 'Blue Jackets',   city: 'Columbus',   color: '#002654', decades: ['2000s','2010s','2020s'] },
+  { abbr: 'OTT', name: 'Senators',       city: 'Ottawa',     color: '#C52032', decades: ['1990s','2000s','2010s','2020s'] },
+  { abbr: 'ANA', name: 'Ducks',          city: 'Anaheim',    color: '#F47A38', decades: ['1990s','2000s','2010s','2020s'] },
+  { abbr: 'CAR', name: 'Hurricanes',     city: 'Carolina',   color: '#CC0000', decades: ['1990s','2000s','2010s','2020s'] },
+  { abbr: 'MIN', name: 'Wild',           city: 'Minnesota',  color: '#154734', decades: ['2000s','2010s','2020s'] },
+  // Arizona/Phoenix/Utah lineage
+  { abbr: 'PHX', name: 'Coyotes',        city: 'Phoenix',    color: '#8C2633', decades: ['1990s','2000s','2010s'] },
+  // Historic/defunct
+  { abbr: 'QUE', name: 'Nordiques',      city: 'Quebec',     color: '#003DA5', decades: ['1980s','1990s'] },
+  { abbr: 'HFD', name: 'Whalers',        city: 'Hartford',   color: '#007A33', decades: ['1980s','1990s'] },
+  { abbr: 'MNS', name: 'North Stars',    city: 'Minnesota',  color: '#154734', decades: ['1970s','1980s','1990s'] },
+  { abbr: 'WIN', name: 'Jets',           city: 'Winnipeg (WHA)', color: '#041E42', decades: ['1980s','1990s'] },
 ];
 
 export const FRANCHISE_MAP = new Map(FRANCHISES.map(f => [f.abbr, f]));
