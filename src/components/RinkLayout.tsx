@@ -2,11 +2,6 @@
 import { Position, DraftedPlayer } from '@/types';
 import { FRANCHISE_MAP } from '@/lib/franchises';
 
-interface SlotState {
-  filled?: DraftedPlayer;
-  eligible: boolean; // can the current player go here?
-}
-
 interface Props {
   roster: Partial<Record<Position, DraftedPlayer>>;
   eligibleSlots: Position[];
@@ -14,56 +9,65 @@ interface Props {
   onPlace: (pos: Position) => void;
 }
 
-// Rink spatial layout — forwards up top, D in middle, G at net
-const RINK_LAYOUT: { pos: Position; label: string; col: number; row: number }[] = [
-  { pos: 'LW', label: 'Left Wing',    col: 1, row: 1 },
-  { pos: 'C',  label: 'Center',       col: 2, row: 1 },
-  { pos: 'RW', label: 'Right Wing',   col: 3, row: 1 },
-  { pos: 'LD', label: 'Left D',       col: 1, row: 2 },
-  { pos: 'RD', label: 'Right D',      col: 3, row: 2 },
-  { pos: 'G',  label: 'Goalie',       col: 2, row: 3 },
+const RINK_LAYOUT: { pos: Position; label: string }[][] = [
+  [
+    { pos: 'LW', label: 'Left Wing' },
+    { pos: 'C',  label: 'Center'    },
+    { pos: 'RW', label: 'Right Wing'},
+  ],
+  [
+    { pos: 'LD', label: 'Left D'    },
+    { pos: 'RD', label: 'Right D'   },
+  ],
+  [
+    { pos: 'G',  label: 'Goalie'    },
+  ],
 ];
 
 export default function RinkLayout({ roster, eligibleSlots, teamColor, onPlace }: Props) {
   return (
-    <div className="relative w-full max-w-sm mx-auto">
-      {/* Ice rink outline */}
+    <div className="w-full">
+      {/* Rink surface */}
       <div
-        className="relative rounded-3xl border border-slate-700/60 bg-slate-900/60 px-4 py-6"
-        style={{ background: 'linear-gradient(180deg, rgba(15,25,40,0.95) 0%, rgba(10,18,30,0.95) 100%)' }}
+        className="relative rounded-3xl px-5 py-7 flex flex-col gap-4"
+        style={{
+          background: 'linear-gradient(180deg, #0e1e35 0%, #091625 100%)',
+          border: '1px solid rgba(100,160,220,0.15)',
+          boxShadow: 'inset 0 0 60px rgba(30,80,140,0.15)',
+        }}
       >
-        {/* Rink lines */}
-        <div className="absolute inset-x-6 top-[38%] h-px bg-blue-900/40" />
-        <div className="absolute inset-x-6 top-[66%] h-px bg-red-900/40" />
+        {/* Blue line */}
+        <div className="absolute inset-x-5 top-[37%] h-[2px] rounded-full" style={{ backgroundColor: 'rgba(59,130,246,0.35)' }} />
+        {/* Red line */}
+        <div className="absolute inset-x-5 top-[63%] h-[2px] rounded-full" style={{ backgroundColor: 'rgba(220,38,38,0.35)' }} />
 
-        {/* Grid of slots */}
+        {/* Forwards row */}
         <div className="grid grid-cols-3 gap-3">
-          {RINK_LAYOUT.map(({ pos, label, col, row }) => {
-            const player    = roster[pos];
-            const isEligible = eligibleSlots.includes(pos);
+          {RINK_LAYOUT[0].map(({ pos, label }) => (
+            <RinkSlot key={pos} pos={pos} label={label} player={roster[pos]}
+              isEligible={eligibleSlots.includes(pos)} teamColor={teamColor}
+              onPlace={() => eligibleSlots.includes(pos) && onPlace(pos)} />
+          ))}
+        </div>
 
-            if (row === 2 && col === 2) {
-              // Center gap between LD/RD — render spacer
-              return <div key="gap" />;
-            }
+        {/* Defense row — centered pair */}
+        <div className="grid grid-cols-3 gap-3">
+          <RinkSlot pos="LD" label="Left D"  player={roster['LD']}
+            isEligible={eligibleSlots.includes('LD')} teamColor={teamColor}
+            onPlace={() => eligibleSlots.includes('LD') && onPlace('LD')} />
+          <div /> {/* center gap */}
+          <RinkSlot pos="RD" label="Right D" player={roster['RD']}
+            isEligible={eligibleSlots.includes('RD')} teamColor={teamColor}
+            onPlace={() => eligibleSlots.includes('RD') && onPlace('RD')} />
+        </div>
 
-            // For the G row, pad left and right
-            if (row === 3 && col !== 2) {
-              return <div key={`pad-${col}`} />;
-            }
-
-            return (
-              <RinkSlot
-                key={pos}
-                pos={pos}
-                label={label}
-                player={player}
-                isEligible={isEligible}
-                teamColor={teamColor}
-                onPlace={() => isEligible && onPlace(pos)}
-              />
-            );
-          })}
+        {/* Goalie row — centered */}
+        <div className="grid grid-cols-3 gap-3">
+          <div />
+          <RinkSlot pos="G" label="Goalie" player={roster['G']}
+            isEligible={eligibleSlots.includes('G')} teamColor={teamColor}
+            onPlace={() => eligibleSlots.includes('G') && onPlace('G')} />
+          <div />
         </div>
       </div>
     </div>
@@ -80,71 +84,75 @@ function RinkSlot({
   teamColor: string;
   onPlace: () => void;
 }) {
-  const playerFranchise = player ? FRANCHISE_MAP.get(player.franchiseAbbr) : null;
-  const playerColor     = playerFranchise?.color ?? '#4a9eff';
+  const playerColor = player ? (FRANCHISE_MAP.get(player.franchiseAbbr)?.color ?? '#4a9eff') : teamColor;
 
   if (player) {
-    // Filled slot
     return (
       <div
-        className="rounded-xl p-2.5 text-center border border-slate-600/60 bg-slate-800/60"
-        style={{ borderColor: `${playerColor}50` }}
+        className="rounded-2xl py-4 px-2 text-center border"
+        style={{
+          borderColor: `${playerColor}60`,
+          backgroundColor: `${playerColor}18`,
+        }}
       >
         <div
-          className="w-8 h-8 rounded-lg mx-auto mb-1.5 flex items-center justify-center text-white font-bold text-xs"
+          className="w-11 h-11 rounded-xl mx-auto mb-2 flex items-center justify-center
+                     text-white font-black text-sm shadow-lg"
           style={{ backgroundColor: playerColor }}
         >
           {player.initials}
         </div>
-        <div className="text-white text-[11px] font-semibold leading-tight truncate">
+        <div className="text-white text-[12px] font-bold leading-tight truncate px-1">
           {player.name.split(' ').slice(-1)[0]}
         </div>
-        <div className="text-slate-500 text-[9px] mt-0.5">{pos}</div>
+        <div className="text-[10px] mt-0.5 font-medium" style={{ color: `${playerColor}cc` }}>
+          {player.slotPosition}
+        </div>
       </div>
     );
   }
 
   if (isEligible) {
-    // Empty, eligible — glowing + clickable
     return (
       <button
         onClick={onPlace}
-        className="rounded-xl p-2.5 text-center border-2 border-dashed transition-all duration-150
-                   hover:scale-105 active:scale-95 cursor-pointer"
+        className="rounded-2xl py-4 px-2 text-center border-2 border-dashed
+                   transition-all duration-150 hover:scale-105 active:scale-95 w-full"
         style={{
-          borderColor: `${teamColor}80`,
-          backgroundColor: `${teamColor}12`,
-          boxShadow: `0 0 12px ${teamColor}30`,
+          borderColor: `${teamColor}90`,
+          backgroundColor: `${teamColor}15`,
+          boxShadow: `0 0 16px ${teamColor}35`,
         }}
         onMouseEnter={e => {
+          e.currentTarget.style.backgroundColor = `${teamColor}28`;
           e.currentTarget.style.borderColor = teamColor;
-          e.currentTarget.style.boxShadow = `0 0 20px ${teamColor}55`;
+          e.currentTarget.style.boxShadow = `0 0 24px ${teamColor}55`;
         }}
         onMouseLeave={e => {
-          e.currentTarget.style.borderColor = `${teamColor}80`;
-          e.currentTarget.style.boxShadow = `0 0 12px ${teamColor}30`;
+          e.currentTarget.style.backgroundColor = `${teamColor}15`;
+          e.currentTarget.style.borderColor = `${teamColor}90`;
+          e.currentTarget.style.boxShadow = `0 0 16px ${teamColor}35`;
         }}
       >
         <div
-          className="w-8 h-8 rounded-lg mx-auto mb-1.5 flex items-center justify-center text-xl font-light"
-          style={{ color: teamColor, backgroundColor: `${teamColor}20` }}
+          className="w-11 h-11 rounded-xl mx-auto mb-2 flex items-center justify-center
+                     text-2xl font-light"
+          style={{ color: teamColor, backgroundColor: `${teamColor}25` }}
         >
           +
         </div>
-        <div className="text-[11px] font-semibold leading-tight" style={{ color: teamColor }}>
-          {pos}
-        </div>
-        <div className="text-slate-500 text-[9px] mt-0.5">{label}</div>
+        <div className="text-[12px] font-bold" style={{ color: teamColor }}>{pos}</div>
+        <div className="text-slate-400 text-[10px] mt-0.5">{label}</div>
       </button>
     );
   }
 
-  // Empty, ineligible — dimmed placeholder
+  // Empty, ineligible
   return (
-    <div className="rounded-xl p-2.5 text-center border border-slate-800/40 opacity-25 cursor-default">
-      <div className="w-8 h-8 rounded-lg mx-auto mb-1.5 bg-slate-800" />
-      <div className="text-slate-600 text-[11px] font-semibold">{pos}</div>
-      <div className="text-slate-700 text-[9px] mt-0.5">{label}</div>
+    <div className="rounded-2xl py-4 px-2 text-center border border-slate-700/30 cursor-default">
+      <div className="w-11 h-11 rounded-xl mx-auto mb-2 bg-slate-800/50" />
+      <div className="text-slate-600 text-[12px] font-bold">{pos}</div>
+      <div className="text-slate-700 text-[10px] mt-0.5">{label}</div>
     </div>
   );
 }

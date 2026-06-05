@@ -130,7 +130,7 @@ export default function DraftGame() {
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4">
-      <div className="grid grid-cols-[1fr_280px] gap-6 items-start">
+      <div className="grid grid-cols-[1fr_320px] gap-6 items-start">
 
         {/* LEFT — slot machine / player list / placing prompt */}
         <div className="flex flex-col gap-4 min-w-0">
